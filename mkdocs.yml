@@ -1,0 +1,18 @@
+site_name: bitlayer-l2 docs
+site_url: https://bitlayer-org.github.io/docs.bitlayer-l2
+site_author: bitlayer-l2
+repo_url: https://github.com/bitlayer-org/docs.bitlayer-l2
+docs_dir: docs/
+theme:
+    name: material
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+        - javascript
+        - shell
+nav:
+    - About bitlayer-l2: index.md
+    - Tutorials: tutorial.md
+    - Main:
+      - Compile and Run: dev/install.md
