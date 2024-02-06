@@ -2,7 +2,7 @@
 
 In this section, we have provided tutorials on usage of different components of Bitlayer.
 
-### Developers
+## Developers
 
 * Tutorial on [How do synchronize Bitlayer nodes](./dev/install.md)
 

@@ -21,5 +21,5 @@ By running `./build/bin/geth --help`, we can get all `option` info. Specific usa
 
 ## Deployment
 
-please refer [deployment](/dev/deploy.md)
+please refer [deployment](./dev/deploy.md)
 
