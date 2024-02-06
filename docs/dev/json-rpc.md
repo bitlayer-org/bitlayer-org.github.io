@@ -12,12 +12,12 @@ Returns logs of internal transactions by hash of a transaction.
 
 1. DATA, 32 Bytes - hash of a transaction
 
+
 2. Object - The filter options:
     - fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
     - toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
-    - opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.
+    - opCode: String - (optional) An EVM opcode for a transaction's log.
     - minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
-
 
 ### Returns
 
