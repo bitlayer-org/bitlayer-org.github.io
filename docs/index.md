@@ -23,14 +23,15 @@ Bitlayer innovatively utilizes the DLC/LN protocol to enable trustless bidirecti
     <tr style="background:rgba(0,0,0,0)" >
 <th > Stage </th><th> Definition </th><th> Time </th><th> Delivery Content </th><th> Description </th>
 </tr>
+<tr style="background:rgba(0,0,0,0)" >
 
 <tr style="background:rgba(0,0,0,0)" >
     <td rowspan=4 >Mainnet V1</td>
     <td rowspan=4 >BTC main chain assets can be mapped through the PoS side chain</td>
     <td rowspan=4 >2024 Q1</td>
-    <td rowspan=1 >PoS side chain</td><td>Based on DPoSA consensus, supporting token economic model</td>
-    <td rowspan=1 >BTC<->BL cross-chain bridge</td><td>Wrapping third parties (such as polyhedra) to support BTC/BRC-20 and BL two-way cross-chain</td>
-    <td rowspan=1 >Developer Kit</td><td>RPC/Testnet/Faucet/Developer Website/Browser</td>
+    <td rowspan=1 >PoS side chain</td><td>Based on DPoSA consensus, supporting token economic model</td></tr>
+    <td rowspan=1 >BTC<->BL cross-chain bridge</td><td>Wrapping third parties (such as polyhedra) to support BTC/BRC-20 and BL two-way cross-chain</td></tr>
+    <td rowspan=1 >Developer Kit</td><td>RPC/Testnet/Faucet/Developer Website/Browser</td></tr>
     <td rowspan=1 >Commonly used assets</td><td>Mapping of mainstream assets</td></tr>
 
 <tr style="background:rgba(0,0,0,0)" >
@@ -45,16 +46,16 @@ Bitlayer innovatively utilizes the DLC/LN protocol to enable trustless bidirecti
 
 Seamless migration for developers and users, achieving the highest security model in the industry</td>
 <td rowspan=4 >2024 Q3</td>
-<td rowspan=1 >Layer2</td><td>A model with sequencer and DA</td>
-<td rowspan=1 >Funds cross-chain</td><td>Safe deposit and withdrawal based on DLC protocol</td>
-<td rowspan=1 >Status verification</td><td>Implement the multi-signature Oracle and take OP challenge</td>
+<td rowspan=1 >Layer2</td><td>A model with sequencer and DA</td></tr>
+<td rowspan=1 >Funds cross-chain</td><td>Safe deposit and withdrawal based on DLC protocol</td></tr>
+<td rowspan=1 >Status verification</td><td>Implement the multi-signature Oracle and take OP challenge</td></tr>
 <td rowspan=1 >Capital escape</td><td>Multi-signature controlled DLC-Attestors realize fund escape</td></tr>
 
 <tr style="background:rgba(0,0,0,0)" >
     <td rowspan=2 >Mainnet V3</td>
     <td rowspan=3 >Seamless migration for developers and users, achieving Bitcoin equivalent security</td>
     <td rowspan=2 >2024 Q4 ~ 2025 Q2</td>
-    <td rowspan=1 >Status verification</td><td>BitVM implementation for OP challenges</td>
+    <td rowspan=1 >Status verification</td><td>BitVM implementation for OP challenges</td></tr>
     <td rowspan=1 >Capital escape</td><td>Decentralized DLC-Attestors achieve fund escape</td></tr>
 
 </table>
