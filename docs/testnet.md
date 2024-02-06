@@ -32,5 +32,7 @@ wss://testnet-ws.bitlayer.org
 
 **Genesis block hash**: 
 
+[View or download testnet genesis file](./static/testnet_genesis.json ':ignore')
+
 
 

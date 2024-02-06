@@ -16,7 +16,7 @@ Returns logs of internal transactions by hash of a transaction.
 * fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
 * toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
 * opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.
-* minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in Wei.
+* minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
 
 ### Returns
 
@@ -27,7 +27,7 @@ Object - A internal transaction's log object, or null when no log was found:
 * logs: Array - Array of log objects, which this transaction generated. The log object:
   * from: DATA, 20 Bytes - address of the sender.
   * to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction.
-  * value: QUANTITY - value transferred in Wei.
+  * value: QUANTITY - value transferred in BRC.
   * success: QUANTITY - a boolean value indicating whether the call was successfully completed. either 1 (success) or 0 (failure)
   * opcode: DATA - the EVM opcode of the transaction's log.
   * depth: QUANTITY - the length of callstack in EVM.
@@ -112,7 +112,7 @@ Returns logs of internal transactions by block number.
 * fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
 * toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
 * opCode: String - (optional) An EVM opcode for a transaction's log.
-* minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in Wei.
+* minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
 
 ### Returns
 Same as [eth_getTraceActionByTxHash](#returns)
