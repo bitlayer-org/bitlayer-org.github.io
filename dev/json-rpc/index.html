@@ -755,21 +755,23 @@
 <li>minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.</li>
 </ol>
 <h3 id="returns">Returns</h3>
-<p>Object - A internal transaction's log object, or null when no log was found:
-* transactionHash: DATA, 32 Bytes - hash of the transaction.
-* blockHash: DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.
-* blockNumber: QUANTITY - block number where this transaction was in.
-* logs: Array - Array of log objects, which this transaction generated. The log object:
-  * from: DATA, 20 Bytes - address of the sender.
-  * to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction.
-  * value: QUANTITY - value transferred in BRC.
-  * success: QUANTITY - a boolean value indicating whether the call was successfully completed. either 1 (success) or 0 (failure)
-  * opcode: DATA - the EVM opcode of the transaction's log.
-  * depth: QUANTITY - the length of callstack in EVM.
-  * gas: QUANTITY - gas provided by the sender.
-  * gas_used: QUANTITY - The amount of gas used by this specific transaction alone.
-  * input: DATA - the data send along with the transaction.
-  * trace_address: QUANTITY|Array - Array of call trace where each element signifies the depth of a call during execution.</p>
+<p>Object - A internal transaction's log object, or null when no log was found:</p>
+<ul>
+<li>transactionHash: DATA, 32 Bytes - hash of the transaction.</li>
+<li>blockHash: DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.</li>
+<li>blockNumber: QUANTITY - block number where this transaction was in.</li>
+<li>logs: Array - Array of log objects, which this transaction generated. The log object:</li>
+<li>from: DATA, 20 Bytes - address of the sender.</li>
+<li>to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction.</li>
+<li>value: QUANTITY - value transferred in BRC.</li>
+<li>success: QUANTITY - a boolean value indicating whether the call was successfully completed. either 1 (success) or 0 (failure)</li>
+<li>opcode: DATA - the EVM opcode of the transaction's log.</li>
+<li>depth: QUANTITY - the length of callstack in EVM.</li>
+<li>gas: QUANTITY - gas provided by the sender.</li>
+<li>gas_used: QUANTITY - The amount of gas used by this specific transaction alone.</li>
+<li>input: DATA - the data send along with the transaction.</li>
+<li>trace_address: QUANTITY|Array - Array of call trace where each element signifies the depth of a call during execution.</li>
+</ul>
 <h3 id="example">Example</h3>
 <p>Request:</p>
 <pre><code class="language-shell">curl -X POST --data '{  &quot;jsonrpc&quot;:&quot;2.0&quot;,  &quot;method&quot;:&quot;eth_getTraceActionByTxHash&quot;,  &quot;params&quot;:[&quot;0xce9a42b2d2e0c0a7984d9351793129b91dc0599b9b4401082b75afcbc6abd694&quot;], &quot;id&quot;:1}'
