@@ -749,7 +749,9 @@
 <li>
 <p>Object - The filter options:</p>
 </li>
-<li>fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.</li>
+<li>
+<p>fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.</p>
+</li>
 <li>toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.</li>
 <li>opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.</li>
 <li>minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.</li>
@@ -761,15 +763,15 @@
 <li>blockHash: DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.</li>
 <li>blockNumber: QUANTITY - block number where this transaction was in.</li>
 <li>logs: Array - Array of log objects, which this transaction generated. The log object:</li>
-<li>from: DATA, 20 Bytes - address of the sender.</li>
-<li>to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction.</li>
-<li>value: QUANTITY - value transferred in BRC.</li>
+<li>from: DATA, 20 Bytes - address of the sender. </li>
+<li>to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction. </li>
+<li>value: QUANTITY - value transferred in BRC. </li>
 <li>success: QUANTITY - a boolean value indicating whether the call was successfully completed. either 1 (success) or 0 (failure)</li>
-<li>opcode: DATA - the EVM opcode of the transaction's log.</li>
-<li>depth: QUANTITY - the length of callstack in EVM.</li>
-<li>gas: QUANTITY - gas provided by the sender.</li>
-<li>gas_used: QUANTITY - The amount of gas used by this specific transaction alone.</li>
-<li>input: DATA - the data send along with the transaction.</li>
+<li>opcode: DATA - the EVM opcode of the transaction's log. </li>
+<li>depth: QUANTITY - the length of callstack in EVM. </li>
+<li>gas: QUANTITY - gas provided by the sender. </li>
+<li>gas_used: QUANTITY - The amount of gas used by this specific transaction alone. </li>
+<li>input: DATA - the data send along with the transaction. </li>
 <li>trace_address: QUANTITY|Array - Array of call trace where each element signifies the depth of a call during execution.</li>
 </ul>
 <h3 id="example">Example</h3>
