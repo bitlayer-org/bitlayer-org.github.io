@@ -40,7 +40,7 @@ Object - A internal transaction's log object, or null when no log was found:
 
 Request:
 ```shell
-curl -X POST --data '{  "jsonrpc":"2.0",  "method":"eth_getTraceActionByBlockHash",  "params":["0x80f5779b0348102d90f5463a9a494b7454d0e1f8d8b119cf090cd90e2d6105c3"], "id":1}'
+curl -X POST --data '{  "jsonrpc":"2.0",  "method":"eth_getTraceActionByTxHash",  "params":["0xce9a42b2d2e0c0a7984d9351793129b91dc0599b9b4401082b75afcbc6abd694"], "id":1}'
 ```
 Response:
 ```json
