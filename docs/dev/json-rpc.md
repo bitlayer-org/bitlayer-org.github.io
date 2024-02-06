@@ -13,14 +13,15 @@ Returns logs of internal transactions by hash of a transaction.
 1. DATA, 32 Bytes - hash of a transaction
 
 2. Object - The filter options:
-* fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
-* toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
-* opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.
-* minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
+   * fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
+   * toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
+   * opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.
+   * minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
 
 ### Returns
 
 Object - A internal transaction's log object, or null when no log was found:
+
 * transactionHash: DATA, 32 Bytes - hash of the transaction.
 * blockHash: DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.
 * blockNumber: QUANTITY - block number where this transaction was in.
@@ -108,11 +109,12 @@ Returns logs of internal transactions by block number.
 ### Parameters
 1. QUANTITY|TAG - integer of a block number
 
+
 2. Object - The filter options:
-* fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
-* toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
-* opCode: String - (optional) An EVM opcode for a transaction's log.
-* minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
+   * fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
+   * toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
+   * opCode: String - (optional) An EVM opcode for a transaction's log.
+   * minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
 
 ### Returns
 Same as [eth_getTraceActionByTxHash](#returns)
