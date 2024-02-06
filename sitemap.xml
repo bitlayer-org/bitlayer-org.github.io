@@ -2,22 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/</loc>
-         <lastmod>2024-01-30</lastmod>
+         <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/faq/</loc>
-         <lastmod>2024-01-30</lastmod>
+         <lastmod>2024-02-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/genesis/</loc>
+         <lastmod>2024-02-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/testnet/</loc>
+         <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/tutorial/</loc>
-         <lastmod>2024-01-30</lastmod>
+         <lastmod>2024-02-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/dev/deploy/</loc>
+         <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/dev/install/</loc>
-         <lastmod>2024-01-30</lastmod>
+         <lastmod>2024-02-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/dev/json-rpc/</loc>
+         <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

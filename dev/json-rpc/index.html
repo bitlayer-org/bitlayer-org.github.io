@@ -10,13 +10,9 @@
         <meta name="author" content="bitlayer-l2">
       
       
-        <link rel="canonical" href="https://bitlayer-org.github.io/docs.bitlayer-l2/dev/install/">
+        <link rel="canonical" href="https://bitlayer-org.github.io/docs.bitlayer-l2/dev/json-rpc/">
       
       
-        <link rel="prev" href="../../tutorial/">
-      
-      
-        <link rel="next" href="../deploy/">
       
       
       <link rel="icon" href="../../images/FA_Bitlayer_Logo.jpg">
@@ -24,7 +20,7 @@
     
     
       
-        <title>Compile and Run - bitlayer-l2 docs</title>
+        <title>JSON-RPC API METHODS - bitlayer-l2 docs</title>
       
     
     
@@ -66,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#compile-and-run" class="md-skip">
+        <a href="#json-rpc-api-methods" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compile and Run
+              JSON-RPC API METHODS
             
           </span>
         </div>
@@ -254,21 +250,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -282,7 +276,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Main
@@ -293,30 +287,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Compile and Run
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -325,71 +299,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    <span class="md-ellipsis">
-      Download
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-golang" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Golang
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compile
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -491,47 +400,128 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
+  <a href="#eth_gettraceactionbytxhash" class="md-nav__link">
     <span class="md-ellipsis">
-      Download
+      eth_getTraceActionByTxHash
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eth_getTraceActionByTxHash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#install-golang" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#returns" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Golang
+      Returns
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#compile" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      Compile
+      Example
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
+  <a href="#eth_gettraceactionbyblocknumber" class="md-nav__link">
     <span class="md-ellipsis">
-      Deployment
+      eth_getTraceActionByBlockNumber
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="eth_getTraceActionByBlockNumber">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eth_gettraceactionbyblockhash" class="md-nav__link">
+    <span class="md-ellipsis">
+      eth_getTraceActionByBlockHash
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eth_getTraceActionByBlockHash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#returns_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Returns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -553,22 +543,136 @@
   
 
 
-<h1 id="compile-and-run">Compile and Run</h1>
-<h2 id="download">Download</h2>
-<p>Download source code via <code>git</code></p>
-<pre><code>git clone https://github.com/bitlayer-org/bitlayer-l2.git
+<h1 id="json-rpc-api-methods">JSON-RPC API METHODS</h1>
+<p>Bitlayer provides all json-rpc api methods listed in <a href="https://ethereum.org/developers/docs/apis/json-rpc#json-rpc-methods">Ethereum</a>. </p>
+<p>Besides, it has several custom methods.</p>
+<h2 id="eth_gettraceactionbytxhash">eth_getTraceActionByTxHash</h2>
+<p>Returns logs of internal transactions by hash of a transaction.</p>
+<h3 id="parameters">Parameters</h3>
+<ol>
+<li>
+<p>DATA, 32 Bytes - hash of a transaction</p>
+</li>
+<li>
+<p>Object - The filter options:</p>
+</li>
+<li>fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.</li>
+<li>toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.</li>
+<li>opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.</li>
+<li>minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.</li>
+</ol>
+<h3 id="returns">Returns</h3>
+<p>Object - A internal transaction's log object, or null when no log was found:
+* transactionHash: DATA, 32 Bytes - hash of the transaction.
+* blockHash: DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.
+* blockNumber: QUANTITY - block number where this transaction was in.
+* logs: Array - Array of log objects, which this transaction generated. The log object:
+  * from: DATA, 20 Bytes - address of the sender.
+  * to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction.
+  * value: QUANTITY - value transferred in BRC.
+  * success: QUANTITY - a boolean value indicating whether the call was successfully completed. either 1 (success) or 0 (failure)
+  * opcode: DATA - the EVM opcode of the transaction's log.
+  * depth: QUANTITY - the length of callstack in EVM.
+  * gas: QUANTITY - gas provided by the sender.
+  * gas_used: QUANTITY - The amount of gas used by this specific transaction alone.
+  * input: DATA - the data send along with the transaction.
+  * trace_address: QUANTITY|Array - Array of call trace where each element signifies the depth of a call during execution.</p>
+<h3 id="example">Example</h3>
+<p>Request:</p>
+<pre><code class="language-shell">curl -X POST --data '{  &quot;jsonrpc&quot;:&quot;2.0&quot;,  &quot;method&quot;:&quot;eth_getTraceActionByTxHash&quot;,  &quot;params&quot;:[&quot;0xce9a42b2d2e0c0a7984d9351793129b91dc0599b9b4401082b75afcbc6abd694&quot;], &quot;id&quot;:1}'
 </code></pre>
-<h2 id="install-golang">Install Golang</h2>
-<p>Reference: <a href="https://golang.org/doc/install">Go Download and install</a></p>
-<h2 id="compile">Compile</h2>
-<pre><code>cd /path/to/bitlayer-l2
-make geth
+<p>Response:</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 1,
+  &quot;jsonrpc&quot;: &quot;2.0&quot;,
+  &quot;result&quot;: [
+    {
+      &quot;transactionHash&quot;: &quot;0xce9a42b2d2e0c0a7984d9351793129b91dc0599b9b4401082b75afcbc6abd694&quot;,
+      &quot;blockHash&quot;: &quot;0x80f5779b0348102d90f5463a9a494b7454d0e1f8d8b119cf090cd90e2d6105c3&quot;,
+      &quot;blockNumber&quot;: 54,
+      &quot;logs&quot;: [
+        {
+          &quot;from&quot;: &quot;0x2e46771cff3636a42f363826ff8a94d3a738e075&quot;,
+          &quot;to&quot;: &quot;0x000000000000000000000000000000000000f000&quot;,
+          &quot;value&quot;: 0,
+          &quot;success&quot;: true,
+          &quot;opcode&quot;: &quot;CALL&quot;,
+          &quot;depth&quot;: 18446744073709551615,
+          &quot;gas&quot;: 165629,
+          &quot;gas_used&quot;: 162996,
+          &quot;input&quot;: &quot;0x6374299e0000000000000000000000009f01eb5eb4dbea8b2cecc679050819990ab68a1a000000000000000000000000000000000000000000295be96e64066972000000&quot;,
+          &quot;trace_address&quot;: []
+        },
+        {
+          &quot;from&quot;: &quot;0x000000000000000000000000000000000000f000&quot;,
+          &quot;to&quot;: &quot;0x4b20bbf3652696b9afd27b8f88ff8b7c1f361336&quot;,
+          &quot;value&quot;: 0,
+          &quot;success&quot;: true,
+          &quot;opcode&quot;: &quot;STATICCALL&quot;,
+          &quot;depth&quot;: 0,
+          &quot;gas&quot;: 157800,
+          &quot;gas_used&quot;: 2443,
+          &quot;input&quot;: &quot;0x00000000&quot;,
+          &quot;output&quot;: &quot;0x0000000000000000000000002e46771cff3636a42f363826ff8a94d3a738e075&quot;,
+          &quot;trace_address&quot;: [
+            0
+          ]
+        },
+        {
+          &quot;from&quot;: &quot;0x000000000000000000000000000000000000f000&quot;,
+          &quot;to&quot;: &quot;0xf4340cf5f3891a3827713b33f769b501a0b5b122&quot;,
+          &quot;value&quot;: 0,
+          &quot;success&quot;: true,
+          &quot;opcode&quot;: &quot;STATICCALL&quot;,
+          &quot;depth&quot;: 0,
+          &quot;gas&quot;: 150040,
+          &quot;gas_used&quot;: 2814,
+          &quot;input&quot;: &quot;0x0000000000000000000000000000000000000000007c13bc4b2c133c560000000000000000000000000000000000000000000000007c13bc4b2c133c5600000000000000&quot;,
+          &quot;output&quot;: &quot;0x0000000000000000000000000000000000000000007c13bc4b2c133c56000000&quot;,
+          &quot;trace_address&quot;: [
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}
 </code></pre>
-<p>Compilation is completed, the generated binary is in the folder <code>build/bin</code>.</p>
-<h2 id="run">Run</h2>
-<p>By running <code>./build/bin/geth --help</code>, we can get all <code>option</code> info. Specific usage can refer to <a href="https://geth.ethereum.org/docs/interface/command-line-options">Command-line Options</a></p>
-<h2 id="deployment">Deployment</h2>
-<p>please refer <a href="../deploy/">deployment</a></p>
+<h2 id="eth_gettraceactionbyblocknumber">eth_getTraceActionByBlockNumber</h2>
+<p>Returns logs of internal transactions by block number.</p>
+<h3 id="parameters_1">Parameters</h3>
+<ol>
+<li>
+<p>QUANTITY|TAG - integer of a block number</p>
+</li>
+<li>
+<p>Object - The filter options:</p>
+</li>
+<li>fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.</li>
+<li>toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.</li>
+<li>opCode: String - (optional) An EVM opcode for a transaction's log.</li>
+<li>minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.</li>
+</ol>
+<h3 id="returns_1">Returns</h3>
+<p>Same as <a href="#returns">eth_getTraceActionByTxHash</a></p>
+<h3 id="example_1">Example</h3>
+<p>Request:</p>
+<pre><code class="language-shell">curl -X POST --data '{  &quot;jsonrpc&quot;:&quot;2.0&quot;,  &quot;method&quot;:&quot;eth_getTraceActionByBlockNumber&quot;,  &quot;params&quot;:[&quot;0x36&quot;],  &quot;id&quot;:1}'
+</code></pre>
+<p>Result see <a href="#example">eth_getTraceActionByTxHash</a></p>
+<h2 id="eth_gettraceactionbyblockhash">eth_getTraceActionByBlockHash</h2>
+<p>Returns logs of internal transactions by block hash.</p>
+<h3 id="parameters_2">Parameters</h3>
+<ol>
+<li>DATA, 32 Bytes - Hash of a block.</li>
+</ol>
+<h3 id="returns_2">Returns</h3>
+<p>Same as <a href="#returns">eth_getTraceActionByTxHash</a></p>
+<h3 id="example_2">Example</h3>
+<p>Request:</p>
+<pre><code class="language-shell">curl -X POST --data '{  &quot;jsonrpc&quot;:&quot;2.0&quot;,  &quot;method&quot;:&quot;eth_getTraceActionByBlockHash&quot;,  &quot;params&quot;:[&quot;0x80f5779b0348102d90f5463a9a494b7454d0e1f8d8b119cf090cd90e2d6105c3&quot;],  &quot;id&quot;:1}'
+</code></pre>
+<p>Result see <a href="#example">eth_getTraceActionByTxHash</a></p>
 
 
 
