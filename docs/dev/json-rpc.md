@@ -13,29 +13,30 @@ Returns logs of internal transactions by hash of a transaction.
 1. DATA, 32 Bytes - hash of a transaction
 
 2. Object - The filter options:
-   * fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
-   * toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
-   * opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.
-   * minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
+
+- fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
+- toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
+- opCode: DATA|Array - (optional) An EVM opcode for a transaction's log.
+- minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
 
 ### Returns
 
 Object - A internal transaction's log object, or null when no log was found:
 
-* transactionHash: DATA, 32 Bytes - hash of the transaction.
-* blockHash: DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.
-* blockNumber: QUANTITY - block number where this transaction was in.
-* logs: Array - Array of log objects, which this transaction generated. The log object:
-  * from: DATA, 20 Bytes - address of the sender.
-  * to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction.
-  * value: QUANTITY - value transferred in BRC.
-  * success: QUANTITY - a boolean value indicating whether the call was successfully completed. either 1 (success) or 0 (failure)
-  * opcode: DATA - the EVM opcode of the transaction's log.
-  * depth: QUANTITY - the length of callstack in EVM.
-  * gas: QUANTITY - gas provided by the sender.
-  * gas_used: QUANTITY - The amount of gas used by this specific transaction alone.
-  * input: DATA - the data send along with the transaction.
-  * trace_address: QUANTITY|Array - Array of call trace where each element signifies the depth of a call during execution.
+- transactionHash: DATA, 32 Bytes - hash of the transaction.
+- blockHash: DATA, 32 Bytes - hash of the block where this transaction was in. null when its pending.
+- blockNumber: QUANTITY - block number where this transaction was in.
+- logs: Array - Array of log objects, which this transaction generated. The log object:
+  - from: DATA, 20 Bytes - address of the sender. 
+  - to: DATA, 20 Bytes - address of the receiver. null when it's a contract creation transaction. 
+  - value: QUANTITY - value transferred in BRC. 
+  - success: QUANTITY - a boolean value indicating whether the call was successfully completed. either 1 (success) or 0 (failure)
+  - opcode: DATA - the EVM opcode of the transaction's log. 
+  - depth: QUANTITY - the length of callstack in EVM. 
+  - gas: QUANTITY - gas provided by the sender. 
+  - gas_used: QUANTITY - The amount of gas used by this specific transaction alone. 
+  - input: DATA - the data send along with the transaction. 
+  - trace_address: QUANTITY|Array - Array of call trace where each element signifies the depth of a call during execution.
 
 ### Example
 
@@ -111,10 +112,10 @@ Returns logs of internal transactions by block number.
 
 
 2. Object - The filter options:
-   * fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
-   * toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
-   * opCode: String - (optional) An EVM opcode for a transaction's log.
-   * minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
+- fromUser: DATA|Array, 20 Bytes - (optional) address of the sender.
+- toBlock: DATA|Array, 20 Bytes - (optional) address of the receiver.
+- opCode: String - (optional) An EVM opcode for a transaction's log.
+- minValue: QUANTITY|TAG - (optional) the minimal value or amount transferred in BRC.
 
 ### Returns
 Same as [eth_getTraceActionByTxHash](#returns)
