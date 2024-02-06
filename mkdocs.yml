@@ -5,6 +5,8 @@ repo_url: https://github.com/bitlayer-org/docs.bitlayer-l2
 docs_dir: docs/
 theme:
     name: material
+    favicon: images/FA_Bitlayer_Logo.jpg
+    logo: images/FA_Bitlayer_Logo.jpg
     highlightjs: true
     hljs_languages:
         - yaml
@@ -16,3 +18,7 @@ nav:
     - Tutorials: tutorial.md
     - Main:
       - Compile and Run: dev/install.md
+      - Deployment: dev/deploy.md
+      - Testnet: testnet.md
+    - FAQ: faq.md
+
