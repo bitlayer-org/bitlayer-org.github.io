@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/</loc>
+         <loc>https://bitlayer-org.github.io/docs/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/faq/</loc>
+         <loc>https://bitlayer-org.github.io/docs/faq/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/genesis/</loc>
+         <loc>https://bitlayer-org.github.io/docs/genesis/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/testnet/</loc>
+         <loc>https://bitlayer-org.github.io/docs/testnet/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/tutorial/</loc>
+         <loc>https://bitlayer-org.github.io/docs/tutorial/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/dev/deploy/</loc>
+         <loc>https://bitlayer-org.github.io/docs/dev/deploy/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/dev/install/</loc>
+         <loc>https://bitlayer-org.github.io/docs/dev/install/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://bitlayer-org.github.io/docs.bitlayer-l2/dev/json-rpc/</loc>
+         <loc>https://bitlayer-org.github.io/docs/dev/json-rpc/</loc>
          <lastmod>2024-02-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
