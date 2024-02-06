@@ -18,3 +18,8 @@ Compilation is completed, the generated binary is in the folder `build/bin`.
 
 ## Run
 By running `./build/bin/geth --help`, we can get all `option` info. Specific usage can refer to [Command-line Options](https://geth.ethereum.org/docs/interface/command-line-options)
+
+## Deployment
+
+please refer [deployment](/dev/deploy.md)
+
