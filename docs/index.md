@@ -35,5 +35,3 @@ Thanks to the rich experience and resources of the core team and early-stage inv
 - Medium: <https://medium.com/@Bitlayer>
 - Email: <build@bitlayer.org>
 - GitHub: <https://github.com/bitlayer-org>
-- Mainnet Explorer: <>
-- Documentation: <https://bitlayer.org/docs>
