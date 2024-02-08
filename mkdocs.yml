@@ -23,6 +23,6 @@ nav:
       - JSON RPC: build/dev/json-rpc.md
       - Testnet: build/dev/testnet.md
     - Learn:
-      - learn/faq.md
       - learn/roadmap.md
+      - learn/faq.md
 

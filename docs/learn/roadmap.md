@@ -1,8 +1,6 @@
 # Roadmap
 
-![](images/roadmap.png)
+More detail to come...
 
+![](../images/roadmap.png)
 
-## Architecture
-
-![](../images/bitlayer-testnet/architecture.png)
