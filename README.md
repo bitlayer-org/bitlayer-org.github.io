@@ -1,5 +1,6 @@
-# bitlayer-l2 docs
+# bitlayer docs
 
+http://bitlayer.org/docs/ 
 
 ## edit
 git clone git@github.com:bitlayer-org/docs.git
@@ -12,6 +13,3 @@ git push
 ## publish
 git checkout main
 mkdocs gh-deploy 
-
-## 
-http://bitlayer.org/docs/ 

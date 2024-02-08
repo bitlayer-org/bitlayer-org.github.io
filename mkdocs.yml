@@ -14,12 +14,15 @@ theme:
         - javascript
         - shell
 nav:
-    - About bitlayer-l2: index.md
-    - Tutorials: tutorial.md
-    - Main:
-      - Compile and Run: dev/install.md
-      - Deployment: dev/deploy.md
-      - Testnet: testnet.md
-      - JSON RPC: dev/json-rpc.md
-    - FAQ: faq.md
+    - About: index.md
+    - Use: 
+      - Testnet: use/testnet.md
+    - Build:
+      - Compile and Run: build/dev/install.md
+      - Deployment: build/dev/deploy.md
+      - JSON RPC: build/dev/json-rpc.md
+      - Testnet: build/testnet.md
+    - Learn:
+      - learn/faq.md
+      - learn/roadmap.md
 
