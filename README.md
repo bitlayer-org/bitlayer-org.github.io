@@ -2,7 +2,7 @@
 
 ## edit
 ```
-git clone git@github.com:bitlayer-org/docs.git
+git clone git@github.com:bitlayer-org/bitlayer-org.github.io.git 
 git checkout -b main origin/main
 ...
 git add .
