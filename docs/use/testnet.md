@@ -5,7 +5,7 @@
 200810
 ```
 
-## Native Token
+## native token
 ```
 BTC
 ```
