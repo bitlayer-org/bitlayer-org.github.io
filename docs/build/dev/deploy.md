@@ -1,6 +1,6 @@
 # Deployment
 
-introduce systemd management configs.
+Introduce systemd management configs.
 
 ## Hardware
 
