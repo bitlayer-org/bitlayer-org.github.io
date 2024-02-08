@@ -10,6 +10,7 @@ Bitlayer aims to resolve this dilemma and realize a Bitcoin layer 2 that is equa
 
 ## Technical Features
 Bitlayer's core objective is to address the trade-off between security (trustless) and Turing completeness in BTC Layer 2. Based on this context, three key tasks are abstracted:
+
 1. Trustless entry and exit of L1 assets
 2. State transitions using a Turing-complete L2 virtual machine
 3. L1 verification of the validity of L2 state transitions
