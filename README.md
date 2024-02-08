@@ -1,7 +1,5 @@
 # bitlayer docs
 
-http://bitlayer.org/docs/ 
-
 ## edit
 ```
 git clone git@github.com:bitlayer-org/docs.git
