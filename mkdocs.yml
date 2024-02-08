@@ -1,6 +1,6 @@
-site_name: bitlayer-l2 docs
+site_name: Bitlayer Docs
 site_url: https://bitlayer-org.github.io/docs
-site_author: bitlayer-l2
+site_author: bitlayer
 repo_url: https://github.com/bitlayer-org/docs
 docs_dir: docs/
 theme:
