@@ -4,7 +4,7 @@
 Bitlayer is the first Bitcoin security-equivalent layer 2 based on BitVM. It consists an EVM compatible chain/sequencer that can map BTC ecological assets and facilitate the entry of BTC users.
 
 ## Bitlayer’s Value Propositions
-Due to the technical nature of Bitcoin, there exists a trade-off between "security and Turing completeness" for Bitcoin layer2 solutions.
+Due to the technical nature of Bitcoin, there exists a trade-off between "Security and Turing completeness" for Bitcoin layer2 solutions.
 
 Bitlayer aims to resolve this dilemma and realize a Bitcoin layer 2 that is equally secure as Bitcoin and Turing complete through cryptographic innovations and blockchain protocol engineering. This is intended to ultimately foster a prosperous Bitcoin ecosystem.
 
@@ -16,7 +16,6 @@ Bitlayer's core objective is to address the trade-off between security (trustles
 3. L1 verification of the validity of L2 state transitions
 
 Bitlayer innovatively utilizes the DLC/LN protocol to enable trustless bidirectional flow of signals/assets. It introduces VMs (EVM, SolanaVM, MoveVM, etc.) to support a wide range of state transition expressions.
-
 
 ## About Us
 The sophisticated public blockchain development and ecosystem construction team, hailing from Huobi, Polygon, and Polkadot, boasts years of practical experience in leading public blockchains and has achieved top-notch industry results.

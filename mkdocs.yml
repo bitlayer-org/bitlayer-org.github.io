@@ -5,8 +5,8 @@ repo_url: https://github.com/bitlayer-org/docs
 docs_dir: docs/
 theme:
     name: material
-    favicon: images/FA_Bitlayer_Logo.jpg
-    logo: images/FA_Bitlayer_Logo.jpg
+    favicon: images/bitlayer-logo.jpg
+    logo: images/bitlayer-logo.jpg
     highlightjs: true
     hljs_languages:
         - yaml
@@ -15,6 +15,7 @@ theme:
         - shell
 nav:
     - About: index.md
+    - Quick Start: quick-start.md
     - Use: 
       - Testnet: use/testnet.md
     - Build:
