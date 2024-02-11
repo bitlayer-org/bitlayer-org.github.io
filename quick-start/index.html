@@ -10,25 +10,25 @@
         <meta name="author" content="bitlayer">
       
       
-        <link rel="canonical" href="https://bitlayer-org.github.io/docs/build/dev/install/">
+        <link rel="canonical" href="https://bitlayer-org.github.io/docs/quick-start/">
       
       
-        <link rel="prev" href="../../../use/testnet/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../deploy/">
+        <link rel="next" href="../use/testnet/">
       
       
-      <link rel="icon" href="../../../images/bitlayer-logo.jpg">
+      <link rel="icon" href="../images/bitlayer-logo.jpg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
     
     
       
-        <title>Compile and Run - Bitlayer Docs</title>
+        <title>Quick Start - Bitlayer Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f2e4d321.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.f2e4d321.min.css">
       
       
 
@@ -47,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#compile-and-run" class="md-skip">
+        <a href="#architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -82,9 +82,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Bitlayer Docs" class="md-header__button md-logo" aria-label="Bitlayer Docs" data-md-component="logo">
+    <a href=".." title="Bitlayer Docs" class="md-header__button md-logo" aria-label="Bitlayer Docs" data-md-component="logo">
       
-  <img src="../../../images/bitlayer-logo.jpg" alt="logo">
+  <img src="../images/bitlayer-logo.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compile and Run
+              Quick Start
             
           </span>
         </div>
@@ -188,9 +188,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Bitlayer Docs" class="md-nav__button md-logo" aria-label="Bitlayer Docs" data-md-component="logo">
+    <a href=".." title="Bitlayer Docs" class="md-nav__button md-logo" aria-label="Bitlayer Docs" data-md-component="logo">
       
-  <img src="../../../images/bitlayer-logo.jpg" alt="logo">
+  <img src="../images/bitlayer-logo.jpg" alt="logo">
 
     </a>
     Bitlayer Docs
@@ -217,7 +217,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -234,10 +234,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../quick-start/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -246,6 +255,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -294,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../use/testnet/" class="md-nav__link">
+      <a href="../use/testnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -319,21 +329,19 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -347,7 +355,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Build
@@ -358,30 +366,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Compile and Run
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../build/dev/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -390,71 +378,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    <span class="md-ellipsis">
-      Download
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-golang" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Golang
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compile
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -467,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../deploy/" class="md-nav__link">
+      <a href="../build/dev/deploy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../json-rpc/" class="md-nav__link">
+      <a href="../build/dev/json-rpc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -509,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../testnet/" class="md-nav__link">
+      <a href="../build/dev/testnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../learn/roadmap/" class="md-nav__link">
+      <a href="../learn/roadmap/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -595,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../learn/faq/" class="md-nav__link">
+      <a href="../learn/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -636,59 +559,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#download" class="md-nav__link">
-    <span class="md-ellipsis">
-      Download
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-golang" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Golang
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compile" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compile
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deployment" class="md-nav__link">
-    <span class="md-ellipsis">
-      Deployment
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -705,22 +575,21 @@
   
 
 
-<h1 id="compile-and-run">Compile and Run</h1>
-<h2 id="download">Download</h2>
-<p>Download source code via <code>git</code></p>
-<pre><code>git clone https://github.com/bitlayer-org/bitlayer-l2.git
-</code></pre>
-<h2 id="install-golang">Install Golang</h2>
-<p>Reference: <a href="https://golang.org/doc/install">Go Download and install</a></p>
-<h2 id="compile">Compile</h2>
-<pre><code>cd /path/to/bitlayer-l2
-make geth
-</code></pre>
-<p>Compilation is completed, the generated binary is in the folder <code>build/bin</code>.</p>
-<h2 id="run">Run</h2>
-<p>By running <code>./build/bin/geth --help</code>, we can get all <code>option</code> info. Specific usage can refer to <a href="https://geth.ethereum.org/docs/interface/command-line-options">Command-line Options</a></p>
-<h2 id="deployment">Deployment</h2>
-<p>please refer <a href="../deploy/">deployment</a></p>
+<h1 id="architecture">Architecture</h1>
+<p><img alt="arch" src="../images/architecture.png" /></p>
+<p>Bitlayer follows the typical Optimistic-Rollup equivalent model.</p>
+<h1 id="benefits">Benefits</h1>
+<p><img alt="benefits" src="../images/benefits.png" /></p>
+<h1 id="basic-concepts">Basic Concepts</h1>
+<p>To user/developer, the basic concept of Bitlayer as below:</p>
+<p><img alt="analog" src="../images/analog-btc-eth.png" /></p>
+<p>Bitlayer is a layer 2 for Bitcoin, and now its <strong>100% EVM-compatible</strong>.</p>
+<p>User can use the wallets such as <strong>Metamask, imtoken or other Ethereum wallet</strong> to interact with it.</p>
+<p>Developer can easily migrate the smart contract writing in <strong>Solidity, Vyper or other languages that can beccompiled to EVM-Bytecode</strong> to Bitlayer.</p>
+<h1 id="bridges">Bridges</h1>
+<p>There will be many bridges connected to Bitlayer.</p>
+<p><img alt="bridges" src="../images/bitlayer-bridges.png" /></p>
+<p>If the <strong>source chain</strong> is Bitcoin, you should use UniSats, Xverse or other Bitcoin wallet as source wallet.</p>
 
 
 
@@ -767,10 +636,10 @@ make geth
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>
