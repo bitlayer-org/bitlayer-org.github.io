@@ -1,30 +1,29 @@
 # Basic Concepts
 
-To user/developer, the basic concept of Bitlayer as below:
+For users and developers alike, the fundamental concept of Bitlayer is outlined below:
 
 ![analog](images/analog-btc-eth.png)
 
-Bitlayer is a layer 2 for Bitcoin, and now its **100% EVM-compatible**.
+Bitlayer acts as a Layer 2 solution for Bitcoin, boasting **100% EVM and Ethereum toolchain compatibility**.
 
-User can use the wallets such as **Metamask, imtoken or other Ethereum wallet** to interact with it.
+Users can engage with it using wallets such as **Metamask, imToken, or other Ethereum-compatible wallets**.
 
-Developer can easily migrate the smart contract writing in **Solidity, Vyper or other languages that can beccompiled to EVM-Bytecode** to Bitlayer.
-
+Developers are afforded the ease of migrating smart contracts written in **Solidity, Vyper, or any other language that compiles to EVM bytecode** directly to Bitlayer.
 
 # Architecture
+
 ![arch](images/architecture.png)
 
-Bitlayer follows the typical Optimistic-Rollup equivalent model.
+Bitlayer subscribes to the typical model of an Optimistic Rollup equivalent.
 
 # Benefits
 
 ![benefits](images/benefits.png)
 
-
 # Bridges
 
-There will be many bridges connected to Bitlayer.
+Bitlayer will be connected by numerous bridges.
 
 ![bridges](images/bitlayer-bridges.png)
 
-If the **source chain** is Bitcoin, you should use UniSats, Xverse or other Bitcoin wallet as source wallet.
+Should the **source chain** be Bitcoin, it is recommended to use UniSats, Xverse, or another Bitcoin wallet as the source wallet.
