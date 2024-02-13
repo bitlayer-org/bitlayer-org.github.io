@@ -26,4 +26,10 @@ Bitlayer will be connected by numerous bridges.
 
 ![bridges](images/bitlayer-bridges.png)
 
-Should the **source chain** be Bitcoin, it is recommended to use UniSats, Xverse, or another Bitcoin wallet as the source wallet.
+
+## Bitlayer <--> Blockchains
+If the **source chain** is Bitcoin, it is recommended to use UniSats, Xverse, or another Bitcoin wallet as the source wallet.
+
+## Bitlayer <--> CEXs(centralized exchanges)
+
+You can withdraw from CEXs to the bitlayer's ETH-Compatible wallet address.
