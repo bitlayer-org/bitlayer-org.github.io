@@ -1,11 +1,11 @@
-ALL: Update Push Deploy
+all: update push deploy
 
-Push:
+update:
+	git pull origin main
+
+push:
 	git add . && git ci -m "fix content"
 	git push origin main
 
-Deploy:
+deploy:
 	mkdocs gh-deploy
-
-Update:
-	git pull origin main
