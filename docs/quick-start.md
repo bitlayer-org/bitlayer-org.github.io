@@ -4,7 +4,7 @@ For users and developers alike, the fundamental concept of Bitlayer is outlined 
 
 ![analog](images/analog-btc-eth.png)
 
-Bitlayer acts as a Layer 2 solution for Bitcoin, boasting **100% EVM and Ethereum toolchain compatibility**.
+Bitlayer acts as a Layer 2 solution for Bitcoin, boasting **100% EVM and Ethereum toolchain compatibility**, with BTC as native token(gas token).
 
 Users can engage with it using wallets such as **Metamask, imToken, or other Ethereum-compatible wallets**.
 
