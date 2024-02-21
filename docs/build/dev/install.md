@@ -17,7 +17,12 @@ make geth
 Compilation is completed, the generated binary is in the folder `build/bin`.
 
 ## Run
-By running `./build/bin/geth --help`, we can get all `option` info. Specific usage can refer to [Command-line Options](https://geth.ethereum.org/docs/interface/command-line-options)
+By running `./build/bin/geth --help`, we can get all `option` info. Specific usage can refer to [Command-line Options](https://geth.ethereum.org/docs/interface/command-line-options). Besides, it has a custom option as below,
+```
+--traceaction value     (default: 0) 
+    Trace internal tx call/create/suicide action, 0=no trace, 1=trace only native token > 0, 2=trace all
+```
+traceaction option can enable/disable [the custom json-rpc methods](./json-rpc.md)
 
 ## Deployment
 
