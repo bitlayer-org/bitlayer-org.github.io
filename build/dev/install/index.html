@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/bitlayer-logo.jpg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f2e4d321.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
       
       
 
@@ -718,7 +718,11 @@ make geth
 </code></pre>
 <p>Compilation is completed, the generated binary is in the folder <code>build/bin</code>.</p>
 <h2 id="run">Run</h2>
-<p>By running <code>./build/bin/geth --help</code>, we can get all <code>option</code> info. Specific usage can refer to <a href="https://geth.ethereum.org/docs/interface/command-line-options">Command-line Options</a></p>
+<p>By running <code>./build/bin/geth --help</code>, we can get all <code>option</code> info. Specific usage can refer to <a href="https://geth.ethereum.org/docs/interface/command-line-options">Command-line Options</a>. Besides, it has a custom option as below,</p>
+<pre><code>--traceaction value     (default: 0) 
+    Trace internal tx call/create/suicide action, 0=no trace, 1=trace only native token &gt; 0, 2=trace all
+</code></pre>
+<p>traceaction option can enable/disable <a href="../json-rpc/">the custom json-rpc methods</a></p>
 <h2 id="deployment">Deployment</h2>
 <p>please refer <a href="../deploy/">deployment</a></p>
 
@@ -767,10 +771,10 @@ make geth
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
       
     
   </body>
