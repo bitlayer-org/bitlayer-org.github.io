@@ -12,12 +12,12 @@
 
 [Bitvmclub@twitter](https://twitter.com/Bitvmclub)
 
-https://www.bitvm.club/doc
+[bitvm.club](https://www.bitvm.club/doc)
 
 
 * BitVM_CN
 
 [bitvm_cn@Twitter](https://twitter.com/bitvm_cn)
 
-https://www.bitvmcn.xyz/doc
+[bitvmcn.xyz](https://www.bitvmcn.xyz/doc)
 
