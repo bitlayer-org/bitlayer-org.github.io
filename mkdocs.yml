@@ -25,5 +25,5 @@ nav:
       - Testnet: build/dev/testnet.md
     - Learn:
       - learn/roadmap.md
-      - learn/faq.md
+      - learn/bitvm.md
 
