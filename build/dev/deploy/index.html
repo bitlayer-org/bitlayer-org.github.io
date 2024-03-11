@@ -767,13 +767,124 @@ ssd iops&gt;5k
 ssd iops&gt;5k
 </code></pre>
 <h3 id="networkport">network&amp;port</h3>
+<pre><code>External IP Address
+Port TCP/UDP 31031
+</code></pre>
 <h2 id="chain-node">chain node</h2>
 <ul>
 <li>config.toml</li>
 </ul>
+<pre><code>[Eth]
+SyncMode = &quot;snap&quot;
+TrieCleanCacheRejournal= 300000000000
+TrieTimeout = 20000000000
+
+
+[Eth.Miner]
+GasFloor = 40000000
+GasCeil = 40000000
+GasPrice = 100000000
+Recommit = 3000000000
+
+
+[Eth.TxPool]
+NoLocals = true
+Journal = &quot;transactions.rlp&quot;
+Rejournal = 600000000000
+PriceLimit = 100000000
+PriceBump = 10
+AccountSlots = 64
+GlobalSlots = 10240
+AccountQueue = 32
+GlobalQueue = 1024
+Lifetime = 1800000000000
+
+[Node]
+DataDir = &quot;/data/bitlayer-l2/chain/data&quot;
+InsecureUnlockAllowed = true
+NoUSB = true
+IPCPath = &quot;geth.ipc&quot;
+HTTPHost = &quot;0.0.0.0&quot;
+HTTPPort = 8545
+HTTPCors = [&quot;*&quot;]
+HTTPVirtualHosts = [&quot;*&quot;]
+HTTPModules = ['eth', 'net', 'web3']
+
+WSHost = &quot;0.0.0.0&quot;
+WSPort = 8546
+WSModules = ['eth', 'net', 'web3']
+
+GraphQLVirtualHosts = [&quot;localhost&quot;]
+
+
+[Node.P2P]
+MaxPeers = 50
+NoDiscovery = false
+ListenAddr = &quot;:31031&quot;
+EnableMsgEvents = false
+
+[Node.HTTPTimeouts]
+ReadTimeout = 30000000000
+WriteTimeout = 30000000000
+IdleTimeout = 120000000000
+</code></pre>
+<p>use snap sync in the config, if full needed - change this line</p>
+<pre><code>SyncMode = &quot;snap&quot;
+</code></pre>
+<p>to</p>
+<pre><code>SyncMode = &quot;full&quot;
+</code></pre>
 <h2 id="start-bash">start bash</h2>
+<blockquote>
+<p>To show full detail help info of all flags, type <code>geth help</code> or <code>geth -h</code></p>
+</blockquote>
+<ul>
+<li>run.sh</li>
+</ul>
+<pre><code>#!/usr/bin/env bash
+/data/bitlayer-l2/chain/geth-linux-amd64 \
+--config /data/bitlayer-l2/chain/config.toml  \
+--log.file /data/bitlayer-l2/chain/logs/chain.log \
+--log.rotate=true \
+--authrpc.port 8445 \
+--traceaction 2 \
+--verbosity 3  &gt;&gt; /data/bitlayer-l2/chain/logs/systemd_chain_console.out 2&gt;&amp;1
+</code></pre>
+<p>if you need to use it as archive node, add: </p>
+<pre><code>--syncmode full \
+--gcmode archive \
+</code></pre>
+<p>so: </p>
+<pre><code>#!/usr/bin/env bash
+/data/bitlayer-l2/chain/geth-linux-amd64 \
+--config /data/bitlayer-l2/chain/config.toml  \
+--log.file /data/bitlayer-l2/chain/logs/chain.log \
+--log.rotate=true \
+--authrpc.port 8445 \
+--traceaction 2 \
+--syncmode full \
+--gcmode archive \
+--verbosity 3  &gt;&gt; /data/bitlayer-l2/chain/logs/systemd_chain_console.out 2&gt;&amp;1
+</code></pre>
+<p>If no network flags were provided, the node will connect the bitlayer mainnet by default. If you want to connect to bitlayer testnet, add:</p>
+<pre><code>--testnet
+</code></pre>
 <h2 id="systemd-config">systemd config</h2>
-<pre><code>
+<pre><code>[Unit]
+Description=bitlayer-l2 chain service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /data/bitlayer-l2/chain/run.sh
+WorkingDirectory=/data/bitlayer-l2/chain
+TimeoutSec=600
+Restart=on-failure
+RestartSec=5s
+
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
 </code></pre>
 
 
