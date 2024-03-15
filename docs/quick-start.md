@@ -18,7 +18,7 @@ Bitlayer subscribes to the typical model of an Optimistic Rollup equivalent.
 
 # Benefits
 
-![benefits](images/benefits.png)
+![benefits](images/benefit.png)
 
 # Bridges
 

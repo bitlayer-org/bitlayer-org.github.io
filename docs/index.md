@@ -15,7 +15,7 @@ Bitlayer's core objective is to address the trade-off between security (trustles
 2. State transitions using a Turing-complete L2 virtual machine
 3. L1 verification of the validity of L2 state transitions
 
-Bitlayer innovatively utilizes the DLC/LN protocol to enable trustless bidirectional flow of signals/assets. It introduces VMs (EVM, SolanaVM, MoveVM, etc.) to support a wide range of state transition expressions.
+Bitlayer innovatively utilizes the DLC/BitVM protocol to enable trustless bidirectional flow of signals/assets. It introduces VMs (EVM, SolanaVM, MoveVM, etc.) to support a wide range of state transition expressions.
 
 ## About Us
 The sophisticated public blockchain development and ecosystem construction team, hailing from Huobi, Polygon, and Polkadot, boasts years of practical experience in leading public blockchains and has achieved top-notch industry results.
