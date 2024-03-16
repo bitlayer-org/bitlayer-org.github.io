@@ -4,7 +4,7 @@ update:
 	git pull origin main
 
 push:
-	git add . && git ci -m "fix content"
+	git add . && git commit --message "fix content"
 	git push origin main
 
 deploy:

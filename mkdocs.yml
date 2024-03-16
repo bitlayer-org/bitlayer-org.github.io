@@ -1,7 +1,7 @@
 site_name: Bitlayer Docs
-site_url: https://bitlayer-org.github.io/docs
+site_url: https://docs.bitlayer.org/
 site_author: bitlayer
-repo_url: https://github.com/bitlayer-org/docs
+repo_url: https://github.com/bitlayer-org/bitlayer-org.github.io
 docs_dir: docs/
 theme:
     name: material

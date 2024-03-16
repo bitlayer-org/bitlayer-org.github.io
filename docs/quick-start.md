@@ -26,7 +26,7 @@ MetaMask automatically recommends a minimum "Priority Fee" (`maxPriorityFeePerGa
 Here's a screenshot of how to set the `Priority Fee`:
 
 <center class="half">
-    <img src="/docs/images/metamask_tip_1.png" width="252"/><img src="/docs/images/metamask_tip_2.png" width="252"/><img src="/docs/images/metamask_tip_3.png" width="252"/>
+    <img src="/images/metamask_tip_1.png" width="252"/><img src="/images/metamask_tip_2.png" width="252"/><img src="/images/metamask_tip_3.png" width="252"/>
 </center>
 
 ## Architecture
