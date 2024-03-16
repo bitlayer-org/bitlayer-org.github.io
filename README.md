@@ -10,6 +10,12 @@ git commit -m"update doc"
 git push
 ```
 
+## preview locally
+
+```bash
+mkdocs serve
+```
+
 ## publish
 ```
 git checkout main
