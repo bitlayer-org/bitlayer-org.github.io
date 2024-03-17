@@ -805,7 +805,8 @@
 <li>Bitlayer's native gas token is BTC. However, on Bitlayer, BTC has an 18-digit precision, which is different from the 8-digit precision of BTC on Bitcoin. This is done to maintain consistency with the default decimal of tokens of EVM-compatible chains.</li>
 <li>On the Bitlayer, there is a minimum priority fee requirement. Developers can use <code>eth_gasPrice</code> or <code>eth_maxPriorityFeePerGas</code> to estimate the gas price required for a transaction in real time.</li>
 <li>For the Testnet, a minimum tip of <code>0.1 gwei</code> is required. Usually, <code>0.11 gwei</code> <code>gasPrice</code> for legacy transactions, <code>0.1 gwei</code> <code>maxPriorityFeePerGas</code> (and set enough amount to <code>maxFeePerGas</code>) for EIP1559 transactions SHOULD BE enough.</li>
-<li>TBD: (The minimal tip for Mainnet is to be determined)</li>
+<li>TBD: (The minimal tip for Mainnet is to be determined).</li>
+<li>For Dapp developers, it's recommended that setting the <code>maxPriorityFeePerGas</code> by code before calling apis to send the transaction, rather then leave it empty (filled by the default strategy of wallet (e.g. Metamask) or SDK).</li>
 </ul>
 <h4 id="important-notice-for-metamask-users">Important notice for Metamask users</h4>
 <p>MetaMask automatically recommends a minimum "Priority Fee" (<code>maxPriorityFeePerGas</code>) of 1 gwei, which is way more than Bitlayer's minimum requirement. This can lead to transaction fees much higher than necessary.</p>
