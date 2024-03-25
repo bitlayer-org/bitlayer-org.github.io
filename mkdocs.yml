@@ -23,6 +23,7 @@ nav:
       - Deployment: build/dev/deploy.md
       - JSON RPC: build/dev/json-rpc.md
       - Testnet: build/dev/testnet.md
+      - TheGraph: build/dev/thegraph.md
     - Learn:
       - learn/roadmap.md
       - learn/bitvm.md
