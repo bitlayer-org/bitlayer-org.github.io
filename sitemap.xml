@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.bitlayer.org/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/quick-start/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/build/dev/deploy/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/build/dev/genesis/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/build/dev/install/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/build/dev/json-rpc/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/build/dev/testnet/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.bitlayer.org/build/dev/thegraph/</loc>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/learn/bitvm/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/learn/roadmap/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.bitlayer.org/use/testnet/</loc>
-         <lastmod>2024-03-17</lastmod>
+         <lastmod>2024-03-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
