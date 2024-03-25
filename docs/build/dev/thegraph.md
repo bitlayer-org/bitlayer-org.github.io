@@ -8,7 +8,7 @@
 ## Usage
 
 ### The Graph Official
-The Graph Official has not support bitlayer, will coming soon.
+The Graph official has not support bitlayer, will coming soon.
 
 ### Bitlayer Graph Node
 Self hosting graph node service of Bitlayer is avaiable now.
