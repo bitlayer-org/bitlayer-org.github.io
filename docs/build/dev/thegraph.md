@@ -12,7 +12,7 @@ The Graph official has not support bitlayer, will coming soon.
 
 ### Bitlayer Graph Node
 Self hosting graph node service of Bitlayer is avaiable now.
-Please contact us via [business](build@bitlayer.org) or [telegram](https://t.me/bitlayer_developers) if you need this service.
+Please contact us via business or [telegram](https://t.me/bitlayer_developers) if you need this service.
 
 ### Project Local Graph Node
 We recommend following the [Official documentation](https://thegraph.com/docs/) for deployment. The next operation is only intended as a simple setup tutorial for reference.
