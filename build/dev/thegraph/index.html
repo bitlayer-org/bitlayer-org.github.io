@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#graph-node" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -446,6 +451,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TheGraph
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -456,6 +474,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-graph-official" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graph Official
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitlayer-graph-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bitlayer Graph Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-local-graph-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Local Graph Node
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Local Graph Node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-up-graph-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up graph-node
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -572,6 +675,82 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-graph-official" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graph Official
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bitlayer-graph-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bitlayer Graph Node
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-local-graph-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Local Graph Node
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Local Graph Node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-up-graph-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up graph-node
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -589,10 +768,48 @@
   
 
 
-  <h1>TheGraph</h1>
-
-<p>The graph will support bitlayer soon, bitlayer self hosting service is available for use now.</p>
-<p>You can migrate your subgraph from self hosting to offical environment when the graph enables bitlayer.</p>
+<h1 id="graph-node">Graph Node</h1>
+<p><code>Graph Node</code> is a protocol for building decentralized applications (dApps) quickly on Ethereum and IPFS using GraphQL.</p>
+<ul>
+<li><a href="https://thegraph.com/">Official website</a></li>
+<li><a href="https://github.com/graphprotocol/graph-node">Github</a></li>
+</ul>
+<h2 id="usage">Usage</h2>
+<h3 id="the-graph-official">The Graph Official</h3>
+<p>The Graph Official has not support bitlayer, will coming soon.</p>
+<h3 id="bitlayer-graph-node">Bitlayer Graph Node</h3>
+<p>Self hosting graph node service of Bitlayer is avaiable now.
+Please contact us via <a href="build@bitlayer.org">business</a> or <a href="https://t.me/bitlayer_developers">telegram</a> if you need this service.</p>
+<h3 id="project-local-graph-node">Project Local Graph Node</h3>
+<p>We recommend following the <a href="https://thegraph.com/docs/">Official documentation</a> for deployment. The next operation is only intended as a simple setup tutorial for reference.</p>
+<h4 id="set-up-graph-node">Set up graph-node</h4>
+<p>For convenience reasons, we use the official <a href="https://github.com/graphprotocol/graph-node/tree/master/docker">docker compose</a> for node, database, and IPFS deployment.</p>
+<p>Note that the value of the <code>ethereum</code> field in <code>docker-compose.yml</code> is replaced with <code>Bitlayer</code>'s node connection information.</p>
+<pre><code>graph-node:
+    image: graphprotocol/graph-node
+    ports:
+      - '8000:8000'
+      - '8001:8001'
+      - '8020:8020'
+      - '8030:8030'
+      - '8040:8040'
+    depends_on:
+      - ipfs
+      - postgres
+    environment:
+      postgres_host: postgres
+      postgres_user: graph-node
+      postgres_pass: let-me-in
+      postgres_db: graph-node
+      ipfs: 'ipfs:5001'
+      ethereum: 'mainnet:http://127.0.0.1:8545'  #replaced with bitlayer rpc info
+      RUST_LOG: info
+</code></pre>
+<blockquote>
+<p>Note: The node connected to graph-node needs to be in <code>archive</code> mode (add flag --syncmode full --gcmode archive when starting the node), we recommend each user to build their own RPC node.</p>
+</blockquote>
+<h3 id="migration">Migration</h3>
+<p>You can migrate your subgraph from bitlayer graph node or project local graph node to offical environment when the graph enables bitlayer.</p>
 <p>To migrate smoothly, please set dataSources.source.startBlock in subgraph.yaml, we suggest using the block in which the contract was created. </p>
 
 
