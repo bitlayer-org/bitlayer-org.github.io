@@ -15,6 +15,10 @@ BTC
 ```
 https://testnet-rpc.bitlayer.org
 wss://testnet-ws.bitlayer.org
+
+https://testnet-rpc.bitlayer-rpc.com
+wss://testnet-ws.bitlayer-rpc.com
+
 ```
 
 ## explorer

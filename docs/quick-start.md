@@ -12,7 +12,7 @@ Users can engage with it using wallets such as **Metamask, imToken, or other Eth
 
 Developers are afforded the ease of migrating smart contracts written in **Solidity, Vyper, or any other language that compiles to EVM bytecode** directly to Bitlayer, using the toolchain you are familiar with: Ethereum JSON-RPC, Hardhat, etc.
 
-### Essential Information for Users
+### Important: about gas price
 
 - Bitlayer's native gas token is BTC. However, on Bitlayer, BTC has an 18-digit precision, which is different from the 8-digit precision of BTC on Bitcoin. This is done to maintain consistency with the default decimal of tokens of EVM-compatible chains.
 - On the Bitlayer, there is a minimum priority fee requirement. Developers can use `eth_gasPrice` or `eth_maxPriorityFeePerGas` to estimate the gas price required for a transaction in real time.
