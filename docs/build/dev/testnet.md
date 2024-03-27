@@ -19,6 +19,7 @@ wss://testnet-ws.bitlayer.org
 https://testnet-rpc.bitlayer-rpc.com
 wss://testnet-ws.bitlayer-rpc.com
 
+https://rpc.ankr.com/bitlayer_testnet
 ```
 
 ## explorer
