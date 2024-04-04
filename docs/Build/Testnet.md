@@ -40,7 +40,7 @@ The Bitlayer testnet provides the following RPC (Remote Procedure Call) endpoint
  - https://testnet-rpc.bitlayer.org: This RPC endpoint allows developers to send requests and interact with the Bitlayer testnet programmatically. It is commonly used for deploying contracts, querying blockchain data, and executing transactions.
  - wss://testnet-ws.bitlayer.org: This WebSocket endpoint enables real-time communication with the Bitlayer testnet. Developers can subscribe to events and receive updates as they occur on the network.
  - https://testnet-rpc.bitlayer-rpc.com
-- wss://testnet-ws.bitlayer-rpc.com
+ - wss://testnet-ws.bitlayer-rpc.com
 
 ## Explorer
 To explore and inspect transactions, blocks, and addresses on the Bitlayer testnet, you can utilize the following explorer:

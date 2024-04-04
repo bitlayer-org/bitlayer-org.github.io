@@ -4,10 +4,10 @@ sidebar_position: 7
 
 # Contracts
 
-## Contract Addresses
+## Contract Addresses (Testnet)
 - Staking : 0x000000000000000000000000000000000000F000
 
-- BRC : 0xf4340CF5F3891A3827713b33f769b501A0b5b122
+- BTR : 0xf4340CF5F3891A3827713b33f769b501A0b5b122
 
 - LockingContract : 0x845D2b001934a99d072EF409b719cffE468ba7e3
 
