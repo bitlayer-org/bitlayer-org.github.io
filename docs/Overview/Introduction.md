@@ -20,7 +20,7 @@ While Bitcoin remains the leading blockchain for value transfer, it faces limita
 
 The ingenious integration of Bitcoin smart contracts and Ethereum compatibility sets Bitlayer apart, verifying the integrity of Bitlayer's transactions and ensuring a high level of security, decentralization, and resistance to censorship. These achievements are made possible through recent advancements in cryptography, blockchain protocol design, and hardware optimization.
 
-For detailed insights into our technical architecture, please refer to the [Bitlayer Technical Architecture section](/learn/Overview/technicalarchitecture).
+For detailed insights into our technical architecture, please refer to the [Bitlayer Technical Architecture section](/docs/AboutBitlayer/technicalarchitecture).
 
 ### Can I Start Using Bitlayer Today?
 While the Bitlayer mainnet for Bitcoin is scheduled to launch in early April, we are excited to offer a testnet environment where you can experiment with Bitlayer's capabilities. Please refer to our [testnet user guide](/docs/Build/TestnetUserGuide) to get started with our test network and explore the infinite possibilities of Bitcoin.
