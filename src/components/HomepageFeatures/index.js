@@ -5,6 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Learn more about Bitlayer',
+    link: 'https://docs.bitlayer.org/',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
@@ -14,6 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Faucet',
+    link: 'https://www.bitlayer.org/faucet',
     Svg: require('@site/static/img/logobit.svg').default,
     description: (
       <>
@@ -23,6 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Testnet Scan',
+    link: 'https://testnet-scan.bitlayer.org/en-us/',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -32,14 +35,16 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, link, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3>
+          <a href={link}>{title}</a>
+        </h3>
         <p>{description}</p>
       </div>
     </div>
