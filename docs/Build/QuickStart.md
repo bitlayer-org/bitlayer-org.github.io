@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Getting Started with
+# Getting Started
 
 ### Hardhat
 
