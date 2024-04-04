@@ -40,18 +40,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'learn',
-        path: 'learn',
-        routeBasePath: 'learn',
-        sidebarPath: require.resolve('./sidebarslearn.js'),
-        // ... other options
-      },
-    ],
-  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -65,16 +53,10 @@ const config = {
         },
         items: [
           {
-            to: '/docs/aboutbitlayer/introduction',   // To highlight the navbar item, you must link to a document, not a top-level directory
+            to: '/docs/aboutbitlayer/intro',   // To highlight the navbar item, you must link to a document, not a top-level directory
             position: 'left',
             label: 'Build Now',
             activeBaseRegex: `/docs/`,
-          },
-          {
-            to: '/learn/overview/intro',   // To highlight the navbar item, you must link to a document, not a top-level directory
-            position: 'left',
-            label: 'Learn More',
-            activeBaseRegex: `/learn/`,
           },
           {
             href: 'https://medium.com/@Bitlayer',
@@ -96,12 +78,8 @@ const config = {
             items: [
               {
                label: 'Build Now',
-               to: '/docs/aboutbitlayer/introduction',
+               to: '/docs/aboutbitlayer/intro',
               },
-              {
-                label: 'Learn More',
-                to: '/learn/overview/intro',
-               },
             ],
           },
           {
