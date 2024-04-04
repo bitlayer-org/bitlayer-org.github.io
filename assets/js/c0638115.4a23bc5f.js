@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[1212],{7379:function(e){e.exports=JSON.parse('{"title":"About Bitlayer","slug":"/category/about-bitlayer","permalink":"/docs/category/about-bitlayer","navigation":{"next":{"title":"Overview","permalink":"/docs/aboutbitlayer/Introduction"}}}')}}]);
