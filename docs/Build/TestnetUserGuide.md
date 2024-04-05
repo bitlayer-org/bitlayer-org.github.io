@@ -18,9 +18,6 @@ If you need to help doing this, here is an official guide to set up a MetaMask w
 Once you have a MetaMask wallet, you can start using the Bitlayer testnet and explore new DApps, interacting with contracts like Satswap. 
 The first thing you need to do is add the Bitlayer network testnet to your wallet. 
 
-### You can add Bitlayer Testnet in one click below
-Add Testnet
-
 ### You can also add the Bitlayer Testnet manually
 Once Metamask is open, click the Ethereum Mainnet button and click the Add network button to set up the Bitlayer testnet.
 
@@ -41,7 +38,7 @@ You can copy/paste the following configuration details into the corresponding fi
 | Network | Bitlayer Testnet |
 | RPC URL | [https://testnet-rpc.bitlayer.org](https://testnet-rpc.bitlayer.org) |
 | Chain ID | 200810 |
-| urrency symbol | BTC |
+| Currency symbol | BTC |
 
 
 After saving the network configuration, you should now have the Bitlayer Testnet selected!
