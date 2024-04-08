@@ -1,6 +1,6 @@
-# bitlayer docs
+# Bitlayer docs
 
-## edit
+## Edit
 ```
 git clone git@github.com:bitlayer-org/bitlayer-org.github.io.git 
 git checkout -b main origin/main
@@ -10,13 +10,13 @@ git commit -m"update doc"
 git push
 ```
 
-## preview locally
+## Preview locally
 
 ```bash
 mkdocs serve
 ```
 
-## publish
+## Publish
 ```
 git checkout main
 mkdocs gh-deploy 
