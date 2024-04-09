@@ -37,7 +37,7 @@ Currently, Bitlayer supports Solidity up to version v0.8.23, with a commitment t
 ### Ethereum
 
 #### EVM Support
-Ethereum, as the birthplace of the EVM, offers comprehensive support for the entire range of EVM functionalities. This allows for a wide spectrum of smart contract capabilities and decentralized application developments.
+Ethereum, as the origin of the EVM, offers support for the entire range of EVM functionalities. This allows for a wide spectrum of smart contract capabilities and decentralized application developments.
 
 #### Solidity Version
 Ethereum consistently supports the latest versions of Solidity, providing developers with the newest features, optimizations, and security enhancements for smart contract development.
