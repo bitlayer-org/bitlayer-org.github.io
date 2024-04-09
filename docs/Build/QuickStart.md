@@ -3,7 +3,11 @@ sidebar_position: 2
 ---
 
 # Getting Started
+:::tip Note:
 
+We currently support Solidity up to version v0.8.23. Updates for newer versions might be delayed. 
+
+:::
 ### Hardhat
 
 Modify your Hardhat config file `hardhat.config.ts` to point at the Bitlayer Testnet public RPC.
