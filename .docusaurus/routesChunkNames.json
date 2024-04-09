@@ -1,0 +1,183 @@
+{
+  "/__docusaurus/debug-3d6": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/config-914": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/content-c28": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-3cf": {
+    "component": "component---theme-debug-global-dataede-0fa"
+  },
+  "/__docusaurus/debug/metadata-31b": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
+  },
+  "/__docusaurus/debug/registry-0da": {
+    "component": "component---theme-debug-registry-679-501"
+  },
+  "/__docusaurus/debug/routes-244": {
+    "component": "component---theme-debug-routes-946-699"
+  },
+  "/blog-651": {
+    "component": "component---theme-blog-list-pagea-6-a-7ba",
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-153-dae"
+      }
+    ],
+    "metadata": "metadata---blogb-2-b-df1"
+  },
+  "/blog/archive-f4c": {
+    "component": "component---theme-blog-archive-page-9-e-4-1d8",
+    "archive": "archive---blog-archiveb-2-f-393"
+  },
+  "/blog/Bitlayer: Amplifying Bitcoin-6b2": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-bitlayer-amplifying-bitcoin-94-d-650"
+  },
+  "/blog/tags-e13": {
+    "component": "component---theme-blog-tags-list-page-01-a-d0b",
+    "sidebar": "sidebar---blog-814-8ac",
+    "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/hello-bitlayer-73d": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-153-dae"
+      }
+    ],
+    "metadata": "metadata---blog-tags-hello-bitlayer-79-b-82e",
+    "listMetadata": "listMetadata---blog-tags-hello-bitlayer-0-b-5-01a"
+  },
+  "/markdown-page-be1": {
+    "component": "component---theme-mdx-page-1-f-3-b90",
+    "content": "content---markdown-page-393-028"
+  },
+  "/docs-991": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/AboutBitlayer/BitlayerVsEth-ffd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-about-bitlayer-bitlayer-vs-eth-11-b-528"
+  },
+  "/docs/AboutBitlayer/BitVM-0a6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-about-bitlayer-bit-v-mc-2-a-7eb"
+  },
+  "/docs/AboutBitlayer/intro-322": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-about-bitlayer-introfd-5-760"
+  },
+  "/docs/AboutBitlayer/Roadmap-f7f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-about-bitlayer-roadmapa-7-a-12a"
+  },
+  "/docs/AboutBitlayer/TechnicalArchitecture-bb3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-about-bitlayer-technical-architecture-49-b-c0f"
+  },
+  "/docs/AboutBitlayer/Use Case-f14": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-about-bitlayer-use-case-09-e-803"
+  },
+  "/docs/Build/Bridges-c24": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-bridgesd-4-b-a90"
+  },
+  "/docs/Build/Compile and Run-2f1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-compile-and-run-182-a9c"
+  },
+  "/docs/Build/Contracts-f97": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-contractsefb-5c6"
+  },
+  "/docs/Build/Deployment-a85": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-deployment-609-e8c"
+  },
+  "/docs/Build/Json-RPC-564": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-json-rpc-182-13e"
+  },
+  "/docs/Build/Mainnet-81f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-mainnet-9-ed-887"
+  },
+  "/docs/Build/QuickStart-e0a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-quick-startfba-554"
+  },
+  "/docs/Build/Testnet-96c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-testnetfd-9-66c"
+  },
+  "/docs/Build/TestnetUserGuide-d9e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-build-testnet-user-guide-0-bb-2c4"
+  },
+  "/docs/category/about-bitlayer-8bd": {
+    "component": "component---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-about-bitlayerc-06-1f5"
+  },
+  "/docs/category/build-7cd": {
+    "component": "component---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-builde-35-813"
+  },
+  "/docs/category/faqs-203": {
+    "component": "component---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-faqs-77-a-58c"
+  },
+  "/docs/category/join-us-ca4": {
+    "component": "component---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-join-us-4-a-7-907"
+  },
+  "/docs/category/overview-9f0": {
+    "component": "component---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-overview-9-a-6-637"
+  },
+  "/docs/category/tools-672": {
+    "component": "component---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-toolsd-59-379"
+  },
+  "/docs/FAQs/Frequently asked questions-f1a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-fa-qs-frequently-asked-questions-684-6b5"
+  },
+  "/docs/Join Us/Contact Details-b88": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-join-us-contact-details-20-b-fd4"
+  },
+  "/docs/Overview/Introduction-37d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overview-introduction-2-c-6-1b6"
+  },
+  "/docs/Tools/Block Explorers-6de": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tools-block-explorersae-7-198"
+  },
+  "/docs/Tools/Faucets-816": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tools-faucets-015-a2c"
+  },
+  "/docs/Tools/TheGraph-197": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tools-the-graph-938-5a3"
+  },
+  "/docs/Tools/Wallets-9ce": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tools-walletsa-72-15d"
+  },
+  "/-deb": {
+    "component": "component---site-src-pages-index-jsc-4-f-f99",
+    "config": "config---5-e-9-4f3"
+  }
+}

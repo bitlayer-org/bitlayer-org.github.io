@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Build/Mainnet",
+  "id": "Build/Mainnet",
+  "title": "Mainnet",
+  "description": "The mainnet launch of Bitlayer is scheduled for early April.",
+  "source": "@site/docs/Build/Mainnet.md",
+  "sourceDirName": "Build",
+  "slug": "/Build/Mainnet",
+  "permalink": "/docs/Build/Mainnet",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "More on Testnet",
+    "permalink": "/docs/Build/Testnet"
+  },
+  "next": {
+    "title": "Tools",
+    "permalink": "/docs/category/tools"
+  }
+}

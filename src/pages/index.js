@@ -30,8 +30,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Welcome to the Bitlayer Docs | Bitlayer Docs`}
+      description="The first Bitcoin security-equivalent Layer 2 based on BitVM">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "FAQs/Frequently asked questions",
+  "id": "FAQs/Frequently asked questions",
+  "title": "Frequently Asked Questions",
+  "description": "Q: When does Bitlayer launch?",
+  "source": "@site/docs/FAQs/Frequently asked questions.md",
+  "sourceDirName": "FAQs",
+  "slug": "/FAQs/Frequently asked questions",
+  "permalink": "/docs/FAQs/Frequently asked questions",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "FAQs",
+    "permalink": "/docs/category/faqs"
+  }
+}

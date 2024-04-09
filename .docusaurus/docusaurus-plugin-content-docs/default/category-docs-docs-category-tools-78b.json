@@ -1,0 +1,16 @@
+{
+  "title": "Tools",
+  "description": "This guide provides an overview of the tools and resources available for Bitlayer development.",
+  "slug": "/category/tools",
+  "permalink": "/docs/category/tools",
+  "navigation": {
+    "previous": {
+      "title": "Mainnet",
+      "permalink": "/docs/Build/Mainnet"
+    },
+    "next": {
+      "title": "Supported Wallets for Bitlayer",
+      "permalink": "/docs/Tools/Wallets"
+    }
+  }
+}

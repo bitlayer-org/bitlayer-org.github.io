@@ -1,0 +1,16 @@
+{
+  "title": "Build",
+  "description": "5 minutes to learn how to build on Bitlayer.",
+  "slug": "/category/build",
+  "permalink": "/docs/category/build",
+  "navigation": {
+    "previous": {
+      "title": "About BitVM",
+      "permalink": "/docs/AboutBitlayer/BitVM"
+    },
+    "next": {
+      "title": "Testnet User Guide",
+      "permalink": "/docs/Build/TestnetUserGuide"
+    }
+  }
+}

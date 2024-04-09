@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Build/QuickStart",
+  "id": "Build/QuickStart",
+  "title": "Getting Started",
+  "description": "We currently support Solidity up to version v0.8.23. Updates for newer versions might be delayed.",
+  "source": "@site/docs/Build/QuickStart.md",
+  "sourceDirName": "Build",
+  "slug": "/Build/QuickStart",
+  "permalink": "/docs/Build/QuickStart",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Testnet User Guide",
+    "permalink": "/docs/Build/TestnetUserGuide"
+  },
+  "next": {
+    "title": "Compile and Run",
+    "permalink": "/docs/Build/Compile and Run"
+  }
+}

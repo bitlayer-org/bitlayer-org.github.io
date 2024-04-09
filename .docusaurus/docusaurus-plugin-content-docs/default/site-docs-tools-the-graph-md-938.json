@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Tools/TheGraph",
+  "id": "Tools/TheGraph",
+  "title": "The Graph",
+  "description": "Graph Node is a protocol for building decentralized applications (dApps) quickly on Ethereum and IPFS using GraphQL.",
+  "source": "@site/docs/Tools/TheGraph.md",
+  "sourceDirName": "Tools",
+  "slug": "/Tools/TheGraph",
+  "permalink": "/docs/Tools/TheGraph",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Supported Wallets for Bitlayer",
+    "permalink": "/docs/Tools/Wallets"
+  },
+  "next": {
+    "title": "Faucets",
+    "permalink": "/docs/Tools/Faucets"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Overview",
+  "slug": "/category/overview",
+  "permalink": "/docs/category/overview",
+  "navigation": {
+    "next": {
+      "title": "Welcome",
+      "permalink": "/docs/Overview/Introduction"
+    }
+  }
+}

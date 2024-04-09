@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Build/Json-RPC",
+  "id": "Build/Json-RPC",
+  "title": "JSON-RPC",
+  "description": "Bitlayer provides all json-rpc api methods listed in Ethereum.",
+  "source": "@site/docs/Build/Json-RPC.md",
+  "sourceDirName": "Build",
+  "slug": "/Build/Json-RPC",
+  "permalink": "/docs/Build/Json-RPC",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Deployment",
+    "permalink": "/docs/Build/Deployment"
+  },
+  "next": {
+    "title": "Bridges",
+    "permalink": "/docs/Build/Bridges"
+  }
+}

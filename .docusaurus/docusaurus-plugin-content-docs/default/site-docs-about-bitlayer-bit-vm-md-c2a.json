@@ -1,0 +1,25 @@
+{
+  "unversionedId": "AboutBitlayer/BitVM",
+  "id": "AboutBitlayer/BitVM",
+  "title": "About BitVM",
+  "description": "BitVM is a potential changer for the Bitcoin ecosystem. It is a verification scheme that involves constructing challenge trees and response trees to verify the correctness of computations. BitVM utilizes various types of scripts, such as HashLock scripts and Prover Timelock scripts, along with mechanisms like multi-signature, time locks, and equivocation detection, to facilitate the complete verification process.",
+  "source": "@site/docs/AboutBitlayer/BitVM.md",
+  "sourceDirName": "AboutBitlayer",
+  "slug": "/AboutBitlayer/BitVM",
+  "permalink": "/docs/AboutBitlayer/BitVM",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Use Case Ideas",
+    "permalink": "/docs/AboutBitlayer/Use Case"
+  },
+  "next": {
+    "title": "Build",
+    "permalink": "/docs/category/build"
+  }
+}

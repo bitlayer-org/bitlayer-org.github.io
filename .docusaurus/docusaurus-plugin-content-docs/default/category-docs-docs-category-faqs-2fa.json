@@ -1,0 +1,16 @@
+{
+  "title": "FAQs",
+  "description": "5 minutes to find your answer.",
+  "slug": "/category/faqs",
+  "permalink": "/docs/category/faqs",
+  "navigation": {
+    "previous": {
+      "title": "Contact Details",
+      "permalink": "/docs/Join Us/Contact Details"
+    },
+    "next": {
+      "title": "Frequently Asked Questions",
+      "permalink": "/docs/FAQs/Frequently asked questions"
+    }
+  }
+}

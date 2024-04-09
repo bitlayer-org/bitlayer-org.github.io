@@ -1,0 +1,25 @@
+{
+  "unversionedId": "AboutBitlayer/BitlayerVsEth",
+  "id": "AboutBitlayer/BitlayerVsEth",
+  "title": "Bitlayer vs. Ethereum",
+  "description": "This document compares Bitlayer and Ethereum across several key aspects including gas prices, and support for EVM and Solidity versions, providing insights for both developers and users.",
+  "source": "@site/docs/AboutBitlayer/BitlayerVsEth.md",
+  "sourceDirName": "AboutBitlayer",
+  "slug": "/AboutBitlayer/BitlayerVsEth",
+  "permalink": "/docs/AboutBitlayer/BitlayerVsEth",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/AboutBitlayer/intro"
+  },
+  "next": {
+    "title": "Technical Architecture",
+    "permalink": "/docs/AboutBitlayer/TechnicalArchitecture"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Build/Testnet",
+  "id": "Build/Testnet",
+  "title": "More on Testnet",
+  "description": "Important: about gas price",
+  "source": "@site/docs/Build/Testnet.md",
+  "sourceDirName": "Build",
+  "slug": "/Build/Testnet",
+  "permalink": "/docs/Build/Testnet",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Contracts",
+    "permalink": "/docs/Build/Contracts"
+  },
+  "next": {
+    "title": "Mainnet",
+    "permalink": "/docs/Build/Mainnet"
+  }
+}

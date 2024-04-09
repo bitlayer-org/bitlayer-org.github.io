@@ -1,0 +1,25 @@
+{
+  "unversionedId": "Build/Compile and Run",
+  "id": "Build/Compile and Run",
+  "title": "Compile and Run",
+  "description": "This guide walks you through compiling and running Bitlayer.",
+  "source": "@site/docs/Build/Compile and Run.md",
+  "sourceDirName": "Build",
+  "slug": "/Build/Compile and Run",
+  "permalink": "/docs/Build/Compile and Run",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/Build/QuickStart"
+  },
+  "next": {
+    "title": "Deployment",
+    "permalink": "/docs/Build/Deployment"
+  }
+}
