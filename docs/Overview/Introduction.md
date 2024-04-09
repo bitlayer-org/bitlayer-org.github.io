@@ -5,14 +5,13 @@ sidebar_position: 1
 # Welcome
 ##   
 
-![the first bitcoin security-equivalent layer 2 based on bitvm](FA_Bitlayer-Logo-horizontal.png)
+![The first bitcoin security-equivalent Layer 2 based on BitVM](FA_Bitlayer-Logo-horizontal.png)
 
-### Start your bitcoin journey from Bitlayer Technical Documentation!
+### Explore Bitlayer Technical Documentation
 
-Bitlayer is the first Bitcoin Layer 2 offering Bitcoin-equivalent security and Turing completeness, and the first Bitcoin Layer 2 based on BitVM. 
-Bitlayer is dedicated to bringing secure scalability to the Bitcoin ecosystem, promoting asset diversity, and fostering innovation, ultimately offering users a faster, safer, and more flexible experience.
+Bitlayer is the first Layer 2 solution for Bitcoin that offers security equivalent to Bitcoin's own and Turing completeness. It is also the first Bitcoin Layer 2 solution based on BitVM. Bitlayer aims to enhance the Bitcoin ecosystem by providing secure scalability, promoting diversity of assets, and encouraging innovation. Ultimately, it seeks to offer users a faster, safer, and more flexible experience.
 
-### What Sets Bitlayer Apart?
+### Why Choose Bitlayer?
 
 At Bitlayer, our primary focus is to address the scalability challenges of the Bitcoin network.
 
