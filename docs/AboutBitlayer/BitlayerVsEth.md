@@ -21,6 +21,16 @@ This document compares Bitlayer and Ethereum across several key aspects includin
 ### Bitlayer
 Bitlayer aims to offer lower transaction costs through innovative efficiency mechanisms. Leveraging technologies like optimistic execution, Bitlayer seeks to optimize transaction throughput, making it a potentially more economical choice for its users.
 
+:::caution **Important: About Gas Price on Bitlayer**
+
+Bitlayer's native gas token is BTC, utilized with an 18-digit precision, diverging from Bitcoin's traditional 8-digit precision. This adjustment aligns with the default decimal precision of tokens on EVM-compatible chains, ensuring consistency across transactions.
+:::
+To accommodate transaction processing priorities, Bitlayer has established a minimum priority fee requirement. Developers can dynamically estimate the required gas price for transactions using `eth_gasPrice` or `eth_maxPriorityFeePerGas`.
+
+For transactions on the Testnet, a minimum tip of 0.1 gwei is necessary. Typically, setting a `gasPrice` of 0.11 gwei for legacy transactions or a `maxPriorityFeePerGas` of 0.1 gwei (with an adequately set `maxFeePerGas`) for EIP-1559 transactions should suffice for most operations.
+
+Dapp developers are advised to programmatically set the `maxPriorityFeePerGas` before initiating transactions via APIs, rather than relying on default strategies employed by wallets (like MetaMask) or SDKs, to ensure optimal transaction processing.
+
 ### Ethereum
 In contrast, Ethereum's gas prices fluctuate based on network demand. Users compete for computational resources, leading to variable gas prices that can spike significantly during periods of high demand, affecting cost-effectiveness.
 
@@ -29,7 +39,7 @@ In contrast, Ethereum's gas prices fluctuate based on network demand. Users comp
 ### Bitlayer
 
 #### EVM Support
-Bitlayer introduces the Layered Virtual Machine (LVM), which is fully compatible with Ethereum Virtual Machine (EVM) smart contracts. This enables developers to build applications on Bitcoin's secure network, mirroring the functionality available on Ethereum.
+Bitlayer introduces the Layered Virtual Machine (LVM), which is fully compatible with Ethereum Virtual Machine (EVM) smart contracts. It supports EVM-compatible contracts up to the Shanghai update, with the exception of the PREVRANDAO opcode. The Cancun upgrade is expected to be supported in the next release. This enables developers to build applications on Bitcoin's secure network, mirroring the functionality available on Ethereum.
 
 #### Solidity Version
 Currently, Bitlayer supports Solidity up to version v0.8.23, with a commitment to incorporating future versions. This stance ensures that developers have access to a stable and secure environment for their smart contracts.
