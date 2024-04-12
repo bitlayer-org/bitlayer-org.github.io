@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Bitlayer',
-  tagline: 'The first Bitcoin security-equivalent Layer2 based on BitVM',
+  tagline: 'The first Bitcoin security-equivalent Layer 2 based on BitVM',
   url: 'https://docs.bitlayer.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',

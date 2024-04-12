@@ -3,7 +3,7 @@ slug: "Bitlayer: Amplifying Bitcoin"
 title: "Bitlayer: Amplifying Bitcoin"
 authors:
   name: Bitlayer
-  title: The First Bitcoin security - equivalent Layer2 based on BitVM.
+  title: The First Bitcoin security - equivalent Layer 2 based on BitVM.
   url: https://medium.com/@Bitlayer
   image_url: https://avatars.githubusercontent.com/u/153826528?s=200&v=4
 tags: [Hello Bitlayer]
