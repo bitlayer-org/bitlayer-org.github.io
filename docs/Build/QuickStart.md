@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Getting Started
+# Quick Start Guide
 :::tip Note:
 
 We currently support Solidity up to version v0.8.23. Updates for newer versions might be delayed. 

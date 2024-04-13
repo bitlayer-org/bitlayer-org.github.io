@@ -1,6 +1,6 @@
 {
-  "label": "Tools",
-  "position": 4,
+  "label": "Developer Resources",
+  "position": 5,
   "link": {
     "type": "generated-index",
     "description": "This guide provides an overview of the tools and resources available for Bitlayer development."

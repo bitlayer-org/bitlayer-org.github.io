@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# About Bitlayer
 For users and developers alike, the fundamental concept of Bitlayer is outlined below:
 
 ![alt text](intro.png)
