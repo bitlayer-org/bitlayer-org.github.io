@@ -6,8 +6,6 @@ sidebar_position: 2
 
 This reference guide provides a listing of the different Bitlayer networks and public RPC endpoints.
 
-<!-- 
-
 ## Bitlayer Mainnet
 
 | Parameter                   | Value                                                                                    |
@@ -21,7 +19,7 @@ This reference guide provides a listing of the different Bitlayer networks and p
 | Connect Wallet              | [Click here to connect your wallet to Bitlayer Mainnet](https://chainlist.org/?search=bitlayer) |
 
 1.  The "currency symbol" is required by some wallets like MetaMask.
--->
+
 ## Bitlayer Testnet
 
 | Parameter                   | Value                                                                                      |
