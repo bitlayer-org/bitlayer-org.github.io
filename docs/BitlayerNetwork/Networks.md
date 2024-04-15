@@ -30,7 +30,7 @@ This reference guide provides a listing of the different Bitlayer networks and p
 | Explorer                    | [https://testnet-scan.bitlayer.org](https://testnet-scan.bitlayer.org)         |
 | Public RPC URL              | [https://testnet-rpc.bitlayer.org](https://testnet-rpc.bitlayer.org)                                 |
 | Contract Addresses          | Refer to the [Contract Addresses page](../Build/Contracts)                         |
-| Connect Wallet              | [Click here to connect your wallet to Bitlayer Testnet](https://chainlist.org/?search=bitlayer) |
+| Connect Wallet              | [Click here to connect your wallet to Bitlayer Testnet](https://chainlist.org/?search=bitlayer&testnets=true) |
 
 :::tip 
 The "currency symbol" is required by some wallets like MetaMask.
