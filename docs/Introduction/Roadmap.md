@@ -5,7 +5,7 @@ sidebar_position: 5
 # Roadmap
 The vision of Bitlayer will be realized through the rollout of a mainnet in multiple stages, with each phase designed to enhance the user experience and bolster security through cryptographic proof of Bitcoin consensus and onchain activity.
 
-![Roadmap](/img/Introduction/Roadmap.PNG)
+![Roadmap](/img/Introduction/roadmap2.png)
 
 ## First Stage: Bitlayer Mainnet-V1
 In this initial phase, Bitlayer will support the cross-chain movement of BTC/BRC-20 assets between the Bitcoin mainnet and Bitlayer, and other mainstream assets, thereby enriching the overall value of the Bitlayer ecosystem.
