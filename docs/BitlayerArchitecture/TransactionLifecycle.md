@@ -1,0 +1,19 @@
+---
+sidebar_position: 3
+---
+
+# Bitlayer's Transaction Lifecycle
+
+The Bitlayer asset bridge provides user-controlled decentralized custody, as well as a high-liquidity Bitcoin Layer 2 cross-chain solution based on BitVM+DLC technology. Bitlayer offers a dual-channel two-way peg bridge that not only meets the self-controlled asset needs of Layer 1 users for BTC deposit and withdrawal, but also satisfies the smooth withdrawal requirements of native Layer 2 users. The core components of the asset bridge consist of BitVM Federation nodes, DLC components, Layer 2 smart contracts, and Relayers:
+
+## 1. BitVM Federation
+The nodes within the BitVM Federation act as a verification network to ensure the secure execution of Layer 2 transactions and the stable operation of the Bitlayer bridge. When Layer 2 begins, validated organizations can join the federation by depositing a specific amount of BTC. As the Layer 2 network progresses, the federation dynamically adjusts and increases its membership to boost security and decentralization. Within the cross-chain bridge, the BitVM Federation collectively manages decentralized asset custody for the BitVM bridge channel, attaining a 1 of \(N\) security level, meaning only one honest node is needed for network integrity. Moreover, the BitVM Federation functions as an oracle network for the OP-DCL bridge channel, requiring only some members to agree (\(t\) of \(N\)) to produce a legitimate oracle signature.
+
+## 2. DLC Components
+Using DLC for deposits and withdrawals ensures users' autonomous control over their assets but introduces restrictions on the BTC amount for deposits and withdrawals. Because DLC requires predefined CETs to determine the withdrawal amount, supporting fine-grained CETs is necessary to meet user-friendly withdrawal requirements. The first function of the DLC component is to facilitate the creation of funding transactions, where the assets are initially output to a 2 of 2 multi-sig output, with the parties involved being the user and the BitVM Federation (\(N\) of \(N\)) address. The second function is the CET manager, which pre-creates DLCs supporting multiple future withdrawal requirements, thus realizing a user-friendly cross-chain solution.
+
+## 3. Layer 2 Smart Contracts
+The bridge and light client are two core smart contracts on Layer 2 that implement the trustless bridge. The bridge smart contract manages the issuance and destruction of BTC assets on Layer 2. The light client contract maintains Bitcoin block header information on Layer 2, and Bitlayer uses ZKP-based Bitcoin state proofs to update and maintain the block header information. The light client contract also provides a Verify function to validate Bitcoin transactions, by submitting a Simplified Payment Verification (SPV) proof of the transaction to the light client contract to verify the legitimacy of the Bitcoin transaction. The bridge contract calls the light client's Verify function to validate the legitimacy of users' locking transactions on Bitcoin, ensuring that all BTC assets on Layer 2 are issued in a trustless manner.
+
+## 4. Relayers
+The Relayer plays a critical, trustless role in the Bitlayer asset bridge, primarily tasked with monitoring both Layer 1 and Layer 2 blockchains and updating the state of light client data on the Layer 2 blockchain. When the Bitcoin network commits a new block, the relayer submits a state update transaction for the light client, accompanied by a zero-knowledge proof. Whenever there is a bridge transaction, the relayer forwards it to a smart contract (peg-in) or a BitVM Federation node (peg-out) for further processing. The inclusion of this permissionless relayer system ensures the continuous operation of the asset bridge; the bridge remains functional as long as at least one relayer is operational.
