@@ -38,5 +38,11 @@ Click the above link to know more about our Mainnet-V1.
 
 :::tip 
 The "currency symbol" is required by some wallets like MetaMask.
-
 :::
+
+## Node Providers
+
+| Provider Name               | Provider URL| 
+| --------------------------- | ------------------ | 
+| Ankr                        | https://bitlayer-rpc.com/              |Mainnet|
+
