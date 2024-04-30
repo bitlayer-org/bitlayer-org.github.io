@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ![Technical Architecture](/img/Introduction/Architecture.png)
 
-Bitlayer's solution synthesizes the technical characteristics of BitVM, DLC|BitVM, and various XVMs (such as EVM, MoveVM), addressing three major challenges: Layer 1 verification, asset bridging, and enriching state transition expressions.
+Bitlayer's solution synthesizes the technical characteristics of BitVM, DLC, and various XVMs (such as EVM, CairoVM, SolVM, MoveVM), addressing three major challenges: Layer 1 verification, asset bridging, and enriching state transition expressions.
 
 From an architectural standpoint, Bitlayer is a fairly typical example of a Rollup-equivalent model. To adapt to Bitcoin's unique programming model, BitVM has been introduced as a component for state challenges. Additionally, DLC|BitVM has been incorporated as a cross-chain component for messaging/assets, and the sequencer component's XVM, in theory, can support any Turing-complete programming language.
 

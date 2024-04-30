@@ -9,7 +9,7 @@ sidebar_position: 1
 
 ### Explore Bitlayer Technical Documentation
 
-Bitlayer is the first Layer 2 solution for Bitcoin that offers security equivalent to Bitcoin's own and Turing completeness. It is also the first Bitcoin Layer 2 solution based on BitVM. Bitlayer aims to enhance the Bitcoin ecosystem by providing secure scalability, promoting diversity of assets, and encouraging innovation. Ultimately, it seeks to offer users a faster, safer, and more flexible experience.
+Bitlayer is the first Layer 2 solution for Bitcoin that offers security equivalent to Bitcoin's own and Turing completeness. It is also the first Bitcoin Layer 2 solution based on BitVM paradigm. Bitlayer aims to enhance the Bitcoin ecosystem by providing secure scalability, promoting diversity of assets, and encouraging innovation. Ultimately, it seeks to offer users a faster, safer, and more flexible experience.
 
 ### Why Choose Bitlayer?
 
@@ -25,4 +25,4 @@ For detailed insights into our technical architecture, please refer to the [Bitl
 The Bitlayer Mainnet has just launched and we are also glad to offer a testnet environment where you can experiment with Bitlayer's capabilities. Please refer to our [Quick Start Guide](/docs/Build/QuickStart) to get started with our test network and explore the infinite possibilities of Bitcoin on both Bitlayer Testnet and Mainnet.
 
 ### What Lies Ahead for Bitlayer?
-While we are preparing for the launch of the Bitlayer mainnet for Bitcoin in early April, our journey to further decentralization is far from over. We are committed to decentralizing each component of the stack, ensuring a resilient and robust network. Stay updated on our progress by following our [Twitter](https://twitter.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also connect with us on [Medium](https://medium.com/@Bitlayer) to stay abreast of the latest Bitlayer developments.
+We have launched the Bitlayer Mainnet-V1 in early April, our journey to further decentralization is far from over. We are committed to decentralizing each component of the stack, ensuring a resilient and robust network. Stay updated on our progress by following our [Twitter](https://twitter.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also connect with us on [Medium](https://medium.com/@Bitlayer) to stay abreast of the latest Bitlayer developments.
