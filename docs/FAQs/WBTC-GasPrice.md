@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# wBTC 与 手续费
+# wBTC and Gas Fee
 
 ### wBTC
 
