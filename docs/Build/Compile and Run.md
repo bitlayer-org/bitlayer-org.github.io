@@ -164,7 +164,7 @@ SyncMode = "full"
 --log.rotate=true \
 --authrpc.port 8445 \
 --traceaction 2 \
---verbosity 3  >> /data/bitlayer-l2/chain/logs/systemd_chain_console.out 2>&1
+--verbosity 3 
 ```
 
 if you need to use it as archive node, add: 
@@ -186,7 +186,7 @@ so:
 --traceaction 2 \
 --syncmode full \
 --gcmode archive \
---verbosity 3  >> /data/bitlayer-l2/chain/logs/systemd_chain_console.out 2>&1
+--verbosity 3  
 ```
 
 If no network flags were provided, the node will connect the bitlayer mainnet by default. If you want to connect to bitlayer testnet, add:
