@@ -20,6 +20,11 @@ For Bitcoin transactions, Bitlayer is compatible with wallets designed specifica
 
 *Bitcoin-only wallets provide optimized features for handling Bitcoin transactions and secure storage.*
 
+## In-app Wallets
+In-app wallets activate when users log into an app, functioning as embedded wallets without the need for a browser extension. Bitlayer supports the following in-app wallets:
+
+- [Arcana Wallet](https://docs.arcana.network/concepts/anwallet/) - A non-custodial, in-app wallet that is accessible to authenticated users through the apps integrated with the [Arcana Auth SDK](https://docs.arcana.network/auth/). Once activated, the wallet interface includes preset EVM and non-EVM chains, enabling instant blockchain transaction signing. Explore the [supported chains](https://docs.arcana.network/web3-stack/chains/) and [quick start guides](https://docs.arcana.network/quick-start/) for further details.
+
 ## Networks Supported
 
 - EVM Networks (e.g., Ethereum Mainnet, Binance Smart Chain)
