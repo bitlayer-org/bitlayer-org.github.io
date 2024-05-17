@@ -1,11 +1,13 @@
-# Introduction
+# DefiLlama TVL Integration
+
+## Introduction
 
 There are two steps required to integrate into the defillama system.
 
 1. Add adapter to defillama
 2. Submit PR like: https://github.com/DefiLlama/DefiLlama-Adapters/commits/d67f57641b931a04afe05affe4c52605b6544e26/projects/macaron-xyz/index.js
 
-# Step 1: Add adapter locally
+## Step 1: Add adapter locally
 
 The following steps need to be completed: 
 
@@ -33,10 +35,10 @@ module.exports = {
 - [%TOKNE_ADDR_1%]、[%TOKEN_ADDR_2%] are the currency pair address that needs to be calculated
 - For future references, if you add another token you can just add it here, you can do like this https://github.com/DefiLlama/DefiLlama-Adapters/pull/10229/files
 
-# Step 2: Submit PR
+## Step 2: Submit PR
 
 - Submit PR, for example: https://github.com/DefiLlama/DefiLlama-Adapters/commits/d67f57641b931a04afe05affe4c52605b6544e26/projects/macaron-xyz/index.js
 
-# Reference
+## Reference
 
 - https://docs.llama.fi/list-your-project/submit-a-project
