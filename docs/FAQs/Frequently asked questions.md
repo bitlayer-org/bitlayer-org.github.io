@@ -35,7 +35,6 @@ A: There are several ways to support Bitlayer. You can actively participate in c
 ### Q: Who is building Bitlayer?
 A: Bitlayer is being built by a team of engineers with experience in top platforms and blockchain operations. The core builders include individuals from companies such as Huobi, Polygon, and Polkadot, who bring their expertise and resources to the development of Bitlayer.
 
-
 ### Q: Who can I contact regarding a press inquiry?
 A: For press inquiries related to Bitlayer, you can reach out to the Bitlayer team through our official communication channels.
 
@@ -49,4 +48,9 @@ Medium：https://medium.com/@Bitlayer
 
 Email: build@bitlayer.org
 
-    
+
+### Q: Is there a rate-limits on Public RPC URLs? What should I do if I hit the rate-limits issue?
+A: Yes, the rate-limits is 30 rps default for both mainnet and testnet.  
+When requests reached rate-limits, you can  
+&emsp;&emsp;(1) Refer to [Compile and Run](../Build/Compile%20and%20Run.md) to build your own rpc node.  
+&emsp;&emsp;(2) Or refer to [ankr](https://www.ankr.com/rpc/bitlayer/) to buy a paid plan.
