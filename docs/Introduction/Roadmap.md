@@ -14,12 +14,13 @@ During this stage, we will prioritize offering a 100% EVM-compatible development
 
 ## Second Stage: Bitlayer Mainnet-V2
 
-In this phase, we plan to introduce a Sequencer+DA model, which, based on the DLC|BitVM technical protocol, secures user asset deposits and withdrawals. Additionally, utilizing multisig oracles for challenges and DLC-Attestors controlled by multisig for asset escape will be implemented.
+In this phase, we plan to introduce a Sequencer+DA model, implement a BitVM component for commiting and challenging the state transition.
 
 By leveraging the vast network and security of Bitcoin, Bitlayer will continuously lead with the highest security standards, offering users enhanced flexibility and an improved onchain experience through network upgrades.
 
 ## Third Stage: Bitlayer Mainnet V3
-In this phase, our aim is to implement OP challenges based on BitVM, along with decentralized DLC-Attestors for asset escape.
+In this phase, our aim is to implement trustless bridge based on the L1 verification ability.
+
 Upon the completion of this third stage, Bitlayer’s final mainnet will be fully deployed, achieving the network's original goals—Bitcoin-equivalent security combined with Turing completeness. 
 
 This version is set to elevate the security standards of Bitcoin Layer 2 to an unprecedented level.
