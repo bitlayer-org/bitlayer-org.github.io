@@ -40,3 +40,15 @@ module.exports = {
 # Reference
 
 - https://docs.llama.fi/list-your-project/submit-a-project
+## Projects built on bitlayer
+
+| Name      | Category                                           | Website                                | Defillama                                                    | Project Path            |
+| --------- | -------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------ | ----------------------- |
+| bitsmiley | [CDP](https://defillama.com/protocols/CDP)         | https://www.bitsmiley.io/app/alphanet  | https://defillama.com/protocol/bitsmiley#information         | projects/bitsmiley-io   |
+| macaron   | [Dexes](https://defillama.com/protocols/Dexes)     | https://www.macaron.xyz/#/swap?lang=en | https://defillama.com/protocol/macaron                       | projects/macaron-xyz    |
+| avalon    | [Lending](https://defillama.com/protocols/Lending) | https://app.avalonfinance.xyz/         | https://defillama.com/protocol/avalon-finance#information    | projects/avalon-finance |
+| bitcow    | [Dexes](https://defillama.com/protocols/Dexes)     | https://bitcow.xyz/                    | https://defillama.com/protocol/bitcow#information            | projects/bitcow         |
+| enzo      | [Lending](https://defillama.com/protocols/Lending) | https://app.enzo.finance/              | https://defillama.com/protocol/enzo#information              | projects/enzo           |
+| trustin   | [Lending](https://defillama.com/protocols/Lending) | https://www.trustin.com/               | https://defillama.com/protocol/trustin-finance?borrowed=false&twitter=true&tvl=false | projects/trustin        |
+
+
