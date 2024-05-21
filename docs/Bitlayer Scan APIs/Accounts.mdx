@@ -1,0 +1,771 @@
+---
+sidebar_position: 1
+title: Accounts
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Endpoint URLs
+| Network | URL   
+|---|---|
+| Mainnet | https://api.btrscan.com/scan/api
+| Testnet | https://api-testnet.bitlayer.org/scan/api
+
+
+## Get BTC Balance for a single address
+Returns the BTC balance of a given address.
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=balance
+&address=0xe7564c607c663e5784031229570cbd47290dd87f
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=balance&address=0xe7564c607c663e5784031229570cbd47290dd87f) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check balance |
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+
+  ```json
+  {
+    "status": "1",
+    "message": "OK",
+    "result": "24160814822445819116"
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get BTC Balance for multiple addresses in a single call
+Returns the balance of the accounts from a list of addresses.
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=balancemulti
+&address=0xe7564c607c663e5784031229570cbd47290dd87f,0xe01a40a0894970fc4c2b06f36f5eb94e73ea502d
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=balancemulti&address=0xe7564c607c663e5784031229570cbd47290dd87f,0xe01a40a0894970fc4c2b06f36f5eb94e73ea502d) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check balance,separated by `,` up to 20 addresses in a single batch |
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+  Sample Response
+
+  ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "account": "0xe7564c607c663e5784031229570cbd47290dd87f",
+        "balance": "24160814822445819116"
+      },
+      {
+        "account": "0xe01a40a0894970fc4c2b06f36f5eb94e73ea502d",
+        "balance": "7152743425798252551"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get a list of 'Normal' Transactions By Address
+Returns the list of transactions performed by an address, with optional pagination.
+[Optional Parameters] startblock: starting blockNo to retrieve results, endblock: ending blockNo to retrieve results
+
+:::tip
+
+Returns up to a maximum of the last 10000 transactions only 
+
+:::
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=txlist
+&address=0xe7564c607c663e5784031229570cbd47290dd87f
+&startblock=0
+&endblock=99999999
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=txlist&address=0xe7564c607c663e5784031229570cbd47290dd87f&startblock=0&endblock=99999999&sort=asc) 🔗
+
+or
+
+:::tip
+To get paginated results use `page=<page number>` and `offset=<max records to return>`
+:::
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=txlist
+&address=0xe7564c607c663e5784031229570cbd47290dd87f
+&startblock=0
+&endblock=99999999
+&page=1
+&offset=10
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=txlist&address=0xe7564c607c663e5784031229570cbd47290dd87f&startblock=0&endblock=99999999&page=1&offset=10&sort=asc) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check balance |
+| startblock | the `integer` block number to start searching for transactions |
+| endblock | the `integer` block number to stop searching for transactions |
+| page | the `integer` page number, if pagination is enabled |
+| offset | the number of transactions displayed per page |
+| sort | the sorting preference, use `asc` to sort by ascending and `desc` to sort by descending |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+
+  ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "blockNumber": "911734",
+        "timeStamp": "1715011831",
+        "hash": "0x38a33c9dedf320432ab4bbfdaf5bec13fb156d81bfa96bbc853b387755f37291",
+        "nonce": "0",
+        "transactionIndex": "0",
+        "value": "99800000000000000",
+        "gas": "45358",
+        "gasPrice": "102553563",
+        "txreceipt_status": "1",
+        "gasUsed": "44978",
+        "methodId": "0xd0e30db0",
+        "functionName": "deposit"
+      },
+        {
+          "blockNumber": "911882",
+          "timeStamp": "1715012275",
+          "hash": "0x50b60e5046fe4d13413737b7e886906d7511ed1fe78ba5aa4b1978145f0309da",
+          "nonce": "1",
+          "transactionIndex": "0",
+          "value": "0",
+          "gas": "140550",
+          "gasPrice": "102581210",
+          "txreceipt_status": "1",
+          "gasUsed": "46143",
+          "methodId": "0x095ea7b3",
+          "functionName": "approve"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get a list of 'Internal' Transactions By Address
+Returns the list of internal transactions performed by an address, with optional pagination.
+
+:::tip
+
+Returns up to a maximum of the last 10000 transactions only 
+
+[Optional Parameters] startblock: starting blockNo to retrieve results, endblock: ending blockNo to retrieve results
+
+:::
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=txlistinternal
+&address=0x039bac1779933ee52abf3eff25188c4d673931ac
+&startblock=0
+&endblock=2702578
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=txlistinternal&address=0x039bac1779933ee52abf3eff25188c4d673931ac&startblock=0&endblock=2702578&sort=asc) 🔗
+
+or
+
+:::tip
+To get paginated results use `page=<page number>` and `offset=<max records to return>`
+:::
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=txlistinternal
+&address=0x039bac1779933ee52abf3eff25188c4d673931ac
+&startblock=0
+&endblock=2702578
+&page=1
+&offset=10
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=txlistinternal&address=0x039bac1779933ee52abf3eff25188c4d673931ac&startblock=0&endblock=2702578&page=1&offset=10&sort=asc) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check balance |
+| startblock | the `integer` block number to start searching for transactions |
+| endblock | the `integer` block number to stop searching for transactions |
+| page | the `integer` page number, if pagination is enabled |
+| offset | the number of transactions displayed per page |
+| sort | the sorting preference, use `asc` to sort by ascending and `desc` to sort by descending |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+  
+  Sample Response
+
+  ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "blockNumber": "2063492",
+        "timeStamp": "1713324960",
+        "hash": "0xb633b52fa2eaa2f817aa721db500766458e6b794b872f911d8f72d20c1356377",
+        "transactionIndex": "0",
+        "from": "0x039bac1779933ee52abf3eff25188c4d673931ac",
+        "to": "0x0000000000000000000000000000000000000001",
+        "value": "0",
+        "gas": "77311",
+        "txreceipt_status": "1",
+        "gasUsed": "3000
+      },
+      {
+        "blockNumber": "2063508",
+        "timeStamp": "1713325008",
+        "hash": "0x9b169e06404b28fec2f1d20eeecc485ed8d11c0f792d872dfc78e29e05fe3a2f",
+        "transactionIndex": "1",
+        "from": "0x039bac1779933ee52abf3eff25188c4d673931ac",
+        "to": "0x0000000000000000000000000000000000000001",
+        "value": "0",
+        "gas": "77299",
+        "txreceipt_status": "1",
+        "gasUsed": "3000"
+      },
+      {
+        "blockNumber": "2063521",
+        "timeStamp": "1713325047",
+        "hash": "0xd9e8a7407f4993d85ba80ddc05a0bcf2e45c5a70781fae58d508df45bf7bf846",
+        "transactionIndex": "0",
+        "from": "0x039bac1779933ee52abf3eff25188c4d673931ac",
+        "to": "0x0000000000000000000000000000000000000001",
+        "value": "0",
+        "gas": "77299",
+        "txreceipt_status": "1",
+        "gasUsed": "3000"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get "Internal Transactions" by Transaction Hash
+Returns the list of internal transactions performed within a transaction.
+
+:::tip
+
+Returns up to a maximum of the last 10000 transactions only 
+
+:::
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=txlistinternal
+&txhash=0xa8599451628af4914db83b7d73df8784bdda7bc6d541d6931a5855bd54091c04
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=txlistinternal&txhash=0xa8599451628af4914db83b7d73df8784bdda7bc6d541d6931a5855bd54091c04) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| txhash | the `string` representing the transaction hash to check for internal transactions |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+  ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "blockNumber": "2928943",
+        "timeStamp": "1715921315",
+        "hash": "0xa8599451628af4914db83b7d73df8784bdda7bc6d541d6931a5855bd54091c04",
+        "transactionIndex": "0",
+        "from": "0x9386a8135c6a56103f14a1ed655ff7467b3b86eb",
+        "to": "0x039bac1779933ee52abf3eff25188c4d673931ac",
+        "value": "0",
+        "gas": "90214",
+        "txreceipt_status": "1",
+        "input": "0x5eddd15700000000000000000000000000000000000000000000000000000000000000320000000000000000000000000000000021312b850fc5b0ee50c710d245c364bc00000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000041e7d4cad89769c747ecbfaab89239b64facf1be59ec2132f68d4c5ddd6e6834570b20c6c3dbe1733f9428aaafe5d37f9c56a7639426a793a3bb8b53bb313ede3b1c00000000000000000000000000000000000000000000000000000000000000",
+        "gasUsed": "36357"
+      },
+      {
+        "blockNumber": "2928943",
+        "timeStamp": "1715921315",
+        "hash": "0xa8599451628af4914db83b7d73df8784bdda7bc6d541d6931a5855bd54091c04",
+        "transactionIndex": "0",
+        "from": "0x039bac1779933ee52abf3eff25188c4d673931ac",
+        "to": "0x0000000000000000000000000000000000000001",
+        "value": "0",
+        "gas": "90214",
+        "txreceipt_status": "1",
+        "input": "0x0000000000000000000000009386a8135c6a56103f14a1ed655ff7467b3b86eb00000000000000000000000000000000000000000000000000000000000000320000000000000000000000000000000021312b850fc5b0ee50c710d245c364bc0b20c6c3dbe1733f9428aaafe5d37f9c56a7639426a793a3bb8b53bb313ede3b",
+        "gasUsed": "3000"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get "Internal Transactions" by Block Range
+Returns the list of internal transactions performed within a block range, with optional pagination.
+
+:::tip
+
+Returns up to a maximum of the last 10000 transactions only 
+
+:::
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=txlistinternal
+&startblock=0
+&endblock=2928944
+&page=1
+&offset=10
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=txlistinternal&startblock=0&endblock=2928944&page=1&offset=10&sort=asc) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| startblock | the `integer` block number to start searching for transactions |
+| endblock | the `integer` block number to stop searching for transactions |
+| page | the `integer` page number, if pagination is enabled |
+| offset | the number of transactions displayed per page |
+| sort | the sorting preference, use `asc` to sort by ascending and `desc` to sort by descending |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+
+  ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "blockNumber": "29",
+        "timeStamp": "1707134551",
+        "hash": "0x17b0cd2caaff5c8cf1ae1c0398b867dc9c5354caa166532b39ae6eb9dfddd626",
+        "transactionIndex": "0",
+        "from": "0x2e46771cff3636a42f363826ff8a94d3a738e075",
+        "to": "0xf4340cf5f3891a3827713b33f769b501a0b5b122",
+        "value": "0",
+        "gas": "517789",
+        "txreceipt_status": "1",
+        "input": "0x60806040523480156200001157600080fd5b5060405162000a0c38038062000a0c8339810160408190526200003491620002d4565b6b033b2e3c9fd0803ce80000006002558051825160009114620000915760405162461bcd60e51b815260206004820152601060248201526f098cadccee8d0409cdee8409ac2e8c6d60831b60448201526064015b60405180910390fd5b60005b83518110156200019557828181518110620000b357620000b3620003b2565b602002602001015182620000c89190620003de565b91506002548211156200011e5760405162461bcd60e51b815260206004820152601460248201527f546f74616c537570706c79204f766572466c6f77000000000000000000000000604482015260640162000088565b828181518110620001335762000133620003b2565b6020026020010151600080868481518110620001535762000153620003b2565b60200260200101516001600160a01b03166001600160a01b031681526020019081526020016000208190555080806200018c90620003fa565b91505062000094565b508060025414620001e95760405162461bcd60e51b815260206004820152601e60248201527f546f74616c537570706c79206973206e6f742044697374726962757465640000604482015260640162000088565b50505062000416565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f191681016001600160401b0381118282101715620002335762000233620001f2565b604052919050565b60006001600160401b03821115620002575762000257620001f2565b5060051b60200190565b600082601f8301126200027357600080fd5b815160206200028c62000286836200023b565b62000208565b82815260059290921b84018101918181019086841115620002ac57600080fd5b8286015b84811015620002c95780518352918301918301620002b0565b509695505050505050565b60008060408385031215620002e857600080fd5b82516001600160401b03808211156200030057600080fd5b818501915085601f8301126200031557600080fd5b815160206200032862000286836200023b565b82815260059290921b840181019181810190898411156200034857600080fd5b948201945b838610156200037f5785516001600160a01b03811681146200036f5760008081fd5b825294820194908201906200034d565b918801519196509093505050808211156200039957600080fd5b50620003a88582860162000261565b9150509250929050565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b80820180821115620003f457620003f4620003c8565b92915050565b6000600182016200040f576200040f620003c8565b5060010190565b6105e680620004266000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c8063313ce56711610066578063313ce5671461012357806370a082311461013d57806395d89b4114610166578063a9059cbb14610188578063dd62ed3e1461019b57600080fd5b806306fdde0314610098578063095ea7b3146100d657806318160ddd146100f957806323b872dd14610110575b600080fd5b6100c060405180604001604052806009815260200168212921902a37b5b2b760b91b81525081565b6040516100cd9190610456565b60405180910390f35b6100e96100e43660046104c0565b6101d4565b60405190151581526020016100cd565b61010260025481565b6040519081526020016100cd565b6100e961011e3660046104ea565b610241565b61012b601281565b60405160ff90911681526020016100cd565b61010261014b366004610526565b6001600160a01b031660009081526020819052604090205490565b6100c06040518060400160405280600381526020016242524360e81b81525081565b6100e96101963660046104c0565b610391565b6101026101a9366004610541565b6001600160a01b03918216600090815260016020908152604080832093909416825291909152205490565b3360008181526001602090815260408083206001600160a01b038716808552925280832085905551919290917f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b9259061022f9086815260200190565b60405180910390a35060015b92915050565b6001600160a01b038316600090815260208190526040812054821180159061028c57506001600160a01b03841660009081526001602090815260408083203384529091529020548211155b80156102985750600082115b15610386576001600160a01b038316600090815260208190526040812080548492906102c590849061058a565b90915550506001600160a01b038416600090815260208190526040812080548492906102f290849061059d565b90915550506001600160a01b03841660009081526001602090815260408083203384529091528120805484929061032a90849061059d565b92505081905550826001600160a01b0316846001600160a01b03167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef8460405161037691815260200190565b60405180910390a350600161038a565b5060005b9392505050565b3360009081526020819052604081205482118015906103b05750600082115b1561044e5733600090815260208190526040812080548492906103d490849061059d565b90915550506001600160a01b0383166000908152602081905260408120805484929061040190849061058a565b90915550506040518281526001600160a01b0384169033907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef9060200160405180910390a350600161023b565b50600061023b565b600060208083528351808285015260005b8181101561048357858101830151858201604001528201610467565b506000604082860101526040601f19601f8301168501019250505092915050565b80356001600160a01b03811681146104bb57600080fd5b919050565b600080604083850312156104d357600080fd5b6104dc836104a4565b946020939093013593505050565b6000806000606084860312156104ff57600080fd5b610508846104a4565b9250610516602085016104a4565b9150604084013590509250925092565b60006020828403121561053857600080fd5b61038a826104a4565b6000806040838503121561055457600080fd5b61055d836104a4565b915061056b602084016104a4565b90509250929050565b634e487b7160e01b600052601160045260246000fd5b8082018082111561023b5761023b610574565b8181038181111561023b5761023b61057456fea264697066735822122054ce9967d7d4eba6cafd665a64e31a65317e0cd391ee8f3adcd1a3194baebc2364736f6c63430008110033000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000000040000000000000000000000002e46771cff3636a42f363826ff8a94d3a738e075000000000000000000000000845d2b001934a99d072ef409b719cffe468ba7e300000000000000000000000026fc26213675827d863607902c8dbc7f42f1a2b70000000000000000000000007765992cae0cd7dc02e2b5857a375b0b090933b500000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000007c13bc4b2c133c56000000000000000000000000000000000000000000000000f8277896582678ac00000000000000000000000000000000000000000000000052b7d2dcc80cd2e4000000000000000000000000000000000000000000000001743b34e18439b502000000",
+        "gasUsed": "417256"
+      },
+      {
+        "blockNumber": "33",
+        "timeStamp": "1707134563",
+        "hash": "0x8001fd5a7fbeca309b7c1edd81ee68008cdbf86247fcf2b5a5522f3af65e691e",
+        "transactionIndex": "0",
+        "from": "0x2e46771cff3636a42f363826ff8a94d3a738e075",
+        "to": "0x845d2b001934a99d072ef409b719cffe468ba7e3",
+        "value": "0",
+        "gas": "785842",
+        "txreceipt_status": "1",
+        "input": "0x60806040523480156200001157600080fd5b5060405162000e7438038062000e748339810160408190526200003491620004bb565b8451865114801562000047575083518651145b801562000055575082518651145b620000a75760405162461bcd60e51b815260206004820152601460248201527f496e76616c696420696e707574206c656e67746800000000000000000000000060448201526064015b60405180910390fd5b6000805b87518110156200026c576000878281518110620000cc57620000cc6200058f565b602002602001015111620001325760405162461bcd60e51b815260206004820152602660248201527f546f74616c20746f6b656e73206d7573742062652067726561746572207468616044820152656e207a65726f60d01b60648201526084016200009e565b6040518060a001604052808883815181106200015257620001526200058f565b60200260200101518152602001600081526020018783815181106200017b576200017b6200058f565b602002602001015181526020018683815181106200019d576200019d6200058f565b6020026020010151815260200160011515815250600360008a8481518110620001ca57620001ca6200058f565b6020908102919091018101516001600160a01b03168252818101929092526040908101600020835181559183015160018301558201516002820155606082015160038201556080909101516004909101805460ff191691151591909117905586518790829081106200024057620002406200058f565b602002602001015182620002559190620005bb565b9150806200026381620005d7565b915050620000ab565b506000839055600180546001600160a01b0319166001600160a01b038416908117909155426002556040516370a0823160e01b81523060048201526370a0823190602401602060405180830381865afa158015620002ce573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190620002f49190620005f3565b8114620003445760405162461bcd60e51b815260206004820152601960248201527f4c6f636b696e672042616c616e6365206e6f74204d617463680000000000000060448201526064016200009e565b505050505050506200060d565b634e487b7160e01b600052604160045260246000fd5b604051601f8201601f191681016001600160401b038111828210171562000392576200039262000351565b604052919050565b60006001600160401b03821115620003b657620003b662000351565b5060051b60200190565b80516001600160a01b0381168114620003d857600080fd5b919050565b600082601f830112620003ef57600080fd5b815160206200040862000402836200039a565b62000367565b82815260059290921b840181019181810190868411156200042857600080fd5b8286015b848110156200044e576200044081620003c0565b83529183019183016200042c565b509695505050505050565b600082601f8301126200046b57600080fd5b815160206200047e62000402836200039a565b82815260059290921b840181019181810190868411156200049e57600080fd5b8286015b848110156200044e5780518352918301918301620004a2565b60008060008060008060c08789031215620004d557600080fd5b86516001600160401b0380821115620004ed57600080fd5b620004fb8a838b01620003dd565b975060208901519150808211156200051257600080fd5b620005208a838b0162000459565b965060408901519150808211156200053757600080fd5b620005458a838b0162000459565b955060608901519150808211156200055c57600080fd5b506200056b89828a0162000459565b935050608087015191506200058360a08801620003c0565b90509295509295509295565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052601160045260246000fd5b80820180821115620005d157620005d1620005a5565b92915050565b600060018201620005ec57620005ec620005a5565b5060010190565b6000602082840312156200060657600080fd5b5051919050565b610857806200061d6000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c8063a3fe79501161005b578063a3fe7950146100d3578063dc070657146100e6578063e6fd48bc146100f9578063fdb20ccb1461010257600080fd5b80630faf4baa146100825780631d31fac0146100b25780634e71d92d146100c9575b600080fd5b600154610095906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100bb60005481565b6040519081526020016100a9565b6100d161016d565b005b6100bb6100e1366004610706565b61043b565b6100d16100f4366004610706565b610513565b6100bb60025481565b610143610110366004610706565b60036020819052600091825260409091208054600182015460028301549383015460049093015491939092909160ff1685565b6040805195865260208601949094529284019190915260608301521515608082015260a0016100a9565b336000908152600360205260409020600481015460ff166101a95760405162461bcd60e51b81526004016101a090610736565b60405180910390fd5b60006101b433610657565b9050816002015481116102095760405162461bcd60e51b815260206004820152601e60248201527f436c69666620706572696f6420686173206e6f7420656e64656420796574000060448201526064016101a0565b60006102143361043b565b905060008360010154826102289190610781565b90506000811161027a5760405162461bcd60e51b815260206004820152601f60248201527f4e6f20746f6b656e7320617661696c61626c6520666f722072656c656173650060448201526064016101a0565b8084600101600082825461028e919061079a565b90915550506001546040516370a0823160e01b81523060048201526001600160a01b03909116906370a0823190602401602060405180830381865afa1580156102db573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102ff91906107ad565b8111156103455760405162461bcd60e51b8152602060048201526014602482015273496e73756666696369656e742062616c616e636560601b60448201526064016101a0565b83546001850154111561038a5760405162461bcd60e51b815260206004820152600d60248201526c15995cdd1a5b99c8195b991959609a1b60448201526064016101a0565b60015460405163a9059cbb60e01b8152336004820152602481018390526001600160a01b039091169063a9059cbb906044016020604051808303816000875af11580156103db573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103ff91906107c6565b5060405181815233907fc7798891864187665ac6dd119286e44ec13f014527aeeb2b8eb3fd413df931799060200160405180910390a250505050565b6001600160a01b0381166000908152600360208181526040808420815160a0810183528154815260018201549381019390935260028101549183019190915291820154606082015260049091015460ff161515608082018190526104b15760405162461bcd60e51b81526004016101a090610736565b60006104bc84610657565b90506000826040015182116104d657506000949350505050565b60008360400151836104e89190610781565b905083606001518185600001516104ff91906107e8565b61050991906107ff565b9695505050505050565b336000908152600360205260409020600481015460ff166105465760405162461bcd60e51b81526004016101a090610736565b6001600160a01b03821660009081526003602052604090206004015460ff16156105b25760405162461bcd60e51b815260206004820152601860248201527f4e657742656e656669636961727920697320416374697665000000000000000060448201526064016101a0565b6001600160a01b03821660008181526003602081905260408083208554815560018087015481830155600280880154818401558488015483860155600480890154938101805460ff909516151560ff19958616179055338088528588208881559384018890559183018790559482018690559301805490911690555190917f768099735d1c322a05a5b9d7b76d99682a1833d3f7055e5ede25e0f2eeaa8c6d91a35050565b6002546000904290829061066b9083610781565b9050600080548261067c91906107ff565b6001600160a01b038616600090815260036020818152604092839020835160a081018552815481526001820154928101929092526002810154938201849052918201546060820181905260049092015460ff16151560808201529293506106e3919061079a565b82106106fd5780604001518160600151610509919061079a565b50949350505050565b60006020828403121561071857600080fd5b81356001600160a01b038116811461072f57600080fd5b9392505050565b6020808252818101527f4e6f206163746976652076657374696e67207363686564756c6520666f756e64604082015260600190565b634e487b7160e01b600052601160045260246000fd5b818103818111156107945761079461076b565b92915050565b808201808211156107945761079461076b565b6000602082840312156107bf57600080fd5b5051919050565b6000602082840312156107d857600080fd5b8151801515811461072f57600080fd5b80820281158282048414176107945761079461076b565b60008261081c57634e487b7160e01b600052601260045260246000fd5b50049056fea264697066735822122072316cc586c2a8c967295ba7c6e33bc7890cf771f04ae131a2043a542556b2b264736f6c6343000811003300000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000120000000000000000000000000000000000000000000000000000000000000018000000000000000000000000000000000000000000000000000000000000001e00000000000000000000000000000000000000000000000000000000000015180000000000000000000000000f4340cf5f3891a3827713b33f769b501a0b5b1220000000000000000000000000000000000000000000000000000000000000002000000000000000000000000a17104869c50271fe81042c81beb3e5a694e605d000000000000000000000000b0d7b4d930f302018ee1d7caff22b0819b4d59e1000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000052b7d2dcc80cd2e4000000000000000000000000000000000000000000000000a56fa5b99019a5c800000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000024",
+        "gasUsed": "665332"
+      },
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get a list of "ERC-20 - Token Transfer Events" by Address
+Returns the list of ERC-20 tokens transferred by an address, with optional filtering by token contract.
+[Optional Parameters] startblock: starting blockNo to retrieve results, endblock: ending blockNo to retrieve results
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=tokentx
+&address=0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec
+&startblock=0
+&endblock=999999999
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=tokentx&address=0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec&startblock=0&endblock=999999999&sort=asc) 🔗
+
+or
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=tokentx
+&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2
+&page=1
+&offset=100
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=tokentx&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2&page=1&offset=100&sort=asc) 🔗
+
+or
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=tokentx
+&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2
+&address=0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec
+&page=1
+&offset=100
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=tokentx&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2&address=0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec&page=1&offset=100&sort=asc) 🔗
+
+Usage:
+- ERC-20 transfers from an address, specify the address parameter
+- ERC-20 transfers from a contract address, specify the contract address parameter
+- ERC-20 transfers from an address filtered by a token contract, specify both address and contract address parameters.
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check balance |
+| contractaddress | the `string` representing the token contract address to check for balance |
+| startblock | the `integer` block number to start searching for transactions |
+| endblock | the `integer` block number to stop searching for transactions |
+| page | the `integer` page number, if pagination is enabled |
+| offset | the number of transactions displayed per page |
+| sort | the sorting preference, use `asc` to sort by ascending and `desc` to sort by descending |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+   ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "blockNumber": "549641",
+        "timeStamp": "1713925552",
+        "hash": "0x8c61a31425cece813e512578358aaff625b5fc25a6a1c59380cdddd5278a9ea2",
+        "nonce": "1",
+        "blockHash": "0x1b3a6f75b3e44af80a846a895778317fe31edc1c84cb9bfb08898f429ea4ca03",
+        "from": "0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec",
+        "contractAddress": "0xfe9f969faf8ad72a83b761138bf25de87eff9dd2",
+        "to": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+        "value": "2107000",
+        "tokenName": "Tether USD",
+        "tokenSymbol": "USDT",
+        "transactionIndex": "0",
+        "gas": "107806",
+        "gasPrice": "125000009",
+        "gasUsed": "101193",
+        "cumulativeGasUsed": "0",
+        "input": "deprecated",
+        "confirmations": "8236"
+      },
+      {
+        "blockNumber": "492201",
+        "timeStamp": "1713753232",
+        "hash": "0x172f945ea91da4e92979c2a85388151f211c1ac40aa3e21f61233bdf6c8c0232",
+        "nonce": "32",
+        "blockHash": "0x5ecacd9d0f8e7f843908db85add0cbd5a6e9ba12e7a6bd4df519ceeab0b4eb06",
+        "from": "0x25ab3efd52e6470681ce037cd546dc60726948d3",
+        "contractAddress": "0xfe9f969faf8ad72a83b761138bf25de87eff9dd2",
+        "to": "0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec",
+        "value": "2107000",
+        "tokenName": "Tether USD",
+        "tokenSymbol": "USDT",
+        "transactionIndex": "0",
+        "gas": "153436",
+        "gasPrice": "105000007",
+        "gasUsed": "125699",
+        "cumulativeGasUsed": "0",
+        "input": "deprecated",
+        "confirmations": "65676"
+      }
+    ]
+  }
+  ```    
+
+  </TabItem>
+</Tabs>
+
+## Get a list of "ERC-721 - Token Transfer Events" by Address
+Returns the list of ERC-721 ( NFT ) tokens transferred by an address, with optional filtering by token contract.
+[Optional Parameters] startblock: starting blockNo to retrieve results, endblock: ending blockNo to retrieve results
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=tokennfttx
+&address=0xfec8a6cfacbf3da3e0c9988d59542eb6a5d49184
+&startblock=0
+&endblock=999999999
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=tokennfttx&address=0xfec8a6cfacbf3da3e0c9988d59542eb6a5d49184&startblock=0&endblock=999999999&sort=asc) 🔗
+
+or
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=tokennfttx
+&contractaddress=0x963c039406f8b10d3a0691328b4d2ae90fa43230
+&page=1
+&offset=100
+&sort=asc
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=tokennfttx&contractaddress=0x963c039406f8b10d3a0691328b4d2ae90fa43230&page=1&offset=100&sort=asc) 🔗
+
+or
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=tokennfttx
+&contractaddress=0x963c039406f8b10d3a0691328b4d2ae90fa43230
+&address=0xfec8a6cfacbf3da3e0c9988d59542eb6a5d49184
+&page=1
+&offset=100
+&sort=asc
+```
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=tokennfttx&contractaddress=0x963c039406f8b10d3a0691328b4d2ae90fa43230&address=0xfec8a6cfacbf3da3e0c9988d59542eb6a5d49184&page=1&offset=100&sort=asc) 🔗
+
+Usage:
+- ERC-721 transfers from an address, specify the address parameter
+- ERC-721 transfers from a contract address, specify the contract address parameter
+- ERC-721 transfers from an address filtered by a token contract, specify both address and contract address parameters.
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check balance |
+| contractaddress | the `string` representing the token contract address to check for balance |
+| startblock | the `integer` block number to start searching for transactions |
+| endblock | the `integer` block number to stop searching for transactions |
+| page | the `integer` page number, if pagination is enabled |
+| offset | the number of transactions displayed per page |
+| sort | the sorting preference, use `asc` to sort by ascending and `desc` to sort by descending |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+      
+  ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "blockNumber": "557453",
+        "timeStamp": "1713948988",
+        "hash": "0x9aa7501ca38b9984d6fd67ee65b44122ddb1523d7f1ea64d0dfdecd078fefb9e",
+        "nonce": "33",
+        "blockHash": "0x818173cb7faafda18f32e1418d880f475ec66967b308078254fbd008b3e82217",
+        "from": "0xfec8a6cfacbf3da3e0c9988d59542eb6a5d49184",
+        "contractAddress": "0x963c039406f8b10d3a0691328b4d2ae90fa43230",
+        "to": "0xbd24dcaa72e661ecc948a654437dafa1a6384e90",
+        "tokenID": "65001055500330754286618552158997555046548672384952399608215284533236886254591",
+        "tokenName": ".btr(XNAME on Bitlayer)",
+        "tokenSymbol": "XNAME",
+        "tokenDecimal": "0",
+        "transactionIndex": "0",
+        "gas": "520481",
+        "gasPrice": "100000007",
+        "gasUsed": "476443",
+        "cumulativeGasUsed": "0",
+        "input": "deprecated",
+        "confirmations": "28002"
+      },
+      {
+        "blockNumber": "557453",
+        "timeStamp": "1713948988",
+        "hash": "0x9aa7501ca38b9984d6fd67ee65b44122ddb1523d7f1ea64d0dfdecd078fefb9e",
+        "nonce": "33",
+        "blockHash": "0x818173cb7faafda18f32e1418d880f475ec66967b308078254fbd008b3e82217",
+        "from": "0x0000000000000000000000000000000000000000",
+        "contractAddress": "0x963c039406f8b10d3a0691328b4d2ae90fa43230",
+        "to": "0xfec8a6cfacbf3da3e0c9988d59542eb6a5d49184",
+        "tokenID": "65001055500330754286618552158997555046548672384952399608215284533236886254591",
+        "tokenName": ".btr(XNAME on Bitlayer)",
+        "tokenSymbol": "XNAME",
+        "tokenDecimal": "0",
+        "transactionIndex": "0",
+        "gas": "520481",
+        "gasPrice": "100000007",
+        "gasUsed": "476443",
+        "cumulativeGasUsed": "0",
+        "input": "deprecated",
+        "confirmations": "28002"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get list of Blocks Validated by Address
+Returns the list of blocks validated by an address.
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=getminedblocks
+&blocktype=blocks
+&address=0x0fac0285011992215edb080f14a2cc6ab629360b
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=getminedblocks&blocktype=blocks&address=0x0fac0285011992215edb080f14a2cc6ab629360b) 🔗
+
+or
+
+:::tip
+To get paginated results use `page=<page number>` and `offset=<max records to return>`
+:::
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=getminedblocks
+&blocktype=blocks
+&page=1
+&offset=100
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=getminedblocks&blocktype=blocks&page=1&offset=100) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| blocktype | the `string` pre-defined block type, either `blocks` for canonical blocks or `uncles` for uncle blocks only |
+| page | the `integer` page number, if pagination is enabled |
+| offset | the number of transactions displayed per page |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+  
+  Sample Response
+
+   ```json
+  {  
+    "status":"1",
+    "message":"OK",
+    "result":[
+      {
+        "blockNumber": "1189703",
+        "timeStamp": "1715845738",
+        "blockReward": "0"
+      },
+      {
+        "blockNumber": "1189683",
+        "timeStamp": "1715845678",
+        "blockReward": "0"
+      },
+      {
+        "blockNumber": "1189663",
+        "timeStamp": "1715845618",
+        "blockReward": "0"
+      },
+      {
+        "blockNumber": "1189643",
+        "timeStamp": "1715845558",
+        "blockReward": "0"
+      },
+      {
+        "blockNumber": "1189623",
+        "timeStamp": "1715845498",
+        "blockReward": "0"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>

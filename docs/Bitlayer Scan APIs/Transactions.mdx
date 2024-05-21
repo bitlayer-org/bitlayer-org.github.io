@@ -1,0 +1,46 @@
+---
+sidebar_position: 3
+title: Transactions
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+## Check Transaction Receipt Status
+The status field returns 0 for failed transactions，1 for successful transactions and 2 for pending transactions.
+
+```json
+https://api.btrscan.com/scan/api
+?module=transaction
+&action=gettxreceiptstatus
+&txhash=0x18498177bda7bac2d36cf43b1d5ff682d533d7114a9dd8d4b626ce6f96aa5013
+```
+
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=transaction&action=gettxreceiptstatus&txhash=0x18498177bda7bac2d36cf43b1d5ff682d533d7114a9dd8d4b626ce6f96aa5013) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| txhash | the `string` representing the transaction hash to check the execution status |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+
+  ```json
+  {
+    "status": "1",
+    "message": "OK",
+    "result": {
+      "status": "1"
+    }
+  }
+  ```
+  </TabItem>
+</Tabs>

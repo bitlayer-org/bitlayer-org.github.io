@@ -1,0 +1,128 @@
+---
+sidebar_position: 5
+title: Logs
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Get Event Logs by Address
+Returns the event logs from an address, with optional filtering by block range.
+
+```json
+https://api.btrscan.com/scan/api
+?module=logs
+&action=getLogs
+&address=0x42857b399adba34b75d6bedcacde75c7784e87c6
+&fromBlock=585180
+&toBlock=585189
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=logs&action=getLogs&address=0x42857b399adba34b75d6bedcacde75c7784e87c6&fromBlock=585180&toBlock=585189) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check for logs |
+| startblock | the `integer` block number to start searching for transactions |
+| toBlock | the `integer` block number to stop searching for transactions |
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+    
+  ```json
+  {
+    "status": "1",
+    "message": "OK",
+    "result": [
+      {
+        "address": "0x42857b399adba34b75d6bedcacde75c7784e87c6",
+        "topics": [
+        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+        "0xfabf3909f1b538697092793867e2118600b63b14fa641bb49f83a02b18d47f0d",
+        "0x0000000000000000000000003528c7b21cd34fe32cdda2806cb2e18a4659e8c1",
+        "0x0000000000000000000000005798c0c8cc396da77aaa68c0722b70926f98946c"
+        ],
+        "data": "0x",
+        "blockNumber": "0x8ede2",
+        "blockHash": "0xfd7f02f18b6c82c765c57b9817438c93a80238b71942d58c7e3219c9a688b5c1",
+        "timeStamp": "0x662a0e3b",
+        "gasPrice": "0x59682f07",
+        "gasUsed": "0xc8e1",
+        "logIndex": "0x0",
+        "transactionHash": "0xc914f58fafbad9ba2197cfb706c1e93ab20860de4d3fd17c8b0ae396dc8862c1",
+        "transactionIndex": "0x0"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
+
+## Get Event Logs by Address filtered by Topics
+Returns the event logs from an address, filtered by topics and block range.
+
+```json
+https://api.btrscan.com/scan/api
+?module=logs
+&action=logs
+&address=0x68879ca2af24941fc3b6eb89fdb26a98aa001fc1
+&fromBlock=1191962
+&toBlock=1191964
+&topic0=0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925
+&topic0_1_opr=and
+&topic1=0x0000000000000000000000009d9b993fa37ed15a38ac111b02077e2bfe5c1d37
+```
+Usage:
+- For a single topic, specify the topic number such as topic0, topic1, topic2, topic3
+- For multiple topics, specify the topic numbers and topic operator either and or or such as belowtopic0_1_opr (and|or between topic0 & topic1), topic1_2_opr (and|or between topic1 & topic2) topic2_3_opr (and|or between topic2 & topic3), topic0_2_opr (and|or between topic0 & topic2) topic0_3_opr (and|or between topic0 & topic3), topic1_3_opr (and|or between topic1 & topic3)
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=logs&action=logs&address=0x68879ca2af24941fc3b6eb89fdb26a98aa001fc1&fromBlock=1191962&toBlock=1191964&topic0=0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925&topic0_1_opr=and&topic1=0x0000000000000000000000009d9b993fa37ed15a38ac111b02077e2bfe5c1d37) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| address | the `string` representing the address to check for logs |
+| fromBlock | the `integer` block number to start searching for transactions |
+| toBlock | the `integer` block number to start searching for transactions |
+| topic | the topic numbers to search for limited `totopic0`, `topic1`, `topic2`, `topic3` |
+| topicOperator | the topic operator when multiple topic combinations are used limited to `and` or `or` |
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+  
+  ```json
+  {
+    "status": "1",
+    "message": "OK",
+   "result": [
+      {
+        "address": "0x68879ca2af24941fc3b6eb89fdb26a98aa001fc1",
+        "topics": [
+          "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+          "0x0000000000000000000000009d9b993fa37ed15a38ac111b02077e2bfe5c1d37",
+          "0x0000000000000000000000006c85a831a945ba9b565d500a3a9e107a0aad868e"
+        ],
+        "data": "0x000000000000000000000000000000000000027716b6a0adc2d677c080000000",
+        "blockNumber": "0x12301b",
+        "blockHash": "0x0a6e405fac20bba7395f6f4363a4b18be6838d2b7c73ef6e7a1abca01de82951",
+        "timeStamp": "0x6645d4e6",
+        "gasPrice": "0x5f5e107",
+        "gasUsed": "0xb507",
+        "logIndex": "0x0",
+        "transactionHash": "0x7ba24f7b5bb5dcfdfeb4bacf587e0a8e63c7d7c39b9a5d05a0337c232a8b230d",
+        "transactionIndex": "0x0"
+      }
+    ]
+  }
+  ```
+  </TabItem>
+</Tabs>
