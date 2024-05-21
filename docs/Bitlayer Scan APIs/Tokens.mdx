@@ -1,0 +1,86 @@
+---
+sidebar_position: 6
+title: Tokens
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Get ERC20-Token TotalSupply (aka MaxSupply) by ContractAddress
+Returns the current amount of an ERC-20 token in circulation.
+
+```json
+https://api.btrscan.com/scan/api
+?module=token
+&action=tokensupply
+&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=token&action=tokensupply&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| contractaddress | the `contract address` of the ERC-20 token |
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+
+  ```json
+  {
+    "status": "1",
+    "message": "OK",
+    "result": "20000000000"
+  }
+  ```
+:::tip The result is returned in the token's smallest decimal representation
+  Eg. a token with a balance of 215.241526476136819398 and 18 decimal places will be returned as 215241526476136819398
+:::
+  </TabItem>
+</Tabs>
+
+## Get ERC20-Token Account Balance for TokenContractAddress
+Returns the current balance of an ERC-20 token of an address.
+
+```json
+https://api.btrscan.com/scan/api
+?module=account
+&action=tokenbalance
+&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2
+&address=0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec
+&tag=latest
+```
+
+Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=account&action=tokenbalance&contractaddress=0xfe9f969faf8ad72a83b761138bf25de87eff9dd2&address=0x718e5b4f5b007bceb7ad6ce8c2629cea767fc4ec&tag=latest) 🔗
+
+<Tabs>
+  <TabItem value="request" label="Request" default>
+    Query Parameters
+
+| Parameter | Description                                            |
+|---|---|
+| contractaddress | the `contract address` of the ERC-20 token |
+| address | the `string` representing the address to check for token balance |
+
+
+    
+  </TabItem>
+  <TabItem value="response" label="Response">
+
+  Sample Response
+
+  ```json
+  {
+    "status": "1",
+    "message": "OK",
+    "result": 0
+  }
+  ```
+  </TabItem>
+</Tabs>
