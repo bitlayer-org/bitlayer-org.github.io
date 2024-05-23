@@ -23,7 +23,7 @@ For detailed insights into our technical architecture, please refer to the [Bitl
 
 ### Can I Start Using Bitlayer Today?
 
-According to our [roadmap](/docs/Introduction/Roadmap.md), we, the Bitlayer Mainnet-V1 has launched and we are also glad to offer a testnet environment where you can experiment with Bitlayer's capabilities. Please refer to our [Quick Start Guide](/docs/Build/QuickStart) to get started with our test network and explore the infinite possibilities of Bitcoin on both Bitlayer Testnet and Mainnet.
+According to our [roadmap](/docs/Introduction/Roadmap), we, the Bitlayer Mainnet-V1 has launched and we are also glad to offer a testnet environment where you can experiment with Bitlayer's capabilities. Please refer to our [Quick Start Guide](/docs/Build/QuickStart) to get started with our test network and explore the infinite possibilities of Bitcoin on both Bitlayer Testnet and Mainnet.
 
 ### What Lies Ahead for Bitlayer?
 We have launched the Bitlayer Mainnet-V1 in early April, our journey to further security&decentralization is far from over. We are committed to decentralizing each component of the stack, ensuring a resilient and robust network. Stay updated on our progress by following our [Twitter](https://twitter.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also connect with us on [Medium](https://medium.com/@Bitlayer) to stay abreast of the latest Bitlayer developments.
