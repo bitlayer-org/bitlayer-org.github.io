@@ -2,12 +2,13 @@
 sidebar_position: 2
 ---
 
-# The Graph
+# Indexing-The-Graph
+
 `Graph Node` is a protocol for building decentralized applications (dApps) quickly on Ethereum and IPFS using GraphQL.
 - [Official website](https://thegraph.com/)
 - [Github](https://github.com/graphprotocol/graph-node)
-## Usage
-### The Graph Official
+
+## The Graph Official
 The Graph official has not support bitlayer, will coming soon.
 
 ### Project Local Graph Node

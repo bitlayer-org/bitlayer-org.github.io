@@ -13,10 +13,10 @@ sidebar_position: 1
 
 - For Dapp developers, it's recommended that setting the `maxPriorityFeePerGas` by code before calling apis to send the transaction, rather then leave it empty (filled by the default strategy of wallet (e.g. Metamask) or SDK).
 
-### Important notice for Metamask users
+## 获取 Gas
 
-MetaMask automatically recommends a minimum "Priority Fee" (`maxPriorityFeePerGas`) of 1 gwei, which is way more than Bitlayer's minimum requirement. This can lead to transaction fees much higher than necessary.
+There are multiple way to get BTC gas on Bitlayer:
 
-Here's a screenshot of how to set the `Priority Fee`:
+1. Visit https://www.bitlayer.org/bridge
 
-![metamaskgas](</img/BitlayerNetwork/metamaskgas.png>)
+2. Visit https://www.bitlayer.org/gas-swap 

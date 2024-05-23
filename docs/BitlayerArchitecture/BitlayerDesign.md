@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Overview of Bitlayer's Design
 
-Link for Technical White Paper: [Bitlayer: A Bitcoin Computational Layer Architecture Based on the BitVM Paradigm](https://static.bitlayer.org/Bitlayer-Technical-Whitepaper.pdf)
+## Technical White Paper
+
+[Bitlayer: A Bitcoin Computational Layer Architecture Based on the BitVM Paradigm](https://static.bitlayer.org/Bitlayer-Technical-Whitepaper.pdf)
 
 ## Introduction
 Bitlayer has revolutionized the verification process for Layer 2 transactions using optimistic execution, while keeping the Bitcoin protocol intact. Its architecture comprises transaction processing, verification, and asset bridging components. Transaction processing involves a sequencer and a Layered Virtual Machine (LVM), optimizing transaction handling and computational efficiency. Transaction verification, managed by provers and challengers, ensures transaction validity and compliance with network rules. They collaborate to complete the entire process from Layer 2 transaction handling to Layer 1 confirmation, maintaining transaction security and integrity throughout the process. Bitlayer's assets bridge components further enhance its capabilities by enabling interoperability between Layer 2 and Layer 1 networks, facilitating secure asset transfer across blockchain layers.

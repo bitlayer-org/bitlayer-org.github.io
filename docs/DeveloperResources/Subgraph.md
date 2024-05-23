@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# Subgraph 
+# Indexing-3rd-Party 
 
 ## What is a Subgraph?
 Subgraph is a customized, open-source solution for indexing and accessing real-time blockchain data through the GraphQL API. They provide developers with powerful tools to build, customize and access blockchain data according to their needs.
