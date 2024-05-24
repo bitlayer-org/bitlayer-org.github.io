@@ -13,7 +13,7 @@ sidebar_position: 1
 
 - For Dapp developers, it's recommended that setting the `maxPriorityFeePerGas` by code before calling apis to send the transaction, rather then leave it empty (filled by the default strategy of wallet (e.g. Metamask) or SDK).
 
-## 获取 Gas
+## Get BTC Gas
 
 There are multiple way to get BTC gas on Bitlayer:
 
