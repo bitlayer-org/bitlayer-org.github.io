@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[1713],{3457:function(e){e.exports=JSON.parse('{"Hello Bitlayer":{"allTagsPath":"/blog/tags","slug":"/blog/tags/hello-bitlayer","name":"Hello Bitlayer","count":1,"permalink":"/blog/tags/hello-bitlayer"}}')}}]);
