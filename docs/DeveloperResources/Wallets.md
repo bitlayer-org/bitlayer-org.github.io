@@ -5,6 +5,7 @@ sidebar_position: 1
 # Supported Wallets for Bitlayer
 
 ## EVM-Compatible Wallets
+
 For interacting with Ethereum and other EVM networks, Bitlayer supports wallets such as:
 
 - [OKX Wallet](https://www.okx.com/web3) - A versatile wallet for secure transactions.
@@ -13,6 +14,7 @@ For interacting with Ethereum and other EVM networks, Bitlayer supports wallets 
 *EVM-compatible wallets allow you to execute smart contracts and interact with decentralized applications across various EVM networks.*
 
 ## Bitcoin-Exclusive Wallets
+
 For Bitcoin transactions, Bitlayer is compatible with wallets designed specifically for Bitcoin, including:
 
 - [Unisat](https://chat.openai.com/c/f352b17c-69a1-457f-be41-a98fd00a8dfc#) - A secure wallet for Bitcoin enthusiasts.
@@ -27,3 +29,13 @@ For Bitcoin transactions, Bitlayer is compatible with wallets designed specifica
 - Bitcoin Mainnet (for real Bitcoin transactions)
 
 *Choosing the right network is essential for your transactions. The Testnet is ideal for practice and development, while the Mainnet is used for actual transactions.*
+
+## Multi-Signature Smart Contract Wallet
+
+Bitlayer provides a robust multi-signature smart contract wallet solution called Bitlayer Multisig. This wallet enhances security by requiring multiple signatures to approve transactions, ensuring that no single person can compromise the funds.
+
+[Create a Bitlayer Multisig Wallet](http://multisign.bitlayer.org)
+
+## MPC Wallet
+
+Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced security and privacy. A notable MPC wallet supported by Bitlayer is provided by [Sinohope](https://sinohope.com).

@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
@@ -39,7 +39,14 @@ const config = {
       }),
     ],
   ],
-
+plugins:[
+  [
+    require.resolve("@easyops-cn/docusaurus-search-local"),
+    ({
+      hashed: true,
+    }),
+  ],
+],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
