@@ -34,8 +34,9 @@ For Bitcoin transactions, Bitlayer is compatible with wallets designed specifica
 
 Bitlayer provides a robust multi-signature smart contract wallet solution called Bitlayer Multisig. This wallet enhances security by requiring multiple signatures to approve transactions, ensuring that no single person can compromise the funds.
 
-[Create a Bitlayer Multisig Wallet](http://multisign.bitlayer.org)
+- [Bitlayer Multisig Wallet](http://multisign.bitlayer.org)
 
 ## MPC Wallet
 
-Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced security and privacy. A notable MPC wallet supported by Bitlayer is provided by [Sinohope](https://sinohope.com).
+Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced security and privacy. 
+- [Sinohope](https://sinohope.com)
