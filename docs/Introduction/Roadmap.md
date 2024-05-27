@@ -7,8 +7,10 @@ The vision of Bitlayer will be realized through the rollout of a mainnet in mult
 
 ![Roadmap](/img/Introduction/roadmap2.png)
 
-## First Stage: Bitlayer Mainnet-V1
-In this initial phase, Bitlayer will support the cross-chain movement of BTC/BRC-20 assets between the Bitcoin mainnet and Bitlayer, and other mainstream assets, thereby enriching the overall value of the Bitlayer ecosystem.
+## First Stage: Bitlayer PoS
+In this initial phase, Bitlayer adopts the best security model: PoS + Multisig, working with multiple MPC custody platforms, ultilizing 100% EVM-Compatible environment to onboard users and developers.
+
+Bitlayer PoS supports the cross-chain movement between BTC/EVM/Other Blockchains and Bitlayer, thereby enriching the overall value of the Bitlayer ecosystem.
 
 During this stage, we will prioritize offering a 100% EVM-compatible development kit and ecosystem support, enabling developers to quickly build, test, and deploy applications on Bitlayer. Solidity applications can be seamlessly migrated, providing early users with the benefits of low gas fees and an extensible Bitcoin framework.
 

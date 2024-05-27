@@ -1,6 +1,6 @@
 {
   "label": "Bitlayer Scan APIs",
-  "position": 5,
+  "position": 7,
   "link": {
     "type": "generated-index",
     "description": "The Bitlayer Chain Developer APIs are provided as a community service and without warranty, so please use what you need and no more. We support both GET/POST requests and there is a rate limit of 5 calls per sec/IP.  Note: Source attribution via a link back or mention that your app is ''Powered by api-testnet.bitlayer.org/scan APIs'' is required except for personal/private usage."
