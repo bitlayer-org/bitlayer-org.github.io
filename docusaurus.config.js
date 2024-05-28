@@ -46,6 +46,14 @@ plugins:[
       hashed: true,
     }),
   ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-PQ6ML9HQ38', // Replace with your GA4 measurement ID
+        anonymizeIP: true, // Optional, anonymize the IP addresses
+      },
+    ],
+  
 ],
 
   themeConfig:
