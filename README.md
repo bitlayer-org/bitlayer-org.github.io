@@ -15,12 +15,7 @@ just skip this step if preview locally is not needed.
 make sure you have node, python and npm installed on your system. 
 
 ```bash
-cd bitlayer-org.github.io
-npm ci
-npm run build
-cd build
-python -m SimpleHTTPServer 8000  # python3 -m http.server 8000
-# http://127.0.0.1:8000
+yarn start
 ```
 
 ## Publish
