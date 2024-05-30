@@ -14,7 +14,7 @@ When integrating Bitlayer with Bitcoin or Bitcoin-compatible chains, it is recom
 
 ### Proof of Reserve
 
-You can find the Proof of Reserve here [POR](/docs/BitlayerNetwork/POR).
+You can find the Proof of Reserve information here [POR](/docs/BitlayerNetwork/POR).
 
 ### BTC to Bitlayer
 
