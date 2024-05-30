@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Bitlayer vs. Ethereum
+# Bitlayer VS. Ethereum
 
 This document compares Bitlayer and Ethereum across several key aspects including gas prices, and support for EVM and Solidity versions, providing insights for both developers and users.
 
