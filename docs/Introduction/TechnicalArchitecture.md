@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Architecture(Bicoin Finality-WIP)
+# Architecture[WIP]
 
 ![Architecture](/img/Introduction/Architecture.png)
 
