@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Proof of Reserve
 
+> The following are POR of Official Bridge, not including the 3rd party bridges.
+
 ## BTC Assets
 
 ### BTC
