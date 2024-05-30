@@ -12,11 +12,16 @@ Bridges play a crucial role in connecting Bitlayer with other blockchain network
 
 When integrating Bitlayer with Bitcoin or Bitcoin-compatible chains, it is recommended to utilize bridge solutions such as UniSats, OKX, or Xverse. These bridges enable the transfer of assets between Bitlayer's Layer 2 solution and the Bitcoin blockchain. By bridging the gap between Bitlayer and Bitcoin, users can enjoy the benefits of Bitlayer's EVM compatibility while leveraging the security and liquidity of the Bitcoin network.
 
+### Proof of Reserve
+
+You can find the Proof of Reserve here [POR](/docs/BitlayerNetwork/POR).
+
 ### BTC to Bitlayer
 
 Mainnet-V1: The Bitlayer team is working with multiple MPC custody platforms, including Coinbase and Sinohope (HK.1611), to secure the assets.
 
-### EVM to Bitlayer
+
+### EVM to Bitlayer 
 
 The Bitlayer team builds the trustless bridge together with the [Polyhedra](https://x.com/PolyhedraZK) team.
 
