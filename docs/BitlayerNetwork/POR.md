@@ -25,7 +25,7 @@ bc1pxpp82hc4t4flkyqtjdnzr3q72qh9st78gfge50vzlrjtp9c6yn4s5zq5vk
 
 
 
-## EVM
+## Ethereum
 
 ```
 0xA4252F2A68b2A078c86E0569eB7Fb872A37864AF
