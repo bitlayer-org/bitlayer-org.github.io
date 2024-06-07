@@ -4,7 +4,11 @@ sidebar_position: 60
 
 # JSON-RPC
 
-Bitlayer provides all JSON-RPC API methods listed on [Ethereum](https://ethereum.org/developers/docs/apis/json-rpc#json-rpc-methods) along with several custom methods.
+Bitlayer provides all JSON-RPC API methods listed on [Ethereum](https://ethereum.org/developers/docs/apis/json-rpc#json-rpc-methods) , but currently with `eth_feeHistory` disabled. Because there's some issue for Metamask users when priority fee per gas is less than `1 gwei`, and we want to avoid our users spending unnecessary high fee.  
+
+If you rely on `eth_feeHistory`, you can try `eth_feeHistory2` instead.
+
+And besides, Bitlayer added several custom methods as follows.
 
 ## eth_getTraceActionByTxHash
 This method returns logs of internal transactions by the hash of a transaction.
