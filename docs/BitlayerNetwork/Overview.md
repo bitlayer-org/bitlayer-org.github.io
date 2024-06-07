@@ -9,7 +9,6 @@ sidebar_position: 10
 | Gas token(Native token) | BTC | Come from Bitcoin chain through official bridge |
 | Project token | [BTR](https://www.btrscan.com/address/0x0e4cf4affdb72b39ea91fa726d291781cbd020bf?tab=Transactions) | Not yet TGE |
 | Networks info | refer to [Networks](./Networks.md) |  |
-| Consensus | DPoSA | Stake BTR, the staking DAPP is under building |
 | Block interval | 3 seconds |  |
 | Block gasLimit | 40,000,000 | Can support more than `100 million` gas, and will increase capacity in time according to network congestion |
 | Will block reorg? | Yes |  |
