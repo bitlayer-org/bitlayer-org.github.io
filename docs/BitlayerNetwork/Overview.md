@@ -6,7 +6,7 @@ sidebar_position: 10
 
 | Item | Value | Note |
 | :--- | --- | --- |
-| Gas token(Native token) | BTC | Come from Bitcoin chain through official bridge |
+| Gas token(Native token) | BTC (decimals: 18) | Come from Bitcoin chain through official bridge, but with 18 decimals on Bitlayer |
 | Project token | [BTR](https://www.btrscan.com/address/0x0e4cf4affdb72b39ea91fa726d291781cbd020bf?tab=Transactions) | Not yet TGE |
 | Networks info | refer to [Networks](./Networks.md) |  |
 | Block interval | 3 seconds |  |
