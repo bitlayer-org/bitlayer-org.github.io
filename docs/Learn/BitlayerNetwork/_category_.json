@@ -1,7 +1,7 @@
 {
     "label": "V1: Bitlayer PoS",
     "position": 3,
-    "link": {
-      "type": "generated-index"
-    }
+    "link": null,
+    "collapsed": false
+
   }

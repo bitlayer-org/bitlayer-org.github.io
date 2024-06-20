@@ -52,5 +52,5 @@ Email: build@bitlayer.org
 ### Q: Is there a rate-limits on Public RPC URLs? What should I do if I hit the rate-limits issue?
 A: Yes, the rate-limits is 30 rps default for both mainnet and testnet.  
 When requests reached rate-limits, you can  
-&emsp;&emsp;(1) Refer to [Compile and Run](../Build/Compile%20and%20Run.md) to build your own rpc node.  
+&emsp;&emsp;(1) Refer to [Compile and Run](../../Build/Getting-Started/compile-and-run) to build your own rpc node.  
 &emsp;&emsp;(2) Or refer to [ankr](https://www.ankr.com/rpc/bitlayer/) to buy a paid plan.

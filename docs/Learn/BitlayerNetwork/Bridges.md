@@ -16,7 +16,7 @@ Bitlayer is connected to multiple blockchains including Bitcoin, EVM chains thro
 
 #### Proof of Reserve
 
-You can find the Proof of Reserve information here: [POR page](/docs/BitlayerNetwork/POR).
+You can find the Proof of Reserve information here: [POR page](/docs/Learn/BitlayerNetwork/POR).
 
 #### BTC to Bitlayer
 

@@ -22,16 +22,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // id: 'docs', // omitted => default instance
           routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -39,13 +36,13 @@ const config = {
       }),
     ],
   ],
-plugins:[
-  [
-    require.resolve("@easyops-cn/docusaurus-search-local"),
-    ({
-      hashed: true,
-    }),
-  ],
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+      },
+    ],
     [
       '@docusaurus/plugin-google-gtag',
       {
@@ -53,8 +50,7 @@ plugins:[
         anonymizeIP: true, // Optional, anonymize the IP addresses
       },
     ],
-  
-],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -68,15 +64,22 @@ plugins:[
         },
         items: [
           {
-            to: '/docs/Introduction',   // To highlight the navbar item, you must link to a document, not a top-level directory
+            to: '/docs/Learn/Introduction', // Link to a document, not a top-level directory
             position: 'left',
-            label: 'Build Now',
-            activeBaseRegex: `/docs/`,
+            label: 'Learn',
+            activeBaseRegex: `/docs/Learn`,
           },
           {
-            href: 'https://medium.com/@Bitlayer',
+            to: '/docs/Build/GettingStarted/QuickStart', // Link to a document, not a top-level directory
+            position: 'left',
+            label: 'Build',
+            activeBaseRegex: `/docs/Build`,
+          },
+
+          {
+            href: 'https://blog.bitlayer.org/',
             label: 'Blog',
-            position: 'left'
+            position: 'left',
           },
           {
             href: 'https://github.com/bitlayer-org',
@@ -92,8 +95,12 @@ plugins:[
             title: 'Docs',
             items: [
               {
-               label: 'Build Now',
-               to: '/docs/Introduction',
+                label: 'Learn',
+                to: '/docs/Learn/Introduction',
+              },
+              {
+                label: 'Build',
+                to: '/docs/Build/Getting-Started',
               },
             ],
           },
