@@ -100,7 +100,7 @@ const config = {
               },
               {
                 label: 'Build',
-                to: '/docs/Build/Getting-Started',
+                to: '/docs/Build/GettingStarted',
               },
             ],
           },
