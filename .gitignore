@@ -15,7 +15,6 @@ package-lock.json
 site
 
 yarn-error.log
-build
 coverage
 .docusaurus
 .cache-loader
