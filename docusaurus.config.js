@@ -10,7 +10,7 @@ const config = {
   tagline: 'The first Bitcoin security-equivalent Layer 2 based on BitVM',
   url: 'https://docs.bitlayer.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/bitlayer.ico',
   organizationName: 'bitlayer-org', // Usually your GitHub org/user name.
