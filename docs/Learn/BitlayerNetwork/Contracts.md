@@ -15,6 +15,10 @@ sidebar_position: 70
 
 - Multicall_v1 : [0xc8818aaeaBF0dF9f3f3ffF54Ab185705177A6234](https://www.btrscan.com/address/0xc8818aaeabf0df9f3f3fff54ab185705177a6234?tab=Transactions)
 
+- Multicall_v2 : [0x53cdc1876d82a095d9669192cdf0614fbb76c0ae](https://www.btrscan.com/address/0x53cdc1876d82a095d9669192cdf0614fbb76c0ae?tab=Transactions)
+
+- Multicall_v3 : [0x5B256fE9e993902eCe49D138a5b1162cBb529474](https://www.btrscan.com/address/0x5B256fE9e993902eCe49D138a5b1162cBb529474?tab=Transactions)
+
 - WBTC : [0xfF204e2681A6fA0e2C3FaDe68a1B28fb90E4Fc5F](https://www.btrscan.com/address/0xff204e2681a6fa0e2c3fade68a1b28fb90e4fc5f?tab=Transactions)
 
 ## Contract Addresses (Testnet)
@@ -27,5 +31,9 @@ sidebar_position: 70
 - Vault : [0x7765992cAE0Cd7DC02e2B5857a375b0B090933b5](https://testnet-scan.bitlayer.org/address/0x7765992cae0cd7dc02e2b5857a375b0b090933b5?tab=Transactions)
 
 - Multicall_v1 : [0x688f1Dac2a07BDCE6e7781Ab1177880fC8d13AE3](https://testnet-scan.bitlayer.org/address/0x688f1dac2a07bdce6e7781ab1177880fc8d13ae3?tab=Transactions)
+
+- Multicall_v2 : [0x53cdc1876d82a095d9669192cdf0614fbb76c0ae](https://testnet.btrscan.com/address/0x53cdc1876d82a095d9669192cdf0614fbb76c0ae?tab=Transactions)
+
+- Multicall_v3 : [0x5b256fe9e993902ece49d138a5b1162cbb529474](https://testnet.btrscan.com/address/0x5b256fe9e993902ece49d138a5b1162cbb529474?tab=Transactions)
 
 - WBTC : [0x3e57d6946f893314324C975AA9CEBBdF3232967E](https://testnet-scan.bitlayer.org/address/0x3e57d6946f893314324c975aa9cebbdf3232967e?tab=Transactions)
