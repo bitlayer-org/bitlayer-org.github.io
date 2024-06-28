@@ -12,8 +12,6 @@ git checkout -b main origin/main
 ## Preview locally
 just skip this step if preview locally is not needed. 
 
-make sure you have node, python and npm installed on your system. 
-
 ```bash
 yarn start
 ```

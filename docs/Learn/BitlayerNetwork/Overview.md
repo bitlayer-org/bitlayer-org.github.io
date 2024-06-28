@@ -14,8 +14,8 @@ sidebar_position: 10
 | Will block reorg? | Yes |  |
 | Finality | very high probability safe with `15 blocks confirmations`; <br/>**absolutely safe** with `21 blocks confirmations` | refer to [About Finality](./AboutFinality.md) |
 | EIP-1559 supported | Yes | But the base fee will not be burned |
-| Priority fee per gas requied | 0.1 gwei |  |
-| Minimum gasPrice for legacy transaction | 0.100000007 gwei |  |
+| Priority fee per gas requied | 0.05 gwei |  |
+| Minimum gasPrice for legacy transaction | 0.050000007 gwei |  |
 | EVM compatibility | Supported up to `Cancun` | But without opcode `PREVRANDAO`, `BLOBHASH`, and `BLOBBASEFEE`, <br/>do NOT support `Blob transaction` |
 | Solidity version supported | ≤ 0.8.25 |  |
 | Geth json-rpc compatibility | Fully support but with `eth_feeHistory` disabled | Can use `eth_feeHistory2` instead, <br/>because there's some issue for Metamask users when priority fee per gas is less than `1 gwei`, and we want to avoid our users spending unnecessary high fee. |
