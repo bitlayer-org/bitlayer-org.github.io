@@ -9,15 +9,17 @@ sidebar_position: 70
 
 - BTR : [0x0E4cF4Affdb72b39Ea91fA726D291781cBd020bF](https://www.btrscan.com/address/0x0e4cf4affdb72b39ea91fa726d291781cbd020bf?tab=Transactions)
 
-- Deterministic Deployment Proxy : [0x4e59b44847b379578588920ca78fbf26c0b4956c](https://www.btrscan.com/address/0x4e59b44847b379578588920ca78fbf26c0b4956c?tab=Transactions)
-
 - Vault : [0xDDf655d9afd934b4851873ba55A678dc82282D4a](https://www.btrscan.com/address/0xddf655d9afd934b4851873ba55a678dc82282d4a?tab=Transactions)
+
+- Deterministic Deployment Proxy : [0x4e59b44847b379578588920ca78fbf26c0b4956c](https://www.btrscan.com/address/0x4e59b44847b379578588920ca78fbf26c0b4956c?tab=Transactions)
 
 - Multicall_v1 : [0xc8818aaeaBF0dF9f3f3ffF54Ab185705177A6234](https://www.btrscan.com/address/0xc8818aaeabf0df9f3f3fff54ab185705177a6234?tab=Transactions)
 
 - Multicall_v2 : [0x53cdc1876d82a095d9669192cdf0614fbb76c0ae](https://www.btrscan.com/address/0x53cdc1876d82a095d9669192cdf0614fbb76c0ae?tab=Transactions)
 
 - Multicall_v3 : [0x5B256fE9e993902eCe49D138a5b1162cBb529474](https://www.btrscan.com/address/0x5B256fE9e993902eCe49D138a5b1162cBb529474?tab=Transactions)
+
+- MultiTokenBalanceQuery : [0x69cb4d2511c81a52fc8d6f8e7ef6a650645a1a21](https://www.btrscan.com/address/0x69cb4d2511c81a52fc8d6f8e7ef6a650645a1a21)
 
 - WBTC : [0xfF204e2681A6fA0e2C3FaDe68a1B28fb90E4Fc5F](https://www.btrscan.com/address/0xff204e2681a6fa0e2c3fade68a1b28fb90e4fc5f?tab=Transactions)
 
