@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Overview of Bitlayer V1
+# Overview
 
 | Item | Value | Note |
 | :--- | --- | --- |

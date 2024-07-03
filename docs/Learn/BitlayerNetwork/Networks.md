@@ -2,7 +2,7 @@
 sidebar_position: 30
 ---
 
-# Networks and RPC Enpoints
+# Network
 
 This reference guide provides a listing of the different Bitlayer networks and public RPC endpoints.
 

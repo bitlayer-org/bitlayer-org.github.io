@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Overview of Bitlayer's Design
+# Architecture Design
 
 ## Technical White Paper
 

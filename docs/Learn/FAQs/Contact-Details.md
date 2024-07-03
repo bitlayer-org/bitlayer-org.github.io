@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Contact Details
+# Contact Us
 
 Website：https://www.bitlayer.org/
 

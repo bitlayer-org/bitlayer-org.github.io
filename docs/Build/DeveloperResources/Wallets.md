@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Supported Wallets for Bitlayer
+# Wallets
 
 ## EVM-Compatible Wallets
 
@@ -22,21 +22,17 @@ For Bitcoin transactions, Bitlayer is compatible with wallets designed specifica
 
 *Bitcoin-only wallets provide optimized features for handling Bitcoin transactions and secure storage.*
 
-## Networks Supported
-
-- EVM Networks (e.g., Ethereum Mainnet, Binance Smart Chain)
-- Bitcoin Testnet (for testing and development purposes)
-- Bitcoin Mainnet (for real Bitcoin transactions)
-
-*Choosing the right network is essential for your transactions. The Testnet is ideal for practice and development, while the Mainnet is used for actual transactions.*
-
-## Multi-Signature Smart Contract Wallet
+## Multi-Sig Wallet
 
 Bitlayer provides a robust multi-signature smart contract wallet solution called Bitlayer Multisig. This wallet enhances security by requiring multiple signatures to approve transactions, ensuring that no single person can compromise the funds.
 
 - [Bitlayer Multisig Wallet](http://multisign.bitlayer.org)
 
-## MPC Wallet
+## Account Abstraction Wallets
+
+- [Particle](/docs/hidden/build/BTC-Connect.md)
+
+## MPC Wallets
 
 Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced security and privacy. 
 - [Sinohope](https://sinohope.com)
