@@ -33,9 +33,9 @@ Bitlayer provides a robust multi-signature smart contract wallet solution called
 Bitlayer supports various account abstraction wallets, including:
 
 - [Particle](../../Hidden/Build/BTC-Connect.md)
-- [echooo](https://www.echooo.xyz/)
-- [holdstation](https://holdstation.com/)
-- [komet](https://komet.me/)
+- [Echooo](https://www.echooo.xyz/)
+- [Holdstation](https://holdstation.com/)
+- [Komet](https://komet.me/)
 - [TOMO](https://tomo.inc/)
 
 
