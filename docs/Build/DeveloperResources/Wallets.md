@@ -36,12 +36,17 @@ Bitlayer supports various account abstraction wallets, including:
 - [Echooo](https://www.echooo.xyz/)
 - [Holdstation](https://holdstation.com/)
 - [Komet](https://komet.me/)
-- [TOMO](https://tomo.inc/)
-
 
 ## MPC Wallets
 
 Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced security and privacy. 
 - [Sinohope](https://sinohope.com)
 - [Bitverse](https://www.bitverse.zone/)
+
+## Social Wallets
+
+Bitlayer also supports Social Wallets. 
+
+- [TOMO](https://tomo.inc/)
+
 
