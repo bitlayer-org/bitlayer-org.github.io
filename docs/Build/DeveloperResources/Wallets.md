@@ -17,8 +17,8 @@ For interacting with Ethereum and other EVM networks, Bitlayer supports wallets 
 
 For Bitcoin transactions, Bitlayer is compatible with wallets designed specifically for Bitcoin, including:
 
-- [Unisat](https://chat.openai.com/c/f352b17c-69a1-457f-be41-a98fd00a8dfc#) - A secure wallet for Bitcoin enthusiasts.
-- [Xverse](https://chat.openai.com/c/f352b17c-69a1-457f-be41-a98fd00a8dfc#) - A wallet focused on privacy and security for Bitcoin users.
+- [Unisat](https://unisat.io/) - A secure wallet for Bitcoin enthusiasts.
+- [Xverse](https://www.xverse.app/) - A wallet focused on privacy and security for Bitcoin users.
 
 *Bitcoin-only wallets provide optimized features for handling Bitcoin transactions and secure storage.*
 
@@ -30,9 +30,18 @@ Bitlayer provides a robust multi-signature smart contract wallet solution called
 
 ## Account Abstraction Wallets
 
-- [Particle](/docs/hidden/build/BTC-Connect.md)
+Bitlayer supports various account abstraction wallets, including:
+
+- [Particle](../../Hidden/Build/BTC-Connect.md)
+- [echooo](https://www.echooo.xyz/)
+- [holdstation](https://holdstation.com/)
+- [komet](https://komet.me/)
+- [TOMO](https://tomo.inc/)
+
 
 ## MPC Wallets
 
 Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced security and privacy. 
 - [Sinohope](https://sinohope.com)
+- [Bitverse](https://www.bitverse.zone/)
+
