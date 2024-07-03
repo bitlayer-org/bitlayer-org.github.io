@@ -21,13 +21,21 @@ bc1ph2x0wdm7vspgdtzuhhgcsey7ahmhypxgjnwfw0p8fghdp4qrnrrsfjc062
 bc1puqn6dw6etk6yg8zruvf2s94cmhxkfncsaumwhtfhu5qy3e6m94sq37eq66
 bc1pvnh3zy48ml3nhzhqrtc7endhj9rrtrv5puy2775p3jwka8y99aqsz78uu2
 bc1pxpp82hc4t4flkyqtjdnzr3q72qh9st78gfge50vzlrjtp9c6yn4s5zq5vk
-bc1qz6wa8ct7s0f47ylz78dlcq904vvt30f5kva5zn
-bc1q0v9kx63urmfesags7azaa0uq0lgz7hpmx0y0rl
 ```
 
 ### BTC-Eco-Assets
 
+BRC20 assets (ORDI, SATS, RATS, ...)
 
+```
+bc1qz6wa8ct7s0f47ylz78dlcq904vvt30f5kva5zn
+```
+
+Runes assets (DOG•GO•TO•THE•MOON, ...)
+
+```
+bc1q0v9kx63urmfesags7azaa0uq0lgz7hpmx0y0rl
+```
 
 ## Ethereum
 
