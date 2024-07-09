@@ -16,3 +16,6 @@ sidebar_position: 80
 | RATS  | RATS  | 18 | [0x0d922f10d86243ceff899f15571f51951e8b20f6](https://www.btrscan.com/address/0x0d922f10d86243ceff899f15571f51951e8b20f6) | Bitcoin BRC20: 77df24c9f1bd1c6a606eb12eeae3e2a2db40774d54b839b5ae11f438353ddf47i0 |
 | DOG•GO•TO•THE•MOON  | DOG  | 5 | [0x25e13e99329ae4a18382e5d77c70743b3d9e484f](https://www.btrscan.com/address/0x25e13e99329ae4a18382e5d77c70743b3d9e484f) | Bitcoin Runes, Rune ID: 840000:3 |
 
+## Testnet
+
+There's no peg-token on Testnet, for the tokens that can received from the faucet, refer to [faucet page](/docs/Build/DeveloperResources/Faucets.md)
