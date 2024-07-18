@@ -32,6 +32,7 @@ Bitlayer provides a robust multi-signature smart contract wallet solution called
 
 Bitlayer supports various account abstraction wallets, including:
 
+- [Owl Protocol](https://docs.owl.build/learn-wallets)
 - [Particle](../../Hidden/Build/BTC-Connect.md)
 - [Echooo](https://www.echooo.xyz/)
 - [Holdstation](https://holdstation.com/)
@@ -40,6 +41,8 @@ Bitlayer supports various account abstraction wallets, including:
 ## MPC Wallets
 
 Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced security and privacy. 
+
+- [Owl Protocol](https://docs.owl.build/learn-wallets)
 - [Sinohope](https://sinohope.com)
 - [Bitverse](https://www.bitverse.zone/)
 
@@ -47,6 +50,7 @@ Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced securi
 
 Bitlayer also supports Social Wallets. 
 
+- [Owl Protocol](https://docs.owl.build/learn-wallets)
 - [TOMO](https://tomo.inc/)
 
 
