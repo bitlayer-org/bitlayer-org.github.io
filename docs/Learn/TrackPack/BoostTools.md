@@ -10,11 +10,11 @@ Leverage the suite of tools within the Bitlayer ecosystem to maximize your poten
 
 | Category| Name | Description | 
 |----------|----------|----------|
-|Infro| [Faucet](https://www.bitlayer.org/faucet)    | Obtain your Bitlayer Testnet tokens every 24 hours for development here   |
-|Infro|[Mainnet Scan](https://www.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Mainnet.    | 
-|Infro| [Testnet Scan](https://testnet.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Testnet.   | 
-|Infro| [Multisig Wallet](https://multisign.bitlayer.org/welcome)    | Stealth your asset's security with decentralized multiple signers   | 
-|Infro| [The Graph](https://docs.bitlayer.org/docs/Build/DeveloperResources/TheGraph)    |     4. The Graph, Index and search your data on Bitlayer   | 
+|Infra| [Faucet](https://www.bitlayer.org/faucet)    | Obtain your Bitlayer Testnet tokens every 24 hours for development here   |
+|Infra|[Mainnet Scan](https://www.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Mainnet.    | 
+|Infra| [Testnet Scan](https://testnet.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Testnet.   | 
+|Infra| [Multisig Wallet](https://multisign.bitlayer.org/welcome)    | Stealth your asset's security with decentralized multiple signers   | 
+|Infra| [The Graph](https://docs.bitlayer.org/docs/Build/DeveloperResources/TheGraph)    |     4. The Graph, Index and search your data on Bitlayer   | 
 |Data|[DefiLlama](https://defillama.com/chain/Bitlayer)|DefiLlama is the largest aggregator of TVL for DeFi. Its data is fully open-source and maintained by a team of passionate individuals and contributors from hundreds of protocols.|
 |Data|[GeckoTerminal](https://www.geckoterminal.com/)|GeckoTerminal provides real-time statistics and price analysis across multiple blockchains and decentralized exchanges. |
 |Data|[Dune](https://dune.com/discover/content/trending)|Dune Analytics is a site that lets anyone publish and access crypto dashboards driven by blockchain data. |
