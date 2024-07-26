@@ -9,7 +9,7 @@ We aim to foster innovation and the adoption of Web3. Through our Developer oper
 
 | Name | Description | 
 |----------|----------|
-| [Ready Player1 ](https://www.bitlayer.org/airdrop/ready-player-one)    | Unlock $50,000,000 in incentives for early builders and contributors.   |
-|[Luck Helmet](https://www.bitlayer.org/airdrop/lucky-helmet)    | Be a driver. Earn from Bitlayer.    | 
-| [Leaderboard](https://www.bitlayer.org/ready-player-one/leaderboard)    | Bitlayer Leaderboard Competition Epoch 1   | 
-| [Mining Gala](https://www.bitlayer.org/mining-gala)    | Win Bitlayer rewards & dapp airdrops   | 
+| [Ready Player Grant ](https://www.bitlayer.org/airdrop/ready-player-one/steps/register)    | Unlock Bitlayer's Potential: Seeking Innovative Projects and Exceptional Teams to Advance the BTC Ecosystem   |
+|[Incentive Program](https://www.bitlayer.org/airdrop/ready-player-one)    | Ready Player I——$50,000,000 in incentives for early builders and contributors.    | 
+| [Ops & MKT Source](https://t.me/bitlayerbuilders)    |   Official resources support & Global market resources support. Leaderboard, DApp Center, Racer Center   | 
+| [Eco Growth Campaign](https://x.com/BitlayerLabs/status/1815271528268796362)    | Mining Gala, The Voice of Bitlayer, Global Crypto Conference  | 
