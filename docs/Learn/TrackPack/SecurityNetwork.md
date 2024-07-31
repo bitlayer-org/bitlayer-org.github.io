@@ -13,7 +13,7 @@ If you have security-related needs, [please contact us](https://docs.google.com/
 |----------|----------|
 |[slowmist](https://cn.slowmist.com/)|Smart contract audit, blockchain security audit, wallet security testing, firewall project|
 |[Hacken](https://hacken.io/)|Smart contract audit, KYC background check, penetration testing, vulnerability bounty program|
-
+|[Beosin](https://beosin.com/)|Beosin is a blockchain security services provider that provides services such as smart contract auditing, stolen crypto recovery, risk monitoring, and alerting.|
 ## Service Content 
 We provide comprehensive security services throughout the entire lifecycle of projects, including contract audits and security assessments. For public chains, we offer full-chain security posture analysis, security risk monitoring, and risk asset monitoring. Additionally, we provide users with services such as risk project detection and asset recovery.
 
