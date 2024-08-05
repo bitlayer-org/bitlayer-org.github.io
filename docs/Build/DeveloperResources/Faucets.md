@@ -8,7 +8,7 @@ Bitlayer is an EVM-compatible blockchain, and can enable applications and develo
 
 If you want to interact with the Dapps on Bitlayer Testnet, your first stop is going to be to a “faucet” to fill up your “tank”. 
 
-Here is a faucet directly distributes Bitlayer Testnet tokens: [https://www.bitlayer.org/faucet](https://www.bitlayer.org/faucet)
+Here is a faucet that directly distributes Bitlayer Testnet tokens: [https://www.bitlayer.org/faucet](https://www.bitlayer.org/faucet)
 
 ![faucet](/img/DeveloperResources/faucet.png)
 
