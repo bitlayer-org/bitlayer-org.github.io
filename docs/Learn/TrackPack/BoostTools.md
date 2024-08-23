@@ -8,9 +8,11 @@ sidebar_position: 1
 Leverage the suite of tools within the Bitlayer ecosystem to maximize your potential on Bitlayer
 
 
-| Category| Name | Description | 
+| Category    | Name | Description | 
 |----------|----------|----------|
 |Infra| [Faucet](https://www.bitlayer.org/faucet)    | Obtain your Bitlayer Testnet tokens every 24 hours for development here   |
+|Infra| [Mainnet Bridge](https://www.bitlayer.org/bridge)    | Bitlayer Mainnet Bridge   |
+|Infra| [Testnet Bridge](https://www.bitlayer.org/bridge/testnet)    | Bitlayer Testnet Bridge   |
 |Infra|[Mainnet Scan](https://www.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Mainnet.    | 
 |Infra| [Testnet Scan](https://testnet.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Testnet.   | 
 |Infra| [Multisig Wallet](https://multisign.bitlayer.org/welcome)    | Stealth your asset's security with decentralized multiple signers   | 
