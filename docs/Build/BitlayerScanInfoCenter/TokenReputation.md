@@ -20,7 +20,7 @@ The token is listed on major price aggregator platform (like Coingecko and Coinm
 
 ## 'OK' reputation
 
-An OK reputation is not an endorsement, but it is of our opinion (and at our own discretion) that the project has (either or a combination of the following criteria):
+An OK reputation is not an endorsement, but it is our opinion (and at our own discretion) that the project has (either or a combination of the following criteria):
 
 Is already eligible for 'Neutral' reputation.
 
@@ -38,6 +38,6 @@ Achieved significant major milestones.
 
 Bitlayer(BTR) Scan does not and is not in a position to endorse, disapprove or censure any services or projects related to the Token contracts displayed on the Bitlayer Blockchain. Users should always do their own research and due diligence before taking any actions related to any Token contracts especially if it involves a transfer of value.
 
-The reputation scores provided in connection with this service may or may not be accurate as they are based on subjective evaluations and/or reports received from the community. We make no representations, warranties or are liable for any content, accuracy, and reliability of such ratings and are we are not responsible directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any content or services provided.
+The reputation scores provided in connection with this service may or may not be accurate as they are based on subjective evaluations and/or reports received from the community. We make no representations, warranties or are liable for any content, accuracy, and reliability of such ratings and we are not responsible directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any content or services provided.
 
 We reserve the right to make the final judgment to accept/deny a token reputation award on this page and we are not obligated to provide any feedback on the reason for a rejection on token reputation award. At any time we found false information or discrepancies, we reserve the right to remove or update information (including reputation).
