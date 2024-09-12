@@ -28,10 +28,10 @@ Leverage the suite of tools within the Bitlayer ecosystem to maximize your poten
 |Wallet|[TokenPocket](https://www.tokenpocket.pro/)|TokenPocket is a multi-chain decentralized wallet, it provides users with mobile wallet, extension wallet and hardware wallet, supporting public chains including Bitcoin, Ethereum, BNB Smart Chain, TRON, Aptos, Polygon, Solana, Polkadot, EOS and all EVM compatible chains. |
 |Wallet|[imToken](https://token.im/)|imToken is a decentralized digital wallet used to manage and safeguard a wide range of blockchain- and token-based assets, identities, and data.|
 |Multi-Sig Wallet|[Bitlayer Multisig Wallet](http://multisign.bitlayer.org)|Stealth your asset's security with decentralized multiple signers|
-|AA Wallet|[Particle](../../Hidden/Build/BTC-Connect.md)|Particle|
-|AA Wallet|[Holdstation](https://holdstation.com/)|Holdstation|
-|AA Wallet|[Komet](https://komet.me/)|Komet|
-|MPC Wallet|[Sinohope](https://sinohope.com)|Sinohope|
+|AA Wallet|[Particle](../../Hidden/Build/BTC-Connect.md)|Particle Network's BTC Connect is the first account abstraction protocol for the Bitcoin ecosystem.|
+|AA Wallet|[Holdstation](https://holdstation.com/)|Smart contract wallet for futures trading|
+|AA Wallet|[Komet](https://komet.me/)|Instant liquidity with Komet wallet for for Digital collectible traders|
+|MPC Wallet|[Sinohope](https://www.sinohope.com/)|SINOHOPE provides a secure self-custody platform for institutional clients that adopts MPC-CMP technology to enable co-management of private key shares and collaborative signatures |
 |MPC Wallet|[Bitverse](https://www.bitverse.zone/)|Bitverse|
-|Social Wallet|[TOMO](https://tomo.inc/)|TOMO|
+|Social Wallet|[TOMO](https://tomo.inc/)|The all-in-one wallet designed to bring the mass adoption|
 
