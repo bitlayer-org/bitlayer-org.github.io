@@ -60,7 +60,7 @@ const config = {
         title: 'Bitlayer',
         logo: {
           alt: 'Bitlayer Logo',
-          src: 'img/FA_Bitlayer-Logo.png',
+          src: 'img/Bitlayer_docs.svg',
         },
         items: [
           {
@@ -80,6 +80,11 @@ const config = {
             href: 'https://blog.bitlayer.org/',
             label: 'Blog',
             position: 'left',
+          },
+          {
+            href: 'https://www.bitlayer.org/',
+            label: 'Bitlayer',
+            position: 'right',
           },
           {
             href: 'https://github.com/bitlayer-org',

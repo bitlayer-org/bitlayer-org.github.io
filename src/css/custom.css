@@ -42,3 +42,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.navbar__brand {
+  margin-right: 0;
+}
+.navbar__title {
+  display: none;
+}
