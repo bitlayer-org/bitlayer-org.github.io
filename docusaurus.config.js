@@ -82,6 +82,11 @@ const config = {
             position: 'left',
           },
           {
+            href: 'https://www.bitlayer.org/',
+            label: 'Bitlayer',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/bitlayer-org',
             label: 'GitHub',
             position: 'right',
