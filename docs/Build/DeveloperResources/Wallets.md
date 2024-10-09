@@ -35,7 +35,6 @@ Bitlayer supports various account abstraction wallets, including:
 - [Particle](../../Hidden/Build/BTC-Connect.md)
 - [Echooo](https://www.echooo.xyz/)
 - [Holdstation](https://holdstation.com/)
-- [Komet](https://komet.me/)
 
 ## MPC Wallets
 
@@ -47,6 +46,7 @@ Bitlayer also supports MPC (Multi-Party Computation) wallets for enhanced securi
 
 Bitlayer also supports Social Wallets. 
 
+- [Komet](https://komet.me/)
 - [TOMO](https://tomo.inc/)
 
 

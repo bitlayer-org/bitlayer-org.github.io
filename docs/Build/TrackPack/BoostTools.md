@@ -30,8 +30,8 @@ Leverage the suite of tools within the Bitlayer ecosystem to maximize your poten
 |Multi-Sig Wallet|[Bitlayer Multisig Wallet](http://multisign.bitlayer.org)|Stealth your asset's security with decentralized multiple signers|
 |AA Wallet|[Particle](../../Hidden/Build/BTC-Connect.md)|Particle Network's BTC Connect is the first account abstraction protocol for the Bitcoin ecosystem.|
 |AA Wallet|[Holdstation](https://holdstation.com/)|Smart contract wallet for futures trading|
-|AA Wallet|[Komet](https://komet.me/)|Instant liquidity with Komet wallet for for Digital collectible traders|
+|AA Wallet|[Echooo](https://www.echooo.xyz/)|Advanced ERC-4337 AA Smart Wallet|
 |MPC Wallet|[Sinohope](https://www.sinohope.com/)|SINOHOPE provides a secure self-custody platform for institutional clients that adopts MPC-CMP technology to enable co-management of private key shares and collaborative signatures |
 |MPC Wallet|[Bitverse](https://www.bitverse.zone/)|Bitverse|
 |Social Wallet|[TOMO](https://tomo.inc/)|The all-in-one wallet designed to bring the mass adoption|
-
+|Social Wallet|[Komet](https://komet.me/)|Instant liquidity with Komet wallet for for Digital collectible traders|
