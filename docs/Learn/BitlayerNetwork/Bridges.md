@@ -13,6 +13,7 @@ Bridges play a crucial role in connecting Bitlayer with other blockchain network
 ### Official Bridges
 
 Bitlayer is connected to multiple blockchains including Bitcoin, EVM chains through multiple bridges, which you can access [here](https://www.bitlayer.org/bridge/).
+Currently, the official bridges don't support direct integration or invocation by third parties for bridging assets. 
 
 #### Proof of Reserve
 
