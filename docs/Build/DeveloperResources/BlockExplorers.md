@@ -10,7 +10,7 @@ Explore transactions, blocks, and addresses on the Bitlayer network using the pr
 
 Access the Bitlayer mainnet block explorer here:
 - [BTRScan](https://www.btrscan.com)
-- [OKLink](https://www.okx.com/zh-hans/web3/explorer/bitlayer)
+- [OKX Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)
 
 
 
