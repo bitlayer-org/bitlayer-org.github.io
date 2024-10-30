@@ -12,7 +12,7 @@ Leverage the suite of tools within the Bitlayer ecosystem to maximize your poten
 |Infra  | [Faucet](https://www.bitlayer.org/faucet)    | Obtain your Bitlayer Testnet tokens every 24 hours for development here   |
 |Infra| [Mainnet Bridge](https://www.bitlayer.org/bridge)    | Bitlayer Mainnet Bridge   |
 |Infra| [Testnet Bridge](https://www.bitlayer.org/bridge/testnet)    | Bitlayer Testnet Bridge   |
-|Infra|[Mainnet Scan](https://www.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Mainnet.    | 
+|Infra|[Mainnet Scan](https://www.btrscan.com/)  [OKX Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)  | A essential tool for exploring and analyzing blockchain data on Bitlayer Mainnet.    | 
 |Infra| [Testnet Scan](https://testnet.btrscan.com/)    | A essential tool for exploring and analyzing blockchain data on Bitlayer Testnet.   | 
 |Infra| [The Graph](https://docs.bitlayer.org/docs/Build/DeveloperResources/TheGraph)    |The Graph, Index and search your data on Bitlayer   | 
 |Infra| [Subgraph](https://docs.bitlayer.org/docs/Build/DeveloperResources/Subgraph)    |  Subgraph is a customized, open-source solution for indexing and accessing real-time blockchain data through the GraphQL API.| 
