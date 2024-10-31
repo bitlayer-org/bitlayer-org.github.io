@@ -22,7 +22,7 @@ We currently support Solidity up to version v0.8.23. Updates for newer versions 
 | Network Name                | `Bitlayer Mainnet`                                                                       |
 | Chain ID                    | `200901`                                                                                 |
 | Currency Symbol             | BTC                                                                                      |
-| Explorer                    | [https://www.btrscan.com](https://www.btrscan.com),  [OKX Bitlayer Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)                                    |
+| Explorer                    | [https://www.btrscan.com](https://www.btrscan.com),  [OKX Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)                                    |
 | Public RPC URLs             | [https://rpc.bitlayer.org](https://rpc.bitlayer.org), [https://rpc.bitlayer-rpc.com](https://rpc.bitlayer-rpc.com), [https://rpc.ankr.com/bitlayer](https://rpc.ankr.com/bitlayer) |
 | WebSocket              | <div>wss://ws.bitlayer.org</div><div>wss://ws.bitlayer-rpc.com</div>                                 |
 | Contract Addresses          | Refer to the [Contract Addresses page](../../DeveloperResources/Contracts)                         |
