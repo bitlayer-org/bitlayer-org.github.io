@@ -264,7 +264,7 @@ Try this endpoint in your [browser](https://api.btrscan.com/scan/api?module=cont
 
 4、List of supported solc versions, only solc version v0.4.11 and above is supported. Ex. v0.4.25+commit.59dbf8f1
 
-5、Upon successful submission you will receive a GUID (50 characters) as a receipt
+5、Upon successful submission you will receive a GUID (32 characters) as a receipt
 
 6、You may use this GUID to track the status of your submission
 
@@ -345,7 +345,7 @@ Submits a proxy contract source code to Btrscan for verification.
 1. Requires a valid Btrscan API key, it will be rejected otherwise
 2. Current daily limit of 100 submissions per day per user (subject to change)
 3. Only supports HTTP post
-4. Upon successful submission you will receive a GUID (50 characters) as a receipt
+4. Upon successful submission you will receive a GUID (32 characters) as a receipt
 5. You may use this GUID to track the status of your submission
 6. Verified proxy contracts will display the "Read/Write as Proxy" of the implementation contract under the contract address's contract tab
 
@@ -356,20 +356,20 @@ Submits a proxy contract source code to Btrscan for verification.
 
 ```js
 // example with only the mandatory contract address parameter
-curl -d "address=0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f" "https://api.btrscan.com/scan/api?module=contract&action=verifyproxycontract&apikey=YourApiKeyToken"
+curl -d "address=0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f" "https://api.btrscan.com/scan/api?module=contract&action=verifyproxycontract"
 
 // example using the expectedimplementation optional parameter
 // the expectedimplementation enforces a check to ensure the returned implementation contract address == address picked up by the verifier
-curl -d "address=0xbc46363a7669f6e12353fa95bb067aead3675c29&expectedimplementation=0xe45a5176bc0f2c1198e2451c4e4501d4ed9b65a6" "https://api.btrscan.io/api?module=contract&action=verifyproxycontract&apikey=YourApiKeyToken"
+curl -d "address=0xbc46363a7669f6e12353fa95bb067aead3675c29&expectedimplementation=0xe45a5176bc0f2c1198e2451c4e4501d4ed9b65a6" "https://api.btrscan.com/scan/api?module=contract&action=verifyproxycontract"
 ```
   </TabItem>
   <TabItem value="response" label="Response">
   ```json
   // OK
-{"status":"1","message":"OK","result":"gwgrrnfy56zf6vc1fljuejwg6pelnc5yns6fg6y2i6zfpgzquz"}
+{"status":"1","message":"OK","result":"4c55dd6a079a4a8d9c3c736911252391"}
 
 // NOTOK
-{"status":"0","message":"NOTOK","result":"Invalid API Key"}
+{"status":"0","message":"NOTOK","result":"Invalid address hash"}
   ```
   </TabItem>
 </Tabs>
@@ -381,7 +381,7 @@ curl -d "address=0xbc46363a7669f6e12353fa95bb067aead3675c29&expectedimplementati
   <TabItem value="request" label="Request" default>
 
 ```js
-curl "https://api.btrscan.com/scan/api?module=contract&action=checkproxyverification&guid=gwgrrnfy56zf6vc1fljuejwg6pelnc5yns6fg6y2i6zfpgzquz&apikey=YourApiKeyToken"
+curl "https://api.btrscan.com/scan/api?module=contract&action=checkproxyverification&guid=4c55dd6a079a4a8d9c3c736911252391"
 ```
   </TabItem>
   <TabItem value="response" label="Response">
