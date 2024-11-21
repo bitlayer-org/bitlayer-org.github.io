@@ -20,7 +20,7 @@ Leverage the suite of tools within the Bitlayer ecosystem to maximize your poten
 |Data|[DefiLlama](https://defillama.com/chain/Bitlayer)|DefiLlama is the largest aggregator of TVL for DeFi. Its data is fully open-source and maintained by a team of passionate individuals and contributors from hundreds of protocols.|
 |Data|[GeckoTerminal](https://www.geckoterminal.com/)|GeckoTerminal provides real-time statistics and price analysis across multiple blockchains and decentralized exchanges. |
 |Data|[Dune](https://dune.com/discover/content/trending)|Dune Analytics is a site that lets anyone publish and access crypto dashboards driven by blockchain data. |
-|Data|[DEXTools](https://www.dextools.io/app/en/hot-pairs)|DEXTools is a trading app designed to provide DeFi market information to users of decentralized exchanges.|
+|Data|[DEXTools](https://www.dextools.io/app/en/bitlayer/hot-pairs)|DEXTools is a trading app designed to provide DeFi market information to users of decentralized exchanges.|
 |Wallet|[MetaMask](https://metamask.io/)|MetaMask is the world's most popular non-custodial digital wallet and Web3 gateway.|
 |Wallet|[OKX Wallet](https://www.okx.com/web3)|OKX Web3 Wallet.|
 |Wallet|[Bitget Wallet](https://web3.bitget.com/)|Bitget Wallet is a decentralized multi-chain crypto wallet dedicated to providing safe and convenient one-stop digital asset management services to users around the world.|
