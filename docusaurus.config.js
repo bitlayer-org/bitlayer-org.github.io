@@ -76,9 +76,9 @@ const config = {
             activeBaseRegex: `/docs/Build`,
           },
           {
-            to: '/docs/Finality/Introduction/GetStarted', // Link to a document, not a top-level directory
+            to: '/docs/Finality/Introduction', // Link to a document, not a top-level directory
             position: 'left',
-            label: 'Finality',
+            label: 'Finality Bridge',
             activeBaseRegex: `/docs/Finality`,
           },
           {
@@ -110,7 +110,11 @@ const config = {
               },
               {
                 label: 'Build',
-                to: '/docs/Build/GettingStarted',
+                to: '/docs/Build/GettingStarted/QuickStart',
+              },
+              {
+                label: 'Finality Bridge',
+                to: '/docs/Finality/Introduction',
               }
             ],
           },
