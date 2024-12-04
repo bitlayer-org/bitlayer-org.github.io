@@ -75,7 +75,12 @@ const config = {
             label: 'Build',
             activeBaseRegex: `/docs/Build`,
           },
-
+          {
+            to: '/docs/Finality/Introduction/GetStarted', // Link to a document, not a top-level directory
+            position: 'left',
+            label: 'Finality',
+            activeBaseRegex: `/docs/Finality`,
+          },
           {
             href: 'https://blog.bitlayer.org/',
             label: 'Blog',
@@ -106,7 +111,7 @@ const config = {
               {
                 label: 'Build',
                 to: '/docs/Build/GettingStarted',
-              },
+              }
             ],
           },
           {
