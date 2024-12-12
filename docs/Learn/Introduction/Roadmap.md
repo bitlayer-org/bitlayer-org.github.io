@@ -5,7 +5,7 @@ sidebar_position: 5
 # Roadmap
 The vision of Bitlayer will be realized through the rollout of a mainnet in multiple stages, with each phase designed to enhance the user experience and bolster security through cryptographic proof of Bitcoin consensus and onchain activity.
 
-![Roadmap](/img/Introduction/roadmap2.png)
+![Roadmap](/img/Introduction/roadmap3.png)
 
 ## First Stage: Bitlayer PoS
 In this initial phase, Bitlayer adopts the best security model: PoS + Multisig, working with multiple MPC custody platforms, ultilizing 100% EVM-Compatible environment to onboard users and developers.
