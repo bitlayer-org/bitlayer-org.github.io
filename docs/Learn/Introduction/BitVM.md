@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # About BitVM
 
-[BitVM](https://bitvm.org/) is a computing paradigm to express Turing-complete Bitcoin contracts, which is the foundamental pilar to build the native layer2 for Bitcoin, without softfork or hardfork(which would take years), BitVM developer to verify computation on Bitcoin.
+[BitVM](https://bitvm.org/) is a computing paradigm to express Turing-complete Bitcoin contracts,which is the fundamental pillar for building a native Layer 2 solution for Bitcoin, without softfork or hardfork(which would take years), BitVM allows developers to verify computations on Bitcoin.
 
 ## What is BitVM?
 

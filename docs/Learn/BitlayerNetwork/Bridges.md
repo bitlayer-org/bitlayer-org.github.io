@@ -12,8 +12,8 @@ Bridges play a crucial role in connecting Bitlayer with other blockchain network
 
 ### Official Bridges
 
-Bitlayer is connected to multiple blockchains including Bitcoin, EVM chains through multiple bridges, which you can access [here](https://www.bitlayer.org/bridge/).
-Currently, the official bridges don't support direct integration or invocation by third parties for bridging assets. 
+Bitlayer connects to multiple blockchains, including Bitcoin and EVM chains, through various bridges, which you can access [here](https://www.bitlayer.org/bridge/).
+Currently, official bridges do not support direct integration or third-party invocation for asset bridging. 
 
 #### Proof of Reserve
 
@@ -23,7 +23,7 @@ You can find the Proof of Reserve information here: [POR page](/docs/Learn/Bitla
 
 Mainnet-V1(Bitlayer PoS): The Bitlayer team is working with multiple MPC custody platforms, including Coinbase and Sinohope (HK.1611), to secure the assets.
 
-Mainnet-V2&V3(Bitcoin Finality): The bitlyer team will deliver trustless bridge using BitVM and DLC technology.[WIP]
+Mainnet-V2&V3(Bitcoin Finality): The Bitlayer team will deliver trustless bridge using BitVM and DLC technology.[WIP]
 
 #### EVM to Bitlayer 
 

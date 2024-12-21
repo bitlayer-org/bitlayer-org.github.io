@@ -8,27 +8,27 @@ This guide walks you through compiling and running Bitlayer.
 
 ## Download
 
-Download the Bitlayer source code using the following git command:
+Download the Bitlayer source code using the following Git command:
 
-```
+```bash
 git clone https://github.com/bitlayer-org/bitlayer-l2.git
 ```
 
 ## Install Golang
 
-Before compiling Bitlayer, make sure you have Golang installed on your system. Refer to the official Golang website ([https://go.dev/dl/](https://go.dev/dl/)) for download and installation instructions.
+Before compiling Bitlayer, ensure that Golang is installed on your system. Refer to the official Golang website ([https://go.dev/dl/](https://go.dev/dl/)) for download and installation instructions.
 
 ## Compile
 
-1. Navigate to the directory where you cloned the Bitlayer source code using:
+1. Navigate to the directory where you cloned the Bitlayer source code:
 
-   ```
+   ```bash
    cd /path/to/bitlayer-l2
    ```
 
 2. Compile Bitlayer by running the following command:
 
-   ```
+   ```bash
    make geth
    ```
 
@@ -38,17 +38,17 @@ Before compiling Bitlayer, make sure you have Golang installed on your system. R
 
 1. Get a list of available options and their descriptions by running:
 
-   ```
+   ```bash
    ./build/bin/geth --help
    ```
 
 2. Refer to the [Command-line Options documentation](https://geth.ethereum.org/docs/fundamentals/command-line-options) for specific usage details.
 
-**Custom Option:**
+### Custom Option
 
 Bitlayer offers a custom option named `--traceaction`:
 
-```
+```bash
 --traceaction value     (default: 0)
     Trace internal tx call/create/suicide action, 0=no trace, 1=trace only native token > 0, 2=trace all
 ```
@@ -57,47 +57,46 @@ This option allows you to enable or disable custom JSON-RPC methods for tracing 
 
 ## Deployment
 
-Introduce systemd management configs.
-
-### Hardware
+### Hardware Requirements
 
 #### Minimum
-```
-8core
-16g
-ssd iops>5k
+
+```plaintext
+8 core
+16 GB RAM
+SSD with IOPS > 5k
 ```
 
 #### Recommended
-```
-16core
-32g
-ssd iops>5k
+
+```plaintext
+16 core
+32 GB RAM
+SSD with IOPS > 5k
 ```
 
-#### Network & Port
+### Network & Port Configuration
 
-```
+```plaintext
 External IP Address
 Port TCP/UDP 31031
 ```
 
-### Chain Node
+### Chain Node Configuration
 
-* config.toml
-```
+Use the following `config.toml` file:
+
+```toml
 [Eth]
 SyncMode = "snap"
-TrieCleanCacheRejournal= 300000000000
+TrieCleanCacheRejournal = 300000000000
 TrieTimeout = 20000000000
-
 
 [Eth.Miner]
 GasFloor = 40000000
 GasCeil = 40000000
 GasPrice = 50000000
 Recommit = 3000000000
-
 
 [Eth.TxPool]
 NoLocals = true
@@ -128,7 +127,6 @@ WSModules = ['eth', 'net', 'web3']
 
 GraphQLVirtualHosts = ["localhost"]
 
-
 [Node.P2P]
 MaxPeers = 50
 NoDiscovery = false
@@ -141,22 +139,25 @@ WriteTimeout = 30000000000
 IdleTimeout = 120000000000
 ```
 
-use snap sync in the config, if full needed - change this line
-```
+To use full sync instead of snap sync, change:
+
+```toml
 SyncMode = "snap"
 ```
-to
-```
+
+to:
+
+```toml
 SyncMode = "full"
 ```
 
-### Start Bash
-> To show full detail help info of all flags, type `geth help` or `geth -h`
+### Start Bash Script
 
-* run.sh
+To show full help information for all flags, type `geth help` or `geth -h`.
 
+#### Example `run.sh` Script
 
-```
+```bash
 #!/usr/bin/env bash
 /data/bitlayer-l2/chain/geth-linux-amd64 \
 --config /data/bitlayer-l2/chain/config.toml  \
@@ -164,19 +165,19 @@ SyncMode = "full"
 --log.rotate=true \
 --authrpc.port 8445 \
 --traceaction 2 \
---verbosity 3 
+--verbosity 3
 ```
 
-if you need to use it as archive node, add: 
+If you need to use it as an archive node, add the following flags:
 
-```
+```bash
 --syncmode full \
 --gcmode archive \
 ```
 
-so: 
+Updated `run.sh` script for archive node:
 
-```
+```bash
 #!/usr/bin/env bash
 /data/bitlayer-l2/chain/geth-linux-amd64 \
 --config /data/bitlayer-l2/chain/config.toml  \
@@ -186,20 +187,20 @@ so:
 --traceaction 2 \
 --syncmode full \
 --gcmode archive \
---verbosity 3  
+--verbosity 3
 ```
 
-If no network flags were provided, the node will connect the bitlayer mainnet by default. If you want to connect to bitlayer testnet, add:
+If no network flags are provided, the node will connect to the Bitlayer mainnet by default. To connect to the Bitlayer testnet, add:
 
-```
+```bash
 --testnet
 ```
 
-### systemd config
+### Systemd Configuration
 
-```
+```ini
 [Unit]
-Description=bitlayer-l2 chain service
+Description=Bitlayer-L2 Chain Service
 
 [Service]
 Type=simple
@@ -213,4 +214,3 @@ LimitNOFILE=65536
 
 [Install]
 WantedBy=multi-user.target
-```
