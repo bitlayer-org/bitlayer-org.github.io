@@ -9,7 +9,7 @@ sidebar_position: 2
 - [Github](https://github.com/graphprotocol/graph-node)
 
 ## The Graph Official
-The Graph official has not support bitlayer, will coming soon.
+The Graph official does not support bitlayer, will be coming soon.
 
 ### Project Local Graph Node
 We recommend following the [Official documentation](https://thegraph.com/docs/) for deployment. The next operation is only intended as a simple setup tutorial for reference.
