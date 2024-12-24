@@ -1,0 +1,104 @@
+name: Dev Version Deploy
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - "develop"
+
+  workflow_dispatch:
+    inputs:
+      projectName:
+        description: "Cloudflare page name"
+        required: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "yarn"
+
+      - name: Install # optional, --immutable
+        run: |
+          yarn install --frozen-lockfile
+
+      - name: Build
+        run: |
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          yarn build
+
+      - id: deploy
+        name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./build --project-name=${{ inputs.projectName || vars.CF_PROJECT_NAME }}
+
+      - name: Notify deploy success
+        if: ${{ success() }}
+        uses: joelwmale/webhook-action@2.4.1
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
+          body: |
+            {
+              "msg_type": "post",
+              "content": {
+                "post": {
+                  "en": {
+                    "title": "${{ github.repository }} Pull request deployed",
+                    "content": [
+                      [
+                        {
+                          "tag": "text",
+                          "text": "🚢 Branch ${{ github.head_ref || github.ref_name }} has been deployed. The preview URL is "
+                        },
+                        {
+                          "tag": "a",
+                          "text": "${{ steps.deploy.outputs.deployment-url }}",
+                          "href": "${{ steps.deploy.outputs.deployment-url }}"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            }
+
+      - name: Notify deploy failure
+        if: ${{ failure() }}
+        uses: joelwmale/webhook-action@2.4.1
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
+          body: |
+            {
+              "msg_type": "post",
+              "content": {
+                "post": {
+                  "en": {
+                    "title": "${{ github.repository }} Pull request deployment failed",
+                    "content": [
+                      [
+                        {
+                          "tag": "text",
+                          "text": "🚧 Branch ${{ github.head_ref || github.ref_name }} deployment failed!. Check the "
+                        },
+                        {
+                          "tag": "a",
+                          "text": "Action ${{ github.run_id }}",
+                          "href": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                        },
+                        {
+                          "tag": "text",
+                          "text": " for detail."
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            }
