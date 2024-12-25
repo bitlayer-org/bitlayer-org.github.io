@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+sidebar_label: Fraud Proofs on Bitcoin
 ---
 
 # Fraud Proofs on Bitcoin

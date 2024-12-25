@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+sidebar_label: Finality Bridge Protocol
 ---
 
 ## Bridge Instance and User Operations

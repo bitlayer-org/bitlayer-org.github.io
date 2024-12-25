@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+sidebar_label: Trust-minimized BTC Bridge
 ---
 
 In a significant advancement for cross-chain interoperability, Bitlayer rollup has integrated the Finality Bridge to achieve trust-minimized Bitcoin bridging capabilities. Operating as a BitVM-style bridge alongside Bitlayer rollup, this innovative solution implements a front-and-reclaim workflow that leverages pre-signing based smart contracts while utilizing fraud proofs on Bitcoin's Layer 1 for optimistic verification of bridge state transitions.

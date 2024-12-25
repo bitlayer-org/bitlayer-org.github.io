@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+sidebar_label: Overview
 ---
 
 The Bitlayer research team is dedicated to pushing the boundaries of what's possible with Bitcoin. We are actively developing and refining technologies that enhance Bitcoin's capabilities, making it more versatile, scalable, and efficient for a wider range of applications. Here's a glimpse into our current research focuses:

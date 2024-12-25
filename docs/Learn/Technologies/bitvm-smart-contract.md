@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+sidebar_label: BitVM-Style Smart Contract
 ---
 
 Bitcoin, by design, lacks native support for smart contracts. BitVM tackles this limitation by providing an ingenious way to emulate their functionality. This document delves into the intricacies of BitVM smart contracts, their design principles, and the security model that underpins their operation.

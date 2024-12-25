@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+sidebar_label: Overview
 ---
 
 In the rapidly evolving landscape of blockchain technology, the challenge of securely bridging Bitcoin with other blockchain networks has remained a persistent focus of innovation. Finality Bridge, developed by Bitlayer, emerges as a groundbreaking solution that leverages the power of BitVM2 to create a trust-minimized bridge for Bitcoin interoperability. This technological advancement represents a significant leap forward in addressing the fundamental challenges that have long plagued cross-chain Bitcoin transfers.
