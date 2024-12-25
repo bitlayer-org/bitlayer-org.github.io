@@ -2,27 +2,44 @@
 sidebar_position: 5
 ---
 
-# Roadmap
-The vision of Bitlayer will be realized through the rollout of a mainnet in multiple stages, with each phase designed to enhance the user experience and bolster security through cryptographic proof of Bitcoin consensus and onchain activity.
+## **Vision**
+
+Bitlayer is not just a blockchain platform—it’s a movement to redefine what’s possible with Bitcoin. From pioneering cross-chain interoperability to achieving Bitcoin-equivalent security and delivering unmatched scalability, Bitlayer is building the future of decentralized finance and beyond.
+
+## Roadmap
 
 ![Roadmap](/img/Introduction/roadmap3.png)
 
-## First Stage: Bitlayer PoS
-In this initial phase, Bitlayer adopts the best security model: PoS + Multisig, working with multiple MPC custody platforms, ultilizing 100% EVM-Compatible environment to onboard users and developers.
+### **Phase 1: Bitlayer PoS — Laying the Foundation**
 
-Bitlayer PoS supports the cross-chain movement between BTC/EVM/Other Blockchains and Bitlayer, thereby enriching the overall value of the Bitlayer ecosystem.
+In this foundational phase, Bitlayer adopts a cutting-edge security model that combines Proof of Stake (PoS) with multisignature (multisig) technology, ensuring robust protection for assets. By collaborating with multiple MPC (Multi-Party Computation) custody platforms, Bitlayer establishes a secure and scalable infrastructure while maintaining 100% EVM (Ethereum Virtual Machine) compatibility to onboard both users and developers seamlessly.  
 
-During this stage, we will prioritize offering a 100% EVM-compatible development kit and ecosystem support, enabling developers to quickly build, test, and deploy applications on Bitlayer. Solidity applications can be seamlessly migrated, providing early users with the benefits of low gas fees and an extensible Bitcoin framework.
+Bitlayer PoS introduces cross-chain functionality, enabling smooth asset movement between Bitcoin (BTC), EVM-based blockchains, and other networks. This interoperability enriches the Bitlayer ecosystem, fostering a dynamic environment for innovation and growth.  
 
-## Second Stage: Bitcoin Finality-V1[WIP]
+During this stage, the focus is on empowering developers with a fully EVM-compatible development toolkit and comprehensive ecosystem support. Developers can quickly build, test, and deploy decentralized applications (dApps) on Bitlayer, with Solidity applications migrating effortlessly. Early adopters benefit from ultra-low gas fees and an extensible framework built on Bitcoin, paving the way for a thriving developer and user community.
 
-In this phase, we plan to introduce a rollup-equivalent model, implement a BitVM component for commiting and challenging the state transition, achieving the L1 verification ability.
+### **Phase 2: Native Bitcoin Rollup — Pioneering Bitcoin Security**
 
-By leveraging the vast network and security of Bitcoin, Bitlayer will continuously lead with the highest security standards, offering users enhanced flexibility and an improved onchain experience through network upgrades.
+**Target: Q2 2025**
 
-## Third Stage: Bitcoin Finality-V2[WIP]
-In this phase, our aim is to implement trustless bridge based on the L1 verification ability.
+This phase marks a transformative leap as Bitlayer evolves into a native Bitcoin rollup, achieving Bitcoin-equivalent security by verifying Layer 2 state transitions directly on Bitcoin. This innovation ensures trustless, robust security for all transactions.
 
-Upon the completion of this third stage, Bitlayer’s final mainnet will be fully deployed, achieving the network's original goals—Bitcoin-equivalent security combined with Turing completeness. 
+Highlights of this phase include:
 
-This version is set to elevate the security standards of Bitcoin Layer 2 to an unprecedented level.
+- **Trust-Minimized BTC Bridge**: A groundbreaking bridge replaces the multisig-based solution from Phase 1, delivering enhanced decentralization and security.
+- **Seamless Migration**: Applications transition effortlessly from Bitlayer PoS to the rollup architecture, ensuring continuity and zero disruptions for developers and users.
+
+By anchoring its security to Bitcoin, Bitlayer establishes itself as a leader in trust-minimized blockchain solutions, setting a new standard for scalability and reliability.
+
+### **Phase 3: Enhanced Bitlayer Rollup — Scaling to New Heights**
+
+**Target: Q1 2026**
+
+The final stage of the roadmap focuses on performance, scalability, and user experience. Bitlayer achieves unprecedented throughput and responsiveness, making it a powerhouse for high-volume on-chain activity.
+
+Key advancements include:
+
+- **Unmatched Performance**: Bitlayer reaches a staggering throughput of 20,000 transactions per second (TPS), enabling enterprise-grade applications and mass adoption.
+- **Lightning-Fast Confirmations**: Transactions achieve soft confirmation within just 3 seconds, providing a seamless, near-instant user experience.
+
+With these enhancements, Bitlayer positions itself as the ultimate platform for high-performance blockchain applications, merging Bitcoin's security with unparalleled scalability and efficiency.
