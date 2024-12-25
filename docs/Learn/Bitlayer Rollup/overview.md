@@ -3,6 +3,8 @@ sidebar_position: 1
 sidebar_label: Overview
 ---
 
+# Overview
+
 ## Introduction
 
 Bitlayer V2, an upcoming upgrade to Bitlayer's layer 2 infrastructure, represents a pivotal evolution in the Bitcoin ecosystem. Designed to supersede the existing sidechain architecture, Bitlayer V2 is poised to become the first Bitcoin-native rollup, adopting rollup technology widely regarded as the most promising solution for scaling layer 2 systems. By leveraging Bitcoin's unparalleled security, Bitlayer V2 not only achieves significantly higher throughput and reduced transaction costs but also introduces Turing-complete programmability, thereby unlocking vast new possibilities for the Bitcoin ecosystem that extend far beyond the constraints of Bitcoin's limited scripting language.

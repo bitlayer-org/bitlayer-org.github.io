@@ -3,6 +3,8 @@ sidebar_position: 1
 sidebar_label: Overview
 ---
 
+# Overview
+
 The Bitlayer research team is dedicated to pushing the boundaries of what's possible with Bitcoin. We are actively developing and refining technologies that enhance Bitcoin's capabilities, making it more versatile, scalable, and efficient for a wider range of applications. Here's a glimpse into our current research focuses:
 
 **1. Smart Contracts on Bitcoin:** Bitcoin, by design, has limited support for complex smart contracts. We are tackling this challenge head-on, developing solutions that enable a variety of smart contract functionalities on top of Bitcoin's robust and secure blockchain. Imagine:

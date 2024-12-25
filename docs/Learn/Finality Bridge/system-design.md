@@ -3,6 +3,8 @@ sidebar_position: 3
 sidebar_label: System Design
 ---
 
+# System Design
+
 ## Network Architecture
 
 The architectural design of Finality Bridge represents a careful balance between decentralization, security, and operational efficiency. While the system continues to evolve rapidly, its core structure is built around two primary components: the Finality Bridge Network (FBN) and the Finality Bridge Coordinator (FBC).

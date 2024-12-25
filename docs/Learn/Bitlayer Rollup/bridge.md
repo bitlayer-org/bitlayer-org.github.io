@@ -3,6 +3,8 @@ sidebar_position: 4
 sidebar_label: Trust-minimized BTC Bridge
 ---
 
+# Trust-minimized BTC Bridge
+
 In a significant advancement for cross-chain interoperability, Bitlayer rollup has integrated the Finality Bridge to achieve trust-minimized Bitcoin bridging capabilities. Operating as a BitVM-style bridge alongside Bitlayer rollup, this innovative solution implements a front-and-reclaim workflow that leverages pre-signing based smart contracts while utilizing fraud proofs on Bitcoin's Layer 1 for optimistic verification of bridge state transitions.
 
 The Finality Bridge serves as the exclusive minting mechanism for fiBTC tokens within Bitlayer V2, ensuring that all minted tokens maintain verifiable backing by Layer 1 Bitcoin. This architectural decision provides DeFi applications on Bitlayer with robust security guarantees regarding asset validity. When combined with complementary bridging solutions such as atomic swaps, users gain the ability to transfer Bitcoin between the base layer and Bitlayer while maintaining minimal trust assumptions.

@@ -3,6 +3,8 @@ sidebar_position: 2
 sidebar_label: Finality Bridge Protocol
 ---
 
+# Finality Bridge Protocol
+
 ## Bridge Instance and User Operations
 
 The operational framework of Finality Bridge revolves around the concept of bridge instances, which provide a structured approach to managing cross-chain transfers while maintaining security guarantees. Each peg-in request triggers the creation of a new bridge instance, accompanied by a corresponding BitVM2 smart contract that governs the entire lifecycle of the transferred funds.
