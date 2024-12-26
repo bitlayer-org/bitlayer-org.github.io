@@ -12,6 +12,8 @@ Bitlayer is not just a blockchain platform—it’s a movement to redefine what�
 
 ### **First Stage: Bitlayer PoS, the Foundation**
 
+**Target: April, 2024(Achieved)**
+
 In this foundational stage, Bitlayer adopts a cutting-edge security model that combines Proof of Stake (PoS) with multisignature (multisig) technology, ensuring robust protection for assets. By collaborating with multiple MPC (Multi-Party Computation) custody platforms, Bitlayer establishes a secure and scalable infrastructure while maintaining 100% EVM (Ethereum Virtual Machine) compatibility to onboard both users and developers seamlessly.
 
 Bitlayer PoS introduces cross-chain functionality, enabling smooth asset movement between Bitcoin (BTC), EVM-based blockchains, and other networks. This interoperability enriches the Bitlayer ecosystem, fostering a dynamic environment for innovation and growth.
@@ -20,7 +22,7 @@ During this stage, the focus is on empowering developers with a fully EVM-compat
 
 ### **Second Stage: Bitlayer Rollup, BitVM based**
 
-**Target: Q1/Q2 2025**
+**Target: Q1/Q2, 2025(Staging)**
 
 In this stage, the BitVM(https://bitvm.org/) paradigm is implemented and used in BTC Bridge and Bitcoin Rollup, which would be groundbreaking progress in security assumption.
 
@@ -34,7 +36,7 @@ By anchoring its security to Bitcoin, Bitlayer establishes itself as a leader in
 
 ### **Third Stage: Bitlayer Rollup, Super Charged**
 
-**Target: Q4 2025**
+**Target: Q4, 2025**
 
 The final stage of the roadmap focuses on performance, scalability, and user experience. Bitlayer achieves unprecedented throughput and responsiveness, making it a powerhouse for high-volume on-chain activity.
 
