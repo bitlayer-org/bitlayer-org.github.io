@@ -20,7 +20,7 @@ During this stage, the focus is on empowering developers with a fully EVM-compat
 
 ### **Phase 2: Native Bitcoin Rollup — Pioneering Bitcoin Security**
 
-**Target: Q2 2025**
+**Target: Q1/Q2 2025**
 
 This phase marks a transformative leap as Bitlayer evolves into a native Bitcoin rollup, achieving Bitcoin-equivalent security by verifying Layer 2 state transitions directly on Bitcoin. This innovation ensures trustless, robust security for all transactions.
 
@@ -33,7 +33,7 @@ By anchoring its security to Bitcoin, Bitlayer establishes itself as a leader in
 
 ### **Phase 3: Enhanced Bitlayer Rollup — Scaling to New Heights**
 
-**Target: Q1 2026**
+**Target: Q4 2025**
 
 The final stage of the roadmap focuses on performance, scalability, and user experience. Bitlayer achieves unprecedented throughput and responsiveness, making it a powerhouse for high-volume on-chain activity.
 
