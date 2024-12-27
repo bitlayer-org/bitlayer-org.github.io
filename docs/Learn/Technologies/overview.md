@@ -18,3 +18,20 @@ The Bitlayer research team is dedicated to pushing the boundaries of what's poss
 **3. L1 Verification Protocols:** We are pioneering innovative protocols that operate directly on Bitcoin's base layer (L1). These protocols are designed to **verify off-chain computing**, enabling secure and efficient off-chain computation, paving the way for more complex applications and scalability solutions.
 
 **4. High-Performance L2 Transaction Execution:** To further enhance Bitcoin's capabilities, we are focused on developing technologies that enable lightning-fast execution of transactions on layer-2 solutions built on top of Bitcoin. 
+
+## Research Outcomes
+
+1. BitVM-Style Smart Contract
+    - A feasible smart contract abstraction tailored for Bitcoin
+    - A trust-minimized bridge smart contract for BTC Bridge (part of work is contributed to BitVM project)
+    - A recursive state transition verification smart contract for Bitcoin rollup
+2. Fraud Proofs on Bitcoin
+    - Modeling fraud proofs specifically for Bitcoin
+    - Establishing fraud-proof frameworks for the BTC Bridge and Bitcoin rollups
+    - A practical method to design and implement feasible fraud-proof solutions for Bitcoin
+3. Bitlayer Proof System
+    - Groth16: optimizing script size and implementing chunker functionality, contributing to the BitVM project
+    - TapSTARK: a hybrid proof system combining STARK and Bitcoin Taptree, addressing Merkle proof verification challenges in Bitcoin’s script language while bringing STARK’s advantages to BitVM2
+    - BF-STARK: a next-generation STARK system for Bitcoin, contingent on future Bitcoin upgrades
+4. Cryptography
+    - Threshold Adapter Signatures to facilitate secure and efficient atomic swaps
