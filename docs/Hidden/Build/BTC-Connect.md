@@ -9,7 +9,7 @@ Particle Network's BTC Connect is the first account abstraction protocol for the
 
 
 
-BTC Connect achieves this by, firstly, allowing users to connect to your dApp with their UniSat, OKX, TokenPocket, Bybit, or Bitget wallet. Upon connecting, a smart account is generated on Bitlayer and assigned to their BTC account. This smart account can then be used and authenticated directly through their BTC wallet, providing native Bitcoin users with a simple interface to interact with applications on Bitlayer.
+BTC Connect achieves this achieves this first by allowing users, allowing users to connect to your dApp with their UniSat, OKX, TokenPocket, Bybit, or Bitget wallet. Upon connecting, a smart account is generated on Bitlayer and linked to their BTC account. This smart account can then be used and authenticated directly through their BTC wallet, providing native Bitcoin users with a simple interface to interact with applications on Bitlayer.
 
 
 
@@ -44,7 +44,7 @@ Before configuring and implementing BTC Connect, you'll need to meet the followi
 4. Finally, with an application made, copy your **Project ID**, **Client Key**, and **App ID**.
 
 
-You'll be using these three values momentarily to configure BTC Connect. If applicable, you can save these within corresponding environment variables, such as `REACT_APP_PROJECT_ID`, `REACT_APP_CLIENT_KEY`, and `REACT_APP_APP_ID`.
+You'll be using these three values shortly to configure BTC Connect. If applicable, you can save these within corresponding environment variables, such as `REACT_APP_PROJECT_ID`, `REACT_APP_CLIENT_KEY`, and `REACT_APP_APP_ID`.
 
 
 ### Dependency Installation

@@ -5,7 +5,7 @@ sidebar_position: 1
 # FAQ
 
 ### Q: When does Bitlayer launch?
-A: The mainnet launch of Bitlayer is scheduled for early April.
+A: Bitlayer's mainnet launch is planned for early April.
 
 
 ### Q: Is Bitlayer EVM compatible?

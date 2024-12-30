@@ -21,7 +21,7 @@ But at this point, if you don’t at least understand the trade-offs, then you�
 
 Inscriptions, Ordinals, BRC-20s, NFTs, DeFi, Layer 2s…these developments signal a major movement in the Bitcoin paradigm towards the development of applications, infrastructure, and entire industries built on top of Bitcoin blockchain technology.
 
-Another signal, perhaps the biggest of them all, was the SEC’s approval of Bitcoin ETFs and the ensuing scramble for exposure from major TradFi companies. Bitcoin purchased through Grayscale, ARK 21Shares, Franklin Templeton, Fidelity and others totaled more than 10x that of what miners were able to extract from the protocol in late February, 2024.
+Another signal, perhaps the biggest of them all, was the SEC’s approval of Bitcoin ETFs and the ensuing scramble for exposure from major TradFi companies. Bitcoin purchased through Grayscale, ARK 21Shares, Franklin Templeton, Fidelity and others totaled more than 10x that of what miners were able to extract from the protocol in late February 2024.
 
 It’s the confluence of these factors: adoption by global markets, and the development of Bitcoin applications and infrastructure, that gives Bitcoin a new meaning. Namely:
 
@@ -65,7 +65,7 @@ The solutions offered by Bitlayer will not fundamentally alter Bitcoin in any wa
 
 Building on this, Bitlayer aims to unlock and expand additional use cases, elevating Bitcoin from the status of a digital gold to a productive asset that could serve as the bedrock of the entire decentralized economy. For Bitcoin holders, value lies in capturing the increasing value created by a wealth of new decentralized applications such as NFTs, DeFi, blockchain gaming and DePIN.
 
-Is Bitlayer the Next Big Thing for Bitcoin？
+Is Bitlayer the Next Big Thing for Bitcoin?
 BitVM’s value is gaining increased recognition by developers as many teams continually work towards its implementation.
 
 Bitlayer’s core stated objective is to address the trade-off between security and Turing completeness in Bitcoin Layer 2 technology. Its design is inspired by BitVM, DLC/LN (Discreet Log Contract/Lightning Network) technical protocols, and multiple VMs (including EVM, the Ethereum Virtual Machine).
@@ -81,7 +81,8 @@ This traditional approach results in users completely losing control of their as
 
 The verification of Layer 2 state transitions operates on a principle comparable to proving one’s innocence– an inherently secure process. Theoretically, the choice of network used for state verification determines the security level of the Layer 2 network. As one of the most secure networks available, using Bitcoin’s base layer for verification enables Layer 2 solutions like Bitlayer to inherit Bitcoin’s robust security measures, achieving a level of security equivalent to Bitcoin itself. The introduction of the BitVM paradigm challenges the existing notion that complex computations cannot be performed on Bitcoin, offering a new pathway for executing Layer 2 state verifications on the Bitcoin network.
 
-Through integrating with BitVM, Bitlayer aspires to incentivize more users and developers in the ecosystem to participate and contribute to its development. Starting with EVM compatibility, Bitlayer can then enable applications and developers from the existing Ethereum ecosystem to migrate to Bitlayer at low cost, eliminating the need for substantial modifications or rewrites (an optimal choice for the launching of new projects and applications).
+Through integrating with BitVM, Bitlayer aspires to incentivize more users and developers in the ecosystem to participate and contribute to its development.
+ Starting with EVM compatibility, Bitlayer can then enable applications and developers from the existing Ethereum ecosystem to migrate to Bitlayer at low cost, eliminating the need for substantial modifications or rewrites (an optimal choice for the launching of new projects and applications).
 
 Compatibility with multiple VMs results in a more excellent DX/UX. So Bitlayer plans to expand the ecosystem further, providing access to more innovative applications for Bitcoin blockchain users.
 
@@ -90,7 +91,7 @@ Above is an outline of preliminary ideation for Bitlayer.
 Following the publication of the Bitlayer white paper, expect more insight into the project’s economic model design and core component design solutions. A Layer 2 state commitment challenge protocol based on BitVM, as well as bi-directional message/asset protocols based on DLC/LN, among others, are expected to make the development pipeline.
 
 Bitlayer is Making History on Bitcoin
-Bitcoin initially emerged and endured as an asset or “store of value”. Its open-source and decentralized nature have fostered a culture of experimentation. Unfortunately, this has also contributed to relatively sluggish development within the Bitcoin ecosystem. With the viral spread of Ordinals and a cultural shift towards “building on Bitcoin”, the protocol is reaching a significant inflection point, showing potential for an ecosystem larger than Ethereum’s.
+"Bitcoin started as an asset or 'store of value”. Its open-source and decentralized nature have fostered a culture of experimentation. Unfortunately, this has also contributed to relatively sluggish development within the Bitcoin ecosystem. With the viral spread of Ordinals and a cultural shift towards “building on Bitcoin”, the protocol is reaching a significant inflection point, showing potential for an ecosystem larger than Ethereum’s.
 
 At present, it appears that the full blossoming of the Bitcoin ecosystem will take some more time, as foundational issues such as the implementation of BitVM and crosschain security are in urgent need of resolution.
 

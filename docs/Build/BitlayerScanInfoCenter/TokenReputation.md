@@ -4,7 +4,7 @@ The Bitlayer(BTR) Scan Token Reputation is designed to help users make informed 
 
 ## 'NEUTRAL' reputation
 
-Neutral reputation determines that sufficient information about the project and the team provided providing some form of transparency.
+Neutral reputation determines that sufficient information about the project and the team is provided, ensuring some form of transparency.
 
 The contract source code must be verified.
 
@@ -12,9 +12,9 @@ Mandatory and sufficient information is provided (website, logo, official contac
 
 Professional public profiles for team members and advisers are also provided or published on the website (with LinkedIn profile giving attribute to the project).
 
-The token project must maintain a working website with active social profiles and communication channels.
+The token project must maintain a functional website with active social profiles and communication channels.
 
-No significant 'red' flags (that we were aware of at the point of time the reputation score was assigned).
+No significant 'red' flags identified at the time the reputation score was assigned.
 
 The token is listed on major price aggregator platform (like Coingecko and Coinmarketcap).
 

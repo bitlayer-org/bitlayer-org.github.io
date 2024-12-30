@@ -8,7 +8,7 @@ The vision of Bitlayer will be realized through the rollout of a mainnet in mult
 ![Roadmap](/img/Introduction/roadmap3.png)
 
 ## First Stage: Bitlayer PoS
-In this initial phase, Bitlayer adopts the best security model: PoS + Multisig, working with multiple MPC custody platforms, ultilizing 100% EVM-Compatible environment to onboard users and developers.
+In this initial phase, Bitlayer adopts the best security model: PoS + Multisig, working with multiple MPC custody platforms, utilizing 100% EVM-Compatible environment to onboard users and developers.
 
 Bitlayer PoS supports the cross-chain movement between BTC/EVM/Other Blockchains and Bitlayer, thereby enriching the overall value of the Bitlayer ecosystem.
 
@@ -16,7 +16,7 @@ During this stage, we will prioritize offering a 100% EVM-compatible development
 
 ## Second Stage: Bitcoin Finality-V1[WIP]
 
-In this phase, we plan to introduce a rollup-equivalent model, implement a BitVM component for commiting and challenging the state transition, achieving the L1 verification ability.
+In this phase, we plan to introduce a rollup-equivalent model, implement a BitVM component for committing and challenging the state transition, achieving the capability for L1 verification.
 
 By leveraging the vast network and security of Bitcoin, Bitlayer will continuously lead with the highest security standards, offering users enhanced flexibility and an improved onchain experience through network upgrades.
 
@@ -25,4 +25,4 @@ In this phase, our aim is to implement trustless bridge based on the L1 verifica
 
 Upon the completion of this third stage, Bitlayer’s final mainnet will be fully deployed, achieving the network's original goals—Bitcoin-equivalent security combined with Turing completeness. 
 
-This version is set to elevate the security standards of Bitcoin Layer 2 to an unprecedented level.
+This version is set to raise the security standards of Bitcoin Layer 2 to an unprecedented level.

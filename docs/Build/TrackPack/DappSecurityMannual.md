@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# Dapp Security Mannual
+# Dapp Security Manual
 
 # 1 Overview
-Bitlayer aims to become a Layer 2 public blockchain for BTC, achieving 100% EVM compatibility as well as compatibility with Ethereum ecosystem tools, using BTC as the native token. 
+Bitlayer aims to become a Layer 2 public blockchain on BTC, achieving full EVM and Ethereum ecosystem tool compatibility, using BTC as the native token. 
 
-Building various infrastructures and DApps on Bitlayer is essentially the same as doing so on Ethereum. For developers, ensuring security is paramount, especially when it comes to centralized permissions, with the primary concern being the security of private keys.
+Building various infrastructures and DApps on Bitlayer is essentially the same as doing so on Ethereum. For developers, ensuring security is paramount, particularly in the context of centralized permissions, with the primary concern being the security of private keys.
 
 This article provides some security practice recommendations for developers to consider when managing and using private keys.
 # 2 Basic security concepts
@@ -34,7 +34,7 @@ A fundamental security tool for EVM-compatible chains is a multi-signature smart
 Meanwhile, we have already deployed Safe-Global's open-source multi-signature wallet system on Bitlayer, which developers can freely use. Details are as follows:
 - Mainnet：https://multisign.bitlayer.org/home
 - Testnet：https://test-multisign.bitlayer.org/home 
-> Contract version：https://github.com/safe-global/safe-smart-account/tree/v1.3.0-libs.0
+> [Contract version]：(https://github.com/safe-global/safe-smart-account/tree/v1.3.0-libs.0)
 
 # 4 Third-party facilities and services
 

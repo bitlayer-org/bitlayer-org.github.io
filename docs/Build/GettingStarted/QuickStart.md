@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Quick Start Guide
 
-Your tools for building and testing smart contracts can work on Bitlayer smoothly as Bitlayer boasting 100% EVM and Ethereum toolchain compatibility.
+Your tools for building and testing smart contracts can work on Bitlayer smoothly as Bitlayer boasts 100% EVM and Ethereum toolchain compatibility.
 
 :::tip Note:
 
-We currently support Solidity up to version v0.8.23. Updates for newer versions might be delayed. 
+We currently support Solidity up to version v0.8.23. Updates for newer versions may be delayed. 
 
 :::
 
@@ -22,7 +22,7 @@ We currently support Solidity up to version v0.8.23. Updates for newer versions 
 | Network Name                | `Bitlayer Mainnet`                                                                       |
 | Chain ID                    | `200901`                                                                                 |
 | Currency Symbol             | BTC                                                                                      |
-| Explorer                    | [https://www.btrscan.com](https://www.btrscan.com),  [OKX Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)                                    |
+| Explorer                    | [https://www.btrscan.com](https://www.btrscan.com), [OKX Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)                                    |
 | Public RPC URLs             | [https://rpc.bitlayer.org](https://rpc.bitlayer.org), [https://rpc.bitlayer-rpc.com](https://rpc.bitlayer-rpc.com), [https://rpc.ankr.com/bitlayer](https://rpc.ankr.com/bitlayer) |
 | WebSocket              | <div>wss://ws.bitlayer.org</div><div>wss://ws.bitlayer-rpc.com</div>                                 |
 | Contract Addresses          | Refer to the [Contract Addresses page](../../DeveloperResources/Contracts)                         |
@@ -80,7 +80,7 @@ const config: HardhatUserConfig = {
 To deploy using the Bitlayer Testnet Public RPC, run:
 
 ```bash
-forge create ... --rpc-url=https://https://testnet-rpc.bitlayer.org/ --legacy
+forge create ... --rpc-url=https://testnet-rpc.bitlayer.org/ --legacy
 ```
 
 
