@@ -39,7 +39,7 @@ The ECG of BN254 is defined by divisors, and we introduce a point in projective 
 - $R = P \oplus P$, which represents the doubling of a single point.
 - $P = P \oplus \mathbb{O}$ and $\mathbb{O} = \mathbb{O} \oplus \mathbb{O}$, which demonstrate the rules governing the point at infinity.
 
-![[Pasted image 20241231172410.png]]
+![](/img/ZeroKnowledgeofBitcoin/tagent_and_chord.png)
 
 ## Pairing Computation
 
