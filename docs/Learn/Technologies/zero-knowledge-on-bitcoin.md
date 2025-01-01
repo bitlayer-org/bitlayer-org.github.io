@@ -26,7 +26,6 @@ Despite this chunking method, the intermediate values of these segments need to 
 
 This article will delve into the specifics of Groth16. First, some primary concepts and symbols will be quickly reviewed to align with the readers. Then, a key optimization related to verifying pairing will be introduced. Finally, the discussion will guide readers through the core idea of chunking the $\text{verify}$ algorithm. By the end, readers will gain an in-depth understanding of zero-knowledge proofs in BitVM.
 
-
 ## Elliptic Curve Group
 
 The Elliptic Curve Group (ECG) is widely used due to its efficiency compared to finite fields under large primes. In this context, the BN254 elliptic curve group is selected for both security and efficiency. The BN254 curve $C(F_{q^k})$ is defined by the equation $C: y^2 = x^3 + 3$, based on a finite field $F_{q^k}$, where $q$ is an efficiently chosen large prime.
@@ -37,35 +36,34 @@ The ECG of BN254 is defined by divisors, and we introduce a point in projective 
 - $R = P \oplus P$, which represents the doubling of a single point.
 - $P = P \oplus \mathbb{O}$ and $\mathbb{O} = \mathbb{O} \oplus \mathbb{O}$, which demonstrate the rules governing the point at infinity.
 
+![](/img/ZeroKnowledgeofBitcoin/tagent_and_chord.png)
 
-![[Pasted image 20241231172410.png]]
 ## Pairing Computation
 
 Selecting an efficient pairing is a common method to reduce verification time. For the pairing in the BN254 elliptic curve group (ECG), two torsion groups are specifically chosen, both based on a smaller finite field with characteristic $q$. Following the standard notation for pairings, we denote $G_1$ as $C(F_q)$, $G_2$ as $C(F_{q^2})$, and $G_T$ as $C(F_{q^k})$.
 
-The ate pairing on $r$-torsion groups is defined as a map 
+The ate pairing on $r$-torsion groups is defined as a map
 
 $$e: G_1 \times G_2 \rightarrow G_T$$
 and is expressed as
 $$e(P, Q) = f_{r, Q}^{(q^k-1)/r}(P)$$
 where $P \in G_1$, $Q \in G_2$, $k$ is the embedding degree, and $f_{r, Q}$ is a function whose divisor is $r(Q) - r(\mathbb{O})$. It is important to note that this is an optimized and reduced version. The computation of the Tate pairing in the BN254 ECG can be further simplified through algebraic optimization.
 
-By choosing any $r$ such that $\gcd(r, t) = 1$, for $rQ = \mathbb{O}$, we have 
+By choosing any $r$ such that $\gcd(r, t) = 1$, for $rQ = \mathbb{O}$, we have
 
 $$f_{tr, Q}(P) \rightarrow f_{r, Q}(P)^t \cdot f_{t, rQ}(P) \rightarrow f_{r, Q}(P)^t,$$
 which shows that $f_{tr, Q}$ is a valid substitution for $f_{r, Q}$. In the BN254 ECG setting, $tr = 6x + 2 + q - q^2 + q^3$, where $x = 4965661367192848881$. The evaluation of $f_{tr, P}$ is more efficient to compute by leveraging the Frobenius map. A similar technique is also applied during the verification of the pairing, rather than through direct computation.
 
-
 ## Groth16 Verifier
 
-The Groth16 verifier utilizes the properties of pairings while acknowledging its inherent inefficiencies. The proof is defined as 
+The Groth16 verifier utilizes the properties of pairings while acknowledging its inherent inefficiencies. The proof is defined as
 $$\pi = ([A]_{1}, [C]_{1}, [B]_{2}) \in G_1^2 \times G_2,$$
 
 and the verifier accepts the proof if and only if the following condition holds:
 
 $$[A]_{1} \cdot [B]_{2} = [\alpha]_{1} \cdot [\beta]_{2} + \sum_{i = 0}^l  z_i \left[(\beta A_i(\tau) + \alpha B_i(\tau) + C_i(\tau)) \cdot \gamma^{-1} \right] \cdot [\gamma]_{2} + [C]_{1} \cdot [\delta]_{2},$$
 
-where $\alpha, \beta, \tau, \gamma, A_i, B_i, C_i$ are precomputed during the setup phase, $l$ is the number of public inputs, and $z_i$s are the public inputs. 
+where $\alpha, \beta, \tau, \gamma, A_i, B_i, C_i$ are precomputed during the setup phase, $l$ is the number of public inputs, and $z_i$s are the public inputs.
 
 This equation can be simplified to the following form, which outlines the two phases of the Groth16 verifier:
 
@@ -127,5 +125,3 @@ $$
 32. \space & \textbf{Return } f
 \end{align*}
 $$
-
-
