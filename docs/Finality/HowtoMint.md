@@ -31,7 +31,7 @@ Enter amount within 0.0001~0.001, and input your Sepolia address(If you have con
 Please ensure the selected UTXOs are not associated with derivative assets like BRC20.
 If UTXOs you choosed containes more BTC than you mint, extra BTC will back to your BTC address
 
-![Pick your funding UTXOs](/img/Finality/tutorial/pick-your-funding-UTXOs.png)
+![Pick your funding UTXOs](/img/Finality/tutorial/pick-your-funding-utxo.png)
 
 
 ## 3. Generate address for Deposit
