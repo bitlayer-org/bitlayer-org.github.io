@@ -66,16 +66,21 @@ const config = {
           {
             to: '/docs/Learn/Introduction', // Link to a document, not a top-level directory
             position: 'left',
-            label: 'Learn',
+            label: 'Learn@Bitlayer',
             activeBaseRegex: `/docs/Learn`,
           },
           {
             to: '/docs/Build/GettingStarted/QuickStart', // Link to a document, not a top-level directory
             position: 'left',
-            label: 'Build',
+            label: 'Build@Bitlayer',
             activeBaseRegex: `/docs/Build`,
           },
-
+          {
+            to: '/docs/Finality/overview', // Link to a document, not a top-level directory
+            position: 'left',
+            label: 'Finality Bridge',
+            activeBaseRegex: `/docs/Finality`,
+          },
           {
             href: 'https://blog.bitlayer.org/',
             label: 'Blog',
