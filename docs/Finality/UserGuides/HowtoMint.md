@@ -7,7 +7,7 @@ sidebar_position: 50
 ## Prerequisites
 
 
-To get started, ensure you have wallets supporting BTC and EVM-compatible addresses, you can get test tokens from the [links](../Resources/GetFaucet.md).
+To get started, ensure you have wallets supporting BTC and EVM-compatible addresses, you can get test tokens from the [links](./GetTestToken.md).
 
 - Bitcoin Testnet3
   - Wallet: [UniSat](https://unisat.io/) , [OKX Web3](https://www.okx.com/web3)
