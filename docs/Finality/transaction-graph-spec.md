@@ -1,9 +1,12 @@
 
-## Transaction Graph Specification
+---
+sidebar_position: 99
+sidebar_label: Transaction Graph Specification
+---
 
+# Transaction Graph Specification
 
-
-### Peg-in
+## Peg-in
 
 1. The User provides sufficient UTXOs and it's sidechain address to the FBC
 2. The FBC responds with a valid peg-in transaction, accompanied by an endorsement consisting of signatures from the CEC on the transaction's TXID.
@@ -13,7 +16,7 @@
 
 The Bitcoin light client proof ensures that the peg-in transaction has been confirmed on the Bitcoin network, while the endorsement guarantees that the bitvm smart contract (transaction graph) has been successfully constructed. These two elements are critical for maintaining the security of the bridge.
 
-### Peg-out
+## Peg-out
 
 1. The user interacts with the FBC, specifying the amount it wishes to burn.
 2. The FBC responds with the most suitable burn transaction. As explained in the 'front-and-reclaim', the amount of peg-in funds is predetermined, so it may not exactly match the amount the user initially requested.
@@ -22,7 +25,7 @@ The Bitcoin light client proof ensures that the peg-in transaction has been conf
 
 For the user, the workflow is complete once the expected BTC is received. They do not need to worry about the reclaim process, which is the most complex aspect of the operation.
 
-### Reclaim
+## Reclaim
 
 1. The winner then submits a kickoff transaction to reclaim the peg-in funds following the challenge game. 
 2. An honest broker will receive the peg-in funds, while a malicious broker will be penalized through slashing, and the challenger will be rewarded.
