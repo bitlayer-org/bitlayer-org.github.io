@@ -44,7 +44,7 @@ You can view the logic rules of this smart contract through a visualized diagram
 Confirm all information and transfer your BTC.
 ![Make your BTC Deposit](/img/Finality/tutorial/make-your-btc-deposit.png)
 
-## 5. Mint your fiBTC on Ethereum
+## 5. Mint your YBTC on Ethereum
 This operation will cost 20-30Mins, it is safe to close the window. Minting process will continue as a background process and will not be interrupted.  
 
-![Mint your fiBTC on Ethereum](/img/Finality/tutorial/mint-your-fibtc-on-ethereum-1.png)
+![Mint your YBTC on Ethereum](/img/Finality/tutorial/mint-your-ybtc-on-ethereum.png)
