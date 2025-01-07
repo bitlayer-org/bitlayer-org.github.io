@@ -2,7 +2,7 @@
 sidebar_position: 50
 ---
 
-# How to Mint ?
+# How to Mint?
 
 ## Prerequisites
 

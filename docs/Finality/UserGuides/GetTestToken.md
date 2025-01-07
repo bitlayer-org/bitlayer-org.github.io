@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# How to get Test Token?
+# How to Get Test Token?
 
 ## Bitcoin Testnet3 Faucet
 
