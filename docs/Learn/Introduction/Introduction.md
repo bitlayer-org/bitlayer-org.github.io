@@ -2,29 +2,63 @@
 sidebar_position: 1
 ---
 
-# Welcome
-##   
+# Welcome to Bitlayer Documentation
 
-![The first bitcoin security-equivalent Layer 2 based on BitVM](/img/Introduction/FA_Bitlayer-Logo-horizontal.png)
+![Bitlayer](/img/Introduction/FA_Bitlayer-Logo-horizontal.png)
 
-### Explore Bitlayer Technical Documentation
+Welcome to the official Bitlayer documentation hub, your comprehensive guide to understanding and building on Bitlayer. Whether you're exploring the foundational aspects of our platform or diving into the details of our cutting-edge upgrades, this documentation will provide you with the technical insights and resources you need.
 
-Bitlayer is the first Layer 2 solution for Bitcoin that offers security equivalent to Bitcoin's own and Turing completeness. It is also the first Bitcoin Layer 2 solution based on BitVM paradigm. Bitlayer aims to enhance the Bitcoin ecosystem by providing secure scalability, promoting diversity of assets, and encouraging innovation. Ultimately, it seeks to offer users a faster, safer, and more flexible experience.
+## Explore Bitlayer Technical Documentation
 
-### Why Choose Bitlayer?
+- **Bitlayer PoS (V1):** For an in-depth understanding of Bitlayer V1 Mainnet, its architecture, and functionality, visit [Bitlayer PoS (V1)](https://docs.bitlayer.org/docs/Learn/Bitlayer%20PoS/Overview).
+- **Bitlayer Rollup (V2):** Learn about the technical architecture and innovations in our upcoming upgrade by visiting [Bitlayer Rollup (V2)](https://docs.bitlayer.org/docs/Learn/Bitlayer%20Rollup/overview).
+- **Finality Bridge:** Explore the user manual and technical details of our trust-minimized Bitcoin bridge by referring to the [Finality Bridge Document](https://docs.bitlayer.org/docs/Finality/overview).
+- **Bitlayer Research:** Discover our research outcomes and technological advancements in [Technologies](https://docs.bitlayer.org/docs/Learn/Technologies/overview).
 
-At Bitlayer, our primary focus is to address the scalability challenges of the Bitcoin network.
+## Bitcoin and Layer 2: Challenges and Opportunities
 
-While Bitcoin remains the leading blockchain for value transfer, it faces limitations in terms of scalability and transaction costs. Bitlayer tackles these issues head-on by leveraging cutting-edge cryptographic protocols and virtual machine technology. Bitlayer is building a native Bitcoin Layer 2 using BitVM paradigm, it will achieve Bitcoin finality, trustless bridge, multiple virtual machine support. This means that developers can easily migrate their existing smart contracts written in Solidity, Vyper, or any other language that compiles to EVM bytecode directly to Bitlayer, using familiar tools such as Ethereum JSON-RPC and Hardhat.
+Bitcoin, as the most secure and decentralized blockchain, has inherent limitations that hinder its scalability and programmability. Bitlayer aims to address these challenges while preserving Bitcoin's core principles.
 
-The ingenious integration of Bitcoin smart contracts and Ethereum compatibility sets Bitlayer apart, verifying the integrity of Bitlayer's transactions and ensuring a high level of security, decentralization, and resistance to censorship. These achievements are made possible through recent advancements in cryptography, blockchain protocol design, and hardware optimization.
+### Limitations of Bitcoin:
 
-For detailed insights into our technical architecture, please refer to the [Bitlayer Technical Architecture section](/docs/Learn/Introduction/TechnicalArchitecture).
+1. **Low Throughput and High Costs:** Bitcoin's base layer is designed for security and decentralization, but this comes at the cost of limited transaction capacity and high fees.
+2. **Lack of Programmability:** Bitcoin does not natively support smart contracts, limiting its ability to host complex decentralized applications.
+3. **No Trustless BTC Bridge:** There is no native mechanism for trustless interoperability between Bitcoin and other blockchain ecosystems.
 
+### The Future of Bitcoin Layer 2:
 
-### Can I Start Using Bitlayer Today?
+1. **Bitcoin-Equivalent Security:** Layer 2 solutions must inherit Bitcoin's robust security guarantees.
+2. **Trustless BTC Bridges:** Seamless and decentralized bridging of BTC assets to other chains is essential for ecosystem expansion.
+3. **Turing-Complete Programmability:** Enabling smart contracts and programmability will unlock new use cases for Bitcoin.
+4. **Unlimited Transaction Capacity:** Scaling solutions must achieve high throughput without compromising decentralization.
 
-According to our [roadmap](/docs/Learn/Introduction/Roadmap), we, the Bitlayer Mainnet-V1 has launched and we are also glad to offer a testnet environment where you can experiment with Bitlayer's capabilities. Please refer to our [Quick Start Guide](/docs/Build/GettingStarted/QuickStart) to get started with our test network and explore the infinite possibilities of Bitcoin on both Bitlayer Testnet and Mainnet.
+Bitlayer is at the forefront of realizing this vision, bringing transformative advancements to the Bitcoin ecosystem.
 
-### What Lies Ahead for Bitlayer?
-We have launched the Bitlayer Mainnet-V1 in early April, our journey to further security&decentralization is far from over. We are committed to decentralizing each component of the stack, ensuring a resilient and robust network. Stay updated on our progress by following our [Twitter](https://twitter.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also read our [Blog](https://blog.bitlayer.org/) to stay abreast of the latest Bitlayer developments.
+## About Bitlayer
+
+### What is Bitlayer?
+
+Bitlayer is a transformative innovation in the Bitcoin ecosystem, designed to bridge the gap between Bitcoin’s unrivaled security and the growing demand for scalability and programmability in modern blockchain systems. As the first rollup solution purpose-built for Bitcoin, Bitlayer harnesses the strength of Bitcoin’s base layer, ensuring that its operations inherit the same level of trust, decentralization, and resilience that have made Bitcoin the most secure blockchain in existence. At the same time, Bitlayer extends Bitcoin’s functionality by introducing Turing-complete programmability, enabling developers to create complex decentralized applications and smart contracts that were previously impossible within Bitcoin’s native framework. Built on the groundbreaking BitVM paradigm, Bitlayer brings smart contract capabilities to Bitcoin in a way that respects its foundational principles, while also being fully compatible with the Ethereum Virtual Machine (EVM), allowing developers to seamlessly migrate applications and tools from Ethereum to Bitlayer without significant modifications. This unique combination of Bitcoin’s security, Ethereum’s programmability, and the scalability of rollup architecture positions Bitlayer as more than just a scaling solution—it is a platform that reimagines Bitcoin’s potential, empowering users and developers to unlock new possibilities in decentralized finance, trustless systems, and scalable infrastructure, all while staying grounded in the core ethos of Bitcoin.
+
+### Bitlayer Vision
+
+Bitlayer's mission is to scale Bitcoin while preserving its core principles of decentralization and security. Our key objectives include:
+
+- Scaling Bitcoin without compromising its unparalleled security.
+- Providing the best infrastructure for Bitcoin-based financial applications (BTCFi).
+
+## What's the Current Status?
+
+Bitlayer is rapidly evolving, with significant milestones already achieved and exciting developments underway:
+
+1. **Bitlayer PoS (Mainnet-V1):**
+   Launched in early April 2024, Bitlayer V1 Mainnet is live and operational. Additionally, a testnet environment is available for developers and users to experiment with Bitlayer's capabilities. To get started with Bitlayer PoS, refer to our [Quick Start Guide](https://docs.bitlayer.org/docs/Build/GettingStarted/QuickStart).
+
+2. **Bitlayer Rollup (Mainnet-V2):**
+   Bitlayer Rollup, our next-generation upgrade, is currently under intensive development. As part of this effort, we have launched a testnet for the **Finality Bridge**, enabling the secure bridging of BTC assets. The testnet will soon be upgraded to support the rollup architecture, bringing us closer to realizing the full potential of Bitlayer V2.
+
+---
+
+By combining Bitcoin's security with cutting-edge scalability and programmability, Bitlayer is poised to redefine the possibilities of Bitcoin Layer 2. Dive into our documentation to explore the technical details and start building on Bitlayer today!
+
+Stay updated on our progress by following our [Twitter](https://twitter.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also read our [Blog](https://blog.bitlayer.org/) to stay abreast of the latest Bitlayer developments.
