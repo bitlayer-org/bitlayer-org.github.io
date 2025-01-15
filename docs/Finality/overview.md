@@ -5,27 +5,46 @@ sidebar_label: Overview
 
 # Overview
 
-In the rapidly evolving landscape of blockchain technology, the challenge of securely bridging Bitcoin with other blockchain networks has remained a persistent focus of innovation. Finality Bridge, developed by Bitlayer, emerges as a groundbreaking solution that leverages the power of BitVM2 to create a trust-minimized bridge for Bitcoin interoperability. This technological advancement represents a significant leap forward in addressing the fundamental challenges that have long plagued cross-chain Bitcoin transfers.
+## What is Finality Bridge?
 
-As a standalone product operating independently of Bitlayer's layer 2 infrastructure, Finality Bridge introduces a novel approach to Bitcoin bridging that prioritizes security and trust minimization while maintaining practical functionality. Its ability to support multiple target chains, including Ethereum, EVM-compatible chains like Bitlayer, and non-EVM chains like Solana, positions it as a versatile solution for the growing demands of cross-chain interoperability in the Bitcoin ecosystem.
+The **Finality Bridge** represents a groundbreaking advancement in Bitcoin bridging technology, developed by **Bitlayer** and powered by the innovative **BitVM smart contract**. As the first step toward the realization of the Bitlayer rollup, Finality Bridge offers a secure and efficient mechanism for transferring Bitcoin (BTC) into the Bitlayer ecosystem. This integration allows Bitcoin to be actively utilized within the **BTCFi ecosystem**, enabling seamless trading and interaction with decentralized finance (DeFi) applications.
 
-## Evolution of Bitcoin Bridges
+Unlike traditional BTC bridges, which often rely on centralized or semi-centralized custodians, Finality Bridge is **trust-minimized**, meaning it significantly reduces the level of trust required in third-party actors. This trust minimization is achieved through a protocol that combines the robustness of BitVM smart contracts with **fraud proofs**, ensuring that all transactions and operations are verifiable and secure.
 
-The journey toward achieving secure and efficient Bitcoin bridges has been marked by distinct evolutionary stages, each representing significant progress in addressing the fundamental challenges of cross-chain interoperability. Understanding this evolution provides crucial context for appreciating the revolutionary nature of Finality Bridge's approach.
+The architecture of Finality Bridge is designed to be highly extensible, making it adaptable to a range of blockchain environments. Initially, it supports the **Bitlayer rollup** and **Ethereum**, with plans to expand compatibility to other **EVM-compatible chains** such as Avalanche and Polygon, as well as non-EVM chains like **Solana**. This flexibility underscores its potential to become a universal solution for bridging Bitcoin across diverse blockchain ecosystems. The token minted through the Finality Bridge, known as **YBTC (Yielding BTC)**, plays a central role in this process, serving as the representation of Bitcoin within these environments.
 
-The first generation of Bitcoin bridges emerged with solutions like Wrapped Bitcoin (wBTC), which relied entirely on centralized custodians and control mechanisms. While functional, these solutions required users to place complete trust in a single entity or small group of entities, fundamentally contradicting the decentralized ethos of blockchain technology.
+## Finality Bridge: A 3rd Generation BTC Bridge
 
-Second-generation bridges introduced distributed control mechanisms while maintaining centralized custody. These Multi-Party Computation (MPC) bridges represented an important step forward in security by distributing control across multiple parties. However, they still relied on custodial services, creating persistent vulnerabilities in the system.
+### The Evolution of BTC Bridges
 
-The third generation brought sophisticated middleware chain-assisted bridges, exemplified by solutions like tBTC. These implementations featured distributed custody systems backed by Proof-of-Stake incentives, marking significant advancement in decentralization while still facing limitations in security guarantees and trust assumptions.
+To fully appreciate the significance of Finality Bridge, it is essential to understand its place within the broader evolution of Bitcoin bridging technologies. BTC bridges can be categorized into four distinct generations, each defined by the type of custodian managing the locked Bitcoin funds:
 
-With the advent of fourth-generation solutions, exemplified by Finality Bridge powered by BitVM2 technology, we witness a fundamental shift toward trust minimization. This approach moves beyond previous limitations by implementing sophisticated smart contract mechanisms on Bitcoin itself, despite the network's limited native smart contract capabilities.
+1. **First Generation: Centralized Custodian**  
+    The earliest BTC bridges relied on centralized custodians, where Bitcoin funds were locked in addresses controlled by a single entity or a fixed group. This model, while simple, introduced significant trust requirements and risks. For example, **wBTC** relies on centralized control, while **MPC-based BTC bridges** distribute control among a predefined group. However, both models are vulnerable to single points of failure or collusion within the custodian group.
+    
+2. **Second Generation: Distributed Custodian**  
+    The next evolution introduced distributed custodianship, where Bitcoin funds were locked in addresses controlled by groups of randomly selected entities. These groups were randomly chosen from a larger set to reduce the risk of collusion. To incentivize honest behavior, participants were required to stake assets on a middleware blockchain, with penalties (such as forfeiting their stake) for any detected misconduct. A notable example of this approach is the **tBTC bridge**, supported by the Keep Network. While an improvement over centralized custodianship, this model still assumes an **honest majority** within the group, which can be a critical vulnerability.
+    
+3. **Third Generation: Trust-Minimized Smart Contract Custodian**  
+    The Finality Bridge belongs to this generation, which represents a paradigm shift in BTC bridging. Here, Bitcoin funds are locked in addresses controlled by a **BitVM smart contract**, a system that requires only one honest participant to ensure security. This approach eliminates the need for centralized or distributed custodians, relying instead on the inherent transparency and verifiability of the smart contract. This makes the custodian **trust-minimized**, reducing the reliance on external actors and enhancing the overall security of the bridge.
+    
+4. **Fourth Generation: Trustless Smart Contract Custodian** _(Future)_  
+    The theoretical fourth generation envisions a fully trustless model, where Bitcoin funds are locked in **covenant-style smart contracts** that inherit Bitcoin’s native security without any external assumptions. However, this model depends on the introduction of **covenant opcodes** in a future Bitcoin upgrade, which is not yet available.
 
-Looking ahead, the theoretical fifth generation of Bitcoin bridges promises complete trustlessness, though this advancement remains contingent on future Bitcoin protocol upgrades. This forward-looking perspective helps contextualize Finality Bridge's position as a crucial stepping stone toward truly trustless cross-chain interoperability.
+![1st BTC bridge generation](/img/Finality/introduction/001.jpg)
 
-Two critical limitations plagued previous generations of bridges:
+![2nd BTC bridge generation](/img/Finality/introduction/002.jpg)
 
-1. The requirement for honest majority assumptions, which created systemic vulnerabilities that could potentially compromise the entire bridge system.
-2. The mismatch between security levels of wrapped Bitcoin and other DeFi assets, introducing inconsistencies in the broader ecosystem's security model.
+![3rd and 4th BTC bridge generation](/img/Finality/introduction/003.jpg)
 
-Fourth-generation solutions like Finality Bridge directly address these limitations through innovative architectural approaches and security mechanisms, establishing new standards for Bitcoin bridge security and reliability.
+### Addressing the Limitations of Earlier Generations
+
+As a **3rd generation BTC bridge**, Finality Bridge resolves key issues that plagued earlier models. First, it removes the reliance on an **honest majority**, a critical vulnerability in distributed custodian systems. Second, it ensures that the security level of the wrapped Bitcoin (YBTC) matches that of other DeFi assets, addressing a long-standing concern about the robustness and reliability of BTC-backed assets in decentralized ecosystems.
+
+## YBTC: The Yielding BTC Token
+
+At the heart of the Finality Bridge lies **YBTC**, the token minted on the Bitlayer rollup and other supported environments when users lock their Bitcoin into the BitVM smart contract. YBTC is designed to be a secure and reliable representation of Bitcoin within decentralized ecosystems, and its design reflects the principles of trust minimization and security that underpin the Finality Bridge.
+
+YBTC maintains a **strict 1:1 peg with BTC**, ensuring that every YBTC token in circulation is backed by an equivalent amount of Bitcoin locked in the BitVM smart contract. Unlike tokens issued by centralized custodians, YBTC is not dependent on any single entity for its security. Instead, it derives its integrity from the transparency and verifiability of the BitVM smart contract, which eliminates the need for trust in third-party actors.
+
+It is important to note that YBTC is not a **liquid staked token (LST)**. This means that the Bitcoin locked in the smart contract cannot be accessed or utilized by anyone, ensuring the absolute security of the underlying funds. This design choice further distinguishes YBTC from other BTC-backed tokens, making it a robust and trustworthy asset for use in DeFi applications.
