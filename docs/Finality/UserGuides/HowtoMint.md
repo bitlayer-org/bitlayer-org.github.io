@@ -18,7 +18,7 @@ To get started, ensure you have wallets supporting BTC and EVM-compatible addres
 
 ## 1. Connect Bitcoin Wallet
 
-#### 1.1 Connect Bitcoin Testnet3, and Sign in.
+#### 1.1 Visit [Finality Bridge](https://finality.bitlayer.org/), Connect Bitcoin Testnet3, and Sign in.
 ![Connect Bitcoin Wallet](/img/Finality/tutorial/connect-wallet.png)
 
 #### 1.2 Confirm address and amount

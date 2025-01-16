@@ -5,7 +5,7 @@ sidebar_label: Finality Bridge Protocol
 
 # Finality Bridge Protocol
 
-The Finality Bridge Protocol represents a sophisticated mechanism for enabling secure and decentralized interoperability between Bitcoin and other blockchain ecosystems. By leveraging innovative technologies such as BitVM smart contracts and fraud-proof mechanisms, it establishes a trust-minimized environment where funds can be transferred across chains while preserving the integrity of Bitcoin's foundational principles. This article delves into the architecture and operations of the protocol, with a particular focus on its components on Bitcoin, its interaction with target chains, and the intricate processes that govern its functionality.
+The [Finality Bridge](https://finality.bitlayer.org/) Protocol represents a sophisticated mechanism for enabling secure and decentralized interoperability between Bitcoin and other blockchain ecosystems. By leveraging innovative technologies such as BitVM smart contracts and fraud-proof mechanisms, it establishes a trust-minimized environment where funds can be transferred across chains while preserving the integrity of Bitcoin's foundational principles. This article delves into the architecture and operations of the protocol, with a particular focus on its components on Bitcoin, its interaction with target chains, and the intricate processes that govern its functionality.
 
 ## Bridge Contract on Bitcoin
 
