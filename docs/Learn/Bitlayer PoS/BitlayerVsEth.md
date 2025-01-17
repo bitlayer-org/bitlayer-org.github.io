@@ -10,7 +10,7 @@ This document compares Bitlayer and Ethereum across several key aspects includin
 | Feature                   | Bitlayer                                                                 | Ethereum                                                                                      |
 |---------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | **Gas Price**             | Lower due to efficiency mechanisms.                          | Variable, dependent on network demand. High demand can lead to increased gas prices.          |
-| **EVM Support**           | Supports EVM-compatible smart contracts through the Layered Virtual Machine (LVM). | Full EVM support as the native platform.                                                       |
+| **EVM Support**           | Supports EVM-compatible smart contracts. | Full EVM support as the native platform.                                                       |
 | **Solidity Support**      | Supports up to Solidity version v0.8.25. Future versions will be supported. | Supports the latest versions of Solidity, with ongoing updates.                               |
 | **Developer Implications**| Offers a platform leveraging Bitcoin's security. Easier transition for those familiar with Ethereum's EVM. | Mature tooling and community support.|
 | **User Implications**     | Access to innovative dApps leveraging Bitcoin's security. | Vast ecosystem of dApps.   |
@@ -39,7 +39,7 @@ In contrast, Ethereum's gas prices fluctuate based on network demand. Users comp
 ### Bitlayer
 
 #### EVM Support
-Bitlayer introduces the Layered Virtual Machine (LVM), which is fully compatible with Ethereum Virtual Machine (EVM) smart contracts. It supports EVM-compatible contracts up to the Cancun update, with the exception of the PREVRANDAO opcode, BLOBHASH opcode, and BLOBBASEFEE opcode. This enables developers to build applications on Bitcoin's secure network, mirroring the functionality available on Ethereum.
+Bitlayer is fully compatible with Ethereum Virtual Machine (EVM) smart contracts. It supports EVM-compatible contracts up to the Cancun update, with the exception of the PREVRANDAO opcode, BLOBHASH opcode, and BLOBBASEFEE opcode. This enables developers to build applications on Bitcoin's secure network, mirroring the functionality available on Ethereum.
 
 #### Solidity Version
 Currently, Bitlayer supports Solidity up to version v0.8.25, with a commitment to incorporating future versions. This stance ensures that developers have access to a stable and secure environment for their smart contracts.
@@ -56,7 +56,7 @@ Ethereum consistently supports the latest versions of Solidity, providing develo
 
 ### For Developers
 
-- **Bitlayer** emerges as an appealing platform for developers seeking to leverage Bitcoin's renowned security with the added benefit of potentially lower operational costs. The LVM's compatibility with EVM ensures a smooth transition for developers already familiar with Ethereum's ecosystem.
+- **Bitlayer** emerges as an appealing platform for developers seeking to leverage Bitcoin's renowned security with the added benefit of potentially lower operational costs. The compatibility with EVM ensures a smooth transition for developers already familiar with Ethereum's ecosystem.
 - **Ethereum** remains a cornerstone for smart contract and decentralized application development, supported by its extensive tooling and a vibrant community.
 
 ### For Users
