@@ -60,7 +60,7 @@ const config = {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'G-THLS255HKW', // Replace with your GA4 measurement ID
+        trackingID: 'G-R3DF3TS5JQ', // Replace with your GA4 measurement ID
         anonymizeIP: true, // Optional, anonymize the IP addresses
       },
     ],
