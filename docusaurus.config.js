@@ -13,8 +13,8 @@ const config = {
   tagline: 'The first Bitcoin security-equivalent Layer 2 based on BitVM',
   url: 'https://docs.bitlayer.org',
   baseUrl: '/',
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/bitlayer.ico',
   organizationName: 'bitlayer-org', // Usually your GitHub org/user name.
   projectName: 'bitlayer-org.github.io', // Usually your repo name.
@@ -124,7 +124,7 @@ const config = {
               },
               {
                 label: 'Build',
-                to: '/docs/Build/GettingStarted',
+                to: '/docs/Build/GettingStarted/QuickStart',
               },
             ],
           },

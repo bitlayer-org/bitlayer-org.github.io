@@ -25,7 +25,7 @@ We currently support Solidity up to version v0.8.23. Updates for newer versions 
 | Explorer                    | [https://www.btrscan.com](https://www.btrscan.com),  [OKX Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)                                    |
 | Public RPC URLs             | [https://rpc.bitlayer.org](https://rpc.bitlayer.org), [https://rpc.bitlayer-rpc.com](https://rpc.bitlayer-rpc.com), [https://rpc.ankr.com/bitlayer](https://rpc.ankr.com/bitlayer) |
 | WebSocket              | <div>wss://ws.bitlayer.org</div><div>wss://ws.bitlayer-rpc.com</div>                                 |
-| Contract Addresses          | Refer to the [Contract Addresses page](../../DeveloperResources/Contracts)                         |
+| Contract Addresses          | Refer to the [Contract Addresses page](/docs/Build/DeveloperResources/Contracts.md)                         |
 | Connect Wallet              | [Click here to connect your wallet to Bitlayer Mainnet](https://chainlist.org/?search=bitlayer) |
 
 [Introducing Bitlayer Mainnet-V1: Unlocking the Potential of Bitcoin](https://medium.com/@Bitlayer/introducing-bitlayer-mainnet-v1-unlocking-the-potential-of-bitcoin-56c5fa2159fd) 
@@ -42,7 +42,7 @@ Click the above link to know more about our Mainnet-V1.
 | Explorer                    | [https://testnet-scan.bitlayer.org](https://testnet-scan.bitlayer.org)         |
 | Public RPC URL              | [https://testnet-rpc.bitlayer.org](https://testnet-rpc.bitlayer.org)                                 |
 | WebSocket              | <div>wss://testnet-ws.bitlayer.org</div><div>wss://testnet-ws.bitlayer-rpc.com</div>                                 |
-| Contract Addresses          | Refer to the [Contract Addresses page](../../DeveloperResources/Contracts)                         |
+| Contract Addresses          | Refer to the [Contract Addresses page](/docs/Build/DeveloperResources/Contracts.md)                         |
 | Connect Wallet              | [Click here to connect your wallet to Bitlayer Testnet](https://chainlist.org/?search=bitlayer&testnets=true) |
 
 :::tip 
