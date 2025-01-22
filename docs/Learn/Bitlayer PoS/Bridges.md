@@ -17,7 +17,7 @@ Currently, the official bridges don't support direct integration or invocation b
 
 #### Proof of Reserve
 
-You can find the Proof of Reserve information here: [POR page](/docs/Learn/BitlayerNetwork/POR).
+You can find the Proof of Reserve information here: [POR page](./POR).
 
 #### BTC to Bitlayer
 
