@@ -5,76 +5,162 @@ sidebar_label: Finality Bridge Protocol
 
 # Finality Bridge Protocol
 
-The [Finality Bridge](https://finality.bitlayer.org/) Protocol represents a sophisticated mechanism for enabling secure and decentralized interoperability between Bitcoin and other blockchain ecosystems. By leveraging innovative technologies such as BitVM smart contracts and fraud-proof mechanisms, it establishes a trust-minimized environment where funds can be transferred across chains while preserving the integrity of Bitcoin's foundational principles. This article delves into the architecture and operations of the protocol, with a particular focus on its components on Bitcoin, its interaction with target chains, and the intricate processes that govern its functionality.
+The **Finality Bridge Protocol** establishes the foundational framework for interactions between users and two distinct smart contracts—one deployed on Bitcoin and the other on a target chain. This protocol is designed to facilitate a trust-minimized bridging mechanism, enabling secure and efficient movement of Bitcoin (BTC) across blockchain ecosystems while maintaining the integrity of the underlying assets.
 
-## Bridge Contract on Bitcoin
+## Defining Protocol Participants
 
-At the heart of the Finality Bridge Protocol lies the bridge contract on Bitcoin, which is constructed using BitVM smart contract technology. This approach is particularly well-suited for building bridge protocols due to its ability to emulate smart contract functionality on Bitcoin, a platform traditionally limited in this regard. BitVM achieves this by utilizing pre-signed transaction graphs that define all possible execution paths, ensuring that funds remain secure and accessible only through predefined conditions.
+The protocol involves several key participants, each playing a specific role in ensuring the secure and seamless operation of the bridge:
 
-One of the key advantages of BitVM smart contracts is their inherent trust-minimization. A peg-in user, for instance, will only deposit funds after verifying that the correct smart contract has been generated and published. This ensures that no party is harmed if the user chooses not to proceed. Furthermore, the security model operates under a "1-of-N" assumption, meaning that as long as one committee member deletes their private key after signing, it becomes impossible to introduce unauthorized exits for the bridge funds. This design ensures that the bridge contract secures the funds without relying on custodianship, aligning with Bitcoin's decentralized ethos.
+1. **Bridge Contract A:**  
+    Deployed on Bitcoin, this contract acts as the **trust-minimized custodian** of the bridge funds. It is responsible for securing the BTC locked by users and managing the exit paths for the funds.
+    
+2. **Bridge Contract B:**  
+    Deployed on the target chain (e.g., Bitlayer rollup), this contract functions as the **management console** for the minted YBTC tokens, which represent the pegged BTC on the target chain.
+    
+3. **Peg-in User:**  
+    A BTC holder who initiates the bridging process by locking BTC in Bridge Contract A. In return, the peg-in user mints an equivalent amount of YBTC on Bridge Contract B. Each bridge instance involves a single peg-in user.
+    
+4. **Peg-out User:**  
+    A YBTC holder who burns their tokens on Bridge Contract B to withdraw BTC from Bridge Contract A. The number of peg-out users corresponds to the number of fund exits defined in Bridge Contract A.
+    
+5. **Broker:**  
+    Serving as a **middleman**, brokers provide short-term liquidity to peg-out users by fulfilling their withdrawal requests. Brokers later reclaim the BTC from Bridge Contract A using a **front-and-reclaim** mechanism, which ensures the smooth operation of the bridge while addressing the unpredictability of peg-out requests.
 
-For more details on the principles and mechanics of BitVM smart contracts, refer to the [BitVM documentation](https://github.com/bitlayer-org/bitlayer-org.github.io/blob/feature/v2-doc/docs/Learn/Technologies/bitvm-smart-contract.md).
+## Bridge Contract A on Bitcoin
 
-### Bridge Instance Lifecycle
+### Overview
 
-Each peg-in request initiates the creation of a new bridge instance, which is governed by its own BitVM smart contract. This contract meticulously defines all potential exits for the peg-in funds, ensuring that once the funds enter the target chain, they can only be withdrawn back to Bitcoin through the smart contract. This guarantees that no external entity can bypass the contract and access the locked funds.
+Bridge Contract A, deployed on Bitcoin, is constructed using the **BitVM smart contract** framework. Rather than a single, monolithic contract, it consists of multiple contract instances, with each instance corresponding to a unique bridge instance. This decentralized construction ensures that funds are securely managed without reliance on a centralized custodian.
 
-The lifecycle of a bridge instance is characterized by three distinct states:
-1. **Inactive**: The initial state before the peg-in funds are locked in the BitVM smart contract.
-2. **Active**: Once the peg-in funds are secured within the contract, the instance transitions to an active state, enabling operations such as peg-out.
-3. **Finished**: When all peg-in funds are returned to Bitcoin, the instance concludes its lifecycle by transitioning to the finished state.
+The **BitVM smart contract** is particularly well-suited for building bridge protocols due to its robust trust-minimized design:
 
-### User Operations: Peg-in and Peg-out
+- **Verification Before Deposit:** Peg-in users can verify the correctness of the smart contract before depositing funds, ensuring that no funds are at risk unless the contract is valid and publicly available.
+- **1-of-N Security:** The trust model assumes that as long as one participant deletes their private key, the contract remains secure. This ensures that no malicious actor can manipulate the contract to steal funds.
+- **Immutable Exit Paths:** The transaction graph defines all possible exits for the bridge funds, preventing unauthorized access or tampering.
 
-The protocol supports two primary user operations: peg-in and peg-out. During a peg-in, users lock their BTC in a BitVM smart contract, which results in the minting of YBTC—a token representation of BTC—on the target chain. Each YBTC token is pegged 1:1 to BTC, ensuring value parity. Conversely, a peg-out involves burning YBTC on the target chain to withdraw an equivalent amount of BTC from the BitVM smart contract. While the peg-in process is relatively straightforward, the peg-out operation introduces additional complexities, which are addressed through innovative mechanisms discussed later in this article.
+For more details, refer to [BitVM Smart Contract](Learn/Technologies/bitvm-smart-contract.md).
 
-### The Role of the Presigning Committee
+### Bridge Instances and Contract Instances
 
-To facilitate the secure operation of each bridge instance, a presigning committee is elected. This committee is responsible for reviewing and pre-signing the transaction graph that governs the BitVM smart contract. To ensure fungibility of funds across different bridge instances, the size of the presigning committee is standardized. Notably, the protocol allows peg-in users to join the presigning committee, further enhancing security by incentivizing honest behavior. Peg-in users have a vested interest in protecting their funds, motivating them to act in accordance with the protocol's rules, such as deleting their private keys after signing.
+Each peg-in request triggers the creation of a new **bridge instance**, which manages the entire lifecycle of the pegged funds. The following steps outline the process:
 
-### Handling Dynamic Elements and Unpredictable Inputs
+1. **Creation of Bridge Contract A:**
+    For each bridge instance, a unique BitVM smart contract (Bridge Contract A) is generated collaboratively by the participants. This involves jointly proposing and cosigning the transaction graph that defines the contract's behavior.
+    
+2. **Deployment of the Transaction Graph:**
+    Once the pre-signed transaction graph is published, the smart contract is considered "deployed." Although this deployment mimics Ethereum-style on-chain smart contract deployment, all operations occur off-chain.
+    
+3. **Lifecycle Management:**
+    
+    - When the peg-in fund is locked in Bridge Contract A, the bridge instance transitions from an **inactive** to an **active** state.
+    - Once all pegged funds are withdrawn and returned to Bitcoin, the bridge instance transitions to a **finished** state.
 
-A significant challenge in BitVM smart contracts is managing dynamic elements, particularly the unpredictability of peg-out users. Since the beneficiary and amount of peg-in funds must be predetermined during the contract's construction, only a limited set of users can initially receive the funds. This rigidity introduces operational inefficiencies.
+This design ensures that all exits of the pegged funds are predefined and immutable, guaranteeing that no external actor can bypass the contract to access the funds.
 
-To address this, the protocol employs a "front-and-reclaim" scheme. Brokers act as intermediaries, fronting the peg-out requests with their own liquidity and subsequently reclaiming the funds from the BitVM smart contract. This approach not only resolves the predictability issue but also ensures that users experience seamless operations without being constrained by the contract's static nature.
+### Handling Dynamic Participants
 
-## Bridge Contract on Target Chain
+One of the key challenges in constructing Bridge Contract A is managing the unpredictability of peg-out users. Since the transaction graph must be presigned by all participants, the beneficiaries and amounts for each fund exit must be determined in advance. This limitation introduces significant inconvenience, as it restricts the eligibility of users to withdraw funds.
 
-The Finality Bridge Protocol is designed to support multiple target chains, including Ethereum and Bitcoin rollups like Bitlayer. The architecture of the bridge contract on the target chain varies depending on the chain's specific design, particularly its light client implementation. This adaptability ensures that the protocol can operate efficiently across diverse blockchain ecosystems.
+To address this issue, the protocol introduces the role of **brokers**, who act as intermediaries. Brokers provide liquidity to peg-out users by fulfilling their withdrawal requests and reclaiming the funds from Bridge Contract A later. This **front-and-reclaim scheme** ensures that the bridge can operate efficiently despite the dynamic nature of peg-out requests.
 
-### Example: Ethereum Mainnet and Bitlayer Rollup
+### Presigning Committee
 
-On Ethereum, the bridge contract integrates with Ethereum's light client to verify transactions and manage the minting and burning of YBTC tokens. Similarly, on Bitcoin rollups like Bitlayer, the bridge contract is tailored to interact with the rollup's unique consensus and state verification mechanisms. These variations highlight the protocol's flexibility and its ability to accommodate the nuances of different blockchain platforms.
+The security of Bridge Contract A relies on a **presigning committee**, which is responsible for jointly signing the transaction graph. However, the composition of this committee introduces potential vulnerabilities:
+
+- Peg-out users cannot participate in the presigning process because their identities are unknown at the time.
+- The committee, comprising the peg-in user and brokers, creates an imbalance of power, as brokers may collude to steal the pegged funds.
+
+To mitigate this risk, the protocol incorporates **neutral members** into the presigning committee. These members, who have no direct stake in the funds, act as impartial participants to enhance security.
+
+Key considerations for the presigning committee include:
+
+- The size of the committee must be significantly larger than the number of brokers to prevent collusion.
+- The peg-in user also joins the committee, adding an additional layer of security by acting in their own interest to protect the funds.
+- To ensure fungibility of funds across bridge instances, the size of the presigning committee must remain consistent across all instances.
+
+### Transaction Graph Design
+
+The transaction graph in Bridge Contract A consists of multiple subgraphs that define the flow of funds:
+
+1. **Peg-in Subgraph:**  
+    Contains a single transaction in which the pegged funds are distributed among multiple exit UTXOs.
+    
+2. **Peg-out Subgraphs:**  
+    Each peg-out subgraph corresponds to a single peg-out transaction, where brokers use their reserved UTXOs to fulfill withdrawal requests.
+    
+3. **Reclaim Subgraphs:**  
+    For each broker, multiple reclaim subgraphs are prepared, corresponding to potential fund exit paths. While not all reclaim subgraphs will be executed on-chain, they ensure that brokers can reclaim their liquidity in a trust-minimized manner.
+
+### Addressing Invalid Reclaim Requests
+
+To prevent brokers from submitting invalid reclaim requests, the protocol employs an **optimistic fraud-proof mechanism**:
+
+- When a broker submits a reclaim request, they must commit to the result of a **Reclaim Checker**, which verifies the validity of the request.
+- If no challenge is raised within a specified period (e.g., one week), the broker is allowed to reclaim the funds.
+- In the event of a dispute, a **vigilante** can challenge the reclaim request and submit a fraud proof to Bridge Contract A.
+
+The fraud-proof mechanism assumes the presence of at least one honest vigilante who actively monitors the system and ensures that invalid reclaim requests are rejected.
+
+## Bridge Contract B on the Target Chain
+
+Bridge Contract B, deployed on the target chain, manages the lifecycle of YBTC tokens. Unlike Bridge Contract A, its implementation varies depending on the target chain's architecture. For example, Turing-complete chains like Ethereum and Bitlayer rollup allow for more straightforward implementations, while other chains may require custom designs.
+
+Further details on Bridge Contract B will be provided in future updates.
 
 ## End-to-End Operations
 
-### Peg-in: Locking BTC in the Smart Contract
+### Peg-in Process
 
-The peg-in process begins with the generation of an N-of-N multisig by the presigning committee. This multisig acts as the custodian of the smart contract, ensuring that no single entity can unilaterally access the funds. Once the peg-in user verifies the correctness of the contract, they transfer their BTC to the multisig, effectively locking the funds in the smart contract. The deletion of private keys by committee members further ensures the trust-minimized nature of the protocol.
+1. The presigning committee generates a multisig address to act as the custodian of the pegged funds.
+2. The peg-in user locks their BTC in the multisig after verifying the correctness of the smart contract.
 
-### Peg-out: Front-and-Reclaim Procedure
+### Peg-out Process
 
-The peg-out process is facilitated by brokers, who play a crucial role in bridging the gap between the static nature of the smart contract and the dynamic requirements of users. When a peg-out user burns YBTC on the target chain, they initiate a peg-out request by partially signing a Bitcoin transaction. The broker validates the request, transfers the requested BTC to the user, and subsequently reclaims the funds from the smart contract.
-
-The reclaim process is inherently optimistic. The broker submits a reclaim request on-chain, which is finalized if no challenges are raised within a predefined window. However, if a challenge arises, a dispute resolution game is triggered. This game, based on fraud proofs, determines the validity of the reclaim request. If the challenge succeeds, the broker's request is rejected, and their deposit is forfeited. This mechanism ensures that the complexity of the process is offloaded to the broker, who charges a fee for their service.
+1. The peg-out user burns YBTC on Bridge Contract B and initiates a withdrawal request.
+2. A broker fulfills the request by transferring BTC to the peg-out user.
+3. The broker reclaims the funds from Bridge Contract A through the fraud-proof mechanism.
 
 ## Fraud Proofs for Reclaim Procedure
 
-Fraud proofs are an integral part of the reclaim process, ensuring that invalid requests are identified and rejected. The procedure relies on the **Reclaim Checker**, a program that verifies the validity of reclaim requests. The actual verification is performed using a Groth16 zero-knowledge proof (ZKP), which provides computational efficiency and scalability.
+The fraud-proof mechanism for reclaim requests is modeled on the principles outlined in [Fraud Proofs on Bitcoin](https://github.com/bitlayer-org/bitlayer-org.github.io/blob/main/docs/Learn/Technologies/fraud-proofs-on-bitcoin.md). The configuration of this mechanism is as follows:
 
-### Proving and Verifying State Transitions
+- The **Reclaim Checker** serves as the original program, responsible for verifying the validity of a reclaim request.
+- The **Groth16 verifier** of the Reclaim Checker acts as the actual program being executed.
+- Dispute resolution operates at the **segment level**: the Groth16 verifier is divided into segments, and a single segment—the disputed segment—is replayed on-chain for verification.
+- The assertion being challenged is that the **Reclaim Proof** passes verification by the Groth16 verifier. This proof is generated based on the execution of the Reclaim Checker.
 
-The broker must generate a ZKP to prove that the reclaim request satisfies the conditions defined by the Reclaim Checker. This includes verifying that the burn occurred on the target chain and that the fronting transaction took place on Bitcoin's canonical chain. The proof is processed off-chain using a chunked Groth16 verifier, which generates shared values for on-chain verification.
+### Proving the State Transition
 
-On Bitcoin, the verification process involves the following steps:
-1. The broker commits to the ZK verifier result.
-2. A vigilante verifies the ZK proof off-chain and raises a challenge if inconsistencies are found.
-3. The broker reveals all shared values on-chain.
-4. The vigilante executes each chunk sequentially to identify discrepancies.
-5. If the replayed chunk's result differs from the broker's commitment, the reclaim request is rejected, and the broker's deposit is forfeited.
+To initiate a reclaim request, the broker must provide a **Groth16 proof** that validates the state transition. The Reclaim Checker ensures that:
 
-This layered approach ensures that the protocol remains secure, scalable, and aligned with Bitcoin's decentralized principles.
+1. The burn event occurred in Bridge Contract B on the target chain.
+2. The fronting event occurred on Bitcoin.
+3. Both events were executed on their respective canonical chains, avoiding forks.
 
----
+While detecting private forks on Bitcoin remains an open research problem, this is beyond the scope of the current implementation.
 
-By combining the robustness of BitVM smart contracts with the efficiency of zero-knowledge proofs and fraud-proof mechanisms, the Finality Bridge Protocol establishes a reliable framework for cross-chain interoperability. Its design not only addresses the limitations of Bitcoin's scripting capabilities but also sets a new standard for trust-minimized bridging solutions in the blockchain ecosystem.
+The Groth16 proof is processed off-chain by a **chunked Groth16 verifier**, which divides the verification process into discrete segments and generates the shared values required for all verifier chunks.
+
+### Verifying the State Transition on Bitcoin
+
+The verification process unfolds as follows:
+
+1. **Commitment:**  
+    The broker commits to the result of the ZK verifier by submitting $r = \text{Groth16.Verify}(p)$, where $p$ represents the Reclaim Proof.
+    
+2. **Off-Chain Verification:**  
+    A vigilante verifies the Groth16 verifier off-chain. If the verifier returns a negative result, the vigilante initiates a challenge.
+    
+3. **Revealing Shared Values:**  
+    The broker reveals all shared values for the verifier chunks on-chain.
+    
+4. **Chunk Search:**  
+    The vigilante retrieves the shared values from Bitcoin and sequentially executes each verifier chunk off-chain to locate the disputed segment.
+    
+5. **On-Chain Replay:**  
+    The vigilante replays the disputed chunk on-chain, using the shared values to verify its correctness.
+    
+6. **Outcome:**  
+    If the replayed result does not match the broker’s initial commitment, the reclaim request is rejected, and the broker’s stake is forfeited.
+
+
