@@ -11,7 +11,7 @@ sidebar_label: Transaction Graph Specification
 2. The FBC responds with a valid peg-in transaction, accompanied by an endorsement consisting of signatures from the CEC on the transaction's TXID.
 3. The user submits a peg-in transaction and waits for further processing by the FBC.
 4. The FBC monitors the peg-in transaction, and once it is confirmed, the FBC generates the corresponding Bitcoin light client proof.
-5. The FBC interacts with the bridge contract on sidechain, providing the proof and endorsement, and mints an equivalent amount of YBTC on sidechain for the user.
+5. The FBC interacts with the bridge contract on sidechain, providing the proof and endorsement, and mints an equivalent amount of BitVM BTC on sidechain for the user.
 
 The Bitcoin light client proof ensures that the peg-in transaction has been confirmed on the Bitcoin network, while the endorsement guarantees that the bitvm smart contract (transaction graph) has been successfully constructed. These two elements are critical for maintaining the security of the bridge.
 
@@ -26,7 +26,7 @@ For the user, the workflow is complete once the expected BTC is received. They d
 
 ## Reclaim
 
-1. The winner then submits a kickoff transaction to reclaim the peg-in funds following the challenge game. 
+1. The winner then submits a kickoff transaction to reclaim the peg-in funds following the challenge game.
 2. An honest broker will receive the peg-in funds, while a malicious broker will be penalized through slashing, and the challenger will be rewarded.
 
 The safety of peg-out is almost ensured by the Bitcoin consensus itself. Since anyone can act as a challenger and is incentivized to punish malicious brokers, if a challenge occurs, the broker must reveal all intermediate states. Subsequently, a Bitcoin zk-verifier can be executed to disprove any malicious actions identified in the verifier script.

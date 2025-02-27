@@ -20,7 +20,7 @@ Once the rollup operator publishes a new state root, a seven-day challenge windo
 Bitlayer V2 introduces a range of innovative features that position it as a transformative solution for Bitcoin's layer 2 ecosystem:
 
 - **EVM Compatibility**: Applications built for the Ethereum Virtual Machine (EVM) will seamlessly continue to operate on Bitlayer V2, ensuring backward compatibility with Bitlayer V1.
-- **Trust-Minimized BTC Bridge**: The integration of Finality Bridge—a trust-minimized BTC bridge also developed by Bitlayer—enables secure and efficient cross-chain Bitcoin transfers.
+- **Trust-Minimized BTC Bridge**: The integration of BitVM Bridge a trust-minimized BTC bridge also developed by Bitlayer—enables secure and efficient cross-chain Bitcoin transfers.
 - **Bitcoin-Equivalent Security**: EVM state transitions are verified on Bitcoin's layer 1 using a cutting-edge fraud-proof mechanism, ensuring that the rollup inherits Bitcoin's unmatched security properties.
 - **Flexible Data Availability Options**: Users can choose between Bitcoin-native data availability or third-party solutions, allowing for customization based on individual needs and preferences.
 
