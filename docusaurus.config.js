@@ -92,7 +92,7 @@ const config = {
           {
             to: '/docs/Finality/overview', // Link to a document, not a top-level directory
             position: 'left',
-            label: 'Finality Bridge',
+            label: 'BitVM Bridge',
             activeBaseRegex: `/docs/Finality`,
           },
           {

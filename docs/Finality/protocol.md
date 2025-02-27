@@ -1,30 +1,26 @@
 ---
 sidebar_position: 2
-sidebar_label: Finality Bridge Protocol
+sidebar_label: BitVM Bridge Protocol
 ---
 
-# Finality Bridge Protocol
+# BitVM Bridge Protocol
 
-The **Finality Bridge Protocol** establishes the foundational framework for interactions between users and two distinct smart contracts—one deployed on Bitcoin and the other on a target chain. This protocol is designed to facilitate a trust-minimized bridging mechanism, enabling secure and efficient movement of Bitcoin (BTC) across blockchain ecosystems while maintaining the integrity of the underlying assets.
+The **BitVM Bridge Protocol** establishes the foundational framework for interactions between users and two distinct smart contracts—one deployed on Bitcoin and the other on a target chain. This protocol is designed to facilitate a trust-minimized bridging mechanism, enabling secure and efficient movement of Bitcoin (BTC) across blockchain ecosystems while maintaining the integrity of the underlying assets.
 
 ## Defining Protocol Participants
 
 The protocol involves several key participants, each playing a specific role in ensuring the secure and seamless operation of the bridge:
 
 1. **Bridge Contract A:**  
-    Deployed on Bitcoin, this contract acts as the **trust-minimized custodian** of the bridge funds. It is responsible for securing the BTC locked by users and managing the exit paths for the funds.
-    
+   Deployed on Bitcoin, this contract acts as the **trust-minimized custodian** of the bridge funds. It is responsible for securing the BTC locked by users and managing the exit paths for the funds.
 2. **Bridge Contract B:**  
-    Deployed on the target chain (e.g., Bitlayer rollup), this contract functions as the **management console** for the minted YBTC tokens, which represent the pegged BTC on the target chain.
-    
+   Deployed on the target chain (e.g., Bitlayer rollup), this contract functions as the **management console** for the minted BitVM BTC tokens, which represent the pegged BTC on the target chain.
 3. **Peg-in User:**  
-    A BTC holder who initiates the bridging process by locking BTC in Bridge Contract A. In return, the peg-in user mints an equivalent amount of YBTC on Bridge Contract B. Each bridge instance involves a single peg-in user.
-    
+   A BTC holder who initiates the bridging process by locking BTC in Bridge Contract A. In return, the peg-in user mints an equivalent amount of BitVM BTC on Bridge Contract B. Each bridge instance involves a single peg-in user.
 4. **Peg-out User:**  
-    A YBTC holder who burns their tokens on Bridge Contract B to withdraw BTC from Bridge Contract A. The number of peg-out users corresponds to the number of fund exits defined in Bridge Contract A.
-    
+   A BitVM BTC holder who burns their tokens on Bridge Contract B to withdraw BTC from Bridge Contract A. The number of peg-out users corresponds to the number of fund exits defined in Bridge Contract A.
 5. **Broker:**  
-    Serving as a **middleman**, brokers provide short-term liquidity to peg-out users by fulfilling their withdrawal requests. Brokers later reclaim the BTC from Bridge Contract A using a **front-and-reclaim** mechanism, which ensures the smooth operation of the bridge while addressing the unpredictability of peg-out requests.
+   Serving as a **middleman**, brokers provide short-term liquidity to peg-out users by fulfilling their withdrawal requests. Brokers later reclaim the BTC from Bridge Contract A using a **front-and-reclaim** mechanism, which ensures the smooth operation of the bridge while addressing the unpredictability of peg-out requests.
 
 ## Bridge Contract A on Bitcoin
 
@@ -45,15 +41,13 @@ For more details, refer to [BitVM Smart Contract](Learn/Technologies/bitvm-smart
 Each peg-in request triggers the creation of a new **bridge instance**, which manages the entire lifecycle of the pegged funds. The following steps outline the process:
 
 1. **Creation of Bridge Contract A:**
-    For each bridge instance, a unique BitVM smart contract (Bridge Contract A) is generated collaboratively by the participants. This involves jointly proposing and cosigning the transaction graph that defines the contract's behavior.
-    
+   For each bridge instance, a unique BitVM smart contract (Bridge Contract A) is generated collaboratively by the participants. This involves jointly proposing and cosigning the transaction graph that defines the contract's behavior.
 2. **Deployment of the Transaction Graph:**
-    Once the pre-signed transaction graph is published, the smart contract is considered "deployed." Although this deployment mimics Ethereum-style on-chain smart contract deployment, all operations occur off-chain.
-    
+   Once the pre-signed transaction graph is published, the smart contract is considered "deployed." Although this deployment mimics Ethereum-style on-chain smart contract deployment, all operations occur off-chain.
 3. **Lifecycle Management:**
-    
-    - When the peg-in fund is locked in Bridge Contract A, the bridge instance transitions from an **inactive** to an **active** state.
-    - Once all pegged funds are withdrawn and returned to Bitcoin, the bridge instance transitions to a **finished** state.
+
+   - When the peg-in fund is locked in Bridge Contract A, the bridge instance transitions from an **inactive** to an **active** state.
+   - Once all pegged funds are withdrawn and returned to Bitcoin, the bridge instance transitions to a **finished** state.
 
 This design ensures that all exits of the pegged funds are predefined and immutable, guaranteeing that no external actor can bypass the contract to access the funds.
 
@@ -83,13 +77,11 @@ Key considerations for the presigning committee include:
 The transaction graph in Bridge Contract A consists of multiple subgraphs that define the flow of funds:
 
 1. **Peg-in Subgraph:**  
-    Contains a single transaction in which the pegged funds are distributed among multiple exit UTXOs.
-    
+   Contains a single transaction in which the pegged funds are distributed among multiple exit UTXOs.
 2. **Peg-out Subgraphs:**  
-    Each peg-out subgraph corresponds to a single peg-out transaction, where brokers use their reserved UTXOs to fulfill withdrawal requests.
-    
+   Each peg-out subgraph corresponds to a single peg-out transaction, where brokers use their reserved UTXOs to fulfill withdrawal requests.
 3. **Reclaim Subgraphs:**  
-    For each broker, multiple reclaim subgraphs are prepared, corresponding to potential fund exit paths. While not all reclaim subgraphs will be executed on-chain, they ensure that brokers can reclaim their liquidity in a trust-minimized manner.
+   For each broker, multiple reclaim subgraphs are prepared, corresponding to potential fund exit paths. While not all reclaim subgraphs will be executed on-chain, they ensure that brokers can reclaim their liquidity in a trust-minimized manner.
 
 ### Addressing Invalid Reclaim Requests
 
@@ -103,7 +95,7 @@ The fraud-proof mechanism assumes the presence of at least one honest vigilante 
 
 ## Bridge Contract B on the Target Chain
 
-Bridge Contract B, deployed on the target chain, manages the lifecycle of YBTC tokens. Unlike Bridge Contract A, its implementation varies depending on the target chain's architecture. For example, Turing-complete chains like Ethereum and Bitlayer rollup allow for more straightforward implementations, while other chains may require custom designs.
+Bridge Contract B, deployed on the target chain, manages the lifecycle of BitVM BTC tokens. Unlike Bridge Contract A, its implementation varies depending on the target chain's architecture. For example, Turing-complete chains like Ethereum and Bitlayer rollup allow for more straightforward implementations, while other chains may require custom designs.
 
 Further details on Bridge Contract B will be provided in future updates.
 
@@ -116,7 +108,7 @@ Further details on Bridge Contract B will be provided in future updates.
 
 ### Peg-out Process
 
-1. The peg-out user burns YBTC on Bridge Contract B and initiates a withdrawal request.
+1. The peg-out user burns BitVM BTC on Bridge Contract B and initiates a withdrawal request.
 2. A broker fulfills the request by transferring BTC to the peg-out user.
 3. The broker reclaims the funds from Bridge Contract A through the fraud-proof mechanism.
 
@@ -146,21 +138,14 @@ The Groth16 proof is processed off-chain by a **chunked Groth16 verifier**, whic
 The verification process unfolds as follows:
 
 1. **Commitment:**  
-    The broker commits to the result of the ZK verifier by submitting $r = \text{Groth16.Verify}(p)$, where $p$ represents the Reclaim Proof.
-    
+   The broker commits to the result of the ZK verifier by submitting $r = \text{Groth16.Verify}(p)$, where $p$ represents the Reclaim Proof.
 2. **Off-Chain Verification:**  
-    A vigilante verifies the Groth16 verifier off-chain. If the verifier returns a negative result, the vigilante initiates a challenge.
-    
+   A vigilante verifies the Groth16 verifier off-chain. If the verifier returns a negative result, the vigilante initiates a challenge.
 3. **Revealing Shared Values:**  
-    The broker reveals all shared values for the verifier chunks on-chain.
-    
+   The broker reveals all shared values for the verifier chunks on-chain.
 4. **Chunk Search:**  
-    The vigilante retrieves the shared values from Bitcoin and sequentially executes each verifier chunk off-chain to locate the disputed segment.
-    
+   The vigilante retrieves the shared values from Bitcoin and sequentially executes each verifier chunk off-chain to locate the disputed segment.
 5. **On-Chain Replay:**  
-    The vigilante replays the disputed chunk on-chain, using the shared values to verify its correctness.
-    
+   The vigilante replays the disputed chunk on-chain, using the shared values to verify its correctness.
 6. **Outcome:**  
-    If the replayed result does not match the broker’s initial commitment, the reclaim request is rejected, and the broker’s stake is forfeited.
-
-
+   If the replayed result does not match the broker’s initial commitment, the reclaim request is rejected, and the broker’s stake is forfeited.

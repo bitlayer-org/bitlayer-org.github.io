@@ -5,7 +5,7 @@ sidebar_label: Safety and Liveness
 
 # Safety and Liveness
 
-The concepts of safety and liveness are fundamental to the design and operation of decentralized systems, particularly in the context of smart contracts and bridging mechanisms like those employed by BitVM. This article delves into the nuances of these properties as they pertain to BitVM's smart contract architecture and its derivative, the Finality Bridge. By exploring both the deployment and operational stages of BitVM smart contracts, we aim to provide a comprehensive understanding of how these systems ensure security and reliability while maintaining operational continuity.
+The concepts of safety and liveness are fundamental to the design and operation of decentralized systems, particularly in the context of smart contracts and bridging mechanisms like those employed by BitVM. This article delves into the nuances of these properties as they pertain to BitVM's smart contract architecture and its derivative, the BitVM Bridge. By exploring both the deployment and operational stages of BitVM smart contracts, we aim to provide a comprehensive understanding of how these systems ensure security and reliability while maintaining operational continuity.
 ## Safety and Liveness in BitVM Smart Contracts
 
 BitVM smart contracts operate through two distinct stages: the **deployment stage** and the **running stage**. At the deployment stage, a transaction graph is created and presigned by a committee of participants, while the running stage involves participants executing actions in accordance with the predefined transaction graph. These stages form the foundation for evaluating both safety and liveness in the system.
@@ -30,12 +30,12 @@ The deployment stage of a BitVM smart contract is inherently fragile in terms of
 
 Once the contract is deployed, the liveness of the system depends heavily on the application-layer design. For example, in the context of a bridge contract, liveness is preserved as long as at least one broker remains honest and actively participates in the protocol. This ensures that the system can continue to process transactions and fulfill its intended purpose, even in the presence of some malicious or uncooperative participants.
 
-## Safety and Liveness in the Finality Bridge
+## Safety and Liveness in the BitVM Bridge
 
-The Finality Bridge, built atop the BitVM smart contract framework, inherits many of its safety and liveness properties. This bridge serves as a trust-minimized mechanism for transferring assets across chains, leveraging the same cryptographic guarantees provided by the underlying BitVM architecture.
+The BitVM Bridge, built atop the BitVM smart contract framework, inherits many of its safety and liveness properties. This bridge serves as a trust-minimized mechanism for transferring assets across chains, leveraging the same cryptographic guarantees provided by the underlying BitVM architecture.
 ### Safety
 
-The safety of the Finality Bridge is rooted in the behavior of its honest participants. Once the presigned transaction is constructed and the corresponding keys are discarded by honest nodes, the UTXO associated with the bridge becomes immutable. This means that no transaction other than the presigned one can spend the UTXO, and the UTXO cannot be privately appropriated by colluding committee members. This property ensures that the assets locked in the bridge remain secure and tamper-proof, even in the presence of malicious actors.
+The safety of the BitVM Bridge is rooted in the behavior of its honest participants. Once the presigned transaction is constructed and the corresponding keys are discarded by honest nodes, the UTXO associated with the bridge becomes immutable. This means that no transaction other than the presigned one can spend the UTXO, and the UTXO cannot be privately appropriated by colluding committee members. This property ensures that the assets locked in the bridge remain secure and tamper-proof, even in the presence of malicious actors.
 ### Liveness
 
-The liveness of the Finality Bridge, however, is more constrained. If even a single signer refuses to cooperate, the bridge cannot process a peg-in transaction. This limitation highlights the critical role of participant cooperation in maintaining the bridge's functionality. While this dependence on cooperation may seem like a drawback, it is a necessary trade-off to achieve the high level of safety and trust minimization that the Finality Bridge offers.
+The liveness of the BitVM Bridge, however, is more constrained. If even a single signer refuses to cooperate, the bridge cannot process a peg-in transaction. This limitation highlights the critical role of participant cooperation in maintaining the bridge's functionality. While this dependence on cooperation may seem like a drawback, it is a necessary trade-off to achieve the high level of safety and trust minimization that the BitVM Bridge offers.

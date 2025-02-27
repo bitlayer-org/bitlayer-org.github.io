@@ -12,7 +12,7 @@ Welcome to the official Bitlayer documentation hub, your comprehensive guide to 
 
 - **Bitlayer PoS (V1):** For an in-depth understanding of Bitlayer V1 Mainnet, its architecture, and functionality, visit [Bitlayer PoS (V1)](https://docs.bitlayer.org/docs/Learn/Bitlayer%20PoS/Overview).
 - **Bitlayer Rollup (V2):** Learn about the technical architecture and innovations in our upcoming upgrade by visiting [Bitlayer Rollup (V2)](https://docs.bitlayer.org/docs/Learn/Bitlayer%20Rollup/overview).
-- **Finality Bridge:** Explore the user manual and technical details of our trust-minimized Bitcoin bridge by referring to the [Finality Bridge Document](https://docs.bitlayer.org/docs/Finality/overview).
+- **BitVM Bridge:** Explore the user manual and technical details of our trust-minimized Bitcoin bridge by referring to the [BitVM Bridge Document](https://docs.bitlayer.org/docs/Finality/overview).
 - **Bitlayer Research:** Discover our research outcomes and technological advancements in [Technologies](https://docs.bitlayer.org/docs/Learn/Technologies/overview).
 
 ## Bitcoin and Layer 2: Challenges and Opportunities
@@ -55,7 +55,7 @@ Bitlayer is rapidly evolving, with significant milestones already achieved and e
    Launched in early April 2024, Bitlayer V1 Mainnet is live and operational. Additionally, a testnet environment is available for developers and users to experiment with Bitlayer's capabilities. To get started with Bitlayer PoS, refer to our [Quick Start Guide](https://docs.bitlayer.org/docs/Build/GettingStarted/QuickStart).
 
 2. **Bitlayer Rollup (Mainnet-V2):**
-   Bitlayer Rollup, our next-generation upgrade, is currently under intensive development. As part of this effort, we have launched a testnet for the **Finality Bridge**, enabling the secure bridging of BTC assets. The testnet will soon be upgraded to support the rollup architecture, bringing us closer to realizing the full potential of Bitlayer V2.
+   Bitlayer Rollup, our next-generation upgrade, is currently under intensive development. As part of this effort, we have launched a testnet for the **BitVM Bridge**, enabling the secure bridging of BTC assets. The testnet will soon be upgraded to support the rollup architecture, bringing us closer to realizing the full potential of Bitlayer V2.
 
 ---
 
