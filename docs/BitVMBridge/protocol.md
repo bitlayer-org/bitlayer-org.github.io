@@ -14,11 +14,11 @@ The protocol involves several key participants, each playing a specific role in 
 1. **Bridge Contract A:**  
    Deployed on Bitcoin, this contract acts as the **trust-minimized custodian** of the bridge funds. It is responsible for securing the BTC locked by users and managing the exit paths for the funds.
 2. **Bridge Contract B:**  
-   Deployed on the target chain (e.g., Bitlayer rollup), this contract functions as the **management console** for the minted BitVM BTC tokens, which represent the pegged BTC on the target chain.
+   Deployed on the target chain (e.g., Bitlayer rollup), this contract functions as the **management console** for the minted Peg-BTC tokens, which represent the pegged BTC on the target chain.
 3. **Peg-in User:**  
-   A BTC holder who initiates the bridging process by locking BTC in Bridge Contract A. In return, the peg-in user mints an equivalent amount of BitVM BTC on Bridge Contract B. Each bridge instance involves a single peg-in user.
+   A BTC holder who initiates the bridging process by locking BTC in Bridge Contract A. In return, the peg-in user mints an equivalent amount of Peg-BTC on Bridge Contract B. Each bridge instance involves a single peg-in user.
 4. **Peg-out User:**  
-   A BitVM BTC holder who burns their tokens on Bridge Contract B to withdraw BTC from Bridge Contract A. The number of peg-out users corresponds to the number of fund exits defined in Bridge Contract A.
+   A Peg-BTC holder who burns their tokens on Bridge Contract B to withdraw BTC from Bridge Contract A. The number of peg-out users corresponds to the number of fund exits defined in Bridge Contract A.
 5. **Broker:**  
    Serving as a **middleman**, brokers provide short-term liquidity to peg-out users by fulfilling their withdrawal requests. Brokers later reclaim the BTC from Bridge Contract A using a **front-and-reclaim** mechanism, which ensures the smooth operation of the bridge while addressing the unpredictability of peg-out requests.
 
@@ -95,7 +95,7 @@ The fraud-proof mechanism assumes the presence of at least one honest vigilante 
 
 ## Bridge Contract B on the Target Chain
 
-Bridge Contract B, deployed on the target chain, manages the lifecycle of BitVM BTC tokens. Unlike Bridge Contract A, its implementation varies depending on the target chain's architecture. For example, Turing-complete chains like Ethereum and Bitlayer rollup allow for more straightforward implementations, while other chains may require custom designs.
+Bridge Contract B, deployed on the target chain, manages the lifecycle of Peg-BTC tokens. Unlike Bridge Contract A, its implementation varies depending on the target chain's architecture. For example, Turing-complete chains like Ethereum and Bitlayer rollup allow for more straightforward implementations, while other chains may require custom designs.
 
 Further details on Bridge Contract B will be provided in future updates.
 
@@ -108,7 +108,7 @@ Further details on Bridge Contract B will be provided in future updates.
 
 ### Peg-out Process
 
-1. The peg-out user burns BitVM BTC on Bridge Contract B and initiates a withdrawal request.
+1. The peg-out user burns Peg-BTC on Bridge Contract B and initiates a withdrawal request.
 2. A broker fulfills the request by transferring BTC to the peg-out user.
 3. The broker reclaims the funds from Bridge Contract A through the fraud-proof mechanism.
 
