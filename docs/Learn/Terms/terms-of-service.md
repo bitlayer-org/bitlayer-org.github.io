@@ -3,10 +3,11 @@ sidebar_position: 1
 sidebar_label: Terms of Service 
 ---
 
+
 # Terms of Service
 
 ## 1. Introduction
-These Terms of Service (“Terms”) govern the use of Bitlayer’s Bitcoin Layer 2 network and associated services (the “Services”), provided by Bitlayer. By using our Services, you signify your agreement to these Terms, Bitlayer’s Privacy Policy, and any other policies incorporated herein.
+These Terms of Service (“**Terms**”) govern the use of Bitlayer’s Bitcoin Layer 2 network and associated services (the “**Services**”), provided by Bitlayer. By using our Services, you signify your agreement to these Terms, Bitlayer’s Privacy Policy, and any other policies incorporated herein.
 
 We reserve the right, in our sole discretion, to modify these Terms from time to time. If we make changes, we will provide you with notice of such changes using commercially reasonable means, such as by sending an email, providing a notice through the Website or our Services, or updating the date at the top of these Terms. Unless we say otherwise in our notice, any modifications are effective immediately, and your continued use of the Website or our Services will confirm your acceptance of the changes. If you do not agree to the amended Terms, you must stop using our Services.
 
@@ -27,17 +28,24 @@ Bitlayer reserves the right to modify or discontinue any aspect of its Services 
 ## 3. Your Representations and Warranties; Conditions
 To use the Bitlayer Website or Services, you must have the legal capacity to form a binding contract online, either as an individual in your personal capacity or on behalf of an entity. By accessing or using Bitlayer’s Website or Services, you represent and warrant that:
 
-1. **Age and Legal Capacity**: You are at least 18 years old (or the age of majority in your jurisdiction, whichever is greater) and possess the full right, power, and authority to enter into and comply with the obligations under these Terms.
-2. **Authorized Use**: You confirm that any account registered in your name will be used solely by you or authorized representatives acting on your behalf, and you will not attempt to access any unauthorized accounts or data within Bitlayer’s systems.
-3. **Accuracy of Information**: All information you provide to Bitlayer is accurate, current, and complete. You agree to promptly update any information necessary to maintain accuracy and acknowledge that failure to provide accurate information may result in suspension or termination of your account.
-4. **Sanctions Compliance**: You are not:
+（1）**Age and Legal Capacity**: You are at least 18 years old (or the age of majority in your jurisdiction, whichever is greater) and possess the full right, power, and authority to enter into and comply with the obligations under these Terms.
+
+（2）**Authorized Use**: You confirm that any account registered in your name will be used solely by you or authorized representatives acting on your behalf, and you will not attempt to access any unauthorized accounts or data within Bitlayer’s systems.
+
+（3）**Accuracy of Information**: All information you provide to Bitlayer is accurate, current, and complete. You agree to promptly update any information necessary to maintain accuracy and acknowledge that failure to provide accurate information may result in suspension or termination of your account.
+
+（4）**Sanctions Compliance**: You are not:
    - The subject of economic or trade sanctions administered or enforced by any governmental authority or listed on any prohibited or restricted parties list (including lists maintained by the U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC), the European Union, any EU member state, the United Kingdom (including HM Treasury), the Cayman Islands, the British Virgin Islands, or the United Nations).
    - A citizen, resident, or organized in a jurisdiction or territory subject to comprehensive sanctions by any of the aforementioned entities.
    - Directly or indirectly controlling any blockchain address listed on a prohibited or restricted parties list.
-5. **Prohibited Activities**: You will not engage in any activity that could disrupt, damage, or impair Bitlayer’s Services, including but not limited to using automated methods to access data without prior approval, attempting unauthorized access, or engaging in activities that violate the rights of third parties.
-6. **Jurisdiction Compliance**: You are not a citizen or resident of any jurisdiction where the use of the Website or Services would be illegal or would otherwise violate any domestic or international law, rule, statute, regulation, or directive intended to govern or regulate any person, transaction, or activity relevant to the Website or Services.
-7. **Assumption of Risks**: You acknowledge that Bitlayer provides data on an “as-is” basis and cannot guarantee data accuracy or security. By using Bitlayer’s Services, you accept the risks associated with data reliance, blockchain interactions, and potential market volatility.
-8. **Conditions of Use**: Bitlayer’s Services are subject to compliance with these Terms, including respect for intellectual property rights and adherence to usage limits specified in Bitlayer’s API documentation. Breach of these conditions may result in restricted access or account suspension.
+
+（5）**Prohibited Activities**: You will not engage in any activity that could disrupt, damage, or impair Bitlayer’s Services, including but not limited to using automated methods to access data without prior approval, attempting unauthorized access, or engaging in activities that violate the rights of third parties.
+
+（6）**Jurisdiction Compliance**: You are not a citizen or resident of any jurisdiction where the use of the Website or Services would be illegal or would otherwise violate any domestic or international law, rule, statute, regulation, or directive intended to govern or regulate any person, transaction, or activity relevant to the Website or Services.
+
+（7）**Assumption of Risks**: You acknowledge that Bitlayer provides data on an “as-is” basis and cannot guarantee data accuracy or security. By using Bitlayer’s Services, you accept the risks associated with data reliance, blockchain interactions, and potential market volatility.
+
+（8）**Conditions of Use**: Bitlayer’s Services are subject to compliance with these Terms, including respect for intellectual property rights and adherence to usage limits specified in Bitlayer’s API documentation. Breach of these conditions may result in restricted access or account suspension.
 
 ## 4. Eligibility and Account Requirements
 Bitlayer’s Services are available only to users who comply with all applicable laws and who have reached the age of majority in their jurisdiction. Users must provide accurate information upon registration and update their accounts as needed. Bitlayer reserves the right to suspend or terminate accounts for any breach or suspected unauthorized access.
@@ -98,10 +106,13 @@ Bitlayer may amend these Terms at its discretion. Users will be notified of mate
 ## 20. Risk Factors
 Users should be aware of the following risks associated with using Bitlayer’s Services. These risks are not exhaustive, and users are encouraged to conduct their own due diligence before using Bitlayer’s Services.
 
-1. **Blockchain and Smart Contract Risks**: Bitlayer’s Services support integration with blockchain networks and smart contracts, which may rely on third-party oracles. The security and reliability of external oracles are not guaranteed by Bitlayer, and users should conduct their own due diligence before relying on such data sources. Bitlayer’s Services are intended for use with blockchain networks and smart contracts, which are inherently risky and subject to bugs, hacks, or unforeseen technical issues. Bitlayer does not guarantee the security or reliability of any blockchain or smart contract utilizing third-party oracle data.  
-2. **System and Network Vulnerabilities**: While Bitlayer implements security measures, no online platform is entirely secure. Users accept the risks associated with cyber attacks, data breaches, or network disruptions that could compromise data integrity or access to Bitlayer’s Services.  
-3. **Legal and Regulatory Risks**: Blockchain and cryptocurrency regulations are evolving, and Bitlayer’s Services may be subject to changing laws. Bitlayer disclaims responsibility for compliance with laws applicable to user locations and may discontinue or alter Services in response to regulatory changes.  
-4. **Operational Risks**: Bitlayer’s Services may be affected by operational issues such as maintenance, outages, or service interruptions. Bitlayer endeavors to minimize disruptions but cannot guarantee continuous uptime.
+（1）**Blockchain and Smart Contract Risks**: Bitlayer’s Services support integration with blockchain networks and smart contracts, which may rely on third-party oracles. The security and reliability of external oracles are not guaranteed by Bitlayer, and users should conduct their own due diligence before relying on such data sources. Bitlayer’s Services are intended for use with blockchain networks and smart contracts, which are inherently risky and subject to bugs, hacks, or unforeseen technical issues. Bitlayer does not guarantee the security or reliability of any blockchain or smart contract utilizing third-party oracle data.
+
+（2）**System and Network Vulnerabilities**: While Bitlayer implements security measures, no online platform is entirely secure. Users accept the risks associated with cyber attacks, data breaches, or network disruptions that could compromise data integrity or access to Bitlayer’s Services.
+
+（3）**Legal and Regulatory Risks**: Blockchain and cryptocurrency regulations are evolving, and Bitlayer’s Services may be subject to changing laws. Bitlayer disclaims responsibility for compliance with laws applicable to user locations and may discontinue or alter Services in response to regulatory changes.
+  
+（4）**Operational Risks**: Bitlayer’s Services may be affected by operational issues such as maintenance, outages, or service interruptions. Bitlayer endeavors to minimize disruptions but cannot guarantee continuous uptime.
 
 ## 21. Miscellaneous Provisions
 These Terms constitute the entire agreement between Bitlayer and the user, superseding any prior agreements. If any provision is found invalid, the remaining provisions will continue in effect. Bitlayer’s failure to enforce any provision shall not constitute a waiver of its rights.
