@@ -11,7 +11,7 @@ sidebar_label: Transaction Graph Specification
 2. The FBC responds with a valid peg-in transaction, accompanied by an endorsement consisting of signatures from the CEC on the transaction's TXID.
 3. The user submits a peg-in transaction and waits for further processing by the FBC.
 4. The FBC monitors the peg-in transaction, and once it is confirmed, the FBC generates the corresponding Bitcoin light client proof.
-5. The FBC interacts with the bridge contract on sidechain, providing the proof and endorsement, and mints an equivalent amount of BitVM BTC on sidechain for the user.
+5. The FBC interacts with the bridge contract on sidechain, providing the proof and endorsement, and mints an equivalent amount of Peg-BTC on sidechain for the user.
 
 The Bitcoin light client proof ensures that the peg-in transaction has been confirmed on the Bitcoin network, while the endorsement guarantees that the bitvm smart contract (transaction graph) has been successfully constructed. These two elements are critical for maintaining the security of the bridge.
 

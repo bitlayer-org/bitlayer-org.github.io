@@ -90,10 +90,10 @@ const config = {
             activeBaseRegex: `/docs/Build`,
           },
           {
-            to: '/docs/Finality/overview', // Link to a document, not a top-level directory
+            to: '/docs/BitVMBridge/overview', // Link to a document, not a top-level directory
             position: 'left',
             label: 'BitVM Bridge',
-            activeBaseRegex: `/docs/Finality`,
+            activeBaseRegex: `/docs/BitVMBridge`,
           },
           {
             href: 'https://blog.bitlayer.org/',

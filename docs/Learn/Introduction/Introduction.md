@@ -12,7 +12,7 @@ Welcome to the official Bitlayer documentation hub, your comprehensive guide to 
 
 - **Bitlayer PoS (V1):** For an in-depth understanding of Bitlayer V1 Mainnet, its architecture, and functionality, visit [Bitlayer PoS (V1)](https://docs.bitlayer.org/docs/Learn/Bitlayer%20PoS/Overview).
 - **Bitlayer Rollup (V2):** Learn about the technical architecture and innovations in our upcoming upgrade by visiting [Bitlayer Rollup (V2)](https://docs.bitlayer.org/docs/Learn/Bitlayer%20Rollup/overview).
-- **BitVM Bridge:** Explore the user manual and technical details of our trust-minimized Bitcoin bridge by referring to the [BitVM Bridge Document](https://docs.bitlayer.org/docs/Finality/overview).
+- **BitVM Bridge:** Explore the user manual and technical details of our trust-minimized Bitcoin bridge by referring to the [BitVM Bridge Document](https://docs.bitlayer.org/docs/bitvmbridge/overview).
 - **Bitlayer Research:** Discover our research outcomes and technological advancements in [Technologies](https://docs.bitlayer.org/docs/Learn/Technologies/overview).
 
 ## Bitcoin and Layer 2: Challenges and Opportunities
