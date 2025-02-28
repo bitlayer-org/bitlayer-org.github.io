@@ -3,8 +3,6 @@ sidebar_position: 1
 sidebar_label: Terms of Service 
 ---
 
-Here is the provided text formatted in Markdown:
-
 # Terms of Service
 
 ## 1. Introduction
@@ -68,8 +66,6 @@ Users agree to refrain from:
 - Using Bitlayer’s Services for illegal activities, including money laundering or terrorist financing.
 - Employing bots or automated means to access data without prior written permission.
 - Any activity that disrupts or interferes with Bitlayer’s infrastructure, including DDoS attacks.
-
-好的，以下是从第12条到第21条的内容，已转换为Markdown格式：
 
 ## 12. Disclosures; Disclaimers
 Bitlayer aims to support the use of its Services as a public good but does not operate as an exchange or offer financial execution or clearing services. Accordingly, Bitlayer has no involvement or oversight over any transactions, including Bitcoin or other token transactions. Users are responsible for compliance with applicable laws in their jurisdiction, including those enforced by financial regulatory authorities.  
