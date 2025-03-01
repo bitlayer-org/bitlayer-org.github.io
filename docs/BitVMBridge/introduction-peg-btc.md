@@ -25,4 +25,4 @@ Peg-BTC represents a critical advancement in the evolution of Bitcoin’s utilit
 - **Enhanced Utility**: Peg-BTC extends Bitcoin’s use cases beyond simple transactions, unlocking its potential in programmable environments.
 - **Seamless Multi-Chain Support**: Enjoy frictionless interoperability with major blockchain ecosystems, maximizing the accessibility and usability of your Bitcoin.
 
-Embrace the future of Bitcoin with BitVM BTC, a gateway to multi-chain programmability and decentralized innovation.
+Embrace the future of Bitcoin with Peg-BTC, a gateway to multi-chain programmability and decentralized innovation.

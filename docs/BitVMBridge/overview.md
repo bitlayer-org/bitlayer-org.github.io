@@ -34,11 +34,11 @@ To fully appreciate the significance of BitVM Bridge, it is essential to underst
 
 ### Addressing the Limitations of Earlier Generations
 
-As a **3rd generation BTC bridge**, BitVM Bridge resolves key issues that plagued earlier models. First, it removes the reliance on an **honest majority**, a critical vulnerability in distributed custodian systems. Second, it ensures that the security level of the wrapped Bitcoin (BitVM BTC) matches that of other DeFi assets, addressing a long-standing concern about the robustness and reliability of BTC-backed assets in decentralized ecosystems.
+As a **3rd generation BTC bridge**, BitVM Bridge resolves key issues that plagued earlier models. First, it removes the reliance on an **honest majority**, a critical vulnerability in distributed custodian systems. Second, it ensures that the security level of the wrapped Bitcoin (Peg-BTC) matches that of other DeFi assets, addressing a long-standing concern about the robustness and reliability of BTC-backed assets in decentralized ecosystems.
 
-## BitVM BTC: The Yielding BTC Token
+## Peg-BTC: The Yielding BTC Token
 
-At the heart of the BitVM Bridge lies **BitVM BTC**, the token minted on the Bitlayer rollup and other supported environments when users lock their Bitcoin into the BitVM smart contract. Peg-BTC is designed to be a secure and reliable representation of Bitcoin within decentralized ecosystems, and its design reflects the principles of trust minimization and security that underpin the BitVM Bridge.
+At the heart of the BitVM Bridge lies **Peg-BTC**, the token minted on the Bitlayer rollup and other supported environments when users lock their Bitcoin into the BitVM smart contract. Peg-BTC is designed to be a secure and reliable representation of Bitcoin within decentralized ecosystems, and its design reflects the principles of trust minimization and security that underpin the BitVM Bridge.
 
 Peg-BTC maintains a **strict 1:1 peg with BTC**, ensuring that every Peg-BTC token in circulation is backed by an equivalent amount of Bitcoin locked in the BitVM smart contract. Unlike tokens issued by centralized custodians, Peg-BTC is not dependent on any single entity for its security. Instead, it derives its integrity from the transparency and verifiability of the BitVM smart contract, which eliminates the need for trust in third-party actors.
 
