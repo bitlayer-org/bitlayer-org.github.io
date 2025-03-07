@@ -38,7 +38,7 @@ You authorize **Desyn** to manage your assets during the Service period.
 You confirm compliance with applicable laws and will not use the Service for illicit activities such as fraud or money laundering.
 
 ### 3.3 
-You acknowledge and accept market risks, liquidity constraints, and potential losses.
+You acknowledge and accept market risks, liquidity constraints, and the potential risk of principal loss.
 
 ## 4. Service Usage
 
@@ -55,7 +55,7 @@ Subscriptions can be flexible or fixed-term. Fixed-term deposits cannot be redee
 **Fixed-term**: Locked until maturity.
 
 ### 4.5 
-Rewards are calculated and displayed hourly, with the final payout distributed within 1 to 3 months.
+Rewards are calculated and displayed hourly (the displayed yield is an estimated return, and the actual return shall be subject to the final distributed amount), with the final payout distributed within 1 to 3 months.
 
 ### 4.6 
 Redemptions may be delayed due to liquidity or market conditions.
