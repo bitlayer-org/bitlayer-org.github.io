@@ -11,7 +11,7 @@ Bitlayer acts as a Layer 2 solution for Bitcoin, boasting **100% EVM and Ethereu
 
 :::tip Note on Solidity Version Support:
 
-We currently support Solidity up to version v0.8.23. Updates for newer versions might be delayed. 
+We currently support Solidity up to version v0.8.28. Updates for newer versions might be delayed. 
 
 :::
 

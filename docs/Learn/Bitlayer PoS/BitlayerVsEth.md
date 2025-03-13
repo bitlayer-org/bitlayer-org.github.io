@@ -11,7 +11,7 @@ This document compares Bitlayer and Ethereum across several key aspects includin
 |---------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
 | **Gas Price**             | Lower due to efficiency mechanisms.                          | Variable, dependent on network demand. High demand can lead to increased gas prices.          |
 | **EVM Support**           | Supports EVM-compatible smart contracts. | Full EVM support as the native platform.                                                       |
-| **Solidity Support**      | Supports up to Solidity version v0.8.25. Future versions will be supported. | Supports the latest versions of Solidity, with ongoing updates.                               |
+| **Solidity Support**      | Supports up to Solidity version v0.8.28. Future versions will be supported. | Supports the latest versions of Solidity, with ongoing updates.                               |
 | **Developer Implications**| Offers a platform leveraging Bitcoin's security. Easier transition for those familiar with Ethereum's EVM. | Mature tooling and community support.|
 | **User Implications**     | Access to innovative dApps leveraging Bitcoin's security. | Vast ecosystem of dApps.   |
 
@@ -42,7 +42,7 @@ In contrast, Ethereum's gas prices fluctuate based on network demand. Users comp
 Bitlayer is fully compatible with Ethereum Virtual Machine (EVM) smart contracts. It supports EVM-compatible contracts up to the Cancun update, with the exception of the PREVRANDAO opcode, BLOBHASH opcode, and BLOBBASEFEE opcode. This enables developers to build applications on Bitcoin's secure network, mirroring the functionality available on Ethereum.
 
 #### Solidity Version
-Currently, Bitlayer supports Solidity up to version v0.8.25, with a commitment to incorporating future versions. This stance ensures that developers have access to a stable and secure environment for their smart contracts.
+Currently, Bitlayer supports Solidity up to version v0.8.28, with a commitment to incorporating future versions. This stance ensures that developers have access to a stable and secure environment for their smart contracts.
 
 ### Ethereum
 
