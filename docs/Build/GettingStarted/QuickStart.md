@@ -8,7 +8,7 @@ Your tools for building and testing smart contracts can work on Bitlayer smoothl
 
 :::tip Note:
 
-We currently support Solidity up to version v0.8.23. Updates for newer versions might be delayed. 
+We currently support Solidity up to version v0.8.28. Updates for newer versions might be delayed. 
 
 :::
 
