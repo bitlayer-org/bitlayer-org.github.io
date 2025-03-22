@@ -27,4 +27,4 @@ In the **Network** section, select **"Signet"** and manually update the **BTC UR
 ## Step 4
 Click **"Save"** to apply the changes.
 
-After completing these steps, you should be able to use the [Mint/Unmint](bitvmbridge.bitlayer.org) functions as intended.
+After completing these steps, you should be able to use the [Mint/Unmint](https://bitvmbridge.bitlayer.org) functions as intended.
