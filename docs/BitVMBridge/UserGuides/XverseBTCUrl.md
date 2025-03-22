@@ -6,7 +6,7 @@ sidebar_position: 53
 
 [Xverse](https://www.xverse.app/) is a leading Bitcoin wallet, supporting customizable Bitcoin testnet configurations (BTC URL). 
 
-Bitlayer has opened the public Bitcoin test network, [BitVMNet](bitvmnet.org), aiming to advance BitVM infrastructure development and accelerate the adoption and real-world implementation of BitVM-based products.
+Bitlayer has opened the public Bitcoin test network, [BitVMNet](https://bitvmnet.org), aiming to advance BitVM infrastructure development and accelerate the adoption and real-world implementation of BitVM-based products.
 
 You can seamlessly experience the trust-minimized Bitcoin bridge, BitVM Bridge, through the Xverse Wallet.
 
