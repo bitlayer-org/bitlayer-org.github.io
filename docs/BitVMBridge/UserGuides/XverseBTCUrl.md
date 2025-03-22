@@ -1,0 +1,30 @@
+---
+sidebar_position: 53
+---
+
+# How to Set BTC Url In Xverse Wallet?
+
+[Xverse](https://www.xverse.app/) is a leading Bitcoin wallet, supporting customizable Bitcoin testnet configurations (BTC URL). 
+
+Bitlayer has opened the public Bitcoin test network, [BitVMNet](bitvmnet.org), aiming to advance BitVM infrastructure development and accelerate the adoption and real-world implementation of BitVM-based products.
+
+You can seamlessly experience the trust-minimized Bitcoin bridge, BitVM Bridge, through the Xverse Wallet.
+
+To manually configure the BTC URL for Signet mode in your Xverse wallet, please follow these steps:
+
+## Step 1 
+Open the Xverse wallet browser extension and click on the **"Settings"** icon.
+   ![Settings](/img/BitvmBridge/tutorial/xverse/wallet.png)
+
+## Step 2
+Within the **Settings** page, click on **"Network"**.
+   ![Network](/img/BitvmBridge/tutorial/xverse/setting.png)
+
+## Step 3
+In the **Network** section, select **"Signet"** and manually update the **BTC URL** to: `https://esplora.bitvmnet.org`
+   ![Signet Network Settings](/img/BitvmBridge/tutorial/xverse/btcurl.png)
+
+## Step 4
+Click **"Save"** to apply the changes.
+
+After completing these steps, you should be able to use the [Mint/Unmint](bitvmbridge.bitlayer.org) functions as intended.
