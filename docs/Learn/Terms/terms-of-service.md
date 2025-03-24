@@ -16,7 +16,7 @@ Bitlayer provides a Bitcoin Layer 2 solution utilizing BitVM technology to enhan
 
 - **Bitcoin Layer 2 Network**: A scalable and efficient Layer 2 network designed to improve Bitcoin transaction throughput and enable smart contract execution without compromising the security and decentralization of the Bitcoin mainnet.
 - **Multi-Virtual Machine Compatibility**: Support for multiple virtual machines, including EVM, allowing developers to seamlessly deploy and migrate decentralized applications (dApps) onto the Bitlayer network.
-- **Trust-Minimized Cross-Chain Interoperability**: Secure and efficient cross-chain asset transfers between Bitcoin and other blockchain networks via the Finality Bridge, ensuring 1:1 asset pegging and integrity.
+- **Trust-Minimized Cross-Chain Interoperability**: Secure and efficient cross-chain asset transfers between Bitcoin and other blockchain networks via the BitVM Bridge, ensuring 1:1 asset pegging and integrity.
 - **Bitcoin-Native Smart Contracts**: A smart contract execution environment that enhances Bitcoin's programmability, supporting DeFi applications, tokenization, and on-chain financial instruments.
 - **Decentralized Data Oracles**: Access to real-time Bitcoin data feeds, price oracles, and API integrations that provide reliable, on-chain data for decentralized applications and smart contracts.
 - **Developer Tools and Ecosystem Growth**: A robust suite of developer resources, including SDKs, APIs, grants, and community initiatives to foster innovation within the Bitlayer network.
