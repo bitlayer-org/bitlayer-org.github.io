@@ -57,20 +57,20 @@ One of the key challenges in constructing Bridge Contract A is managing the unpr
 
 To address this issue, the protocol introduces the role of **brokers**, who act as intermediaries. Brokers provide liquidity to peg-out users by fulfilling their withdrawal requests and reclaiming the funds from Bridge Contract A later. This **front-and-reclaim scheme** ensures that the bridge can operate efficiently despite the dynamic nature of peg-out requests.
 
-### Presigning Committee
+### Attesting Committee
 
-The security of Bridge Contract A relies on a **presigning committee**, which is responsible for jointly signing the transaction graph. However, the composition of this committee introduces potential vulnerabilities:
+The security of Bridge Contract A relies on a **attesting committee**, which is responsible for jointly signing the transaction graph. However, the composition of this committee introduces potential vulnerabilities:
 
-- Peg-out users cannot participate in the presigning process because their identities are unknown at the time.
+- Peg-out users cannot participate in the attesting process because their identities are unknown at the time.
 - The committee, comprising the peg-in user and brokers, creates an imbalance of power, as brokers may collude to steal the pegged funds.
 
-To mitigate this risk, the protocol incorporates **neutral members** into the presigning committee. These members, who have no direct stake in the funds, act as impartial participants to enhance security.
+To mitigate this risk, the protocol incorporates **neutral members** into the attesting committee. These members, who have no direct stake in the funds, act as impartial participants to enhance security.
 
-Key considerations for the presigning committee include:
+Key considerations for the attesting committee include:
 
 - The size of the committee must be significantly larger than the number of brokers to prevent collusion.
 - The peg-in user also joins the committee, adding an additional layer of security by acting in their own interest to protect the funds.
-- To ensure fungibility of funds across bridge instances, the size of the presigning committee must remain consistent across all instances.
+- To ensure fungibility of funds across bridge instances, the size of the attesting committee must remain consistent across all instances.
 
 ### Transaction Graph Design
 
@@ -89,9 +89,9 @@ To prevent brokers from submitting invalid reclaim requests, the protocol employ
 
 - When a broker submits a reclaim request, they must commit to the result of a **Reclaim Checker**, which verifies the validity of the request.
 - If no challenge is raised within a specified period (e.g., one week), the broker is allowed to reclaim the funds.
-- In the event of a dispute, a **vigilante** can challenge the reclaim request and submit a fraud proof to Bridge Contract A.
+- In the event of a dispute, a **watcher** can challenge the reclaim request and submit a fraud proof to Bridge Contract A.
 
-The fraud-proof mechanism assumes the presence of at least one honest vigilante who actively monitors the system and ensures that invalid reclaim requests are rejected.
+The fraud-proof mechanism assumes the presence of at least one honest watcher who actively monitors the system and ensures that invalid reclaim requests are rejected.
 
 ## Bridge Contract B on the Target Chain
 
@@ -103,7 +103,7 @@ Further details on Bridge Contract B will be provided in future updates.
 
 ### Peg-in Process
 
-1. The presigning committee generates a multisig address to act as the custodian of the pegged funds.
+1. The attesting committee generates a multisig address to act as the custodian of the pegged funds.
 2. The peg-in user locks their BTC in the multisig after verifying the correctness of the smart contract.
 
 ### Peg-out Process
@@ -140,12 +140,12 @@ The verification process unfolds as follows:
 1. **Commitment:**  
    The broker commits to the result of the ZK verifier by submitting $r = \text{Groth16.Verify}(p)$, where $p$ represents the Reclaim Proof.
 2. **Off-Chain Verification:**  
-   A vigilante verifies the Groth16 verifier off-chain. If the verifier returns a negative result, the vigilante initiates a challenge.
+   A watcher verifies the Groth16 verifier off-chain. If the verifier returns a negative result, the watcher initiates a challenge.
 3. **Revealing Shared Values:**  
    The broker reveals all shared values for the verifier chunks on-chain.
 4. **Chunk Search:**  
-   The vigilante retrieves the shared values from Bitcoin and sequentially executes each verifier chunk off-chain to locate the disputed segment.
+   The watcher retrieves the shared values from Bitcoin and sequentially executes each verifier chunk off-chain to locate the disputed segment.
 5. **On-Chain Replay:**  
-   The vigilante replays the disputed chunk on-chain, using the shared values to verify its correctness.
+   The watcher replays the disputed chunk on-chain, using the shared values to verify its correctness.
 6. **Outcome:**  
    If the replayed result does not match the broker’s initial commitment, the reclaim request is rejected, and the broker’s stake is forfeited.

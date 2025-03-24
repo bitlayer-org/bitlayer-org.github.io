@@ -23,7 +23,7 @@ To better grasp this concept, consider the transaction graph as the "source code
 
 ## Pre-Signing the Contract: Building a Foundation of Trust
 
-In typical blockchain ecosystems, smart contracts are deployed directly onto the blockchain, leveraging the blockchain's inherent security to act as a trusted source of truth. Bitcoin, however, lacks this native capability. To overcome this hurdle, BitVM introduces the concept of a pre-signing committee. This committee, composed of trusted entities, is responsible for meticulously reviewing and pre-signing the transaction graph. This process effectively emulates the on-chain deployment of traditional smart contracts.
+In typical blockchain ecosystems, smart contracts are deployed directly onto the blockchain, leveraging the blockchain's inherent security to act as a trusted source of truth. Bitcoin, however, lacks this native capability. To overcome this hurdle, BitVM introduces the concept of a attesting committee. This committee, composed of trusted entities, is responsible for meticulously reviewing and attesting the transaction graph. This process effectively emulates the on-chain deployment of traditional smart contracts.
 
 The committee, through its multi-signature authority (multisig), plays a critical role in ensuring the integrity and security of the BitVM smart contract:
 
@@ -32,7 +32,7 @@ The committee, through its multi-signature authority (multisig), plays a critica
 
 Once the pre-signed transaction graph is made public, all participants gain access to a consistent and tamper-proof version of the smart contract. The multisig mechanism ensures that all parties adhere to the predefined rules of the contract. Participants can only send transactions that are explicitly defined within the pre-signed graph, preventing any deviation from the agreed-upon terms.
 
-A crucial aspect of the BitVM security model is the deletion of private keys by the committee members after the pre-signing process. This step is essential to prevent any single entity from unilaterally modifying the contract after it has been finalized. The security of BitVM relies on the "honest one" assumption, meaning that at least one member of the committee is assumed to have acted honestly and deleted their private key. As long as this assumption holds true, any attempt to manipulate the smart contract is rendered infeasible.
+A crucial aspect of the BitVM security model is the deletion of private keys by the committee members after the attesting process. This step is essential to prevent any single entity from unilaterally modifying the contract after it has been finalized. The security of BitVM relies on the "honest one" assumption, meaning that at least one member of the committee is assumed to have acted honestly and deleted their private key. As long as this assumption holds true, any attempt to manipulate the smart contract is rendered infeasible.
 
 ## Designing the Transaction Graph: Navigating Complexity
 
@@ -54,13 +54,13 @@ To illustrate this concept, consider a scenario where a participant, referred to
 
 The static nature of pre-signed transaction graphs, while ensuring security and predictability, presents a challenge when dealing with dynamic elements inherent in certain smart contract use cases. Two common examples of such dynamic elements are:
 
-- **Unknown Witness Data:** The witness data, which includes signatures and other information required to unlock a Bitcoin transaction input, might not be known at the time of pre-signing the transaction graph.
+- **Unknown Witness Data:** The witness data, which includes signatures and other information required to unlock a Bitcoin transaction input, might not be known at the time of attesting the transaction graph.
 - **Unknown Addresses:** The Bitcoin addresses of certain participants might be unknown during the contract creation phase. For instance, in a cross-chain bridge, the recipient of pegged-out Bitcoin might not be known beforehand. Similarly, in optimistic rollup solutions, the address of a potential challenger is not predetermined.
 
 BitVM employs different strategies to address these challenges:
 
 - **Commit-and-Reveal for Unknown Witness Data:** BitVM leverages a cryptographic technique called commit-and-reveal to handle unknown witness data. This involves creating a cryptographic commitment to the witness data and embedding this commitment within the unlocking script of a pre-signed UTXO (Unspent Transaction Output). The actual witness data is only revealed and verified when the UTXO is spent, ensuring both security and flexibility.
-- **Flexible SIGHASH Flags and Application-Level Solutions for Unknown Addresses:** For unknown addresses, BitVM offers a more nuanced approach. In some cases, flexible `SIGHASH` flags can be employed. A `SIGHASH` flag determines which parts of a transaction are signed, allowing for certain elements to be left unspecified during pre-signing. However, this approach has limitations and might not be suitable for all scenarios. In other cases, solutions at the application layer might be necessary. For instance, the "front-and-reclaim" pattern used in BitVM bridges addresses the challenge of unknown peg-out users.
+- **Flexible SIGHASH Flags and Application-Level Solutions for Unknown Addresses:** For unknown addresses, BitVM offers a more nuanced approach. In some cases, flexible `SIGHASH` flags can be employed. A `SIGHASH` flag determines which parts of a transaction are signed, allowing for certain elements to be left unspecified during attesting. However, this approach has limitations and might not be suitable for all scenarios. In other cases, solutions at the application layer might be necessary. For instance, the "front-and-reclaim" pattern used in BitVM bridges addresses the challenge of unknown peg-out users.
 
 #### Commit and Reveal: A Deep Dive
 
@@ -82,7 +82,7 @@ It's important to note that while `SIGHASH` flags offer a powerful tool for hand
 The process of creating a BitVM smart contract can be summarized in three key steps:
 
 1. **Define the Transaction Graph:** The first step involves meticulously designing the transaction graph that embodies the desired functionality of the smart contract. This step requires a deep understanding of Bitcoin scripting, the specific use case being addressed, and the potential edge cases that might arise.
-2. **Pre-sign the Graph:** Once the transaction graph is finalized, it is presented to the pre-signing committee. The committee members, using their multisig authority, carefully review the graph to ensure its correctness and security. Once the review is complete, the committee members jointly sign the transaction graph, effectively "locking it in."
+2. **Pre-sign the Graph:** Once the transaction graph is finalized, it is presented to the attesting committee. The committee members, using their multisig authority, carefully review the graph to ensure its correctness and security. Once the review is complete, the committee members jointly sign the transaction graph, effectively "locking it in."
 3. **Publish the Graph:** The final step involves publishing the pre-signed transaction graph, making it accessible to all potential participants. This publication can be done through various means, such as distributing it through a decentralized storage network or simply making it available for download on a website.
 
 ## BitVM Smart Contract Safety: A Spectrum of Trust

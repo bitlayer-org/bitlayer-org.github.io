@@ -17,14 +17,14 @@ The Bitlayer rollup consists of four main components:
 2. **Data Availability (DA) Layer**:  
    The operator submits L2 batches to the DA layer, ensuring the availability of transaction data. In cases of censorship, users can bypass the operator by sending forced transactions directly to the DA layer.
 
-3. **Bitcoin Contract**:  
+3. **Bitcoin Contract**:
    The rollup contract is deployed on Bitcoin as a recursive BitVM-style smart contract. This contract verifies the validity of L2 state transitions via submitted proofs.
 
-4. **Rollup Network**:  
+4. **Rollup Network**:
    The rollup network consists of several key nodes:
    - **Operator Node**: Includes one active operator and any number of backup operators.  
-   - **Contract Signer Nodes**: Responsible for deploying and interacting with the rollup contract.  
-   - **Vigilante Nodes**: Monitor the network to detect and challenge invalid state transitions submitted by a malicious operator.
+   - **Attester Nodes**: Responsible for deploying and interacting with the rollup contract.  
+   - **Watcher Nodes**: Monitor the network to detect and challenge invalid state transitions submitted by a malicious operator.
 
 ### The Rollup Operator
 
