@@ -15,7 +15,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3DF3TS5JQ"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-R3DF3TS5JQ",{anonymize_ip:!0})</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.223fd046.css">
-<script src="/assets/js/runtime~main.bf40907f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.556fe857.js" defer="defer"></script>
 <script src="/assets/js/main.8769f56a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -33,16 +33,16 @@
 <!-- -->The operator submits L2 batches to the DA layer, ensuring the availability of transaction data. In cases of censorship, users can bypass the operator by sending forced transactions directly to the DA layer.</p>
 </li>
 <li>
-<p><strong>Bitcoin Contract</strong>:<br>
-<!-- -->The rollup contract is deployed on Bitcoin as a recursive BitVM-style smart contract. This contract verifies the validity of L2 state transitions via submitted proofs.</p>
+<p><strong>Bitcoin Contract</strong>:
+The rollup contract is deployed on Bitcoin as a recursive BitVM-style smart contract. This contract verifies the validity of L2 state transitions via submitted proofs.</p>
 </li>
 <li>
-<p><strong>Rollup Network</strong>:<br>
-<!-- -->The rollup network consists of several key nodes:</p>
+<p><strong>Rollup Network</strong>:
+The rollup network consists of several key nodes:</p>
 <ul>
 <li><strong>Operator Node</strong>: Includes one active operator and any number of backup operators.</li>
-<li><strong>Contract Signer Nodes</strong>: Responsible for deploying and interacting with the rollup contract.</li>
-<li><strong>Vigilante Nodes</strong>: Monitor the network to detect and challenge invalid state transitions submitted by a malicious operator.</li>
+<li><strong>Attester Nodes</strong>: Responsible for deploying and interacting with the rollup contract.</li>
+<li><strong>Watcher Nodes</strong>: Monitor the network to detect and challenge invalid state transitions submitted by a malicious operator.</li>
 </ul>
 </li>
 </ol>
