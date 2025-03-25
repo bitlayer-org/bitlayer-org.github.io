@@ -4,12 +4,11 @@ sidebar_position: 1
 
 # How to Get Test Token?
 
-## Bitcoin Testnet3 Faucet
+## [BitVMNet](https://docs.bitlayer.org/docs/BitVMBridge/BitVMNet) Faucet
 
-Here are some resources for obtaining Bitcoin Testnet3 tokens:  
+Here are some resources for obtaining BitVMNet tokens:  
 
-- [TheFaucet](https://www.thefaucet.org/Bitcoin/Test3)  
-- [Coinfaucet](https://coinfaucet.eu/en/btc-testnet/)  
+- [TheFaucet](https://www.thefaucet.org/Bitcoin/Bitvmnet)  
 
 ## Ethereum Sepolia Faucet
 

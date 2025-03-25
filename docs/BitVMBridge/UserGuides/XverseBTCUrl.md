@@ -14,15 +14,15 @@ To manually configure the BTC URL for Signet mode in your Xverse wallet, please 
 
 ## Step 1 
 Open the Xverse wallet browser extension and click on the **"Settings"** icon.
-   ![Settings](/img/BitvmBridge/tutorial/xverse/wallet.png)
+<img src="/img/BitvmBridge/tutorial/xverse/wallet.png" style={{ maxWidth: '50%', height: 'auto' }}  />
 
 ## Step 2
 Within the **Settings** page, click on **"Network"**.
-   ![Network](/img/BitvmBridge/tutorial/xverse/setting.png)
+<img src="/img/BitvmBridge/tutorial/xverse/wallet.png" style={{ maxWidth: '50%', height: 'auto' }}  />
 
 ## Step 3
 In the **Network** section, select **"Signet"** and manually update the **BTC URL** to: `https://esplora.bitvmnet.org`
-   ![Signet Network Settings](/img/BitvmBridge/tutorial/xverse/btcurl.png)
+<img src="/img/BitvmBridge/tutorial/xverse/btcurl.png" style={{ maxWidth: '50%', height: 'auto' }}  />
 
 ## Step 4
 Click **"Save"** to apply the changes.
