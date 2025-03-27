@@ -18,7 +18,7 @@ Open the Xverse wallet browser extension and click on the **"Settings"** icon.
 
 ## Step 2
 Within the **Settings** page, click on **"Network"**.
-<img src="/img/BitvmBridge/tutorial/xverse/wallet.png" style={{ maxWidth: '50%', height: 'auto' }}  />
+<img src="/img/BitvmBridge/tutorial/xverse/setting.png" style={{ maxWidth: '50%', height: 'auto' }}  />
 
 ## Step 3
 In the **Network** section, select **"Signet"** and manually update the **BTC URL** to: `https://esplora.bitvmnet.org`
