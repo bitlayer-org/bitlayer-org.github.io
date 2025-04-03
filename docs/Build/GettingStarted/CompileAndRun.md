@@ -110,6 +110,7 @@ GlobalSlots = 10240
 AccountQueue = 32
 GlobalQueue = 1024
 Lifetime = 1800000000000
+DiscountContract="0xcfB249808860Af63C500da0426EF17431699a36f"
 
 [Node]
 DataDir = "/data/bitlayer-l2/chain/data"
@@ -193,6 +194,10 @@ If no network flags were provided, the node will connect the bitlayer mainnet by
 
 ```
 --testnet
+```
+and change this line in the config:
+```
+DiscountContract="0x077d303A09Cf37dcb27c99458f411267E30d2e0f"
 ```
 
 ### systemd config
