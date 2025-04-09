@@ -5,16 +5,17 @@ sidebar_label: Privacy Policy
 
 # Privacy Policy
 
-Last Updated: 
+**Last Updated: April 9th, 2025**
+
 Bitlayer Labs Ltd, a British Virgin Islands company (including all affiliates and subsidiaries, collectively referred to as "we", "us", or "our") respects your privacy and is committed to protecting the personal data we collect through our website at https://www.bitlayer.org ("Website"). This Privacy Policy explains how we collect, use, share, and protect your personal data in accordance with applicable data protection laws, including the General Data Protection Regulation ("GDPR") and the California Consumer Privacy Act ("CCPA").
 
 ## 1. Definitions
 
-- Personal Data: Any information relating to an identified or identifiable natural person, including email addresses, wallet addresses, and IP addresses.
-- Processing: Any operation performed on Personal Data such as collection, use, storage, or disclosure.
-- Data Subject: An individual whose personal data is processed by us.
-- EEA: The European Economic Area.
-- Cookies: Small text files stored on your device to track usage and preferences.
+- **Personal Data**: Any information relating to an identified or identifiable natural person, including email addresses, wallet addresses, and IP addresses.
+- **Processing**: Any operation performed on Personal Data such as collection, use, storage, or disclosure.
+- **Data Subject**: An individual whose personal data is processed by us.
+- **EEA**: The European Economic Area.
+- **Cookies**: Small text files stored on your device to track usage and preferences.
 
 ## 2. Information We Collect
 
@@ -53,10 +54,10 @@ We use the collected data to:
 ## 4. Legal Bases for Processing (GDPR)
 
 For individuals in the EEA, we rely on the following lawful bases to process your Personal Data:
-- Consent (e.g., for marketing communications, or optional data collection)
-- Contractual Necessity (e.g., to provide services requested by you)
-- Legal Obligation (e.g., compliance with financial regulations)
-- Legitimate Interest (e.g., improving our service, preventing fraud)
+- **Consent** (e.g., for marketing communications, or optional data collection)
+- **Contractual Necessity** (e.g., to provide services requested by you)
+- **Legal Obligation** (e.g., compliance with financial regulations)
+- **Legitimate Interest** (e.g., improving our service, preventing fraud)
 
 ## 5. Cookies and Tracking Technologies
 
@@ -69,10 +70,10 @@ We use technologies including cookies, local storage, and web beacons to:
 Cookies are small data files that are placed on your device when you visit our Website. Some cookies are essential for the Website to function properly, while others help us improve your experience by analyzing user behavior.
 
 We use the following types of cookies:
-- Strictly Necessary Cookies – required for the operation of the Website.
-- Performance Cookies – used to understand and analyze Website usage (e.g., Google Analytics).
-- Functionality Cookies – used to remember choices you make.
-- Targeting/Advertising Cookies – used to deliver relevant ads and track campaign effectiveness.
+- **Strictly Necessary Cookies** – required for the operation of the Website.
+- **Performance Cookies** – used to understand and analyze Website usage (e.g., Google Analytics).
+- **Functionality Cookies** – used to remember choices you make.
+- **Targeting/Advertising Cookies** – used to deliver relevant ads and track campaign effectiveness.
 
 You may manage cookie preferences via your browser settings.
 
@@ -85,7 +86,7 @@ We may share your Personal Data with:
 - Legal, tax, or audit advisors in the course of a business transaction or dispute
 - Third parties in the context of a business transfer, merger, or acquisition
 
-We do not sell your Personal Data.
+We do **not** sell your Personal Data.
 
 ## 7. International Data Transfers
 
@@ -107,7 +108,7 @@ You have the right to:
 - Withdraw your consent (where applicable)
 - File a complaint with your local data protection authority
 
-Please contact privacy@bitlayer.org to exercise your rights. We may request identity verification before processing your request.
+Please contact **build@bitlayer.org** to exercise your rights. We may request identity verification before processing your request.
 
 ## 9. California Residents (CCPA Disclosure)
 
@@ -150,9 +151,10 @@ The Website may link to external services, including social media, exchanges, an
 We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. In material cases, we may notify users directly.
 
 ## 16. Contact Us
+
 If you have questions or would like to exercise your rights, contact us at:
 
-Email: privacy@bitlayer.org
+Email: build@bitlayer.org
 
 Website: https://www.bitlayer.org
 
@@ -165,4 +167,5 @@ We do not use your Personal Data for decisions based solely on automated process
 If you apply for a position through our Website, we may collect your resume, contact details, employment history, and other relevant information. This information is used solely for recruitment purposes and managed in accordance with this Privacy Policy.
 
 ## 19. Complaints
-If you have concerns about our privacy practices, you may contact us at privacy@bitlayer.org. You also have the right to lodge a complaint with your local data protection authority if you believe we have violated applicable data protection laws.
+
+If you have concerns about our privacy practices, you may contact us at **build@bitlayer.org**. You also have the right to lodge a complaint with your local data protection authority if you believe we have violated applicable data protection laws.
