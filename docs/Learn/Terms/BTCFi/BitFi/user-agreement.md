@@ -62,7 +62,7 @@ sidebar_label: User Agreement
 
 ## 6. Liabilities
 
-6.1 BitFi is not liable for any losses due to:  
+6.1 **BitFi** is not liable for any losses due to:  
 - Service failures, delays, interruptions, or liquidity issues.  
 - System maintenance or data transmission failures.  
 - Force majeure events (e.g., natural disasters, war, government actions).  
