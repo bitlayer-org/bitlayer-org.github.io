@@ -4,8 +4,6 @@ sidebar_label: User Agreement
 ---
 
 
-# User Agreement
-
 # Simple Earn User Agreement
 
 ## 1. Overview
