@@ -5,7 +5,7 @@ sidebar_label: Privacy Policy
 
 # Privacy Policy
 
-**Last Updated: April 9th, 2025**
+**Last Updated: April 16th, 2025**
 
 Bitlayer Labs Ltd, Registration No. 2144013. a British Virgin Islands company (including all affiliates and subsidiaries, collectively referred to as "we", "us", or "our") respects your privacy and is committed to protecting the personal data we collect through our website at https://www.bitlayer.org ("Website"). This Privacy Policy explains how we collect, use, share, and protect your personal data in accordance with applicable data protection laws, including the General Data Protection Regulation ("GDPR") and the California Consumer Privacy Act ("CCPA").
 
