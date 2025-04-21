@@ -2,7 +2,7 @@
 sidebar_position: 53
 ---
 
-# How to Set BTC Url In Xverse Wallet?
+# How to Set BTC Url In Xverse?
 
 [Xverse](https://www.xverse.app/) is a leading Bitcoin wallet, supporting customizable Bitcoin testnet configurations (BTC URL). 
 
