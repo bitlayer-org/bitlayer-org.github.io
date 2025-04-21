@@ -2,23 +2,25 @@
 sidebar_position: 54
 ---
 
-# YBTC Bridge User Guide (Testnet)
+# Bridge User Guide (Testnet)
 
-This guide will walk you through how to use **Bridge function**, including:
+This guide will walk you through how to use **[Bridge function](https://bitvmbridge.bitlayer.org/testnet/bridge#header)**, including:
 
-- Bridging assets from **BitVMNet** to **Ethereum Sepolia and Monad Testnet**
+- Bridging vBTC from **BitVMNet** to **Monad Testnet and Ethereum Sepolia** to Mint YBTC
 - Bridging YBTC **back to BitVMNet**
 
 ---
 
-## Bridge from BitVMNet
-
-**Step1: Get BitVMNet BTC (vBTC) > [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)**
+## **Step1: Get BitVMNet BTC (vBTC) > [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)**
 <img src="/img/BitvmBridge/tutorial/bridge/thefaucet-bitvmnet.png" style={{ maxWidth: '90%', height: 'auto' }} />
 
-**Step2: Configure Xverse Wallet for BitVMNet , [Setup Guide](https://docs.bitlayer.org/docs/BitVMBridge/UserGuides/XverseBTCUrl)**
+## Step2: Configure Xverse Wallet for BitVMNet 
+**Important:** Please make sure to manually set the **Signet BTC URL(`https://esplora.bitvmnet.org`)** in **Xverse**.
 
-**Step3: Connect your Xverse wallet**
+<img src="/img/BitvmBridge/tutorial/bridge/xverse.png" style={{ maxWidth: '100%', height: 'auto' }}  />
+
+
+## Step3: Connect your Xverse wallet
 Open [Bridge](https://bitvmbridge.bitlayer.org/testnet/bridge)
 
 Make sure the Signet network in Xverse is configured with the correct BTC URL: https://esplora.bitvmnet.org

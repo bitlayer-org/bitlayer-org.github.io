@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Here are some resources for obtaining BitVMNet tokens:  
 
-- [TheFaucet](https://www.thefaucet.org/Bitcoin/Bitvmnet)  
+- [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)  
 
 ## Ethereum Sepolia Faucet
 
