@@ -1,6 +1,6 @@
 ---
 sidebar_position: 97
-sidebar_label: BitVM Bridge Network (BBN) Governance Framework
+sidebar_label: Joining the BitVM Bridge Network (BBN)
 ---
 
 # Joining the BitVM Bridge Network (BBN)
