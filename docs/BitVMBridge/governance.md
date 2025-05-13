@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 95
 sidebar_label: BitVM Bridge Network (BBN) Governance Framework
 ---
 
