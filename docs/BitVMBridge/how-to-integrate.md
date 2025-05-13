@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 96
 sidebar_label: Integrating New Target Chains with BitVM Bridge
 ---
 
