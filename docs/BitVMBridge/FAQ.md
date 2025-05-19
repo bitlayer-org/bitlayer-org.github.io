@@ -8,6 +8,32 @@ sidebar_position: 94
 
 A: The most important difference between the BitVM Bridge and many other bridges lies in its **security level**. In the BitVM Bridge, **bridge funds** are locked within a **BitVM smart contract**, rather than in an address controlled by centralized entities or a multisignature (multisig) arrangement managed by a small group of people. This security model is reinforced by the principle of **1-of-N security** (also known as **existential honesty**): as long as at least one participant acts honestly, it is not possible for others to collude and steal the bridge funds from the BitVM smart contract.
 
+## Q: Why are there two bridges, Bridge and Bridge Pro?
+
+A: Bitlayer provides two distinct bridge options within its BitVM Bridge product suite – **Bridge Pro** and **Bridge** – to cater to different user needs, primarily concerning transaction amounts and operational flexibility.
+
+The **Bridge Pro** operates using the core BitVM protocol. While this protocol offers a very high level of security, it currently involves specific, pre-set amount constraints for peg-in and peg-out operations. These constraints, inherent to the current implementation of the BitVM protocol, might not be suitable or convenient for all users or every transaction size.
+
+To address this and provide greater flexibility, we introduced an additional **Bridge** (which can be thought of as the standard or non-Pro version). This **Bridge** operates on a "swap style" mechanism. Instead of users directly minting or burning YBTC through the full BitVM protocol for each cross-chain transfer, this bridge facilitates direct swaps between BTC and YBTC.
+
+The **Bridge** (swap-style) is designed to support two types of swap mechanisms:
+
+- **Atomic Swaps:** These are trustless, meaning they don't require you to trust an intermediary, offering a very high degree of security. However, they can sometimes be more expensive or complex.
+- **MPC (Multi-Party Computation) Swaps:** These swaps involve a group of participants collaboratively managing the process, which introduces a certain level of trust in the MPC setup but can offer advantages in terms of speed or cost.
+
+Current Status (as of May 2025):
+
+Currently, the Bridge primarily supports MPC swaps. Atomic swap functionality is under active development and is planned for future release.
+
+**In summary:**
+
+Bitlayer's BitVM Bridge product suite offers two options:
+
+- **Bridge Pro:** Utilizes the native BitVM protocol, ideal for users whose transaction needs align with its specific amount constraints and who prioritize its particular security model.
+- **Bridge (Swap-style):** Offers flexibility for users needing to transact with varying amounts, using a direct BTC/YBTC swap mechanism.
+
+Users can choose the bridge that best suits their specific requirements, preferences for security models, and transaction characteristics.
+
 ## Q: Why do we have amount constraints for peg-in and peg-out in Bridge Pro?
 
 A: Amount constraints for peg-in and peg-out operations in Bridge Pro are in place primarily due to the **static nature of the BitVM protocol**. The BitVM smart contract for each bridge instance is established with its specific operational parameters (like exact peg-out amounts) pre-signed before it is deployed on the Bitcoin network. This "pre-signed" nature means these core parameters cannot be changed once the contract is active. Here's a breakdown:
