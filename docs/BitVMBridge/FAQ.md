@@ -4,12 +4,12 @@ sidebar_position: 1002
 
 # FAQ
 
-## Q: What is the BitVM2 protocol?
-A: [BitVM2](https://bitvm.org/bitvm2) is an innovative protocol that extends Bitcoin’s smart contract capabilities.  It allows developers to build complex decentralized applications (dApps) on Bitcoin, overcoming the limitations of its native scripting language and unlocking broader use cases.
 
 ## Q: What is BitVM Bridge?
 A: The BitVM Bridge provides the foundational framework for seamless interaction between users and two smart contracts—one on Bitcoin and the other on a target chain. It enables a trust-minimized bridging mechanism that ensures the secure and efficient transfer of Bitcoin (BTC) across blockchain ecosystems, while preserving the integrity of the underlying assets.
 
+## Q: How does the BitVM Bridge work?
+Bitcoin is locked in a smart contract on the Bitcoin network (Bridge Contract A), which triggers the minting of Peg-BTC on the Ethereum chain. When a user wants to withdraw, the Peg-BTC is burned and liquidity is provided by a broker. The entire process relies on a fraud-proof mechanism to ensure the security and validity of transactions. <a href='https://blog.bitlayer.org/introducing_bitvm_bridge/' target='_blank'>Learn more.</a>
 
 ## Q: What are the differences between BitVM Bridge and other bridges?
 
@@ -46,9 +46,9 @@ Users can choose the bridge that best suits their specific requirements, prefere
 A: Peg-BTC(YBTC) is a programmable Bitcoin asset that can be securely transferred across multiple blockchains via the BitVM Bridge, offering greater flexibility and utility. It can be used in decentralized lending, exchanges, staking, and other applications, enabling Bitcoin holders to fully leverage their assets in a multi-chain ecosystem. Chains and project teams can also customize the name of their Peg-BTC asset based on specific needs.
 
 ## Q: How can I obtain Peg-BTC(YBTC) assets?
-A: Institutional users can mint Peg-BTC(YBTC) through <a href='https://bitvmbridge.bitlayer.org/bridge-pro/mint' target='_blank' >Bridge Pro</a>, with the minting process typically taking 1-2 hours to ensure the security and integrity of the transaction.
+A: Institutional users can mint Peg-BTC(YBTC) through <a href='https://bitvmbridge.bitlayer.org/testnet/bridge-pro/mint' target='_blank' >Bridge Pro</a>, with the minting process typically taking 1-2 hours to ensure the security and integrity of the transaction.
 
-Retail users can quickly bridge Peg-BTC(YBTC) across multiple chains using the <a href='https://bitvmbridge.bitlayer.org/bridge' target='_blank' >Bridge</a>.
+Retail users can quickly bridge Peg-BTC(YBTC) across multiple chains using the <a href='https://bitvmbridge.bitlayer.org/testnet/bridge' target='_blank' >Bridge</a>.
 
 ## Q: How can I earn profits through Peg-BTC(YBTC) assets?
 A: Users holding Peg-BTC(YBTC) assets can participate in lending, liquidity mining, and other activities on decentralized finance (DeFi) platforms on the target blockchain to earn profits. The specific returns depend on the platforms and strategies used.
@@ -86,4 +86,4 @@ This streamlined approach saves Brokers from needing to use their own L1 Bitcoin
 A: Peg-BTC uses an innovative model to bring Bitcoin into the multi-chain ecosystem, offering stronger liquidity and accessibility for DeFi, gaming, and other sectors. With BitVM Bridge’s multi-chain capabilities, project teams can easily integrate BTC assets and accelerate Bitcoin’s application in the Web3 space. <a href='https://docs.bitlayer.org/docs/BitVMBridge/join-network' target='_blank' >Application Entrance</a> for Cooperation.
 
 ## Q: I am a developer. How can I receive technical support for BitVM Bridge in the BitVM field?
-A: The Bitlayer research team is actively involved in building the BitVM ecosystem. Developers can gain in-depth technical guidance and resources by engaging with the team, participating in community events, and more. Join the community.
+A: The Bitlayer research team is actively involved in building the BitVM ecosystem. Developers can gain in-depth technical guidance and resources by engaging with the team, participating in community events, and more. [Join the community](https://t.me/bitlayer_developers) — or feel free to reach out to us via email at [build@bitlayer.org](mailto:build@bitlayer.org).
