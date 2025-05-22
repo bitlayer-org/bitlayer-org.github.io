@@ -6,6 +6,7 @@ sidebar_label: Joining the BitVM Bridge Network (BBN)
 # Joining the BitVM Bridge Network (BBN)
 
 This document outlines how interested parties can participate in the BitVM Bridge Network (BBN) as Brokers, Attesters, or Watchers.
+If you’re interested in getting involved, feel free to contact us via email at [build@bitlayer.org](mailto:build@bitlayer.org).
 
 ## Brokers
 
