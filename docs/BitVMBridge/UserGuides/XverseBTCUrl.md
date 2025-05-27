@@ -1,5 +1,5 @@
 ---
-sidebar_position: 53
+sidebar_position: 51
 ---
 
 # How to Set BTC Url In Xverse?
