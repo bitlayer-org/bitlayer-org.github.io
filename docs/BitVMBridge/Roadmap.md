@@ -4,7 +4,7 @@ sidebar_position: 1001
 
 ## Roadmap
 
-![Roadmap](/img/BitvmBridge/introduction/roadmap.png)
+![Roadmap](/img/BitvmBridge/introduction/roadmap1.png)
 
 ### **DEC.2024**
 
@@ -20,6 +20,6 @@ sidebar_position: 1001
 
 - Mainnet Launch
 
-### **H1. 2025**
+### **H2. 2025**
 
 - Support for Additional Chains
