@@ -1,8 +1,8 @@
 ---
-sidebar_position: 50
+sidebar_position: 53
 ---
 
-# How to Mint?
+# How to Mint on Testnet?
 
 ## Prerequisites
 

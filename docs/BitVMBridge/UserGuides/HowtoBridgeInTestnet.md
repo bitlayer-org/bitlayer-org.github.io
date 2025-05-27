@@ -1,5 +1,5 @@
 ---
-sidebar_position: 54
+sidebar_position: 52
 ---
 
 # Bridge User Guide (Testnet)

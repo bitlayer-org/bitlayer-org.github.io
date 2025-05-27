@@ -1,8 +1,8 @@
 ---
-sidebar_position: 51
+sidebar_position: 54
 ---
 
-# How to Unmint?
+# How to Unmint on Testnet?
 
 
 ## 1. Confirm Address and Amount
