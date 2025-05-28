@@ -141,7 +141,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/BitLayerLabs',
+                href: 'https://x.com/BitLayerLabs',
               },
             ],
           },
