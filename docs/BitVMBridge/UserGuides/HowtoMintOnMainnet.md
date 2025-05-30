@@ -6,36 +6,66 @@ sidebar_position: 43
 
 ## Prerequisites
 
-## 1. Connect Bitcoin Wallet
+Before you begin, please ensure you have:
 
-#### 1.1 Visit [BitVM Bridge](https://bitvmbridge.bitlayer.org/bridge-pro/mint), Connect Bitcoin Wallet.
+- A Bitcoin wallet with available UTXOs (not linked to BRC-20 or other derivative assets).
+- An EVM-compatible wallet (e.g., MetaMask) to receive YBTC.
+
+---
+
+## 1. Connect Your Bitcoin Wallet
+
+#### 1.1 Visit [BitVM Bridge](https://bitvmbridge.bitlayer.org/bridge-pro/mint) and connect your Bitcoin wallet.
 
 <img src="/img/BitvmBridge/tutorial/mainnet-mint/connect-btc-wallet.png"  style={{ maxWidth: '100%', height: 'auto' }}  />
 
+---
 
-#### 1.2 Confirm address and amount
+#### 1.2 Confirm Amount and Ethereum Address
 
-Enter amount within 5, and input your Ethereum  address(If you have connected an EVM wallet, your EVM receiving address will be automatically filled in.). You can add [YBTC](https://etherscan.io/token/0xd9e3719f53b61047d5bbbe9e3fb18ea1e07b1b02) to your wallet with one click.
+Enter the amount you want to mint (up to 5 BTC), and provide your Ethereum wallet address.  
+If an EVM wallet is already connected, the receiving address will be auto-filled.
+
+You can add [YBTC](https://etherscan.io/token/0xd9e3719f53b61047d5bbbe9e3fb18ea1e07b1b02) to your wallet with a single click.
+
 <img src="/img/BitvmBridge/tutorial/mainnet-mint/confirm-address-amount.png" style={{ maxWidth: '100%', height: 'auto' }}  />
 
-## 2. Pick your funding UTXOs
+---
 
-Please ensure the selected UTXOs are not associated with derivative assets like BRC20.
-If UTXOs you choosed containes more BTC than you mint, extra BTC will back to your BTC address
+## 2. Select Funding UTXOs
+
+Choose UTXOs that are not associated with assets such as BRC-20.  
+If the selected UTXOs contain more BTC than required, the excess will be automatically returned to your Bitcoin address.
 
 <img src="/img/BitvmBridge/tutorial/mainnet-mint/pick-your-funding-utxo.png" style={{ maxWidth: '100%', height: 'auto' }}  />
-## 3. Generate address for Deposit
 
-The BitVM Bridge Network will generate a smart contract which will accept you BTC according to your peg-in request.
-You can view the logic rules of this smart contract through a visualized diagram.
+---
+
+## 3. Generate Deposit Address
+
+The BitVM Bridge Network will generate a custom smart contract address to receive your BTC.  
+This contract is created based on your peg-in request.
+
 <img src="/img/BitvmBridge/tutorial/mainnet-mint/generate-address-for-deposit.png" style={{ maxWidth: '100%', height: 'auto' }}  />
 
-## 4. Make your BTC Deposit
+---
 
-Confirm all information and transfer your BTC. This operation will cost 60-100 Mins, it is safe to close the window. Minting process will continue as a background process and will not be interrupted.
+## 4. Deposit BTC
+
+Carefully review the deposit details, then send your BTC to the generated address.  
+The confirmation process typically takes 60–100 minutes. You may safely close the window — the minting will continue in the background.
+
 <img src="/img/BitvmBridge/tutorial/mainnet-mint/make-your-btc-deposit.png" style={{ maxWidth: '100%', height: 'auto' }}  />
 
-## 5. Check YBTC in Wallet
+---
 
-Once YBTC appears in your wallet, the minting process is complete. YBTC contract address is [0xd9E3719F53b61047D5Bbbe9E3FB18eA1E07B1B02 ](https://etherscan.io/token/0xd9e3719f53b61047d5bbbe9e3fb18ea1e07b1b02)
+## 5. Check YBTC in Your Wallet
+
+Once the minting process is complete, YBTC will appear in your EVM wallet.  
+The official contract address for YBTC is:
+
+**[0xd9E3719F53b61047D5Bbbe9E3FB18eA1E07B1B02](https://etherscan.io/token/0xd9e3719f53b61047d5bbbe9e3fb18ea1e07b1b02)**
+
 <img src="/img/BitvmBridge/tutorial/mainnet-mint/ybtc-in-wallet.png" style={{ maxWidth: '50%', height: 'auto' }}  />
+
+

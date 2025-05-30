@@ -4,66 +4,99 @@ sidebar_position: 52
 
 # Bridge User Guide (Testnet)
 
-This guide will walk you through how to use **[Bridge function](https://bitvmbridge.bitlayer.org/testnet/bridge#header)**, including:
+This guide walks you through using the **[BitVM Bridge](https://bitvmbridge.bitlayer.org/testnet/bridge#header)** on testnet, including:
 
-- Bridging vBTC from **BitVMNet** to **Monad Testnet and Ethereum Sepolia** to Mint YBTC
-- Bridging YBTC **back to BitVMNet**
+- Bridging **vBTC** from **BitVMNet** to **Monad Testnet** or **Ethereum Sepolia** to mint **YBTC**
+- Bridging **YBTC** back to **BitVMNet**
 
 ---
 
+## Step 1: Configure Xverse Wallet for BitVMNet
 
-## Step1: Configure Xverse wallet for BitVMNet
-**Important:** Please make sure to manually set the **Signet BTC URL(`https://esplora.bitvmnet.org`)** in **Xverse**.
+> ✅ **Important:** Manually set the **Signet BTC URL** in Xverse to:  
+> `https://esplora.bitvmnet.org`
 
-<img src="/img/BitvmBridge/tutorial/bridge/xverse.png" style={{ maxWidth: '100%', height: 'auto' }}  />
+<img src="/img/BitvmBridge/tutorial/bridge/xverse.png" style={{ maxWidth: '100%', height: 'auto' }} />
 
-## Step2: Switch to Native SegWit in Xverse wallet
+---
 
-<img src="/img/BitvmBridge/tutorial/bridge/xverse-native-segwit.png" style={{ maxWidth: '100%', height: 'auto' }}  />
+## Step 2: Switch to Native SegWit Format in Xverse
 
+In the Xverse wallet, ensure your address format is set to **Native SegWit**.
 
-## **Step3: Get BitVMNet BTC (vBTC) > [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)**
-[BitVMNet](https://www.bitvmnet.org/) is an open Bitcoin Signet network sponsored by Bitlayer, designed to facilitate the development and implementation of BitVM-based applications. As a collaborative platform, it empowers developers within the BitVM ecosystem, driving the advancement and adoption of BitVM technology.
-BTC on BitVMNet is called **vBTC**
+<img src="/img/BitvmBridge/tutorial/bridge/xverse-native-segwit.png" style={{ maxWidth: '100%', height: 'auto' }} />
 
-On the [Thefaucet](https://www.thefaucet.org/Bitcoin/BitVMNet), you can enter an address starting with `tb1q` or `tb1p` to claim **vBTC**.
-You need to wait about **20 minutes** for Thefaucet to send you the **vBTC**. Once received, you can view your **vBTC** balance in Xverse.
+---
+
+## Step 3: Get BitVMNet BTC (vBTC) from [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)
+
+[BitVMNet](https://www.bitvmnet.org/) is an open Bitcoin Signet network supported by Bitlayer, designed for BitVM application development and testing.  
+BTC on BitVMNet is referred to as **vBTC**.
+
+To get vBTC:
+
+- Visit [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)
+- Enter a Bitcoin testnet address starting with `tb1q` or `tb1p`
+- Wait ~20 minutes for the faucet to send your vBTC
+
+Once received, you can view your vBTC balance in Xverse.
+
 <img src="/img/BitvmBridge/tutorial/bridge/thefaucet.png" style={{ maxWidth: '90%', height: 'auto' }} />
 
+---
 
-## Step4: Confirm you have configured BitVMNet in Xverse wallet
+## Step 4: Verify BitVMNet Configuration in Xverse
 
-Make sure the Signet network in Xverse is configured with the correct BTC URL: https://esplora.bitvmnet.org
+Make sure your Xverse wallet is still using the correct Signet BTC URL:  
+`https://esplora.bitvmnet.org`
+
 <img src="/img/BitvmBridge/tutorial/bridge/makesurerightbtcurl.png" style={{ maxWidth: '50%', height: 'auto' }} />
 
-## **Step5: Connect your OKX wallet** 
+---
+
+## Step 5: Connect Your OKX Wallet
+
+Connect your OKX Wallet to use Ethereum Sepolia or Monad Testnet as your destination network.
+
 <img src="/img/BitvmBridge/tutorial/bridge/okxwallet.png" style={{ maxWidth: '50%', height: 'auto' }} />
 
+---
 
-## **Step6: Select your target network** 
- Ethereum Sepolia or Monad Testnet
+## Step 6: Select Target Network
 
-## **Step7: Input the amount and Target Address** 
- Confirm to Bridge YBTC on the target chain
+Choose either **Ethereum Sepolia** or **Monad Testnet** as your target network.
+
+---
+
+## Step 7: Input Amount and Target Address
+
+- Enter the amount of vBTC to bridge  
+- Confirm your EVM-compatible address  
+- Proceed to mint **YBTC** on the selected chain
+
 <img src="/img/BitvmBridge/tutorial/bridge/bridge-out-confirm.png" style={{ maxWidth: '50%', height: 'auto' }} />
 
 ---
 
-## Bridge YBTC Back to BitVMNet
+## Bridging YBTC Back to BitVMNet
 
-**Step1: Switch your target Chain to BitVMNet**
+### Step 1: Switch Target Chain to BitVMNet
+
 <img src="/img/BitvmBridge/tutorial/bridge/bridge-in-confirm.png" style={{ maxWidth: '50%', height: 'auto' }} />
 
-**Step2: Approve and Confirm**
+### Step 2: Approve and Confirm
+
+- Approve the transaction in your wallet  
+- Confirm to bridge your YBTC back to **vBTC** on BitVMNet
 
 ---
 
 ## Quick Links
 
-| Feature                 | Link                                                                              |
-| ----------------------- | --------------------------------------------------------------------------------- |
-| Get BitVMNet BTC (vBTC) | [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)                           |
-| Xverse Wallet Setup     | [Setup Guide](https://docs.bitlayer.org/docs/BitVMBridge/UserGuides/XverseBTCUrl) |
-| BitVM Bridge            | [BitVM Bridge ](https://bitvmbridge.bitlayer.org/testnet/bridge#header)           |
+| Feature                   | Link                                                                                 |
+|---------------------------|--------------------------------------------------------------------------------------|
+| Get BitVMNet BTC (vBTC)   | [TheFaucet](https://www.thefaucet.org/Bitcoin/BitVMNet)                              |
+| Xverse Wallet Setup Guide | [Setup Guide](https://docs.bitlayer.org/docs/BitVMBridge/UserGuides/XverseBTCUrl)   |
+| BitVM Bridge Interface     | [BitVM Bridge](https://bitvmbridge.bitlayer.org/testnet/bridge#header)              |
 
 ---
