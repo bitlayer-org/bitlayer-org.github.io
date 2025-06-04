@@ -1,7 +1,7 @@
 ---
 sidebar_position: 42
 ---
-# Howto Bridge on Mainet
+# How to Bridge on Mainnet?
 
 ## Bridge User Guide (Mainnet)
 
