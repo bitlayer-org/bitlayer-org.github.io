@@ -1,9 +1,11 @@
 ---
 sidebar_position: 5
-sidebar_label: Whitepaper 2.0 Preview
+sidebar_label: Bitlayer Network Whitepaper
 ---
 
 # Bitlayer Network: The Computational Layer for Bitcoin
+
+<center>2.0 Preview</center>
 
 ## Abstract
 
@@ -35,7 +37,11 @@ The network is maintained by two key participants: Validators, and Full Nodes.
     - **Rollup Operator**: The Rollup Operator is a specialized, rotating role assigned to a single validator from the set. This operator is responsible for bundling L2 state transitions into batches, generating cryptographic proofs, and submitting them for settlement on the Bitcoin L1. To ensure accountability and disincentivize fraud, the operator must lock a significant amount of BTC as collateral on L1. The operator role rotates periodically to prevent censorship and centralization.
 - **Full Nodes**: Full nodes maintain a complete copy of the Bitlayer network blockchain, independently verifying all transactions and state transitions without trusting validators. They play a crucial role in enforcing the protocol rules and ensuring network transparency.
 
+<center>
 ![Network Architecture](/img/Whitepaper/001.png)
+</center>
+
+
 
 ### 2.2. Dual-Level Transaction Finality
 
@@ -62,7 +68,7 @@ $$
 
 where $t$ is the index of transaction batch. The entire history of the blockchain unfolds from an initial **genesis state ($s_0$)**.
 
-A **State Claim ($\Phi$)** is a formal assertion submitted by a Rollup Operator to a smart contract on the Bitcoin L1. Its purpose is to commit to a new L2 state that has resulted from processing a specific transaction batch. This claim acts as the anchor, linking L2 activity to the L1 and enabling Bitlayer  network to inherit Bitcoin's security.
+A **State Claim ($\Phi$)** is a formal assertion submitted by a Rollup Operator to a smart contract on the Bitcoin L1. Its purpose is to commit to a new L2 state that has resulted from processing a specific transaction batch. This claim acts as the anchor, linking L2 activity to the L1 and enabling Bitlayer network to inherit Bitcoin's security.
 
 $$
 \Phi = \{s_{t-1}, s_t, T\}
@@ -164,10 +170,6 @@ Constructing, pre-signing, and storing a transaction graph intended to last for 
 
 To solve these problems, we introduce **Reconfiguration**. The protocol's timeline is divided into discrete **epochs**, with each epoch consisting of a fixed number of claims (e.g., lasting for two weeks). At the transition between epochs, a reconfiguration event occurs. For each attesting ceremony, the validator set only needs to pre-sign the trunk transaction graph for the upcoming epoch. This makes the burden on validators manageable.
 
-![image](/img/Whitepaper/004.png)
-
-
-
 **The Exit Window:** Reconfiguration is also the point at which protocol upgrades or changes to the validator set can occur. These changes may alter the security assumptions or trust parameters of the system. To protect user sovereignty, Bitlayer provides a mandatory **Exit Window**. The configuration for Epoch $N+2$ is proposed and finalized during Epoch $N$. This gives users the entirety of Epoch $N+1$ to review the new validator set and transaction graph for Epoch $N+2$. If a user does not approve of the upcoming changes, they have a full epoch to exit the system by withdrawing their assets (e.g., pegging-out BTC via the BitVM Bridge) before the new configuration takes effect.
 
 **Validator Incentives:** All validators are required to stake BTR tokens to participate. The pre-signing ceremony for each epoch's transaction graph is coordinated through a system contract on the L2. Failure to participate in the ceremony in a timely manner results in the forfeiture of a portion of the validator's staked BTR, strongly disincentivizing attacks designed to stall the protocol.
@@ -176,7 +178,9 @@ To solve these problems, we introduce **Reconfiguration**. The protocol's timeli
 
 The reconfiguration process is orchestrated by the L2 system contract. The designated operator prepares all necessary information for the next epoch's transaction graph, and each validator independently generates it, signs it, and submits their signature to the L2 contract. Once a supermajority ($N-f$) of valid signatures are collected, they are aggregated, and the attestation is complete.
 
-This process culminates in a **Reconfiguration transaction** on Bitcoin, which links the new epoch to the previous one by spending the last **Reconfiguration transaction** of the old epoch. This transaction locks the aggregate collateral required for all claims in the new epoch and records the updated configuration parameters, such as the verifier program commitment $\delta$, the operator's identity, and time lock values. **Reconfiguration transactions** must be issued immediately after pre-signing is completed to promptly announce configurations. The very first such transaction, the **Epoch 0 Reconfiguration transaction**, bootstraps the entire rollup protocol and records the genesis state $s_0$ of the Bitlayer network.
+This process culminates in a **Reconfiguration transaction** on Bitcoin. This transaction locks the aggregate collateral required for all claims in the new epoch and records the updated configuration parameters, such as the verifier program commitment $\delta$, the operator's identity, and time lock values. **Reconfiguration transactions** must be issued immediately after pre-signing is completed to promptly announce configurations. The very first such transaction, the **Epoch 0 Reconfiguration transaction**, bootstraps the entire rollup protocol and records the genesis state $s_0$ of the Bitlayer network.
+
+![image](/img/Whitepaper/004.png)
 
 ### 3.6. Summary
 
@@ -464,7 +468,7 @@ This chapter reflects on the current design of the Bitlayer Network, discussing 
 While the Bitlayer Network provides a robust framework for a Bitcoin computational layer, its current design involves several trade-offs:
 
 1. **Trust Dependency on the Attester Committee:** The security of the bridge and settlement protocol relies on a 1-of-N honest-minority assumption within the Attester Committee. While this provides strong security, eliminating this external committee through future Bitcoin protocol upgrades remains a key goal for achieving a more fully trustless system.
-2. **Centralized Operator and Liveness:** The current model uses a single, rotating Rollup Operator for sequencing and settlement. While this is efficient, it presents a potential single point of failure for liveness if the operator goes offline. This motivates the development of a decentralized sequencing mechanism.
+2. **Centralized Operator and Liveness:** The current model uses a single, rotating Rollup Operator for sequencing and settlement. While this is efficient, it presents a potential single point of failure for liveness if the operator goes offline. This motivates the development of a multi-operator mechanism.
 3. **Reliance on Broker Liquidity:** The fast withdrawal and emergency escape hatch mechanisms depend on an active network of third-party Brokers to provide upfront liquidity. The system's user experience and capital efficiency could be further improved by protocol-native solutions that reduce this reliance.
     
 
