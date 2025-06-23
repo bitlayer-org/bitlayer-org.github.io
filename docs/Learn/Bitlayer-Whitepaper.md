@@ -353,7 +353,7 @@ This escape hatch mechanism ensures that users always retain control of their as
 
 ## 6. Security Analysis
 
-This chapter presents a comprehensive analysis of the security that underpins the Bitlayer Rollup. We begin by introducing a general security model for BitVM-style smart contracts, followed by definitions and proofs of their safety and liveness properties. We then conduct a detailed analysis of asset security, including proofs of the Bitcoin settlement security properties discussed in Chapter 3 and the escape hatch. Next, we provide a brief overview of Bitlayer Rollup’s incentive mechanism, as the economic model is critical in enhancing overall system security. Finally, we describe our governance framework and outline our vision for future decentralization.
+This chapter presents a comprehensive analysis of the security that underpins the Bitlayer Rollup. We begin by introducing a general security model for BitVM-style smart contracts, followed by definitions and proofs of their safety and liveness properties. We then conduct a detailed analysis of the Bitcoin settlement security properties discussed in Chapter 3. Finally, we briefly described the inherent censorship resistance provided by decentralized networks.
 
 ### 6.1 BitVM-Style Smart Contract Security
 
