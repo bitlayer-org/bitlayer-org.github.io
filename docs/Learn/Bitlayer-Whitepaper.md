@@ -376,7 +376,7 @@ The Transaction Graph serves as the backbone of the BitVM-style smart contract, 
 
 - **Preceding Txs:** The transactions provide the initial outputs necessary for the contract’s execution, which include the Proposer’s stake reserve and the Watcher’s reserve. The Attesters must validate the existence and correctness of these transactions before presigning.
 - **Presigned Txs:** The transactions that Attesters need to presign, which determines the logic of the BitVM-style contract.
-- **Sink Txs:** These transactions, lacking outgoing edges in the DAG, signify the release of funds.
+- **Sink Txs:** The transactions, lacking outgoing edges in the DAG, signify the release of funds.
 
 #### 6.1.3 Design Principles
 
@@ -392,23 +392,23 @@ The Transaction Graph serves as the backbone of the BitVM-style smart contract, 
 - **Integrity:** No new transactions can be added to the Transaction Graph after presigning.
 - **Flexibility:** The BitVM-style smart contract can accommodate different security assumptions, depending on the application scenario.
 
-**Lemma 6.1:** Let $\{tx_1, ..., tx_n\}$ be the presigned transactions spending $utxo_a$. No transaction $tx'\notin\{tx_1, ..., tx_n\}$ can spend $utxo_a$.
+**Lemma 1:** Let $\{tx_1, ..., tx_n\}$ be the presigned transactions spending $utxo_a$. No transaction $tx'\notin\{tx_1, ..., tx_n\}$ can spend $utxo_a$.
 
 **Proof:** We prove this important lemma by contradiction. Assume a presign committee $\{attester_0, ..., attester_{n-m}\}$ performed the setup presigning. If $tx'$ exists, it indicates that the Attesters have performed additional signing outside of the setup phase, which implies that these $n-m+1$ Attesters are semi-honest. This contradicts the assumption.
 
-**Lemma 6.2:** Each presign committee must include at least one honest Attester.
+**Lemma 2:** Each presign committee must include at least one honest Attester.
 
-**Theorem 6.3 (Validity):** If a valid presigned signature $\delta$ is produced for a transaction $tx$, then $tx$ is valid.
+**Theorem 1 (Validity):** If a valid presigned signature $\delta$ is produced for a transaction $tx$, then $tx$ is valid.
 
-**Proof:** By Lemma 6.2, at least one honest Attester $s_i$ participated in the presigning and contributed partial signature σi for $tx$. Hence, $tx$ received by $s_i$ must be valid. Since the validity of $\delta$ relies on all Attesters contributing partial signatures to $tx$, it must be valid.
+**Proof:** By Lemma 2, at least one honest Attester $s_i$ participated in the presigning and contributed partial signature σi for $tx$. Hence, $tx$ received by $s_i$ must be valid. Since the validity of $\delta$ relies on all Attesters contributing partial signatures to $tx$, it must be valid.
 
-**Theorem 6.4 (Integrity)**
+**Theorem 2 (Integrity)**
 
-**Proof:** Except for Sink Transactions, all outputs must require a multi-signature from the presign committee. By Lemma 6.1, we can conclude that all participants can only spend the UTXOs in the Transaction Graph along the predefined path, ensuring the integrity of the BitVM-style smart contract.
+**Proof:** Except for Sink Transactions, all outputs must require a multi-signature from the presign committee. By Lemma 1, we can conclude that all participants can only spend the UTXOs in the Transaction Graph along the predefined path, ensuring the integrity of the BitVM-style smart contract.
 
-**Theorem 6.5 (Flexibility)**
+**Theorem 3 (Flexibility)**
 
-**Proof:** We can dynamically adjust the security assumptions of the Attesters based on the requirements of the application scenario, as long as the presign committee ultimately includes at least one honest node. Based on Lemma 6.1 and Lemma 6.2, validity and integrity can then be deduced.
+**Proof:** We can dynamically adjust the security assumptions of the Attesters based on the requirements of the application scenario, as long as the presign committee ultimately includes at least one honest node. Based on Lemma 1 and Lemma 2, validity and integrity can then be deduced.
 
 #### 6.1.5 Liveness
 
@@ -424,7 +424,7 @@ To address the liveness fragility problem without compromising security or fungi
 
 - **Funds Liquidity:** Funds involved in the contract’s Preceding Txs must not remain indefinitely locked.
 
-**Theorem 6.6 (Funds Liquidity)**
+**Theorem 4 (Funds Liquidity)**
 
 **Proof:** Since the timelock duration is known and finite, the Termination principle of the Transaction Graph ensures that all funds will eventually be unlocked and flow to Sink Txs within a finite time.
 
@@ -432,11 +432,11 @@ To address the liveness fragility problem without compromising security or fungi
 
 This section focuses on proving the Bitcoin settlement security properties introduced in Chapter 3.4.4.
 
-**Lemma 6.7 (Completeness):** An honest Operator who correctly follows the protocol and submits valid state claims will never be unjustly penalized.
+**Lemma 3 (Completeness):** An honest Operator who correctly follows the protocol and submits valid state claims will never be unjustly penalized.
 
 **Proof:** An honest operator publishes valid claims and sub-program results within the required time windows, ensuring no inconsistencies arise. As a result, no watcher can unlock a _Disprove Script_, and the operator is not penalized. To save space, the details are omitted here.
 
-**Lemma 6.8 (Soundness):** A dishonest Operator who submits a fraudulent claim cannot avoid being penalized, as an honest Watcher will always be able to construct a valid *Disprove* transaction.
+**Lemma 4 (Soundness):** A dishonest Operator who submits a fraudulent claim cannot avoid being penalized, as an honest Watcher will always be able to construct a valid *Disprove* transaction.
 
 **Proof:** 
 
@@ -446,7 +446,7 @@ If there is a disproved algorithm allowing watchers to unlock a *Disprove Script
 
 We prove the existence of the disprove algorithm as follows. First, since the inputs and outputs published by the operator contradict the local sub-program execution, there must be at least one inconsistent output produced by the sub-program, saying $f'$. Then, we check the consistency of the inputs of $f'$. If all inputs are consistent, we select $f'$ as the challenged sub-program, otherwise recursively run the first step for one of the inconsistent inputs. So, the disprove algorithm must successfully select a sub-program to challenge. 
 
-**Lemma 6.9 (Efficiency):** The entire claim verification process, whether it results in acceptance or rejection, is guaranteed to terminate within a bounded timeframe defined by the protocol's time locks.
+**Lemma 5 (Efficiency):** The entire claim verification process, whether it results in acceptance or rejection, is guaranteed to terminate within a bounded timeframe defined by the protocol's time locks.
 
 **Proof:** Each phase of the protocol has a bounded time. If both the Operator and Watcher are honest in following the protocol, the optimistic time bound is $\Delta_{claim} + \Delta_{challenge}$. If either the Operator or any Watcher tries to destroy the protocol, the time-bound will become $\Delta_{claim} + \Delta_{assert} +\Delta_{disprove}$. Thus, the maximum time bound to confirm is $\Delta_{claim} + \max\{\Delta_{challenge}, \Delta_{assert} + \Delta_{disprove}\}$, so that the protocol terminates regardless of whether the claim is accepted or rejected. Thus, the protocol guarantees efficiency by design.
 
