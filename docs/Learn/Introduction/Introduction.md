@@ -61,4 +61,4 @@ Bitlayer is rapidly evolving, with significant milestones already achieved and e
 
 By combining Bitcoin's security with cutting-edge scalability and programmability, Bitlayer is poised to redefine the possibilities of Bitcoin Layer 2. Dive into our documentation to explore the technical details and start building on Bitlayer today!
 
-Stay updated on our progress by following our [Twitter](https://twitter.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also read our [Blog](https://blog.bitlayer.org/) to stay abreast of the latest Bitlayer developments.
+Stay updated on our progress by following our [Twitter](https://x.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also read our [Blog](https://blog.bitlayer.org/) to stay abreast of the latest Bitlayer developments.

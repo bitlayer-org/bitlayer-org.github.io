@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Website：https://www.bitlayer.org/
 
-Twitter: https://twitter.com/BitLayerLabs
+Twitter: https://x.com/BitLayerLabs
 
 Discord: https://discord.com/invite/GGSjNyD8nj
 
