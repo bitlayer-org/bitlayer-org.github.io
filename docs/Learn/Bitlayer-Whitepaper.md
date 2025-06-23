@@ -136,11 +136,11 @@ The Watcher now examines the sequence of results published by the Operator. If t
 
 #### 3.4.4. Security Properties
 
-This protocol is designed to be secure under the assumption of at least one honest Watcher. Its security rests on three key properties, which are analyzed in detail in Chapter 6.
+This protocol is designed to be secure under the assumption of at least one honest Watcher. Its security rests on three key properties, which are analyzed in detail in Chapter 6.2.
 
--   **Lemma 3.1 (Completeness):** An honest Operator who correctly follows the protocol and submits valid state claims will never be unjustly penalized.
--   **Lemma 3.2 (Soundness):** A dishonest Operator who submits a fraudulent claim cannot avoid being penalized, as an honest Watcher will always be able to construct a valid *Disprove* transaction.
--   **Lemma 3.3 (Efficiency):** The entire claim verification process, whether it results in acceptance or rejection, is guaranteed to terminate within a bounded timeframe defined by the protocol's time locks.
+-   **Completeness:** An honest Operator who correctly follows the protocol and submits valid state claims will never be unjustly penalized.
+-   **Soundness:** A dishonest Operator who submits a fraudulent claim cannot avoid being penalized, as an honest Watcher will always be able to construct a valid *Disprove* transaction.
+-   **Efficiency:** The entire claim verification process, whether it results in acceptance or rejection, is guaranteed to terminate within a bounded timeframe defined by the protocol's time locks.
 
 ### 3.5. Settling a Chain of Claims
 
@@ -363,7 +363,7 @@ BitVM-style smart contracts follow a universal transaction graph structure. In t
 
 In a BitVM-style smart contract, at least three roles are required to collaborate:
 - **Transaction Graph Proposer:** The Proposer is responsible for initiating a contract instance, the Proposer must stake a predefined amount of BTC, serving as both a commitment and a deterrent against misbehavior.
-- **Attesters:** We assume there are $n$ Attesters, among whom $m$ are honest. The remaining $n-m$ are semi-honest, meaning they follow the protocol and collaborate to construct the presigned signature but may behave unpredictably off-protocol, such as discarding keys after presigning. Each presigning requires the participation of at least $n-m+1$ Attesters.
+- **Attesters:** We assume there are $n$ Attesters, among whom $m$ are honest. The remaining $n-m$ are semi-honest, meaning they follow the protocol and collaborate to construct the presigned signature but may behave unpredictably off-protocol, such as retaining keys after presigning. Each presigning requires the participation of at least $n-m+1$ Attesters.
 - **Watchers:** Watchers monitor the on-chain state submitted by the Proposer to ensure correctness. If misbehavior is detected, they can hold the Proposer accountable by invoking penalties on the staked BTC. The model assumes the existence of at least one rational, honest, and active Watcher.
 
 Additionally, we assume a **synchronized network**, where all communications between participants and the Bitcoin network occur within a known bounded time $\Delta$. All participants are assumed to be rational and polynomial-time bounded, meaning all cryptographic tools used in the BitVM-style smart contract are secure.
@@ -374,8 +374,8 @@ The Transaction Graph serves as the backbone of the BitVM-style smart contract, 
 
 ![Transaction Graph DAG](/img/Whitepaper/008.png)
 
-- **Preceding Txs:** These transactions provide the initial outputs necessary for the contract’s execution. Examples include the Proposer’s stake reserve and the Watcher’s reserve. The Attesters must validate the existence and correctness of these transactions before presigning.
-- **Presigned Txs:** The set of transactions that Attesters need to presign, which determines the logic of the BitVM-style contract.
+- **Preceding Txs:** The transactions provide the initial outputs necessary for the contract’s execution, which include the Proposer’s stake reserve and the Watcher’s reserve. The Attesters must validate the existence and correctness of these transactions before presigning.
+- **Presigned Txs:** The transactions that Attesters need to presign, which determines the logic of the BitVM-style contract.
 - **Sink Txs:** These transactions, lacking outgoing edges in the DAG, signify the release of funds.
 
 #### 6.1.3 Design Principles
@@ -394,7 +394,7 @@ The Transaction Graph serves as the backbone of the BitVM-style smart contract, 
 
 **Lemma 6.1:** Let $\{tx_1, ..., tx_n\}$ be the presigned transactions spending $utxo_a$. No transaction $tx'\notin\{tx_1, ..., tx_n\}$ can spend $utxo_a$.
 
-**Proof:** We prove this important lemma by contradiction. Assume a presign committee $\{attester_0, ..., attester_{n-m}\}$ performed the setup signing. If $tx'$ exists, it indicates that the Attesters have performed additional signing outside of the setup phase, which implies that these $n-m+1$ Attesters are semi-honest. This contradicts the assumption.
+**Proof:** We prove this important lemma by contradiction. Assume a presign committee $\{attester_0, ..., attester_{n-m}\}$ performed the setup presigning. If $tx'$ exists, it indicates that the Attesters have performed additional signing outside of the setup phase, which implies that these $n-m+1$ Attesters are semi-honest. This contradicts the assumption.
 
 **Lemma 6.2:** Each presign committee must include at least one honest Attester.
 
@@ -408,7 +408,7 @@ The Transaction Graph serves as the backbone of the BitVM-style smart contract, 
 
 **Theorem 6.5 (Flexibility)**
 
-**Proof:** We can dynamically adjust the security assumptions of the Attesters based on the requirements of the application scenario, as long as the Presign Committee ultimately includes at least one honest node. Based on Lemma 6.1 and Lemma 6.2, validity and integrity can then be deduced.
+**Proof:** We can dynamically adjust the security assumptions of the Attesters based on the requirements of the application scenario, as long as the presign committee ultimately includes at least one honest node. Based on Lemma 6.1 and Lemma 6.2, validity and integrity can then be deduced.
 
 #### 6.1.5 Liveness
 
@@ -426,17 +426,17 @@ To address the liveness fragility problem without compromising security or fungi
 
 **Theorem 6.6 (Funds Liquidity)**
 
-**Proof:** Since the timelock duration is known and finite, based on the Termination design principle of the Transaction Graph, every amount of funds will ultimately flow to Sink Txs within a known and finite time, indicating that the funds have been released.
+**Proof:** Since the timelock duration is known and finite, the Termination principle of the Transaction Graph ensures that all funds will eventually be unlocked and flow to Sink Txs within a finite time.
 
 ### 6.2 Bitcoin Settlement Security
 
-This section focuses on proving the Bitcoin settlement security properties introduced in Chapter 3.
+This section focuses on proving the Bitcoin settlement security properties introduced in Chapter 3.4.4.
 
-**Lemma 3.1 (Completeness):** An honest Operator who correctly follows the protocol and submits valid state claims will never be unjustly penalized.
+**Lemma 6.7 (Completeness):** An honest Operator who correctly follows the protocol and submits valid state claims will never be unjustly penalized.
 
 **Proof:** An honest operator publishes valid claims and sub-program results within the required time windows, ensuring no inconsistencies arise. As a result, no watcher can unlock a _Disprove Script_, and the operator is not penalized. To save space, the details are omitted here.
 
-**Lemma 3.2 (Soundness):** A dishonest Operator who submits a fraudulent claim cannot avoid being penalized, as an honest Watcher will always be able to construct a valid *Disprove* transaction.
+**Lemma 6.8 (Soundness):** A dishonest Operator who submits a fraudulent claim cannot avoid being penalized, as an honest Watcher will always be able to construct a valid *Disprove* transaction.
 
 **Proof:** 
 
@@ -444,9 +444,9 @@ If the dishonest operator does not publish $\Phi$ within $\Delta_{claim}$, the o
 
 If there is a disproved algorithm allowing watchers to unlock a *Disprove Script* with inputs and outputs published by the operator that contradict the sub-program execution, then a dishonest operator cannot escape penalties.
 
-We prove the existence of the disprove algorithm as follows. First, since the inputs and outputs published by the operator contradict the local sub-program execution, there must be at least one inconsistent output produced by the sub-program, saying $f'$. Then, we check the consistency of the inputs of $f'$. If all inputs are consistent, we select $f'$ as the challenged sub-program, otherwise recursively run the first step for one of the inconsistent inputs. Because the parameter set $\{ \Phi_j \}$ is consistent with the claim, the disprove algorithm must successfully select a sub-program to challenge. 
+We prove the existence of the disprove algorithm as follows. First, since the inputs and outputs published by the operator contradict the local sub-program execution, there must be at least one inconsistent output produced by the sub-program, saying $f'$. Then, we check the consistency of the inputs of $f'$. If all inputs are consistent, we select $f'$ as the challenged sub-program, otherwise recursively run the first step for one of the inconsistent inputs. So, the disprove algorithm must successfully select a sub-program to challenge. 
 
-**Lemma 3.3 (Efficiency):** The entire claim verification process, whether it results in acceptance or rejection, is guaranteed to terminate within a bounded timeframe defined by the protocol's time locks.
+**Lemma 6.9 (Efficiency):** The entire claim verification process, whether it results in acceptance or rejection, is guaranteed to terminate within a bounded timeframe defined by the protocol's time locks.
 
 **Proof:** Each phase of the protocol has a bounded time. If both the Operator and Watcher are honest in following the protocol, the optimistic time bound is $\Delta_{claim} + \Delta_{challenge}$. If either the Operator or any Watcher tries to destroy the protocol, the time-bound will become $\Delta_{claim} + \Delta_{assert} +\Delta_{disprove}$. Thus, the maximum time bound to confirm is $\Delta_{claim} + \max\{\Delta_{challenge}, \Delta_{assert} + \Delta_{disprove}\}$, so that the protocol terminates regardless of whether the claim is accepted or rejected. Thus, the protocol guarantees efficiency by design.
 
