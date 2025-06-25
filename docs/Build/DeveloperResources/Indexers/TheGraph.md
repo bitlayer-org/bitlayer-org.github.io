@@ -40,5 +40,5 @@ graph-node:
  > Note: The node connected to graph-node needs to be in `archive` mode (add flag --syncmode full --gcmode archive when starting the node), we recommend each user to build their own RPC node.
     
 ### Migration
-You can migrate your subgraph from bitlayer graph node or project local graph node to offical environment when the graph enables bitlayer.
+You can migrate your subgraph from bitlayer graph node or project local graph node to official environment when the graph enables bitlayer.
 To migrate smoothly, please set dataSources.source.startBlock in subgraph.yaml, we suggest using the block in which the contract was created. 

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Dapp Security Mannual
+# Dapp Security Manual
 
 # 1 Overview
 Bitlayer aims to become a Layer 2 public blockchain for BTC, achieving 100% EVM compatibility as well as compatibility with Ethereum ecosystem tools, using BTC as the native token. 

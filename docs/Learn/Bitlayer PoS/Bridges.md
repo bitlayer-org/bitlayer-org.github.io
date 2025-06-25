@@ -23,11 +23,11 @@ You can find the Proof of Reserve information here: [POR page](./POR).
 
 Mainnet-V1(Bitlayer PoS): The Bitlayer team is working with multiple MPC custody platforms, including Coinbase and Sinohope (HK.1611), to secure the assets.
 
-Mainnet-V2&V3(Bitcoin Finality): The bitlyer team will deliver trustless bridge using BitVM and DLC technology.[WIP]
+Mainnet-V2&V3(Bitcoin Finality): The bitlyer team will deliver trustless bridge using BitVM technology.[WIP]
 
 #### EVM to Bitlayer 
 
-The Bitlayer team builds the trustless bridge together with the [Polyhedra](https://x.com/PolyhedraZK) team.
+The Bitlayer team builds the trustless bridge based on Chainlink CCIP. Users can check the lane status via [CCIP explorer](https://ccip.chain.link/status?search=Bitlayer).
 
 ### 3rd Party Bridges
 
