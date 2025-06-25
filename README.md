@@ -20,7 +20,7 @@ yarn start
 ```bash
 cd bitlayer-org.github.io
 git add .
-git commit -m"update doc"
+git commit -m "update doc"
 git push
 
 # auto publish
