@@ -9,7 +9,7 @@ sidebar_position: 80
 | Name           | Symbol | Decimal | Contract Address                                             | Source token info |
 | -------------- | ------ | ------- | ------------------------------------------------------------ | --- |
 | Tether USD     | USDT   | 6       | [0xfe9f969faf8ad72a83b761138bf25de87eff9dd2](https://www.btrscan.com/address/0xfe9f969faf8ad72a83b761138bf25de87eff9dd2) | Ethereum ERC20: [USDT](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) |
-| USD Coin       | USDC   | 6       | [0x9827431e8b77e87c9894bd50b055d6be56be0030](https://www.btrscan.com/address/0x9827431e8b77e87c9894bd50b055d6be56be0030?tab=Transactions) | Ethereum ERC20: [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) |
+| USD Coin       | USDC   | 6       | [0xf8c374ce88a3be3d374e8888349c7768b607c755](https://www.btrscan.com/address/0xf8c374ce88a3be3d374e8888349c7768b607c755?tab=Transactions) | Ethereum ERC20: [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) |
 | Ethereum Token | ETH    | 18      | [0xef63d4e178b3180beec9b0e143e0f37f4c93f4c2](https://www.btrscan.com/address/0xef63d4e178b3180beec9b0e143e0f37f4c93f4c2) | Ethereum native token |
 | ORDI  | ORDI  | 18 | [0xde9f57a5b8844ebf607eceffaa2505bb961701a4](https://www.btrscan.com/address/0xde9f57a5b8844ebf607eceffaa2505bb961701a4) | Bitcoin BRC20: b61b0172d95e266c18aea0c624db987e971a5d6d4ebc2aaed85da4642d635735i0 |
 | SATS  | SATS  | 18 | [0x8dae8b60f16a10edfac1714394688e006ff369fa](https://www.btrscan.com/address/0x8dae8b60f16a10edfac1714394688e006ff369fa) | Bitcoin BRC20: 9b664bdd6f5ed80d8d88957b63364c41f3ad4efb8eee11366aa16435974d9333i0 |
