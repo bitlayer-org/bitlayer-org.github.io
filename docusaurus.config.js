@@ -31,10 +31,6 @@ const config = {
           rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -94,6 +90,12 @@ const config = {
             position: 'left',
             label: 'BitVM Bridge',
             activeBaseRegex: `/docs/BitVMBridge`,
+          },
+          {
+            to: '/docs/YBTCFamily/ybtc_overview', // Link to a document, not a top-level directory
+            position: 'left',
+            label: 'YBTC Family',
+            activeBaseRegex: `/docs/YBTCFamily`,
           },
           {
             href: 'https://blog.bitlayer.org/',
