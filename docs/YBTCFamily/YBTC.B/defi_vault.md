@@ -20,7 +20,7 @@ The **YBTC.B DeFi Vault** is a multi-chain, on-chain yield optimization protocol
 Strategies:
 - Stake **YBTC.B** into DEXes as LP to earn **trading fees** and **liquidity mining rewards**
 - Deposit into **lending protocols** to earn interest; potentially re-used as **collateral**
-- Earn **farming rewards** from protocol partners and **DEEP tokens**
+- Earn **farming rewards** from protocol partners
 
 ---
 
@@ -31,11 +31,10 @@ Strategies:
 Strategies:
 - Earn trading fees and **AVAX native rewards** through LP farming (e.g. **BTC.B–YBTC.B pairs**)
 - Participate in **lending markets** for interest or liquidity mining subsidies
-- Use **Yield Yak** auto-compounding strategies to maximize APY
 
 ---
 
-###  Plume
+###  Plume (coming soon)
 
 **Plume** is a Layer 1 blockchain focused on **Real World Assets (RWAs)** — including tokenized bonds, treasuries, and real estate.
 
@@ -46,7 +45,7 @@ Strategies:
 
 ---
 
-###  Starknet
+###  Starknet (coming soon)
 
 **Starknet** is an Ethereum Layer 2 ZK-rollup built using **Cairo** and powered by **zk-STARK proofs**, offering scalability and Ethereum-grade security.
 

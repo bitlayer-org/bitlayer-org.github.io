@@ -30,6 +30,9 @@ Acts as the liquidity medium connecting native Bitcoin with **yield-generating s
 
 - **1:1 Peg to Native BTC**  
   Each YBTC.B token is fully backed by a corresponding amount of native BTC, either bridged or locked on-chain, and is redeemable at any time.
+  
+- **Multi-chain Yield Bearing**  
+  YBTC.B can be deposited into **DeFi and CeDeFi Vaults** across multiple chains to earn BTC-denominated yield. Strategies include LP farming, lending, and fixed-income RWAs, with automated reward compounding and flexible redemption mechanisms.
 
 - **Cross-chain Composability**  
   YBTC.B can move freely between **Bitlayer**, **EVM-compatible chains** (e.g., Avalanche, Plume), and **non-EVM chains** (e.g., Sui, Starknet), ensuring fluid capital mobility.

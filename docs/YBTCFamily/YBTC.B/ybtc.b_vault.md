@@ -47,4 +47,4 @@ The system tracks user ownership and earnings via **proof tokens**, which repres
 
 ## Supported Assets
 
-- The Vault accepts deposits in either **Layer-2 BTC** (native BTC on Bitlayer) or **YBTC.B** (its cross-chain wrapped form).
+- The Vault accepts deposits in either **Bitlayer Native BTC** or **YBTC.B** (its cross-chain wrapped form).
