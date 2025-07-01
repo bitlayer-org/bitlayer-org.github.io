@@ -1,6 +1,6 @@
 ---
 sidebar_position: 25
-sidebar_label: How to
+sidebar_label: Tutorial
 ---
 
 # How to Deposit?
@@ -14,12 +14,12 @@ This section is intended for users who wish to deposit their **YBTC.B** or **BTC
 
 You may deposit using either of the following:
 
-### - YBTC.B (Wrapped BTC)
+### - YBTC.B
 - Requires **token approval** before deposit (default is unlimited).
 - Upon deposit, users receive a **Vault Proof Token** (e.g., `AvaxYBTC.B`) representing their share.
 - Initially, deposits are **1:1**, but the rate updates after each **yield distribution**.
 
-### - BTC (Native Layer-2 BTC on Bitlayer)
+### - Bitlayer Native BTC
 - **No approval needed**.
 - BTC is **automatically converted** to YBTC.B during the deposit process.
 - Converted YBTC.B is then deposited into the selected Vault.
@@ -55,10 +55,6 @@ After staking BTC assets (as **YBTC.B**), the Vault system mints a **Proof Token
 ###  Functions:
 - Records amount staked, deposit timestamp, and expected yield.
 - Sole certificate for redeeming original BTC (or YBTC.B) + interest.
-- In some cases, these are **ERC-20 transferable tokens**, usable for:
-  - Secondary market trading
-  - Collateral in DeFi
-  - Re-staking into other protocols
 
 ---
 
@@ -72,14 +68,8 @@ Proof Tokens are named by chain:
 - `StarkYBTC.B`
 
 ### 2. **CeDeFi Vaults**
-Prefix with `ce` to indicate hybrid strategy:
-- `ceSuiYBTC.B`
-- `ceAvaxYBTC.B`
-- `cePlumeYBTC.B`
+TBD
 
-### 3. **Third-party Partner Integrations**
-Naming is determined by the partner:
-- Example: Folks → `FolksYBTC.B`
 
 ---
 
@@ -93,37 +83,6 @@ Users can redeem staked assets and earned yield by initiating a **redemption req
 
 ## 🪜 Step-by-Step Redemption Process
 
-1. Log in to the **Vault dashboard**.
-2. Check **maturity status**:
-   - **Locked Vaults**: No early redemption unless explicitly supported.
-   - **Flexible Vaults**: Early exit allowed with potential penalty.
-3. Select the Vault entry and click `[Redeem]`.
-4. View:
+1. Select the Vault entry and click `[Redeem]`.
+2. View:
    - Estimated **BTC payout** (principal + yield)
-   - **Applicable fees**
-   - **Redemption timeline**
-5. Confirm the transaction. The request will be submitted.
-
----
-
-##  Redemption Mechanics
-
-- **Vault Proof Token** must be approved for use by the contract (unlimited by default).
-- **Default redemption duration**: 5 days.
-  - No yield accrues during this window.
-  - Multiple redemptions reset the timer.
-- Upon request:
-  - The LP token is **locked** (claim ticket).
-  - At settlement:
-    - Token is **transferred** (advance model), or
-    - **Burned** when assets are returned.
-- After completion, users **claim BTC principal + yield**.
-
----
-
-##  Conversion Rate
-
-Redemption amount is calculated using:
-BTC Received = Total BTC in Vault / Total YBTC.B Supply
-
-This ensures **proportional** and **fair distribution** based on real Vault performance.

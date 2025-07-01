@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-sidebar_label: YBTC Overview
+sidebar_label: Bitlayer Native BTC
 ---
 
 # Bitlayer Native BTC Asset: Overview & Technical Characteristics
