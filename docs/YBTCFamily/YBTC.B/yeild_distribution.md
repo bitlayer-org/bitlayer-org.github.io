@@ -30,7 +30,7 @@ sidebar_label: Yield Distribution & Capital Flow
 - Yield will be updated **every 24 hours**.
 - Exchange ratios between Proof Tokens and YBTC.B are **updated automatically**.
 - Users could redeem their deposits anytime.
-- Users will be able to claim the funds & yields in **7 days** days after the redemption.
+- Users will be able to claim the funds & yields in **7 days** after the redemption.
 
 ---
 
@@ -39,8 +39,8 @@ sidebar_label: Yield Distribution & Capital Flow
 
 ####  Interest Accounting
 - Yield includes Avax ecosystem incentives & BTR subsidy.
-- Sui ecosystem incentives will be converted into BTC assets for yield settlement.
-- Yield will be updated **weekly**.
+- AVAX ecosystem incentives will be converted into BTC assets for yield settlement **weekly**.
+- Yield will be updated **every 24 hours**.
 - Exchange ratios between Proof Tokens and YBTC.B are **updated automatically**.
 - Users could redeem their deposits anytime.
-- Users will be able to claim the funds & yields in **7 days** days after the redemption.
+- Users will be able to claim the funds & yields in **7 days** after the redemption.
