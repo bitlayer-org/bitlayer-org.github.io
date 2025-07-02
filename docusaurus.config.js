@@ -92,7 +92,7 @@ const config = {
             activeBaseRegex: `/docs/BitVMBridge`,
           },
           {
-            to: '/docs/YBTCFamily/ybtc_overview', // Link to a document, not a top-level directory
+            to: '/docs/YBTCFamily/bl_btc_overview', // Link to a document, not a top-level directory
             position: 'left',
             label: 'YBTC Family',
             activeBaseRegex: `/docs/YBTCFamily`,
