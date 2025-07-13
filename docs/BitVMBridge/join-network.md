@@ -17,7 +17,7 @@ The BitVM Bridge Broker role can appeal to various entities for different purpos
 - Type 1: Providing Liquidity Services to End Users
      You might operate as a Broker to generate revenue by servicing the peg-out requests of end-users and charging transaction fees.
 - Type 2: Supporting Your Business Operations
-     You might operate as a Broker if you run a business (such as DeFi protocols or other services) that integrates Peg-BTC (a highly secure bridged BTC asset) and you require the BitVM Bridge to balance your BTC/Peg-BTC positions. The flexible peg-out feature of the Bitlayer BitVM Bridge allows participants with such needs to achieve this cost-effectively.
+     You might operate as a Broker if you run a business (such as DeFi protocols or other services) that integrates YBTC (a highly secure bridged BTC asset) and you require the BitVM Bridge to balance your BTC/YBTC positions. The flexible peg-out feature of the Bitlayer BitVM Bridge allows participants with such needs to achieve this cost-effectively.
 
 Regardless of the specific motivation, all prospective Brokers must meet the following requirements:
 
