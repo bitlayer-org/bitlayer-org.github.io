@@ -8,9 +8,9 @@ sidebar_position: 7
 
 Unlock the full potential of Bitcoin by securely bridging it to any blockchain ecosystem. The BitVM Bridge provides a robust and trust-minimized infrastructure, enabling seamless interoperability for Bitcoin. We invite developers, projects, and enterprises to collaborate with us in activating BTC liquidity on target chains and fostering a vibrant cross-chain ecosystem.
 
-## Peg-BTC Asset Cross-chain
+## YBTC Asset Cross-chain
 
-Peg-BTC represents a revolutionary approach to bridging Bitcoin to any blockchain, facilitating unparalleled liquidity and accessibility. By leveraging BitVM Bridge's multi-chain capabilities, Peg-BTC empowers projects to integrate Bitcoin liquidity into decentralized finance (DeFi), gaming, and other innovative use cases. Join us in driving Bitcoin adoption across the multi-chain universe.
+YBTC represents a revolutionary approach to bridging Bitcoin to any blockchain, facilitating unparalleled liquidity and accessibility. By leveraging BitVM Bridge's multi-chain capabilities, YBTC empowers projects to integrate Bitcoin liquidity into decentralized finance (DeFi), gaming, and other innovative use cases. Join us in driving Bitcoin adoption across the multi-chain universe.
 
 ## BTC Native Protocol Based on BitVM2
 

@@ -6,10 +6,12 @@ sidebar_position: 1002
 
 
 ## Q: What is BitVM Bridge?
+
 A: The BitVM Bridge provides the foundational framework for seamless interaction between users and two smart contracts—one on Bitcoin and the other on a target chain. It enables a trust-minimized bridging mechanism that ensures the secure and efficient transfer of Bitcoin (BTC) across blockchain ecosystems, while preserving the integrity of the underlying assets.
 
 ## Q: How does the BitVM Bridge work?
-Bitcoin is locked in a smart contract on the Bitcoin network (Bridge Contract A), which triggers the minting of Peg-BTC on the Ethereum chain. When a user wants to withdraw, the Peg-BTC is burned and liquidity is provided by a broker. The entire process relies on a fraud-proof mechanism to ensure the security and validity of transactions. <a href='https://blog.bitlayer.org/introducing_bitvm_bridge/' target='_blank'>Learn more.</a>
+
+Bitcoin is locked in a smart contract on the Bitcoin network (Bridge Contract A), which triggers the minting of YBTC on the Ethereum chain. When a user wants to withdraw, the YBTC is burned and liquidity is provided by a broker. The entire process relies on a fraud-proof mechanism to ensure the security and validity of transactions. <a href='https://blog.bitlayer.org/introducing_bitvm_bridge/' target='_blank'>Learn more.</a>
 
 ## Q: What are the differences between BitVM Bridge and other bridges?
 
@@ -28,7 +30,7 @@ The **Bridge** (swap-style) is designed to support two types of swap mechanisms:
 - **Atomic Swaps:** These are trustless, meaning they don't require you to trust an intermediary, offering a very high degree of security. However, they can sometimes be more expensive or complex.
 - **MPC (Multi-Party Computation) Swaps:** These swaps involve a group of participants collaboratively managing the process, which introduces a certain level of trust in the MPC setup but can offer advantages in terms of speed or cost.
 
-Current Status (as of May 2025):
+Current Status (as of July 2025):
 
 Currently, the Bridge primarily supports MPC swaps. Atomic swap functionality is under active development and is planned for future release.
 
@@ -41,26 +43,25 @@ Bitlayer's BitVM Bridge product suite offers two options:
 
 Users can choose the bridge that best suits their specific requirements, preferences for security models, and transaction characteristics.
 
+## Q: What is a YBTC?
 
-## Q: What is a Peg-BTC(YBTC)?
-A: Peg-BTC(YBTC) is a programmable Bitcoin asset that can be securely transferred across multiple blockchains via the BitVM Bridge, offering greater flexibility and utility. It can be used in decentralized lending, exchanges, staking, and other applications, enabling Bitcoin holders to fully leverage their assets in a multi-chain ecosystem. Chains and project teams can also customize the name of their Peg-BTC asset based on specific needs.
+A: YBTC is a programmable Bitcoin asset that can be securely transferred across multiple blockchains via the BitVM Bridge, offering greater flexibility and utility. It can be used in decentralized lending, exchanges, staking, and other applications, enabling Bitcoin holders to fully leverage their assets in a multi-chain ecosystem. Chains and project teams can also customize the name of their YBTC asset based on specific needs.
 
-## Q: How can I obtain Peg-BTC(YBTC) assets?
-A: Institutional users can mint Peg-BTC(YBTC) through <a href='https://bitvmbridge.bitlayer.org/testnet/bridge-pro/mint' target='_blank' >Bridge Pro</a>, with the minting process typically taking 1-2 hours to ensure the security and integrity of the transaction.
+## Q: How can I obtain YBTC assets?
 
-Retail users can quickly bridge Peg-BTC(YBTC) across multiple chains using the <a href='https://bitvmbridge.bitlayer.org/testnet/bridge' target='_blank' >Bridge</a>.
+A: Institutional users can mint YBTC through <a href='https://bitvmbridge.bitlayer.org/testnet/bridge-pro/mint' target='_blank' >Bridge Pro</a>, with the minting process typically taking 1-2 hours to ensure the security and integrity of the transaction.
 
-## Q: How can I earn profits through Peg-BTC(YBTC) assets?
-A: Users holding Peg-BTC(YBTC) assets can participate in lending, liquidity mining, and other activities on decentralized finance (DeFi) platforms on the target blockchain to earn profits. The specific returns depend on the platforms and strategies used.
+Retail users can quickly bridge YBTC across multiple chains using the <a href='https://bitvmbridge.bitlayer.org/testnet/bridge' target='_blank' >Bridge</a>.
 
+## Q: How can I earn profits through YBTC assets?
 
+A: Users holding YBTC assets can participate in lending, liquidity mining, and other activities on decentralized finance (DeFi) platforms on the target blockchain to earn profits. The specific returns depend on the platforms and strategies used.
 
 ## Q: Why do we have amount constraints for peg-in and peg-out in Bridge Pro?
 
 A: Amount constraints for peg-in and peg-out operations in Bridge Pro are in place primarily due to the **static nature of the BitVM protocol**. The BitVM smart contract for each bridge instance is established with its specific operational parameters (like exact peg-out amounts) pre-signed before it is deployed on the Bitcoin network. This "pre-signed" nature means these core parameters cannot be changed once the contract is active. Here's a breakdown:
 
 - **Minimum Peg-in Amount:** A minimum amount is required for peg-in operations. Deploying each BitVM smart contract instance on the Bitcoin network is a resource-intensive and costly process. Setting a minimum peg-in amount helps ensure that each deployment is economically viable and protects the system from potentially spammy or uneconomical transactions.
-
 - **Fixed Peg-out Amounts:** The specific amounts for peg-out operations are determined and immutably set during the pre-signing phase of the contract. Therefore, to perform a peg-out through this bridge, you must burn an amount of YBTC that exactly matches one of these pre-defined denominations for that particular bridge instance. These amounts are not configurable after deployment.
 
 **What if your desired amount doesn't match?**
@@ -82,8 +83,10 @@ Flexible peg-out solves this by allowing Brokers to:
 
 This streamlined approach saves Brokers from needing to use their own L1 Bitcoin for the initial step of their own peg-out, preserving their short-term liquidity and simplifying the overall process.
 
-## Q: I am an institution (public chain, project team). How can I provide liquidity through a partnership with BitVM Bridge?
-A: Peg-BTC uses an innovative model to bring Bitcoin into the multi-chain ecosystem, offering stronger liquidity and accessibility for DeFi, gaming, and other sectors. With BitVM Bridge’s multi-chain capabilities, project teams can easily integrate BTC assets and accelerate Bitcoin’s application in the Web3 space. <a href='https://docs.bitlayer.org/docs/BitVMBridge/join-network' target='_blank' >Application Entrance</a> for Cooperation.
+## Q: I am an institution (L1 chain, project team). How can I provide liquidity through a partnership with BitVM Bridge?
+
+A: YBTC uses an innovative model to bring Bitcoin into the multi-chain ecosystem, offering stronger liquidity and accessibility for DeFi, gaming, and other sectors. With BitVM Bridge’s multi-chain capabilities, project teams can easily integrate BTC assets and accelerate Bitcoin’s application in the Web3 space. <a href='https://docs.bitlayer.org/docs/BitVMBridge/join-network' target='_blank' >Application Entrance</a> for Cooperation.
 
 ## Q: I am a developer. How can I receive technical support for BitVM Bridge in the BitVM field?
+
 A: The Bitlayer research team is actively involved in building the BitVM ecosystem. Developers can gain in-depth technical guidance and resources by engaging with the team, participating in community events, and more. [Join the community](https://t.me/bitlayer_developers) — or feel free to reach out to us via email at [build@bitlayer.org](mailto:build@bitlayer.org).

@@ -9,7 +9,7 @@ Bitlayer's BitVM Bridge incorporates several innovative features and architectur
 
 1. Flexible Peg-out:
 
-    This feature significantly improves convenience for brokers. Brokers are allowed to initiate a withdrawal from the BitVM smart contract by directly burning their Peg-BTC (YBTC), bypassing the cumbersome self-fronting process. This innovation saves brokers valuable time and reduces their transaction costs.
+    This feature significantly improves convenience for brokers. Brokers are allowed to initiate a withdrawal from the BitVM smart contract by directly burning their YBTC, bypassing the cumbersome self-fronting process. This innovation saves brokers valuable time and reduces their transaction costs.
 
 2. Watcher Incentivization:
 
@@ -25,7 +25,7 @@ Bitlayer's BitVM Bridge incorporates several innovative features and architectur
 
 5. Universal Liquidity (Work In Progress):
 
-    The vision for Peg-BTC (YBTC) is to achieve universal liquidity across all integrated target chains. This means Peg-BTC (YBTC) from one target chain will be interchangeable with Peg-BTC (YBTC) on any other supported chain. Users will be able to freely transfer their Peg-BTC (YBTC) between these chains, and crucially, Peg-BTC (YBTC) will always be redeemable for Bitcoin, regardless of the target chain it currently resides on. (This feature is currently under development).
+    The vision for YBTC is to achieve universal liquidity across all integrated target chains. This means YBTC from one target chain will be interchangeable with YBTC on any other supported chain. Users will be able to freely transfer their YBTC between these chains, and crucially, YBTC will always be redeemable for Bitcoin, regardless of the target chain it currently resides on. (This feature is currently under development).
 
 6. Maximum Accessibility (Work In Progress):
 
