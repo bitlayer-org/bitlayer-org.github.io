@@ -2,7 +2,7 @@
 sidebar_position: 43
 ---
 
-# How to Mint on Mainnet?
+# How to Mint on Mainnet Beta?
 
 ## Prerequisites
 

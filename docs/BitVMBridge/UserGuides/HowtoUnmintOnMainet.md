@@ -2,7 +2,7 @@
 sidebar_position: 44
 ---
 
-# How to Unmint on Mainnet?
+# How to Unmint on Mainnet Beta?
 
 ## Prerequisites
 
