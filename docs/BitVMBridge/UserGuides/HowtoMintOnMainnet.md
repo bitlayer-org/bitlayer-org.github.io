@@ -34,7 +34,7 @@ You can add [YBTC](https://etherscan.io/token/0xd9e3719f53b61047d5bbbe9e3fb18ea1
 
 ### 1.3 Enter Invitation Code
 
-If it is your first time minting YBTC, you will be prompted to enter the invitation code when clicking the UTXO button. After entering, it will automatically jump to the next step.
+If it is your first time minting YBTC, you will be prompted to enter the invitation code when clicking the "Pick your funding UTXOs" button. After entering, it will automatically jump to the next step.
 
 <img src="/img/BitvmBridge/tutorial/mainnet-mint/invite-dialog.png" style={{ maxWidth: '100%', height: 'auto' }}  />
 
