@@ -14,24 +14,30 @@ Before you begin, please ensure you have:
 
 ---
 
-## 1. Confirm Address and Amount
+## 1. Connect Your Ethereum Wallet
 
-选择要unmint的数量，and provide your Bitcoin wallet address.
+Visit [BitVM Bridge](https://bitvmbridge.bitlayer.org/bridge-pro/unmint) and connect your Ethereum wallet.
 
-提示：需要先mint YBTC 才能 unmint.
+<img src="/img/BitvmBridge/tutorial/mainnet-unmint/connect1.png" style={{ maxWidth: '100%', height: 'auto' }}  />
 
-<img src="/img/BitvmBridge/tutorial/mainnet-unmint/step1.png" style={{ maxWidth: '50%', height: 'auto' }}  />
+## 2. Confirm Amount and Bitcoin Address
 
-## 2. Confirm
+Select the YBTC amount you want to unmint, and provide your Bitcoin wallet address.
+
+Note: You need to mint YBTC before unminting.
+
+<img src="/img/BitvmBridge/tutorial/mainnet-unmint/step1.png" style={{ maxWidth: '100%', height: 'auto' }} />
+
+## 3. Confirm Unminting
 
 You have 5 chances to unmint within 24 hours.
 
-提示：第一次使用需要先授权额度.
+Note: You need to approve a YBTC amount to be used for the first time.
 
-<img src="/img/BitvmBridge/tutorial/unmint/confirm-1.png" style={{ maxWidth: '50%', height: 'auto' }}  />
+<img src="/img/BitvmBridge/tutorial/mainnet-unmint/step2.png" style={{ maxWidth: '100%', height: 'auto' }} />
 
-## 3. Unminting YBTC
+## 4. Unmint YBTC
 
-YBTC will be burned on Ethereum first, and then Broker will transfer BTC to you BTC address.This operation will cost 20-30Mins
+YBTC will be burned on Ethereum first, and then Broker will transfer BTC to your BTC address. This operation will take 20-30 minutes.
 
-<img src="/img/BitvmBridge/tutorial/unmint/unmintprocess-1.png" style={{ maxWidth: '50%', height: 'auto' }}  />
+<img src="/img/BitvmBridge/tutorial/mainnet-unmint/step3.png" style={{ maxWidth: '100%', height: 'auto' }} />
