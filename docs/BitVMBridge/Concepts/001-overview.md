@@ -1,13 +1,13 @@
 ---
 sidebar_position: 1
-sidebar_label: Overview
+slug: overview
 ---
 
 # Overview
 
 ## What is BitVM Bridge?
 
-The <a href="https://bitvmbridge.bitlayer.org/" target="_blank">BitVM Bridge</a> represents a groundbreaking advancement in Bitcoin bridging technology, developed by **Bitlayer** and powered by the innovative **BitVM smart contract**. As the first step toward the realization of the Bitlayer rollup, BitVM Bridge offers a secure and efficient mechanism for transferring Bitcoin (BTC) into the Bitlayer ecosystem. This integration allows Bitcoin to be actively utilized within the **BTCFi ecosystem**, enabling seamless trading and interaction with decentralized finance (DeFi) applications.
+The <a href="https://bitvmbridge.bitlayer.org/" target="_blank">BitVM Bridge</a> represents a groundbreaking advancement in Bitcoin bridging technology, developed by **Bitlayer** and powered by the innovative **BitVM smart contract**. As part of Bitlayer's Bitcoin DeFi infrastructure, BitVM Bridge offers a secure and efficient mechanism for transferring Bitcoin (BTC) into the Bitlayer ecosystem. This integration allows Bitcoin to be actively utilized within the **BTCFi ecosystem**, enabling seamless trading and interaction with DeFi applications.
 
 Unlike traditional BTC bridges, which often rely on centralized or semi-centralized custodians, BitVM Bridge is **trust-minimized**, meaning it significantly reduces the level of trust required in third-party actors. This trust minimization is achieved through a protocol that combines the robustness of BitVM smart contracts with **fraud proofs**, ensuring that all transactions and operations are verifiable and secure.
 

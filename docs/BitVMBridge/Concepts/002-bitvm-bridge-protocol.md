@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: BitVM Bridge Protocol
+slug: protocol
 ---
 
 # BitVM Bridge Protocol
@@ -126,14 +126,14 @@ The fraud-proof mechanism for reclaim requests is modeled on the principles outl
 To initiate a reclaim request, the broker must provide a **Groth16 proof** that validates the state transition. The Reclaim Checker ensures that:
 
 1. The burn event occurred in Bridge Contract B on the target chain.
-2. The fronting event occurred on Bitcoin.
+2. The fronting event occurred in Bridge Contract A on Bitcoin.
 3. Both events were executed on their respective canonical chains, avoiding forks.
 
 While detecting private forks on Bitcoin remains an open research problem, this is beyond the scope of the current implementation.
 
 The Groth16 proof is processed off-chain by a **chunked Groth16 verifier**, which divides the verification process into discrete segments and generates the shared values required for all verifier chunks.
 
-### Verifying the State Transition on Bitcoin
+### Verifying the State Transition
 
 The verification process unfolds as follows:
 

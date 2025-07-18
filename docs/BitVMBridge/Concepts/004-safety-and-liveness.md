@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-sidebar_label: Safety and Liveness
+slug: safety-and-liveness
 ---
 
 # Safety and Liveness

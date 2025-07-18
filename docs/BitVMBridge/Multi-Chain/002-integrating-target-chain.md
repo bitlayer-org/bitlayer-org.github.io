@@ -1,6 +1,7 @@
 ---
-sidebar_position: 96
-sidebar_label: Integrating New Target Chains with BitVM Bridge
+sidebar_position: 2
+sidebar_label: Integrating Target Chains
+slug: integrating-target-chain
 ---
 
 # Integrating New Target Chains with BitVM Bridge

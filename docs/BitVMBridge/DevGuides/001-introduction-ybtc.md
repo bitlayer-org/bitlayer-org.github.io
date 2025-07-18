@@ -1,9 +1,9 @@
 ---
-sidebar_position: 5
-sidebar_label: Introduction to YBTC
+sidebar_position: 1
+slug: intro-ybtc
 ---
 
-# Introducing Bitlayer's YBTC
+# Introducing YBTC
 
 YBTC is a revolutionary programmable Bitcoin asset designed to unlock the full potential of Bitcoin in the multi-chain ecosystem. Leveraging the innovative **BitVM Bridge**, YBTC seamlessly integrates into various programmable environments, providing unparalleled flexibility and utility for Bitcoin holders.
 
@@ -19,7 +19,7 @@ Once on the target chain, YBTC becomes a versatile asset that can participate in
 
 YBTC represents a critical advancement in the evolution of Bitcoin’s utility, bridging the gap between Bitcoin’s unmatched security and the programmability of modern blockchain ecosystems. By enabling cross-chain compatibility, YBTC empowers users and developers to integrate Bitcoin into DeFi, gaming, and other innovative applications, ultimately driving the adoption of Bitcoin across diverse ecosystems.
 
-## Why Choose YBTC ?
+## Why Choose YBTC?
 
 - **Trust-Minimized Bridging**: The BitVM Bridge ensures secure, efficient, and decentralized Bitcoin transfers across blockchains.
 - **Enhanced Utility**: YBTC extends Bitcoin’s use cases beyond simple transactions, unlocking its potential in programmable environments.

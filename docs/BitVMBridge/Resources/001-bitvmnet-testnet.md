@@ -1,12 +1,10 @@
 ---
-sidebar_position: 999
+sidebar_position: 1
+slug: bitvmnet
 ---
 
-# BitVMNet
+# BitVMNet: Testnet for BitVM Innovation
 
-# BitVMNet: The Developer-Friendly Testnet for BitVM Innovation
-
-## Intro
 [BitVMNet](https://www.bitvmnet.org/) is an open Bitcoin Signet network sponsored by [Bitlayer](https://x.com/BitlayerLabs), designed to facilitate the development and implementation of BitVM-based applications. As a collaborative platform, it empowers developers within the BitVM ecosystem, driving the advancement and adoption of BitVM technology.
 
 ## Key Resources
@@ -18,7 +16,7 @@ sidebar_position: 999
 
 - Bitcoin Core 28.0.0 RPC: Official documentation for interacting with Bitcoin Core. [Bitcoin Core RPC Docs](https://bitcoincore.org/en/doc/28.0.0/)
 
-## Code References
+## Software
 
 - Bitcoin Core Node (28.1): The Bitcoin Core node version used in the BitVMNet network is 28.1. [GitHub Link](https://github.com/bitcoin/bitcoin)
 - Electrs Repository: The Electrs implementation for BitVMNet. [Electrs GitHub](https://github.com/Blockstream/electrs)

@@ -1,27 +1,12 @@
 ---
-sidebar_position: 95
-sidebar_label: BitVM Bridge Network (BBN) Governance Framework
+sidebar_position: 3
+sidebar_label: BBN Governance
+slug: bbn-governance
 ---
 
 # BitVM Bridge Network (BBN) Governance Framework
 
-## 1. Understanding the BitVM Bridge Network (BBN)
-
-The BitVM Bridge Network (BBN) is the decentralized backbone of the BitVM Bridge, facilitating secure and trust-minimized cross-chain asset transfers. It is composed of three key types of participants:
-
-- **Attesters:** Responsible for pre-signing the transaction graph of the bridge instance.
-- **Brokers:** Front the peg-out request with their own liquidity and reclaim the funds from the smart contract later.
-- **Watchers:** Monitor the network for any malicious reclaim request and initiate a challenge against it, playing a crucial role in the security and integrity of the bridge.
-
-Participants within the BBN interact using a dedicated peer-to-peer (P2P) communication protocol.
-
-**Current Status and Evolution:**
-
-The BBN is designed as a permissionless network, allowing any entity that meets the predefined operational and (eventually) staking requirements to join. Initially, the BBN's operational management and onboarding of new participants are overseen by the Bitlayer team.
-
-The comprehensive governance framework for the BBN is currently under active development. Upon its full implementation, the direct management responsibilities held by the Bitlayer team will transition to a community-driven governance model. Subsequently, the BBN governance, empowered by BTR token holders, will be responsible for decisions regarding network participation, protocol upgrades, and other critical aspects.
-
-## 2. The BBN Governance Model
+## 1. The BBN Governance Model
 
 The governance of the BitVM Bridge Network will be centered around the **Bitlayer Token (BTR)**, empowering BTR holders to shape the future of the bridge.
 
@@ -47,7 +32,7 @@ The BBN governance will address various types of proposals, including but not li
 4. **Governance Mechanism Changes:**
     - **Description:** Modifications to the governance framework itself, such as adjusting proposal thresholds, voting periods, or the process for adding or removing members of bodies like the Security Council.
 
-## 3. The Security Council
+## 2. The Security Council
 
 The Security Council is a specialized governance body established within the broader BBN governance framework, designed to act swiftly and decisively in matters of network security and operational stability.
 
@@ -78,7 +63,7 @@ The Security Council is entrusted with several critical functions:
 
 Prior to the full operational launch of the on-chain BBN governance system, the Security Council will provisionally assume key governance responsibilities to ensure the stability and security of the BitVM Bridge.
 
-### 3.1. Emergency Withdrawal Protocol
+### 2.1. Emergency Withdrawal Protocol
 
 In extreme situations where there is an imminent and critical threat that could lead to a significant drain of funds from the BitVM smart contracts, the Security Council is authorized to activate an Emergency Withdrawal Protocol.
 
