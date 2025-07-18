@@ -86,7 +86,7 @@ const config = {
             activeBaseRegex: `/docs/Build`,
           },
           {
-            to: '/docs/BitVMBridge/overview', // Link to a document, not a top-level directory
+            to: '/docs/BitVMBridge/Concepts/overview', // Link to a document, not a top-level directory
             position: 'left',
             label: 'BitVM Bridge',
             activeBaseRegex: `/docs/BitVMBridge`,

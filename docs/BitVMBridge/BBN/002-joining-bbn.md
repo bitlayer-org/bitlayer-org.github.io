@@ -1,11 +1,13 @@
 ---
-sidebar_position: 97
-sidebar_label: Joining the BitVM Bridge Network (BBN)
+sidebar_position: 2
+sidebar_label: Joining BBN
+slug: joining-bbn
 ---
 
 # Joining the BitVM Bridge Network (BBN)
 
 This document outlines how interested parties can participate in the BitVM Bridge Network (BBN) as Brokers, Attesters, or Watchers.
+
 If you’re interested in getting involved, feel free to contact us via email at [build@bitlayer.org](mailto:build@bitlayer.org).
 
 ## Brokers
@@ -21,22 +23,22 @@ The BitVM Bridge Broker role can appeal to various entities for different purpos
 
 Regardless of the specific motivation, all prospective Brokers must meet the following requirements:
 
-### Requirements for Brokers:
+### Requirements for Brokers
 
 1. Node Operation and Registration:
-    
+
      All brokers must run the specified BitVM Bridge node software (denoted as `bitvmbridged`) and register their public key with the BitVM Bridge coordinator.
 
 2. Long-Term Collateral:
-    
+
      All brokers are required to provide long-term liquidity as collateral. A minimum of 0.5 BTC is necessary to participate in a single bridge instance.
-    
+
      Note: This collateral will be refunded once the corresponding bridge funds are reclaimed. The duration for this refund depends on the timing of user requests and the reclaim process.
 
 3. Short-Term Liquidity (Especially for User-Facing Services):
-    
+
      Brokers, particularly those aiming to provide liquidity services to end-users (as in Example 1), will need readily available short-term liquidity to front peg-out requests. A minimum of 2 BTC is recommended for this purpose.
-    
+
      Note: This liquidity will be reclaimed from the BitVM smart contract after the broker has fronted the peg-out request. The typical duration for this reclaim is the challenge window, which is generally one week.
 
 ## Attesters

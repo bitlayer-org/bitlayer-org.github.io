@@ -1,6 +1,7 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 sidebar_label: Key Differentiators
+slug: key-differentiators
 ---
 
 # Key Differentiators of Bitlayer's BitVM Bridge

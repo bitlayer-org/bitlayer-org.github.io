@@ -1,8 +1,9 @@
 ---
-sidebar_position: 7
+sidebar_position: 2
+slug: build-with-ybtc
 ---
 
-# Build With BitVM Bridge
+# Build With YBTC
 
 ## Native BTC Bridge
 
