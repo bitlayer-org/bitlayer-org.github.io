@@ -60,6 +60,33 @@ const config = {
         anonymizeIP: true, // Optional, anonymize the IP addresses
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/BitVMBridge/Concepts/overview',
+            from: '/docs/BitVMBridge/overview',
+          },
+          {
+            to: '/docs/BitVMBridge/BBN/joining-bbn',
+            from: '/docs/BitVMBridge/join-network',
+          },
+          {
+            to: '/docs/BitVMBridge/BBN/bbn-governance',
+            from: '/docs/BitVMBridge/governance',
+          },
+          {
+            to: '/docs/BitVMBridge/Multi-Chain/integrating-target-chain',
+            from: '/docs/BitVMBridge/how-to-integrate',
+          },
+          {
+            to: '/docs/BitVMBridge/Concepts/key-differentiators',
+            from: '/docs/BitVMBridge/key-differentiators/',
+          },
+        ],
+      }
+    ],
   ],
 
   themeConfig:

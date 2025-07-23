@@ -4,7 +4,7 @@ sidebar_label: Understanding BBN
 slug: understanding-bbn
 ---
 
-# Understanding the BitVM Bridge Network
+# Understanding the BitVM Bridge Network (BBN)
 
 ## What is the BitVM Bridge Network?
 
