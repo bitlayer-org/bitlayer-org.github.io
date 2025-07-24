@@ -10,12 +10,9 @@ slug: mainnet
 Status: beta
 - Core Parameter:
     - Token symbol: YBTC
-    - Minimum peg-in (deposit) amount: 0.001 BTC
-    - Minimum peg-out (withdraw) amount: 0.001 YBTC
-    - Minimum service fee amount: 0.0001 BTC (For example, if a user witdhdraw 0.001 YBTC, they will receive 0.0009 BTC after deducting the service fee)
-    - Reimbursement window size: 6 blocks(around 1 hour)
-    - Broker number: 2
-    - attester number: 5
+    - peg-in (deposit) amount: 0.001 BTC
+    - peg-out (withdraw) amount: 0.001 YBTC
+    - service fee amount: 0.0001 BTC (For example, if a user witdhdraw 0.001 YBTC, they will receive 0.0009 BTC after deducting the service fee)
 - Core Contract(Ethereum mainnet)
     - Light Relay: [0xA2609af22fd6900E9E3894a117Ea21Be460cDdF5](https://etherscan.io/address/0xA2609af22fd6900E9E3894a117Ea21Be460cDdF5)
     - YBTC(ERC20): [0x13216c0e1B1721cef967ED7aD8626f0BFA1d5229](https://etherscan.io/address/0x13216c0e1b1721cef967ed7ad8626f0bfa1d5229)
