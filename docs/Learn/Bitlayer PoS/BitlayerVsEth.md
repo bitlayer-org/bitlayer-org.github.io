@@ -27,7 +27,7 @@ Bitlayer's native gas token is BTC, utilized with an 18-digit precision, divergi
 :::
 To accommodate transaction processing priorities, Bitlayer has established a minimum priority fee requirement. Developers can dynamically estimate the required gas price for transactions using `eth_gasPrice` or `eth_maxPriorityFeePerGas`.
 
-For transactions on the Mainnet/Testnet, a minimum tip of 0.05 gwei is necessary. Typically, setting a `gasPrice` of `0.0500001 gwei` for legacy transactions or a `maxPriorityFeePerGas` of `0.05 gwei` (with an adequately set `maxFeePerGas`) for EIP-1559 transactions should suffice for most operations.
+For transactions on the Mainnet/Testnet, a minimum tip of 0.025 gwei is necessary. Typically, setting a `gasPrice` of `0.0250001 gwei` for legacy transactions or a `maxPriorityFeePerGas` of `0.025 gwei` (with an adequately set `maxFeePerGas`) for EIP-1559 transactions should suffice for most operations.
 
 Dapp developers are advised to programmatically set the `maxPriorityFeePerGas` before initiating transactions via APIs, rather than relying on default strategies employed by wallets (like MetaMask) or SDKs, to ensure optimal transaction processing.
 

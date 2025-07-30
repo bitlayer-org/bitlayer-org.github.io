@@ -95,7 +95,7 @@ TrieTimeout = 20000000000
 [Eth.Miner]
 GasFloor = 40000000
 GasCeil = 40000000
-GasPrice = 50000000
+GasPrice = 25000000
 Recommit = 3000000000
 
 
@@ -103,7 +103,7 @@ Recommit = 3000000000
 NoLocals = true
 Journal = "transactions.rlp"
 Rejournal = 600000000000
-PriceLimit = 50000000
+PriceLimit = 25000000
 PriceBump = 10
 AccountSlots = 64
 GlobalSlots = 10240
