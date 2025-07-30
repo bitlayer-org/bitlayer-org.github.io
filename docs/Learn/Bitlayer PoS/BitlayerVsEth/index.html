@@ -9,7 +9,7 @@
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-R3DF3TS5JQ",{anonymize_ip:!0})</script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.c5284178.css">
-<script src="/assets/js/runtime~main.2df82b94.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e3c5b3c0.js" defer="defer"></script>
 <script src="/assets/js/main.0148b796.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,7 +24,7 @@
 <p>Bitlayer aims to offer lower transaction costs through innovative efficiency mechanisms. Leveraging technologies like optimistic execution, Bitlayer seeks to optimize transaction throughput, making it a potentially more economical choice for its users.</p>
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span><strong>Important: About Gas Price on Bitlayer</strong></div><div class="admonitionContent_BuS1"><p>Bitlayer&#x27;s native gas token is BTC, utilized with an 18-digit precision, diverging from Bitcoin&#x27;s traditional 8-digit precision. This adjustment aligns with the default decimal precision of tokens on EVM-compatible chains, ensuring consistency across transactions.</p></div></div>
 <p>To accommodate transaction processing priorities, Bitlayer has established a minimum priority fee requirement. Developers can dynamically estimate the required gas price for transactions using <code>eth_gasPrice</code> or <code>eth_maxPriorityFeePerGas</code>.</p>
-<p>For transactions on the Mainnet/Testnet, a minimum tip of 0.05 gwei is necessary. Typically, setting a <code>gasPrice</code> of <code>0.0500001 gwei</code> for legacy transactions or a <code>maxPriorityFeePerGas</code> of <code>0.05 gwei</code> (with an adequately set <code>maxFeePerGas</code>) for EIP-1559 transactions should suffice for most operations.</p>
+<p>For transactions on the Mainnet/Testnet, a minimum tip of 0.025 gwei is necessary. Typically, setting a <code>gasPrice</code> of <code>0.0250001 gwei</code> for legacy transactions or a <code>maxPriorityFeePerGas</code> of <code>0.025 gwei</code> (with an adequately set <code>maxFeePerGas</code>) for EIP-1559 transactions should suffice for most operations.</p>
 <p>Dapp developers are advised to programmatically set the <code>maxPriorityFeePerGas</code> before initiating transactions via APIs, rather than relying on default strategies employed by wallets (like MetaMask) or SDKs, to ensure optimal transaction processing.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ethereum">Ethereum<a href="#ethereum" class="hash-link" aria-label="Direct link to Ethereum" title="Direct link to Ethereum">​</a></h3>
 <p>In contrast, Ethereum&#x27;s gas prices fluctuate based on network demand. Users compete for computational resources, leading to variable gas prices that can spike significantly during periods of high demand, affecting cost-effectiveness.</p>

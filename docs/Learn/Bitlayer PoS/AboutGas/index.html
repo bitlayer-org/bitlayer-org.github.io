@@ -9,7 +9,7 @@
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-R3DF3TS5JQ",{anonymize_ip:!0})</script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.c5284178.css">
-<script src="/assets/js/runtime~main.2df82b94.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.e3c5b3c0.js" defer="defer"></script>
 <script src="/assets/js/main.0148b796.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,7 +26,7 @@
 <p>On the Bitlayer, there is a minimum priority fee requirement. Developers can use <code>eth_gasPrice</code> or <code>eth_maxPriorityFeePerGas</code> to estimate the gas price required for a transaction in real time.</p>
 </li>
 <li>
-<p>For the Mainnet/Testnet, a minimum tip of <code>0.05 gwei</code> is required. Usually, <code>0.0500001 gwei</code> <code>gasPrice</code> for legacy transactions, <code>0.05 gwei</code> <code>maxPriorityFeePerGas</code> (and set enough amount to <code>maxFeePerGas</code>) for EIP1559 transactions SHOULD BE enough.</p>
+<p>For the Mainnet/Testnet, a minimum tip of <code>0.025 gwei</code> is required. Usually, <code>0.0250001 gwei</code> <code>gasPrice</code> for legacy transactions, <code>0.025 gwei</code> <code>maxPriorityFeePerGas</code> (and set enough amount to <code>maxFeePerGas</code>) for EIP1559 transactions SHOULD BE enough.</p>
 </li>
 <li>
 <p>For Dapp developers, it&#x27;s recommended that setting the <code>maxPriorityFeePerGas</code> by code before calling apis to send the transaction, rather then leave it empty (filled by the default strategy of wallet (e.g. Metamask) or SDK).</p>
