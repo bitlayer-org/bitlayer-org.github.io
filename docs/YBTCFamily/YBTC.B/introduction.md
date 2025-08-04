@@ -85,14 +85,14 @@ YBTC.B is minted through **verified smart contracts** when users bridge BTC into
 
 ## Contract Addresses
 
-| Chain Name  | Contact Address|
+| Chain Name  | Contact Address |
 | --------------------------- | ------------------ |
-| Bitlayer    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://www.btrscan.com/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335)|
-| Sui    | [0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC](https://suivision.xyz/coin/0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC)|
-| Avalanche    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://snowscan.xyz/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335)|
-| Plume    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://explorer.plume.org/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335)|
-| BSC    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://bscscan.com/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335)|
-| Ethereum    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://etherscan.io/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335)|
+| Bitlayer    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://www.btrscan.com/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335) |
+| Sui         | [0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC](https://suivision.xyz/coin/0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC) |
+| Avalanche   | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://snowscan.xyz/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335)|
+| Plume       | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://explorer.plume.org/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| BSC         | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://bscscan.com/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| Ethereum    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://etherscan.io/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
 
 ---
 
