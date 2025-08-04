@@ -16,12 +16,15 @@ sidebar_label: Introduction
 YBTC.B is engineered with the following core objectives:
 
 ### 1. Make BTC Programmable and Usable  
+
 Unlock the value of native BTC by making it accessible and composable across DeFi protocols spanning multiple chains.
 
 ### 2. Create a Unified BTC Liquidity Standard  
+
 Whether on Sui, Avalanche, Plume, Starknet or any other chains, YBTC.B represents a **1:1 Bitcoin-pegged asset**—backed and redeemable on demand.
 
 ### 3. Serve as a Cross-chain DeFi Hub Asset  
+
 Acts as the liquidity medium connecting native Bitcoin with **yield-generating strategies (Vaults)**, **lending protocols**, **AMMs**, and **staking infrastructures** across chains.
 
 ---
@@ -45,9 +48,11 @@ Acts as the liquidity medium connecting native Bitcoin with **yield-generating s
 ## Token Origin & Minting
 
 ### Underlying Asset  
+
 YBTC.B is derived from **Bitlayer Native BTC**, which itself is **backed 1:1 by off-chain BTC** reserves.
 
 ### Minting Mechanism  
+
 YBTC.B is minted through **verified smart contracts** when users bridge BTC into Bitlayer and initiate wrapping via the official bridge infrastructure.
 
 ---
@@ -62,6 +67,32 @@ YBTC.B is minted through **verified smart contracts** when users bridge BTC into
 
 - **Borrow via Lending Platforms**  
   Supported as a **collateral asset** or **borrowable token** via partner DeFi protocols.
+
+---
+
+## How to Acquire YBTC.B
+
+- **Bridge from Native BTC**  
+  Use Bitlayer’s official bridge to transfer BTC into Bitlayer Layer 2 and mint YBTC.B directly.
+
+- **Buy on DEXs**  
+  YBTC.B is available on **AMMs and liquidity pools** across supported chains.
+
+- **Borrow via Lending Platforms**  
+  Supported as a **collateral asset** or **borrowable token** via partner DeFi protocols.
+
+---
+
+## Contract Addresses
+
+| Chain Name  | Contact Address |
+| --------------------------- | ------------------ |
+| Bitlayer    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://www.btrscan.com/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335) |
+| Sui         | [0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC](https://suivision.xyz/coin/0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC) |
+| Avalanche   | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://snowscan.xyz/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335)|
+| Plume       | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://explorer.plume.org/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| BSC         | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://bscscan.com/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| Ethereum    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://etherscan.io/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
 
 ---
 
