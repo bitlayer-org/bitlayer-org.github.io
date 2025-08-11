@@ -5,7 +5,7 @@ sidebar_label: Bitlayer Native BTC
 
 # Bitlayer Native BTC Asset: Overview & Technical Characteristics
 
-**Bitlayer Native BTC** is a natively integrated, Bitcoin-pegged asset that exists directly at the protocol level within the Bitlayer Layer 2 blockchain. Unlike traditional ERC-20-style wrapped tokens, this asset is implemented as a first-class system currency—akin to ETH on Ethereum or BTC on the Bitcoin mainnet.
+**Bitlayer Native BTC** is a natively integrated, Bitcoin-pegged asset that exists directly at the protocol level within the Bitlayer Network. Unlike traditional ERC-20-style wrapped tokens, this asset is implemented as a first-class system currency—akin to ETH on Ethereum or BTC on the Bitcoin mainnet.
 
 It serves two primary purposes:
 

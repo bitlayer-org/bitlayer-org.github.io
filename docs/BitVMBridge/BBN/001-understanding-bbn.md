@@ -40,11 +40,11 @@ A key example is the **BitVM Coordinator**, a protocol contract that plays a cru
 
 A primary function of the BitVM Coordinator is to manage the **attesting committee** for each new BitVM smart contract. This committee is a group of nodes that pre-signs the transaction graph. The Coordinator streamlines this process by:
 
-1. **Electing the Pre-Signing Committee:** For each new contract, the Coordinator selects committee members from a pool of trusted and eligible candidates.
+1. **Electing the Attesting Committee:** For each new contract, the Coordinator selects committee members from a pool of trusted and eligible candidates.
 2. **Implementing Incentives:** To ensure liveness and discourage malicious behavior, the Coordinator manages an incentive structure. Honest committee members are rewarded for their participation, while malicious actors are penalized through slashing.
 3. **Coordinating Signatures:** Once the committee is formed, the Coordinator orchestrates the signing process to ensure all members contribute their signatures in a timely and coordinated manner.
 
-To leverage this functionality, applications must run an **attester node**. For example, a BitVM bridge requires its attester node to verify the format of each transaction in the graph, sign it, and submit the signature to the Coordinator.
+To leverage this functionality, applications must run their own **attester node**. For example, a BitVM bridge requires its attester node to verify the format of each transaction in the graph, sign it, and submit the signature to the Coordinator.
 
 ### Watcher Coordination
 

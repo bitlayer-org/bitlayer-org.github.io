@@ -5,7 +5,7 @@ slug: roadmap
 
 # Roadmap
 
-![Roadmap](/img/BitvmBridge/introduction/roadmap1.png)
+![Roadmap](/img/BitvmBridge/introduction/roadmap.png)
 
 ## **DEC.2024**
 
@@ -19,8 +19,9 @@ slug: roadmap
 
 ## **July 2025**
 
-- Mainnet Beta Launch
+- Mainnet Beta Launch (Ethereum)
 
 ## **H2. 2025**
 
-- Support for Additional Chains
+- Mainnet Launch (SUI)
+- Support more Blockchains
