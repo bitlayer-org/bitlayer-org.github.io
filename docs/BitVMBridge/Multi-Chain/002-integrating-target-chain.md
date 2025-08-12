@@ -8,7 +8,7 @@ slug: integrating-target-chain
 
 ## Introduction to Bitlayer's BitVM Bridge
 
-Bitlayer's BitVM Bridge is a cutting-edge solution designed to facilitate the movement of Bitcoin assets to a diverse array of blockchain ecosystems. This interoperability unlocks a multitude of decentralized finance (DeFi) and yielding opportunities for Bitcoin holders. The bridge supports a multi-chain architecture, encompassing both Layer 1 (L1) blockchains such as Ethereum, Cardano, Sui, Plume, Sonic SVM, and Solana, as well as Layer 2 (L2) solutions including Bitlayer Network, Base, Arbitrum, and Starknet, among others.
+Bitlayer's BitVM Bridge is a cutting-edge solution designed to facilitate the movement of Bitcoin assets to a diverse array of blockchain ecosystems. This interoperability unlocks a multitude of decentralized finance (DeFi) and yielding opportunities for Bitcoin holders. The bridge supports a multi-chain architecture, encompassing both Layer 1 (L1) blockchains such as Ethereum, Cardano, Sui, Plume, Sonic, and Solana, as well as Layer 2 (L2) solutions including Bitlayer Network, Base, Arbitrum, and Starknet, among others.
 
 The core strength of the BitVM Bridge lies in its extensible design, which simplifies the process of integrating new target chains. This document provides a comprehensive guide for developers from the Bitlayer community who wish to extend the bridge's capabilities by adding support for a new target blockchain.
 

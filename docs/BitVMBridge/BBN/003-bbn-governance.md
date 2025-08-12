@@ -12,7 +12,7 @@ The governance of the BitVM Bridge Network will be centered around the **Bitlaye
 
 **Key Features:**
 
-- **Governance Platform:** The core governance smart contracts will be deployed on the **Bitlayer Network** (the L2 scaling solution for Bitcoin). You can find more information about Bitlayer Network at [https://www.bitlayer.org/](https://www.bitlayer.org/).
+- **Governance Platform:** The core governance smart contracts will be deployed on the **Bitlayer Network**. You can find more information about Bitlayer Network at [https://www.bitlayer.org/](https://www.bitlayer.org/).
 - **Membership:** Any individual or entity holding a specified minimum amount of BTR tokens will be eligible to participate as a governance member. The exact threshold will be defined in the forthcoming governance framework.
 - **Proposal Submission:** Any eligible governance member can create new proposals and initiate the voting process.
 - **Discussion Forum:** A dedicated governance forum (currently under construction) will serve as the primary platform for discussing proposals, debating ideas, and fostering community consensus before formal voting.
