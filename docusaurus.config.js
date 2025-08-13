@@ -166,7 +166,7 @@ const config = {
               },
               {
                 label: 'Discord',
-                href: 'https://discord.com/invite/GGSjNyD8nj',
+                href: 'https://discord.com/invite/bitlayer',
               },
               {
                 label: 'Twitter',
