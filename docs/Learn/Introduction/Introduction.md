@@ -19,13 +19,13 @@ Welcome to the official Bitlayer documentation hub, your comprehensive guide to 
 
 Bitcoin, as the most secure and decentralized blockchain, has inherent limitations that hinder its scalability and programmability. Bitlayer aims to address these challenges while preserving Bitcoin's core principles.
 
-### Limitations of Bitcoin:
+### Limitations of Bitcoin
 
 1. **Low Throughput and High Costs:** Bitcoin's base layer is designed for security and decentralization, but this comes at the cost of limited transaction capacity and high fees.
 2. **Lack of Programmability:** Bitcoin does not natively support smart contracts, limiting its ability to host complex decentralized applications.
 3. **No Trustless BTC Bridge:** There is no native mechanism for trustless interoperability between Bitcoin and other blockchain ecosystems.
 
-### The Future of Bitcoin Layer 2:
+### The Future of Bitcoin Layer 2
 
 1. **Bitcoin-Equivalent Security:** Layer 2 solutions must inherit Bitcoin's robust security guarantees.
 2. **Trustless BTC Bridges:** Seamless and decentralized bridging of BTC assets to other chains is essential for ecosystem expansion.
@@ -61,4 +61,4 @@ Bitlayer is rapidly evolving, with significant milestones already achieved and e
 
 By combining Bitcoin's security with cutting-edge scalability and programmability, Bitlayer is poised to redefine the possibilities of Bitcoin Layer 2. Dive into our documentation to explore the technical details and start building on Bitlayer today!
 
-Stay updated on our progress by following our [Twitter](https://x.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/GGSjNyD8nj) / [Telegram](https://t.me/bitlayerofficial) community. You can also read our [Blog](https://blog.bitlayer.org/) to stay abreast of the latest Bitlayer developments.
+Stay updated on our progress by following our [Twitter](https://x.com/BitLayerLabs) or joining our active [Discord](https://discord.com/invite/bitlayer) / [Telegram](https://t.me/bitlayerofficial) community. You can also read our [Blog](https://blog.bitlayer.org/) to stay abreast of the latest Bitlayer developments.
