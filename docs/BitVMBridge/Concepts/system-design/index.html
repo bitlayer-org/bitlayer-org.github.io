@@ -9,7 +9,7 @@
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-R3DF3TS5JQ",{anonymize_ip:!0})</script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.c5284178.css">
-<script src="/assets/js/runtime~main.69cde710.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9e2cbeaf.js" defer="defer"></script>
 <script src="/assets/js/main.12e50f93.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -50,6 +50,77 @@
 <li><strong>Monitoring</strong>: Watchers monitor peg-out events and pending reclaim requests on Bitcoin, ensuring that all actions are consistent with the protocol&#x27;s rules.</li>
 <li><strong>Verification</strong>: Watchers run the Reclaim Checker to independently verify the validity of reclaim requests.</li>
 <li><strong>Challenging</strong>: If a reclaim request is found to be invalid, watchers initiate a challenge and participate in the dispute resolution game to prevent unauthorized fund withdrawals.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-node-architecture">4. <strong>Node Architecture</strong><a href="#4-node-architecture" class="hash-link" aria-label="Direct link to 4-node-architecture" title="Direct link to 4-node-architecture">​</a></h4>
+<p>The <code>bitvm-bridged</code> is the core software daemon that node operators in the BitVM Bridge Network run. It is designed with a modular, layered architecture to clearly separate concerns, from low-level infrastructure dependencies to high-level application logic. This architecture ensures robustness, scalability, and maintainability.</p>
+<p><img decoding="async" loading="lazy" alt="bitvm-bridged architecture" src="/assets/images/architecture-1425ec64a1f96fd14514e649dcdb1308.png" width="1280" height="801" class="img_ev3q"></p>
+<p>The system is organized into four distinct layers:</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="1-application-layer">1. Application Layer<a href="#1-application-layer" class="hash-link" aria-label="Direct link to 1. Application Layer" title="Direct link to 1. Application Layer">​</a></h5>
+<p>This is the outermost layer, providing interfaces for node operators and external systems to interact with the daemon.</p>
+<ul>
+<li><strong>CLI (Command-Line Interface)</strong>: Allows operators to configure and run the node. Crucially, the CLI accepts different parameters at startup to activate specific services in the layer below, which determines whether the node operates as a <strong>Broker</strong>, <strong>Attester</strong>, <strong>Watcher</strong>, or <strong>Coordinator</strong>.</li>
+<li><strong>RPC (Remote Procedure Call)</strong>: Exposes an API for programmatic interaction and serves a dual purpose. It not only exposes public-facing endpoints for services (e.g., handling requests processed by the Coordinator) and node management, but also facilitates the necessary peer-to-peer communication between nodes within the network.</li>
+<li><strong>ACL (Access Control List)</strong>: Manages permissions, controlling which external components can access the Coordinator&#x27;s services and what actions they are allowed to perform.</li>
+<li><strong>OpenTelemetry</strong>: Provides standardized observability, emitting logs, metrics, and traces to help operators monitor the health and performance of the node in real-time.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="2-service-layer">2. Service Layer<a href="#2-service-layer" class="hash-link" aria-label="Direct link to 2. Service Layer" title="Direct link to 2. Service Layer">​</a></h5>
+<p>This layer contains the core business logic and orchestrates the primary functions of the different node roles.</p>
+<ul>
+<li><strong>Coordinator</strong>: Acts as the central orchestration hub for the entire network. Typically, there is only one Coordinator node. It provides a unified service endpoint for external users, scheduling and coordinating the protocol activities of all Broker and Attester nodes. To ensure protocol integrity, the Coordinator also internally runs a <strong>Watcher</strong> service to monitor network operations.<!-- -->
+<ul>
+<li><strong>Request Processor</strong>: The entry point for incoming requests from external users via the Application Layer. It is responsible for managing the entire lifecycle of a request, including scheduling Broker and Attester nodes to complete the required protocol stages.</li>
+<li><strong>Broker/Attesting Instance Manager</strong>: Manages the lifecycle, state, and task allocation for all Broker and Attester nodes participating in the protocol.</li>
+</ul>
+</li>
+<li><strong>Attester</strong>: Responsible for cryptographic attestation.<!-- -->
+<ul>
+<li><strong>Musig2 Aggregator &amp; Signer</strong>: Implements the MuSig2 multi-signature scheme, aggregating partial signatures from peers and producing the final collective signature.</li>
+<li><strong>Context Validator</strong>: Verifies the contextual data related to a transaction before signing, ensuring protocol rules are met.</li>
+</ul>
+</li>
+<li><strong>Broker</strong>: Manages the entire peg-in/peg-out lifecycle and liquidity provision.<!-- -->
+<ul>
+<li><strong>PegIn/PegOut/Reimbursement Processor</strong>: Handles the specific workflows for depositing, withdrawing, and processing reimbursements.</li>
+<li><strong>UTXO Manager</strong>: Tracks and manages the Bitcoin UTXOs used by the broker during protocol execution.</li>
+<li><strong>Defender &amp; Prover Agent</strong>: These components are active during the reclaim process. The <code>Prover Agent</code> interfaces with the Proving System in the Protocol Layer to generate proofs, while the <code>Defender</code> implements the logic to defend a reclaim during a challenge.</li>
+</ul>
+</li>
+<li><strong>Watcher</strong>: This service is the core of a Watcher node. It actively monitors the network for invalid reclaim attempts and initiates the challenge game when necessary.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="3-protocol-layer">3. Protocol Layer<a href="#3-protocol-layer" class="hash-link" aria-label="Direct link to 3. Protocol Layer" title="Direct link to 3. Protocol Layer">​</a></h5>
+<p>This layer defines the fundamental rules, data structures, and cryptographic processes that govern the bridge&#x27;s operation, ensuring all participants adhere to the same consensus rules.</p>
+<ul>
+<li><strong>Transaction Graph &amp; Spec</strong>: Defines the programmatic logic of the bridge on Bitcoin. The <code>Transaction Graph</code> can be understood as a smart contract on Bitcoin, composed of a pre-signed set of transactions. The <code>Transaction Spec</code> provides the formal specifications that govern the generation and validation of this graph.</li>
+<li><strong>Contexts</strong>: These are specialized data structures that contain the necessary information for different protocol operations.<!-- -->
+<ul>
+<li><strong>BurnContext</strong>: A data structure of the context for a peg-out (reclaim) operation on a target chain (e.g., Ethereum, SUI).</li>
+<li><strong>EndorseContext</strong>: An abstraction for the endorsement signature context, responsible for validating the context&#x27;s data and providing an endorsement signature upon successful verification.</li>
+<li><strong>DataContext</strong>: An abstraction for the signature verification context used inside the ZKVM. Corresponding to <code>EndorseContext</code>, it is responsible for verifying the validity of an endorsement signature based on the provided data.</li>
+</ul>
+</li>
+<li><strong>Proving System</strong>: The core of the trust-minimized reclaim process, which operates through three interconnected components:<!-- -->
+<ul>
+<li><strong>ZK Guest Program</strong>: The circuit or program that the zero-knowledge proof is generated for. It contains the logic to validate a reclaim request.</li>
+<li><strong>Prover</strong>: The ZKVM (Zero-Knowledge Virtual Machine) engine that executes the ZK Guest Program to generate a cryptographic proof.</li>
+<li><strong>OnChain Verifier</strong>: The Bitcoin Script used to verify the correctness of the Groth16 proof submitted by the Broker during the challenge game.</li>
+</ul>
+</li>
+<li><strong>SignKit</strong>: A module that provides core cryptographic primitives required by the protocol, such as Secp256k1. It serves as the foundation for services like <code>Attester</code> and contexts like <code>EndorseContext</code>.</li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="4-infrastructure-layer">4. Infrastructure Layer<a href="#4-infrastructure-layer" class="hash-link" aria-label="Direct link to 4. Infrastructure Layer" title="Direct link to 4. Infrastructure Layer">​</a></h5>
+<p>This foundational layer abstracts away interactions with external systems (like blockchains and key managers) and provides essential utilities for the upper layers.</p>
+<ul>
+<li><strong>Secret Manager</strong>: An abstraction layer that provides key cryptographic primitives such as symmetric key encryption/decryption and transaction signing, simplifying key management tasks. It abstracts away the underlying key management solution, which could be a Hardware Security Module (HSM) or a Key Management Service (KMS).</li>
+<li><strong>System Configurator</strong>: Manages and provides access to the system&#x27;s runtime configuration, ensuring all components operate with consistent and correct settings.</li>
+<li><strong>Database</strong>: Responsible for persisting the node&#x27;s state. This includes schema and migration management, and provides essential functionalities for the Service Layer.</li>
+<li><strong>Bitcoin Provider</strong>: An abstraction layer that handles all communication with the Bitcoin network. It provides a simplified interface for the Service Layer to query UTXOs and broadcast transactions, which is particularly helpful when submitting Non-Standard Transactions (NST).</li>
+<li><strong>ChainSuite</strong>: An abstraction layer for interacting with various finality chains (e.g., Ethereum, SUI). It consists of:<!-- -->
+<ul>
+<li><strong>ChainClient</strong>: A generic client for reading from and writing to a blockchain.</li>
+<li><strong>Repo</strong>: A runtime collection of ChainClients for managing interactions with different chains.</li>
+<li><strong>ProverTypes &amp; Utils</strong>: Provides data types and helper functions specific to the proving systems and chains being used.</li>
+</ul>
+</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="bridge-backend">Bridge Backend<a href="#bridge-backend" class="hash-link" aria-label="Direct link to Bridge Backend" title="Direct link to Bridge Backend">​</a></h3>
 <p>The Bridge Backend serves as an interface layer between end-users and the underlying infrastructure of the BitVM Bridge. While it is a centralized service operated by Bitlayer, the backend has no control over the bridge funds, ensuring that the protocol remains trust-minimized. The backend provides the following functionalities:</p>
