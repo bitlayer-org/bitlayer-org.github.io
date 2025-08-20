@@ -13,7 +13,8 @@ BTR is the native token of the Bitlayer ecosystem, primarily used for ecosystem 
 
 ## Network and Address
 - Bitlayer: https://www.btrscan.com/token/0x0e4cf4affdb72b39ea91fa726d291781cbd020bf
-- Ethereum: To Be Announced
+- Ethereum: https://etherscan.io/token/0x6C76dE483F1752Ac8473e2B4983A873991e70dA7
+- BNB Chain: https://bscscan.com/token/0xfed13d0c40790220fbde712987079eda1ed75c51
 
 ## Tokenomics
 
