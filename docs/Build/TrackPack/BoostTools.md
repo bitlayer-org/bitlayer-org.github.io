@@ -36,6 +36,6 @@ Leverage the suite of tools within the Bitlayer ecosystem to maximize your poten
 |MPC Wallet|[Sinohope](https://www.sinohope.com/)|SINOHOPE provides a secure self-custody platform for institutional clients that adopts MPC-CMP technology to enable co-management of private key shares and collaborative signatures |
 |MPC Wallet|[Bitverse](https://www.bitverse.zone/)|Bitverse|
 |Social Wallet|[TOMO](https://tomo.inc/)|The all-in-one wallet designed to bring the mass adoption|
-|Social Wallet|[Komet](https://komet.me/)|Instant liquidity with Komet wallet for for Digital collectible traders|
+|Social Wallet|[Komet](https://komet.me/)|Instant liquidity with Komet wallet for Digital collectible traders|
 |Oracle|[APRO](https://www.apro.com/)|APRO Oracle is the top decentralized oracle in the Bitcoin ecosystem, offering Bitcoin-level security and rapid response through its innovative Oracle 3.0 standard.|
 |Oracle|[Supra](https://supra.com/)|Supra is a high-throughput Oracle & IntraLayer with cross-chain solutions linking public and private blockchains.|
