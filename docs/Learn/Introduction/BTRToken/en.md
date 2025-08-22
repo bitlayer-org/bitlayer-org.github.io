@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # BTR Token Overview
 
-BTR is the native token of the Bitlayer ecosystem, primarily used for ecosystem incentives and governance. The total supply is 1 billion tokens.
+BTR is the governance token of the Bitlayer ecosystem, primarily used for ecosystem incentives and governance. The total supply is 1 billion tokens.
 
 ## Functions and Description
 
