@@ -17,5 +17,12 @@ BTR是Bitlayer生态系统的治理代币，主要用于生态激励和治理。
 - Ethereum: https://etherscan.io/token/0x6C76dE483F1752Ac8473e2B4983A873991e70dA7
 - BNB Chain: https://bscscan.com/token/0xfed13d0c40790220fbde712987079eda1ed75c51
 
+### 审计报告
+
+- [Reports for BTR on Bitlayer](/files/Bitlayer_BTR_audit_report_en.pdf)
+- [Reports for BTR on BNB Chain](/files/BSC_BTR_audit_report_en.pdf)
+- [Reports for BTR on Ethereum](/files/Ethereum_BTR_audit_report_en.pdf)
+
+
 ## 代币经济模型
 敬请期待
