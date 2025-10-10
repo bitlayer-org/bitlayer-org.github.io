@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+image: https://static.bitlayer.org/images/covers/Bitlayer_YBTC_White.png
 ---
 
 # Introducing YBTC
