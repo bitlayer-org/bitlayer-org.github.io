@@ -5,7 +5,7 @@ image: https://static.bitlayer.org/images/covers/Bitlayer_YBTC_White.png?t=16884
 
 # Introducing YBTC
 
-YBTC is a trust-minimized bridged Bitcoin engineered for maximum security, serving as the core asset in Bitlayer's Bitcoin DeFi roadmap.
+A next-generation, trust-minimized Bitcoin-pegged asset. Positioned as the future of Bitcoin within the DeFi ecosystem in multiple blockchains.
 
 - **Trust-Minimized Minting**: YBTC can only be minted through the official [Bitlayer BitVM Bridge](https://bitvmbridge.bitlayer.org/home). This bridge is built on the BitVM2 paradigm, inheriting its trust-minimized properties.
 - **Native Multi-Chain Asset**: Leveraging the bridge's advanced architecture, YBTC is designed as a multi-chain asset. Support begins with Ethereum and will expand to other blockchains, including:
