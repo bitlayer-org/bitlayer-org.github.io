@@ -8,7 +8,7 @@ Several well-known general-purpose cross-chain protocols already support Bitlaye
 
 ## Chainlink CCIP
 
-Chainlink CCIP is a blockchain interoperability protocol that enables developers to build secure applications that can transfer tokens, messages (data), or both tokens and messages across chains. For more infomation, refer to [docs of ccip](https://docs.chain.link/ccip).
+Chainlink CCIP is a blockchain interoperability protocol that enables developers to build secure applications that can transfer tokens, messages (data), or both tokens and messages across chains. For more information, refer to [docs of ccip](https://docs.chain.link/ccip).
 
 ### Getting Started
 
