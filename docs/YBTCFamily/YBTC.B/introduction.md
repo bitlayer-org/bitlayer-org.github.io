@@ -51,22 +51,22 @@ Acts as the liquidity medium connecting native Bitcoin with **yield-generating s
 
 YBTC.B is derived from **Bitlayer Native BTC**, which itself is **backed 1:1 by off-chain BTC** reserves.
 
+Refer to [Proof of Reserve](../../Learn/Bitlayer%20PoS/POR.md) for the proof of Bitlayer native BTC.
+
 ### Minting Mechanism  
 
 YBTC.B is minted through **verified smart contracts** when users bridge BTC into Bitlayer and initiate wrapping via the official bridge infrastructure.
 
----
+YBTC.B is backed 1:1 by Bitlayer native BTC. Users can query information directly from the [YBTC.B contract on Bitlayer](https://www.btrscan.com/address/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335?tab=Contract).
 
-## How to Acquire YBTC.B
+#### More detailed information about YBTC.B
 
-- **Bridge from Native BTC**  
-  Use Bitlayer’s official bridge to transfer BTC into Bitlayer Layer 2 and mint YBTC.B directly.
-
-- **Buy on DEXs**  
-  YBTC.B is available on **AMMs and liquidity pools** across supported chains.
-
-- **Borrow via Lending Platforms**  
-  Supported as a **collateral asset** or **borrowable token** via partner DeFi protocols.
+- YBTC.B contract has been upgraded to V2 version, which implements ERC4626 standard.
+- Users can deposit Bitlayer native BTC via `deposit() public payable` function, or deposit [Bitlayer WBTC](https://www.btrscan.com/token/0xff204e2681a6fa0e2c3fade68a1b28fb90e4fc5f?tab=Contract) (a wrapped token of Bitlayer native BTC) via ERC4626 functions `deposit(uint256 assets, address receiver) public` 0r `mint(uint256 shares, address receiver) public`.
+- Users can query `totalAssets()` for the amount of underlying asset, and `totalSupply` for the total supply of YBTC.B.
+- Bitlayer network is EVM-compatible, which requires that the Bitlayer native BTC has a decimals of `18`, but the decimals of YBTC.B is `8`, their value equivalence is `1 YBTC.B = 1 BTC`, meaning that on-chain, `1 units of YBTC.B should equal 1e10 wei of BTC` in terms of the smallest precision units. There's a `getConvertRatio` function in the YBTC.B contract, which returns a fixed value of `1e10`. **Users should note the difference in decimals between the Bitlayer native BTC and YBTC.B tokens**.
+- The YBTC.B contract restricts the deposited BTC amount to be `an integer multiple of 1e10`, ensuring that **users do not lose any BTC due to precision truncation**.
+- **YBTC.B is originally minted on Bitlayer network**, all deployed version on other chains is a bridged-version, mainly bridged via Chainlink-CCIP protocol.
 
 ---
 
@@ -85,14 +85,18 @@ YBTC.B is minted through **verified smart contracts** when users bridge BTC into
 
 ## Contract Addresses
 
-| Chain Name  | Contact Address |
+| Chain Name | Contact Address |
 | --------------------------- | ------------------ |
-| Bitlayer    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://www.btrscan.com/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335) |
-| Sui         | [0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC](https://suivision.xyz/coin/0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC) |
-| Avalanche   | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://snowscan.xyz/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335)|
-| Plume       | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://explorer.plume.org/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
-| BSC         | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://bscscan.com/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
-| Ethereum    | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://etherscan.io/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| Bitlayer   | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://www.btrscan.com/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335) |
+| Sui        | [0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC](https://suivision.xyz/coin/0xa03ab7eee2c8e97111977b77374eaf6324ba617e7027382228350db08469189e::ybtc::YBTC) |
+| Avalanche  | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://snowscan.xyz/token/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335)|
+| Plume      | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://explorer.plume.org/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| BSC        | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://bscscan.com/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| Ethereum   | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://etherscan.io/token/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| Plasma     | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://plasmascan.to/address/0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335) |
+| Ink        | [0x2cd3cdb3bd68eea0d3be81da707bc0c8743d7335](https://inkonscan.xyz/address/0x2cd3CdB3bd68Eea0d3BE81DA707bC0c8743D7335) |
+| Solana     | [3VcKofugG1SPJmjuiEZCJL5mk1JkyqGZ19ByeMWXVWfK](https://explorer.solana.com/address/3VcKofugG1SPJmjuiEZCJL5mk1JkyqGZ19ByeMWXVWfK) |
+| Starknet   | [0x02cab84694e1be6af2ce65b1ae28a76009e8ec99ec4bc17047386abf20cbb688](https://starkscan.co/token/0x02cab84694e1be6af2ce65b1ae28a76009e8ec99ec4bc17047386abf20cbb688) |
 
 ---
 
