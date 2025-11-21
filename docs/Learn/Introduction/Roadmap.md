@@ -12,7 +12,7 @@ Bitlayer is not just a blockchain platform—it’s a movement to redefine what�
 
 ### **First Stage: Bitlayer PoS, the Foundation**
 
-**Target: April, 2024(Achieved)**
+**Target: 2024(Achieved)**
 
 In this foundational stage, Bitlayer adopts a cutting-edge security model that combines Proof of Stake (PoS) with multisignature (multisig) technology, ensuring robust protection for assets. By collaborating with multiple MPC (Multi-Party Computation) custody platforms, Bitlayer establishes a secure and scalable infrastructure while maintaining 100% EVM (Ethereum Virtual Machine) compatibility to onboard both users and developers seamlessly.
 
@@ -20,28 +20,25 @@ Bitlayer PoS introduces cross-chain functionality, enabling smooth asset movemen
 
 During this stage, the focus is on empowering developers with a fully EVM-compatible development toolkit and comprehensive ecosystem support. Developers can quickly build, test, and deploy decentralized applications (dApps) on Bitlayer, with Solidity applications migrating effortlessly. Early adopters benefit from ultra-low gas fees and an extensible framework built on Bitcoin, paving the way for a thriving developer and user community.
 
-### **Second Stage: Bitlayer Rollup, BitVM based**
+### **Second Stage: BitVM based**
 
-**Target: Q1/Q2, 2025(Staging)**
+**Target: 2025(Staging)**
 
-In this stage, the BitVM(https://bitvm.org/) paradigm is implemented and used in BTC Bridge and Bitcoin Rollup, which would be groundbreaking progress in security assumption.
+In this stage, the BitVM(https://bitvm.org/) paradigm is implemented and used in BTC Bridge, which would be groundbreaking progress in security assumption.
 
-This stage marks a transformative leap as Bitlayer evolves into a native Bitcoin rollup, achieving Bitcoin-equivalent security by verifying Layer 2 state transitions directly on Bitcoin. This innovation ensures trustless, robust security for all transactions.
+This stage not only validates the core cryptographic assumptions and dispute mechanisms underlying BitVM, but also establishes the critical trust model and interoperability layer upon which the full L2 network will rely. By first delivering a secure, verifiable, and Bitcoin-native bridge, the project proves its technical feasibility, earns ecosystem confidence, and creates the infrastructure required for future scalability and smart-contract functionalities. In short, the BitVM bridge is the essential stepping stone that transforms the long-term Layer 2 vision into an achievable and credible path forward.
 
 Highlights of this stage include:
 - **Trust-Minimized BTC Bridge**: A groundbreaking bridge replaces the multisig-based solution from stage 1, delivering enhanced decentralization and security.
-- **Seamless Migration**: Applications transition effortlessly from Bitlayer PoS to the rollup architecture, ensuring continuity and zero disruptions for developers and users.
 
-By anchoring its security to Bitcoin, Bitlayer establishes itself as a leader in trust-minimized blockchain solutions, setting a new standard for scalability and reliability.
+### **Third Stage: Bitlayer BitVM, Enhanced**
 
-### **Third Stage: Bitlayer Rollup, Super Charged**
+**Target: 2026-**
 
-**Target: Q4, 2025**
-
-The final stage of the roadmap focuses on performance, scalability, and user experience. Bitlayer achieves unprecedented throughput and responsiveness, making it a powerhouse for high-volume on-chain activity.
+The enhanced stage of the BitVM bridge focuses on expanding functionality, strengthening security guarantees, and scaling the system beyond its initial capabilities. After the foundational version proves production viability between Bitcoin and Ethereum, this stage introduces advanced dispute mechanisms, optimized verification performance, and more robust fault-tolerance to support real-world liquidity and higher transaction throughput. It also extends interoperability to additional target chains, transforming the bridge from a beta-product into a versatile, multi-chain Bitcoin connectivity layer. 
 
 Key advancements include:
-- **Unmatched Performance**: Bitlayer reaches a staggering throughput of 20,000 transactions per second (TPS), enabling enterprise-grade applications and mass adoption.
-- **Lightning-Fast Confirmations**: Transactions achieve soft confirmation within just 3 seconds, providing a seamless, near-instant user experience.
+- **Multi-chain Expansion**: The enhanced stage introduces support for multiple target chains while upgrading the underlying verification and dispute mechanisms. This elevates the bridge from a single-route connector to a secure, scalable interoperability hub for Bitcoin.
+- **Performance Optimization for Real-World Liquidity**: Through improved proof efficiency, reduced verification overhead, and more resilient fault-tolerance, the bridge achieves higher throughput, making it capable of supporting real-world liquidity flows.
 
-With these enhancements, Bitlayer positions itself as the ultimate platform for high-performance blockchain applications, merging Bitcoin's security with unparalleled scalability and efficiency.
+With these enhancements, Bitlayer turns the BitVM bridge into a long-term strategic asset that supports broader Layer 2 adoption and unlocks richer cross-chain applications.
