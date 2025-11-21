@@ -12,16 +12,17 @@ slug: roadmap
 - BitVM Bridge Testnet Launch
 - Mint Features
 
-## **FEB.2025**
+## **H1.2025**
 
 - New Functions Launch
 - Unmint, Reclaim Process
+- **Mainnet** Beta Launch (Ethereum)
 
-## **July 2025**
+## **H2 2025**
 
-- Mainnet Beta Launch (Ethereum)
+- Support for Additional Chains
 
-## **H2. 2025**
+## **2026-**
 
-- Mainnet Launch (SUI)
-- Support more Blockchains
+- BitVM Evolves
+- More Chains
