@@ -22,7 +22,7 @@ During this stage, the focus is on empowering developers with a fully EVM-compat
 
 ### **Second Stage: BitVM based**
 
-**Target: 2025(Staging)**
+**Target: 2025(Achieved)**
 
 In this stage, the BitVM(https://bitvm.org/) paradigm is implemented and used in BTC Bridge, which would be groundbreaking progress in security assumption.
 
