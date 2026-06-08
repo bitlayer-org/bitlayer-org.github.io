@@ -23,8 +23,8 @@ We currently support Solidity up to version v0.8.28. Updates for newer versions 
 | Chain ID                    | `200901`                                                                                 |
 | Currency Symbol             | BTC                                                                                      |
 | Explorer                    | [https://www.btrscan.com](https://www.btrscan.com),  [OKX Explorer](https://www.okx.com/zh-hans/web3/explorer/bitlayer)                                    |
-| Public RPC URLs             | [https://rpc.bitlayer.org](https://rpc.bitlayer.org), [https://rpc.bitlayer-rpc.com](https://rpc.bitlayer-rpc.com), [https://rpc.ankr.com/bitlayer](https://rpc.ankr.com/bitlayer) |
-| WebSocket              | <div>wss://ws.bitlayer.org</div><div>wss://ws.bitlayer-rpc.com</div>                                 |
+| Public RPC URLs             | [https://rpc.bitlayer.org](https://rpc.bitlayer.org) |
+| WebSocket              | <div>wss://ws.bitlayer.org</div> |
 | Contract Addresses          | Refer to the [Contract Addresses page](/docs/Build/DeveloperResources/Contracts.md)                         |
 | Connect Wallet              | [Click here to connect your wallet to Bitlayer Mainnet](https://chainlist.org/?search=bitlayer) |
 
@@ -39,9 +39,9 @@ Click the above link to know more about our Mainnet-V1.
 | Network         | `Bitlayer Testnet`                         |
 | Chain ID        | `200810`                                   |
 | Currency Symbol | `BTC`                                      |
-| Explorer                    | [https://testnet-scan.bitlayer.org](https://testnet-scan.bitlayer.org)         |
+| Explorer                    | [https://testnet.btrscan.com/](https://testnet.btrscan.com/)         |
 | Public RPC URL              | [https://testnet-rpc.bitlayer.org](https://testnet-rpc.bitlayer.org)                                 |
-| WebSocket              | <div>wss://testnet-ws.bitlayer.org</div><div>wss://testnet-ws.bitlayer-rpc.com</div>                                 |
+| WebSocket              | <div>wss://testnet-ws.bitlayer.org</div> |
 | Contract Addresses          | Refer to the [Contract Addresses page](/docs/Build/DeveloperResources/Contracts.md)                         |
 | Connect Wallet              | [Click here to connect your wallet to Bitlayer Testnet](https://chainlist.org/?search=bitlayer&testnets=true) |
 
@@ -148,7 +148,7 @@ live:
 - name: Ethereum
  networks:
  - chainid: 200810
-   explorer: https://testnet-scan.bitlayer.org
+   explorer: https://testnet.btrscan.com/
    host: https://testnet-rpc.bitlayer.org
    id: bitlayer
    name: Bitlayer Testnet
