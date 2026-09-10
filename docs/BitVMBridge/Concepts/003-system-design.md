@@ -40,7 +40,7 @@ Broker nodes are the liquidity providers within the BitVM Bridge Network. Their 
 Attester nodes are responsible for validating and signing the majority of transactions within the transaction graph. Their tasks include:
 
 - **Attesting**: Similar to broker nodes, attester nodes validate the transaction graph and provide signatures for most transactions. These signatures are also sent to the Coordinator module on the Finality Chain.
-- **Transaction Validation**: Attester nodes ensure that all transactions adhere to the [Transaction Graph Specification](https://docs.bitlayer.org/docs/BitVMBridge/transaction-graph-spec), which defines the structure and rules for transaction execution within the protocol.
+- **Transaction Validation**: Attester nodes ensure that all transactions adhere to the [Transaction Graph Specification](https://docs.bitlayer.org/docs/Learn/Bitlayer-Whitepaper/), which defines the structure and rules for transaction execution within the protocol.
 
 #### 3. **Watcher Nodes**
 
