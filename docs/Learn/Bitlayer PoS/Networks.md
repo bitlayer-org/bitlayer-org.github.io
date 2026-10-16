@@ -45,4 +45,5 @@ The "currency symbol" is required by some wallets like MetaMask.
 | Provider Name               | Provider URL| 
 | --------------------------- | ------------------ | 
 | Ankr                        | https://bitlayer-rpc.com/              |Mainnet|
+| SwiftNodes                  | https://swiftnodes.io/bitlayer-rpc     |Mainnet|
 
